@@ -1,57 +1,44 @@
+##################
 Model Definition
 ##################
 
+**********************
 Settings
-************
+**********************
 
 .. toctree::
     :maxdepth: 2
 
     Data_Entry/General/Analysis_Controls.rst
 
+
+**********************
 General Info
-*************
+**********************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
 
     Data_Entry/General/Program_Controls.rst
     Data_Entry/General/Bridge_Description.rst
-    Data_Entry/General/COGO.rst
-
-    Data_Entry/COGO/COGO_Command_STAT.rst
-    Data_Entry/COGO/COGO_Command_MAPHV.rst
-    Data_Entry/COGO/COGO_Command_RCOOR.rst
-    Data_Entry/COGO/COGO_COmmand_EQ_L.rst
-    Data_Entry/COGO/COGO_Command_PAST.rst
-    Data_Entry/COGO/COGO_Command_VCURV.rst
-    Data_Entry/COGO/COGO_Command_HCURV.rst
-    Data_Entry/COGO/COGO_Command_Data.rst
-    Data_Entry/COGO/COGO_Command_L_TG.rst
-    Data_Entry/COGO/COGO_Command_Example.rst
-    Data_Entry/COGO/COGO_Command_OSPATH.rst
     Data_Entry/COGO/COGO_Command_Command_Descriptions.rst
-    Data_Entry/COGO/COGO_Command_L_BR.rst
-    Data_Entry/COGO/COGO_Command_OFFSET.rst
-    Data_Entry/COGO/COGO_Command_PATH.rst
-    Data_Entry/COGO/COGO_Command_ADDPT.rst
-    Data_Entry/COGO/COGO_Command_L_AZ.rst
-    Data_Entry/COGO/COGO_Command_DI_L.rst
-    Data_Entry/COGO/COGO_Command_STOR.rst
-
     Data_Entry/General/Nodal_Boundary_Condition.rst
     Data_Entry/General/Staging.rst
     Data_Entry/General/Span_Definition.rst
     Data_Entry/General/Capacity_Trace.rst
 
+
+**********************
 2D Transverse Analysis
-********************
+**********************
 
 .. toctree::
     :maxdepth: 5
 
     input/transverse.rst
 
+
+*************************
 Factors & Rating Controls
 *************************
 
@@ -64,6 +51,7 @@ Factors & Rating Controls
     Data_Entry/Rating_and_Factors/ExplicitLLDF.rst
     Data_Entry/Rating_and_Factors/Rate_Location.rst
 
+********************
 Library
 ********************
 
@@ -94,6 +82,7 @@ Archive
     Data_Entry/Libraries/Bolt_Fastener_Library.rst
 
 
+********************
 Steel Members
 ********************
 
@@ -105,16 +94,18 @@ Steel Members
     Data_Entry/Members/Column_Definition.rst
 
 
+********************
 Concrete
 ********************
 
 .. toctree::
-    :maxdepth: 5
+    :maxdepth: 3
 
     Data_Entry/Slab/Concrete_Slab_Definition.rst
     Data_Entry/Slab/Rebar.rst
 
 
+**********************
 Steel Shape Placement
 **********************
 
@@ -134,11 +125,12 @@ Steel Shape Placement
     Data_Entry/Property_Assignment/Bearing_Stiffener.rst
 
 
+********************
 Loads
 ********************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     Data_Entry/Dead_Loads/Dead_Load_Defintion.rst
     Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.rst
@@ -146,11 +138,13 @@ Loads
     Data_Entry/Live_Loads/Live_Load_Definition.rst
     Data_Entry/Live_Loads/Load_Combination_Definition.rst
 
+
+********************
 Depricated
 ********************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     Data_Entry/Members/Girder_Definition.rst
     Data_Entry/Members/Cross_Beam_Definition.rst

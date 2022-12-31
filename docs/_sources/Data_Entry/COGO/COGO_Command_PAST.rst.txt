@@ -1,24 +1,5 @@
-<HTML>
- <HEAD>
-  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
-  <!-- $MVD$:template("","0","0") -->
-  <!-- $MVD$:color("18","e22b8a","Blue Violet","0") -->
-  <!-- $MVD$:fontset("Untitled Font Set 1","MS Sans Serif") -->
-  <!-- $MVD$:fontset("Arial","Arial") -->
-  <!-- $MVD$:fontset("Verdana","Verdana") -->
-  <TITLE>COGO Command: PAST</TITLE>
-  <META NAME="copyright">
-  <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT><LINK REL="StyleSheet" HREF="..\..\HTMLHELP.css">
- <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
- <META NAME="MS-HAID" CONTENT="PAST">
- <META NAME="MS-HAID" CONTENT="COGO"></HEAD>
-  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
-  <H1 VALUE="BRIDG 97 &copy; Alan K. Gordon and Associates">
-   COGO Command: PAST</H1>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <P>
-   <IMG SRC="PAST.gif" WIDTH="615" HEIGHT="340" VSPACE="0" HSPACE="0" BORDER="0">
- </BODY>
-</HTML>
+COGO Command: PAST
+----------------------
+
+.. figure:: PAST.gif
+    :alt: PAST.gif

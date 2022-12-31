@@ -1,26 +1,6 @@
-<HTML>
- <HEAD>
-  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
-  <!-- $MVD$:template("","0","0") -->
-  <!-- $MVD$:color("18","e22b8a","Blue Violet","0") -->
-  <!-- $MVD$:fontset("Untitled Font Set 1","MS Sans Serif") -->
-  <!-- $MVD$:fontset("Arial","Arial") -->
-  <!-- $MVD$:fontset("Verdana","Verdana") -->
-  <TITLE>COGO Command: L/BR</TITLE>
-  <META NAME="copyright">
-  <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
-  <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT><LINK REL="StyleSheet" HREF="..\..\HTMLHELP.css">
- <META NAME="MS-HAID" CONTENT="Line at Bearing">
- <META NAME="MS-HAID" CONTENT="COGO"></HEAD>
-  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
-  <H1 VALUE="BRIDG 97 &copy; Alan K. Gordon and Associates">
-   COGO Command: L/BR</H1>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <P>
-   <IMG SRC="L_BR.gif" WIDTH="579" HEIGHT="348" VSPACE="0" HSPACE="0" BORDER="0">
- </BODY>
-</HTML>
+COGO Command: L/BR
+----------------------
+
+.. figure:: L_BR.gif
+    :alt: L_BR.gif
+

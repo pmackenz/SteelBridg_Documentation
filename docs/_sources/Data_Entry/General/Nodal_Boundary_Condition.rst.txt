@@ -1,5 +1,5 @@
 Input Nodal Boundary Condition
------------------------------------
+=================================
 
    If the same Cogo Point is listed multiple times for the same stage, 
    then the resulting boundary condition is the "OR" of all

@@ -1,33 +1,18 @@
-<HTML>
- <HEAD>
-  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
-  <!-- $MVD$:template("","0","0") -->
-  <!-- $MVD$:color("18","e22b8a","Blue Violet","0") -->
-  <!-- $MVD$:fontset("Untitled Font Set 1","MS Sans Serif") -->
-  <!-- $MVD$:fontset("Arial","Arial") -->
-  <!-- $MVD$:fontset("Verdana","Verdana") -->
-  <TITLE>COGO Commands</TITLE>
-  <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT><LINK REL="StyleSheet" HREF="..\..\HTMLHELP.css">
- <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
- <META NAME="MS-HAID" CONTENT="Input">
- <META NAME="MS-HAID" CONTENT="COGO Command Data"></HEAD>
-  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
-  <H1 VALUE="BRIDG 97 &copy; Alan K. Gordon and Associates">
-   Input COGO Command Data</H1>
-  <H1>
-   <A HREF="..\Input_Navigator.html"><IMG SRC="..\..\image\BTN_Navigator.gif" WIDTH="56" HEIGHT="18" VSPACE="0" HSPACE="0" ALT="image\BTN_Navigator.gif" BORDER="0"></A> <IMG SRC="..\..\image\BTN_Command_Details32.gif" WIDTH="92" HEIGHT="18" VSPACE="0" HSPACE="0" ALT="image\BTN_Command_Details32.gif" BORDER="0"></H1>
-  <P>
-   <IMG SRC="..\..\image\ebd_Ebd21.gif" WIDTH="333" HEIGHT="31" VSPACE="0" HSPACE="0" ALT="image\ebd_Ebd21.gif" BORDER="0"></P>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <P>
-   <IMG SRC="..\..\image\ebd_Ebd22.gif" WIDTH="234" HEIGHT="31" VSPACE="0" HSPACE="0" ALT="image\ebd_Ebd22.gif" BORDER="0"></P>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <H1>
-   <IMG SRC="..\..\image\ebd_Ebd23.gif" WIDTH="769" HEIGHT="309" VSPACE="0" HSPACE="0" ALT="image\ebd_Ebd23.gif" BORDER="0">
- </BODY>
-</HTML>
+Input COGO Command Data
+------------------------
+
+.. comment::
+    .. figure:: ../../image/ebd_Ebd21.gif
+        :alt: image/ebd_Ebd21.gif
+
+
+    .. figure:: ../../image/ebd_Ebd22.gif
+        :alt: image/ebd_Ebd22.gif
+
+
+.. figure:: ../../image/ebd_Ebd23.gif
+    :alt: image/ebd_Ebd23.gif
+
+
+Look at the following pages for details on individual `COGO` commands.
+

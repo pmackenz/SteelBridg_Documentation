@@ -1,5 +1,5 @@
 Capacity Trace
-----------------------
+==========================
 
    This help system has the full documentation in flow chart form of how 
    a member's capacity and rating are computed. The terminology
