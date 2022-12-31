@@ -68,19 +68,6 @@ Library
     Data_Entry/Libraries/Span_Data.rst
 
 
-Archive
-========
-
-.. toctree::
-    :maxdepth: 2
-
-    Data_Entry/Libraries/Pin_Hinge_Library.rst
-    Data_Entry/Libraries/Weld_Fastener_Library.rst
-    Data_Entry/Libraries/Misc_Bearing_Stiffner_Library.rst
-    Data_Entry/Libraries/Misc_Hinge_Library.rst
-    Data_Entry/Libraries/Angle_Bearing_Stiffner_Library.rst
-    Data_Entry/Libraries/Bolt_Fastener_Library.rst
-
 
 ********************
 Steel Members
@@ -140,7 +127,7 @@ Loads
 
 
 ********************
-Depricated
+Deprecated
 ********************
 
 .. toctree::
@@ -150,10 +137,14 @@ Depricated
     Data_Entry/Members/Cross_Beam_Definition.rst
     Data_Entry/Members/Floor_Beam_Definition.rst
     Data_Entry/Members/Miscellaneous_Member.rst
-
     Data_Entry/Property_Assignment/Rivets_Placement.rst
     Data_Entry/Property_Assignment/Shear_Connector_Placement.rst
-
     Data_Entry/Live_Loads/Lane_Group_Definition.rst
     Data_Entry/Live_Loads/Truck_Group_Definition.rst
     Data_Entry/Live_Loads/Live_Load_Envelope_Definition.rst
+    Data_Entry/Libraries/Pin_Hinge_Library.rst
+    Data_Entry/Libraries/Weld_Fastener_Library.rst
+    Data_Entry/Libraries/Misc_Bearing_Stiffner_Library.rst
+    Data_Entry/Libraries/Misc_Hinge_Library.rst
+    Data_Entry/Libraries/Angle_Bearing_Stiffner_Library.rst
+    Data_Entry/Libraries/Bolt_Fastener_Library.rst

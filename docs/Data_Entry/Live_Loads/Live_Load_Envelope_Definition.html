@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Live Load Envelope Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Theory" href="../../theory.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Truck_Group_Definition.html" /> 
+    <link rel="next" title="Input Pin Hinge Library" href="../Libraries/Pin_Hinge_Library.html" />
+    <link rel="prev" title="Truck Group Definition" href="Truck_Group_Definition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,8 +39,41 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#deprecated">Deprecated</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Definition.html">Lane Group Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Truck_Group_Definition.html">Truck Group Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Live Load Envelope Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Bolt_Fastener_Library.html">Input Bolt Fastener Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +94,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Live Load Envelope Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Live_Loads/Live_Load_Envelope_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,103 +104,119 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+  <section id="live-load-envelope-definition">
+<h1>Live Load Envelope Definition<a class="headerlink" href="#live-load-envelope-definition" title="Permalink to this heading"></a></h1>
+<img alt="image/ebd_Ebd65.gif" src="../../_images/ebd_Ebd65.gif" />
+<p>(These optional entries are not operational yet!)</p>
+<img alt="image/ebd_Ebd66.gif" src="../../_images/ebd_Ebd66.gif" />
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>One step in the creation of the final load envelope that is used to rate a bridge, is the creation of load envelopes of each truck along each path that it is used.  These envelopes will then be used to create composite envelopes for multiple truck and multiple lane configurations.  The longitudinal motion for each truck along each path is defined with this table.  Typically, only the first three fields need data, the remaining fields are for the special truck sequencing method of motion control that is <strong>not</strong> required for bridge rating.</p>
+<p>The truck sequencing option provides an alternate method for control of motion for moving live loads. This optional entry allows you to control the motion of one or more trucks in any number of steps. You use this command in conjunction with existing &lt;A href=”Truck_Definition.html”&gt;Truck Definitions&lt;/A&gt; to precisely control the range of motion and axle loading configurations during the development of the force, reaction, and displacement envelopes.  You specify a new “truck” name to represent the final composite envelope that is generated.</p>
+<p>Where as an envelope is developed for each truck for each path that it is used on, a truck this is created using the SEQ method is assumed to apply to all referenced paths.  Thus, if a sequenced “Truck” is referenced in another table, it will only have one envelope that is used for every specified path.  This is different the other modes that generate an envelope for each used path.</p>
+<p>A Truck Sequencing entry defines a new truck that is a combination of one or more trucks that have specific ranges of motion, relative velocity, and sequence of events.  The system will use this information to compute a single composite live load envelope that can be referenced through out the program the same as a normal truck entry is used.</p>
+<p>Note. Only Live Load Definitions and axle load entries in the Truck Definition are used with this option.  Lane loading is not active for truck sequencing.</p>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<p class="rubric">Truck Name</p>
 <blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Live Load Envelope Definition&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
+<div><p>Enter the name of a truck referenced in
+the <a class="reference internal" href="../../input/loading.html#live-load-definition"><span class="std std-ref">Live Load Definition</span></a> or  <a class="reference internal" href="../../input/loading.html#truck-definition"><span class="std std-ref">Truck Definition</span></a> tables.
+If the Motion Mode is <strong>SEQ</strong> then specify a new truck name.</p>
 </div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Live Load Envelope Definition&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd65.gif” border=”0” height=”71” width=”201” alt=”imageebd_Ebd65.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;(These optional entries are not operational yet!)&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd66.gif” border=”0” height=”71” width=”663” alt=”imageebd_Ebd66.gif”&gt;&lt;/P&gt;
-&lt;H2&gt;Description&lt;/H2&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;One step in the creation of the final load envelope that is used to rate a bridge, is the creation of load envelopes of each truck along each path that it is used.  These envelopes will then be used to create composite envelopes for multiple truck and multiple lane configurations.  The longitudinal motion for each truck along each path is defined with this table.  Typically, only the first three fields need data, the remaining fields are for the special truck sequencing method of motion control that is &lt;span style=”font-weight:bold; “&gt;not&lt;/span&gt; required for bridge rating. &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The truck sequencing option provides an alternate method for control of motion for moving live loads. This optional entry allows you to control the motion of one or more trucks in any number of steps. You use this command in conjunction with existing &lt;A href=”Truck_Definition.html”&gt;Truck Definitions&lt;/A&gt; to precisely control the range of motion and axle loading configurations during the development of the force, reaction, and displacement envelopes.  You specify a new ?truck? name to represent the final composite envelope that is generated.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;Where as an envelope is developed for each truck for each path that it is used on, a ?truck? this is created using the SEQ method is assumed to apply to all referenced paths.  Thus, if a sequenced ?truck? is referenced in another table, it will only have one envelope that is used for every specified path.  This is different the other modes that generate an envelope for each used path.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;A Truck Sequencing entry defines a new truck that is a combination of one or more trucks that have specific ranges of motion, relative velocity, and sequence of events.  The system will use this information to compute a single composite live load envelope that can be referenced through out the program the same as a normal truck entry is used.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;Note. Only Live Load Definitions and axle load entries in the Truck Definition are used with this option.  Lane loading is not active for truck sequencing.  &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;H2&gt;Parameters&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Truck Name&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Enter the name of a truck referenced in the&lt;A href=”Live_Load_Definition.html”&gt; Live Load&lt;/A&gt; or &lt;A href=”Truck_Definition.html”&gt;Truck&lt;/A&gt; definition tables.  If the Motion Mode is &lt;span style=”font-weight:bold; “&gt;SEQ&lt;/span&gt; then specify a new truck name.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Motion Mode&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&amp;nbsp;The longitudinal motion of the truck along a path is controlled by this parameter. Use one of the following codes:&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;AUTO&lt;/span&gt; &lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;The truck will be moved such that every axle and the truck?s center of action will be positioned directly over the location of the intersection of the truck?s current path and each cross beam or floor beam.  Also, each axle will be placed at a number of evenly spaced locations between the cross beam / floor beam intersection points.  The number of these intermediate points is specified by an integer value in the &lt;span style=”font-weight:bold; “&gt;Motion Data&lt;/span&gt; field.  The truck will be run in both directions along the path.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;FIXED&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Specify a constant distance in Feet in the &lt;span style=”font-weight:bold; “&gt;Motion Data&lt;/span&gt; field.  For each iteration, the truck will be moved this distance along the path. The truck will be run in both directions along the path.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;SEQ&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;This method  allows for multiple trucks to be moved along paths on the bridge in a very controlled and complex sequence of motion.  &lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Motion Data&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;If the motion mode is either AUTO or FIXED then this field is used as described above.  For the SEQ mode, this field is ignored.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The following entries are needed &lt;span style=”font-weight:bold; “&gt;only&lt;/span&gt; if the motion mode is &lt;span style=”font-weight:bold; “&gt;SEQ&lt;/span&gt;.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Step&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Each truck sequence can have more then one configuration.  For example, a truck sequence could describe step 1 as having truck 1 start at location 100 and proceed to location 200 then stop.  The next step, step 2, could then specify that truck 2 start at location 100 and that truck 1 continue from where it left off and both trucks run until they are both off of the end of the bridge.  The end of a step is defined as when no trucks are in motion.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Ref Truck&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Reference a existing ?Truck? as defined the Truck Definition and Live Load Definition entries.  Use multiple entries with the same ?Truck Name? and Step to define more then one referenced truck in motion at one time.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Dir&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Use the code L for left to right axle orientation, and R for right to left.  The assumed coordinate system is that left to right is going up station and visa versa for right to left.  For example, if the L code is used, the first axle is placed at the start location, and the remaining axles are located to the left of that point.  Also, a truck given a code of L and then having a start position to the right of the ending position will infect describe a truck going backwards.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;COGO Path&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Specify the path that the referenced truck is to follow. Use the next entry to create a path parallel to an existing COGO path.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Offset from Path&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Specify an offset distance from the specified COGO Path to use a path that is parallel to an existing COGO path. Looking up station, a positive direction is to the right.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Start Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of COGO path for initial location of truck?s front axle..&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;End Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of COGO path that will be the farthest the front axle of the truck can move. Once the front axle of a truck reaches the End Distance it is stopped. When all trucks in the current step have stopped then that step is complete.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;VFlag&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;The Velocity flag is used to determine how fast the truck should move.  Velocity has the units of feet per iteration.  Four codes are allowed here:&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;1) Space: Use the value of SeqVel in the Analysis Controls entries to set the speed.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;2) P: The velocity will be computer as proportional to the initial range of motions between this entry and the first entry of the step.  If P is used in the first entry of the step the value of SeqVel is used. The computed speed is then multiplied by the factor Velocity which defaults to 1.0. &lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;V1 = Velocity for truck in first entry in step.&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;D1 = Range of motion of first entry in step.&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;D2 = Range of motion of this entry.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;Speed = V1 * (D1 / D2) * Velocity&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;3) R: The velocity of the truck referenced in this entry will be relative to the first entry in this step.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;V1 = Velocity for truck in first entry in step.&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;Speed = V1 * Velocity&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;4) A: Use this code to enter an absolute velocity that is not derived from any other information.&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;Speed = Velocity&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Velocity&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;The relative / absolute velocity factor as describe above.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;TruckStop&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;There are two ways to have a truck stop during a step. One is when the first axle reaches the end position.  The other is to use this field to tie the motion of this entry to another entry in the same step.  Reference another Truck that is used in this step.  When that truck stops, this one will stop also. This option is not valid for the first truck specified in a step.&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p class="rubric">Motion Mode</p>
+<blockquote>
+<div><p>The longitudinal motion of the truck along a path is controlled by this parameter. Use one of the following codes:</p>
+<p><strong>AUTO</strong>
+The truck will be moved such that every axle and the truck’s center of action will be positioned directly over the location of the intersection of the truck’s current path and each cross beam or floor beam.  Also, each axle will be placed at a number of evenly spaced locations between the cross beam / floor beam intersection points.  The number of these intermediate points is specified by an integer value in the <strong>Motion Data</strong> field.  The truck will be run in both directions along the path.</p>
+<p><strong>FIXED</strong>
+Specify a constant distance in Feet in the <strong>Motion Data</strong> field.  For each iteration, the truck will be moved this distance along the path. The truck will be run in both directions along the path.</p>
+<p><strong>SEQ</strong>
+This method  allows for multiple trucks to be moved along paths on the bridge in a very controlled and complex sequence of motion.</p>
+</div></blockquote>
+<p class="rubric">Motion Data</p>
+<blockquote>
+<div><p>If the motion mode is either AUTO or FIXED then this field is used as described above.  For the SEQ mode, this field is ignored.</p>
+</div></blockquote>
+<p>The following entries are needed <strong>only</strong> if the motion mode is <strong>SEQ</strong>.</p>
+<p class="rubric">Step</p>
+<blockquote>
+<div><p>Each truck sequence can have more then one configuration.  For example, a truck sequence could describe step 1 as having truck 1 start at location 100 and proceed to location 200 then stop.  The next step, step 2, could then specify that truck 2 start at location 100 and that truck 1 continue from where it left off and both trucks run until they are both off of the end of the bridge.  The end of a step is defined as when no trucks are in motion.</p>
+</div></blockquote>
+<p class="rubric">Ref Truck</p>
+<blockquote>
+<div><p>Reference a existing “Truck” as defined the Truck Definition and Live Load Definition entries.  Use multiple entries with the same <cite>Truck Name</cite> and Step to define more then one referenced truck in motion at one time.</p>
+</div></blockquote>
+<p class="rubric">Dir</p>
+<blockquote>
+<div><p>Use the code L for left to right axle orientation, and R for right to left.  The assumed coordinate system is that left to right is going up station and visa versa for right to left.  For example, if the L code is used, the first axle is placed at the start location, and the remaining axles are located to the left of that point.  Also, a truck given a code of L and then having a start position to the right of the ending position will infect describe a truck going backwards.</p>
+</div></blockquote>
+<p class="rubric">COGO Path</p>
+<blockquote>
+<div><p>Specify the path that the referenced truck is to follow. Use the next entry to create a path parallel to an existing COGO path.</p>
+</div></blockquote>
+<p class="rubric">Offset from Path</p>
+<blockquote>
+<div><p>Specify an offset distance from the specified COGO Path to use a path that is parallel to an existing COGO path. Looking up station, a positive direction is to the right.</p>
+</div></blockquote>
+<p class="rubric">Start Distance</p>
+<blockquote>
+<div><p>Distance from start of COGO path for initial location of truck’s front axle..</p>
+</div></blockquote>
+<p class="rubric">End Distance</p>
+<blockquote>
+<div><p>Distance from start of COGO path that will be the farthest the front axle of the truck can move. Once the front axle of a truck reaches the End Distance it is stopped. When all trucks in the current step have stopped then that step is complete.</p>
+</div></blockquote>
+<p class="rubric">VFlag</p>
+<blockquote>
+<div><p>The Velocity flag is used to determine how fast the truck should move.  Velocity has the units of feet per iteration.  Four codes are allowed here:</p>
+<ol class="arabic">
+<li><p>Space: Use the value of SeqVel in the Analysis Controls entries to set the speed.</p></li>
+<li><p>P: The velocity will be computer as proportional to the initial range of motions between this entry and the first entry of the step.  If P is used in the first entry of the step the value of SeqVel is used. The computed speed is then multiplied by the factor Velocity which defaults to 1.0.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>V1 = Velocity for truck in first entry in step.</p></li>
+<li><p>D1 = Range of motion of first entry in step.</p></li>
+<li><p>D2 = Range of motion of this entry.</p></li>
+<li><p>Speed = V1 * (D1 / D2) * Velocity</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>R: The velocity of the truck referenced in this entry will be relative to the first entry in this step.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>V1 = Velocity for truck in first entry in step.</p></li>
+<li><p>Speed = V1 * Velocity</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A: Use this code to enter an absolute velocity that is not derived from any other information.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Speed = Velocity</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p class="rubric">Velocity</p>
+<blockquote>
+<div><p>The relative / absolute velocity factor as describe above.</p>
+</div></blockquote>
+<p class="rubric">TruckStop</p>
+<blockquote>
+<div><p>There are two ways to have a truck stop during a step. One is when the first axle reaches the end position.  The other is to use this field to tie the motion of this entry to another entry in the same step.  Reference another Truck that is used in this step.  When that truck stops, this one will stop also. This option is not valid for the first truck specified in a step.</p>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Truck_Group_Definition.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../theory.html" class="btn btn-neutral float-right" title="Theory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Truck_Group_Definition.html" class="btn btn-neutral float-left" title="Truck Group Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Libraries/Pin_Hinge_Library.html" class="btn btn-neutral float-right" title="Input Pin Hinge Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

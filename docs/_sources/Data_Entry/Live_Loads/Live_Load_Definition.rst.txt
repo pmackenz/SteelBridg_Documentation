@@ -1,128 +1,124 @@
-<HTML>
- <HEAD>
-  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
-  <!-- $MVD$:template("","0","0") -->
-  <!-- $MVD$:color("18","e22b8a","Blue Violet","0") -->
-  <!-- $MVD$:fontset("Untitled Font Set 1","MS Sans Serif") -->
-  <!-- $MVD$:fontset("Arial","Arial") -->
-  <!-- $MVD$:fontset("Verdana","Verdana") -->
-  <TITLE>Live Load Definition</TITLE>
-  <META NAME="copyright">
-  <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
-  <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT><LINK REL="StyleSheet" HREF="..\..\HTMLHELP.css"></HEAD>
-  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
-  <H1 VALUE="BRIDG 97 &copy; Alan K. Gordon and Associates">
-   Live Load Definition</H1>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <H2>
-   <IMG SRC="..\..\image\ebd_Ebd61.gif" WIDTH="257" HEIGHT="70" VSPACE="0" HSPACE="0" ALT="image\ebd_Ebd61.gif" BORDER="0"></H2>
-  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
-   &nbsp;</P>
-  <P>
-   <IMG SRC="..\..\image\ebd_Ebd62.gif" WIDTH="385" HEIGHT="70" VSPACE="0" HSPACE="0" ALT="image\ebd_Ebd62.gif" BORDER="0"></P>
-  <H2>
-   Description</H2>
-  <P STYLE="margin-left : 36.0pt;">
-   This entry is one of the two entries that describe the live load 
-   forces that are associated with a &#147;Truck.&#148; Truck loads 
-   include these stationary loads in addition to the moving loads 
-   specified in the &#147;Truck Definition&#148; entry form. Use the 
-   same name on this entry as on the &#147;<A HREF="Truck_Definition.html">Truck
-    Definition</A> &#148; entry to combine stationary loads with moving 
-   loads for a single truck definition.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   &nbsp;</P>
-  <P STYLE="margin-left : 36.0pt;">
-   Forces can be applied to member lines and COGO points explicitly. Use 
-   this entry sheet to describe <SPAN STYLE="font-weight : bold;">either</SPAN> 
-   a &#147;Load at Point&#148; or a member load applied to a member line.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   &nbsp;</P>
-  <P STYLE="margin-left : 36.0pt;">
-   A full length uniform load can easily be applied by just entering the 
-   a Start Value and leaving the End Value, Start Distance, and End 
-   Distances blank.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   &nbsp;</P>
-  <H2>
-   Parameters</H2>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   <SPAN STYLE="font-weight : bold;">COGO Point&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   If this entry is being use to describe a point load, then specify the 
-   point where the force will be applied. Member loading does not use 
-   this entry.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Force Dir&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Forces are applied in the <SPAN STYLE="font-weight : bold;">global</SPAN> 
-   coordinate system. Use one of the following six direction codes: FX, 
-   FY, FZ, MX, My, or MZ. Note that unlike the member loads, the sense 
-   of these loads is consistent with the directions of the global 
-   coordinate system. Member loading does not use this entry.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Force&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Enter the force in units of Kips and Feet. Member loading does not 
-   use this entry.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Mrb Line&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Specify which member line to apply this load.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Load Code&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Loads are applied to the major local axis of the member. Unless 
-   changed by the user, the Y direction is up and the Z direction is to 
-   the right when looking up station. For convenience, the Y forces are 
-   negated so that a positive value will apply a downward forces. Use 
-   the following codes to apply point, linear, and moment forces:</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">PY</SPAN>&nbsp;<SPAN STYLE="font-weight : bold;">Downward</SPAN> 
-   point load.</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">PZ</SPAN>&nbsp;Point 
-   Load in right direction when looking up station.</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">LY</SPAN>&nbsp;Linear <SPAN STYLE="font-weight : bold;">downward</SPAN> 
-   load applied along a member.</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">LZ</SPAN>&nbsp;Linear 
-   right direction load applied along a member.</P>
-  <P STYLE="text-indent : -58.3pt;margin-left : 94.3pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">MY</SPAN>&nbsp;Moment 
-   about the local Y axis. Looking down on the bridge, this load will be 
-   in the counterclockwise direction.</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;&nbsp;<SPAN STYLE="font-weight : bold;">MZ</SPAN>&nbsp;Moment 
-   about the local Z axis.</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   &nbsp;</P>
-  <P STYLE="text-indent : -58.5pt;margin-left : 94.5pt;">
-   <SPAN STYLE="font-weight : bold;">Start Dist&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Distance from start of member line. Use to specify location of point 
-   or moment forces, and beginning of linear load.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">End Dist&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Distance from start of member line. Use to specify ending location of 
-   linear load.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Start Value&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Point or moment force value, or starting linear load.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Ending Value&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Ending force value for linear load.</P>
-  <P STYLE="margin-left : 36.0pt;">
-   <SPAN STYLE="font-weight : bold;">Description&nbsp;</SPAN></P>
-  <P STYLE="margin-left : 72.0pt;">
-   Optional description.
- </BODY>
-</HTML>
+Live Load Definition
+=========================
+
+.. image:: ../../image/ebd_Ebd61.gif
+    :alt: image/ebd_Ebd61.gif
+    
+.. image:: ../../image/ebd_Ebd62.gif
+    :alt: image/ebd_Ebd62.gif
+
+
+Description
+-----------------
+
+This entry is one of the two entries that describe the live load 
+forces that are associated with a `Truck`. Truck loads
+include these stationary loads in addition to the moving loads 
+specified in the :ref:`Truck Definition` entry form. Use the 
+same name on this entry as on the :ref: Truck Definition` 
+entry to combine stationary loads with moving loads for a single truck definition.
+ 
+Forces can be applied to member lines and COGO points explicitly. Use 
+this entry sheet to describe **either**
+a "Load at Point" **or** a "distributed member load" applied to a member line.
+ 
+A full length uniform load can easily be applied by just entering the 
+a Start Value and leaving the End Value, Start Distance, and End 
+Distances blank.
+
+
+Parameters
+---------------
+
+.. rubric:: COGO Point 
+..
+
+    If this entry is being use to describe a point load, then specify the 
+    point where the force will be applied. Member loading does not use 
+    this entry.
+
+.. rubric:: Force Dir 
+..
+
+    Forces are applied in the **global**
+    coordinate system. Use one of the following six direction codes: FX, 
+    FY, FZ, MX, My, or MZ. Note that unlike the member loads, the sense 
+    of these loads is consistent with the directions of the global 
+    coordinate system. Member loading does not use this entry.
+
+.. rubric:: Force 
+..
+
+    Enter the force in units of Kips and Feet. Member loading does not use this entry.
+
+.. rubric:: Mrb Line 
+..
+
+    Specify which member line to apply this load.
+
+.. rubric:: Load Code 
+..
+
+    Loads are applied to the major local axis of the member. Unless 
+    changed by the user, the Y direction is up and the Z direction is to 
+    the right when looking up station. For convenience, the Y forces are 
+    negated so that a positive value will apply a downward forces. Use 
+    the following codes to apply point, linear, and moment forces:
+
+.. rubric:: PY
+..
+
+    Magnitude of **downward** point load.
+
+.. rubric:: PZ
+..
+
+    Point Load in right direction when looking up station.
+
+.. rubric:: LY
+..
+
+    Linear **downward** distributed load applied along a member.
+
+.. rubric:: LZ
+..
+
+    Linear right direction distributed load applied along a member.
+
+.. rubric:: MY
+..
+
+    Moment about the local Y axis. Looking down on the bridge, this load will be in the counterclockwise direction.
+
+.. rubric:: MZ
+..
+
+    Moment about the local Z axis.
+
+
+.. rubric:: Start Dist 
+..
+
+    Distance from start of member line. Use to specify location of point
+    or moment forces, and beginning of linear load.
+
+.. rubric:: End Dist 
+..
+
+    Distance from start of member line. Use to specify ending location of
+    linear load.
+
+.. rubric:: Start Value 
+..
+
+    Point or moment force value, or starting linear load.
+
+.. rubric:: Ending Value 
+..
+
+    Ending force value for linear load.
+
+.. rubric:: Description 
+..
+
+    Optional description.

@@ -1,18 +1,5 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Input Flange Placement</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Input Flange Placement</H1>
-<H1><A href="..\Input_Navigator.html"><IMG SRC="..\..\image\BTN_Navigator.gif" border="0" height="18" width="56" alt="image\BTN_Navigator.gif"></A> <A href="..\..\Steel_Shape_Placement\Explanation_of_Negative_Area.html"><IMG SRC="..\..\image\BTN_Negative_Area32.gif" border="0" height="18" width="79" alt="image\BTN_Negative_Area32.gif"></A>  <A href="..\..\Reference\Notes_on_Steel_Members\Explanation_of_Start_and_End_Distances.html"><IMG SRC="..\..\image\BTN_Stop_and_Start_Points96.gif" border="0" height="18" width="111" alt="image\BTN_Stop_and_Start_Points96.gif"></A></H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd124.gif" border="0" height="245" width="529" alt="image\ebd_Ebd124.gif"></P>
-</BODY>
-</HTML>
+Input Flange Placement
+=======================
+
+.. image:: ../../image/ebd_Ebd124.gif
+    :alt: image/ebd_Ebd124.gif

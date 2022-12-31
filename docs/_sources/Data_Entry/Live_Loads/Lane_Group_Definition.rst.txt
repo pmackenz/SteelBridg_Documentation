@@ -1,46 +1,69 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Lane Group Definition</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Lane Group Definition</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<H2><IMG src="..\..\image\ebd_Ebd67.gif" border="0" height="74" width="301" alt="image\ebd_Ebd67.gif"></H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="text-indent:30.25pt;"><IMG src="..\..\image\ebd_Ebd68.gif" border="0" height="74" width="315" alt="image\ebd_Ebd68.gif"></P>
-<H2>Description</H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:36.00pt;">The definition of a group of lanes is used in conjunction with a definition of a<A href="Truck_Group_Definition.html"> group of trucks</A> to describe the full range of loading that is used to compute a live load envelope. In the<A href="Load_Combination_Definition.html"> Load Combination Definition</A> both a Lane Group name and a Truck Group name are referenced.  Refer to the <A href="..\..\Load_Generation\Load_Generation.html">Live Load Theory</A> section of this manual to understand how these entries are used.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<H2>Parameters</H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Lane Group Name</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Use a unique name for each lane group.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">COGO Path</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">This is a reference to an existing COGO path that will define center line for the Lane group.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Start Distance</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Distance from start of COGO path to start of Lane group.  Use this value to define where on the referenced COGO path the lane group starts.  It does not have to be at a bridge end.  Loads positioned off the bridge are not processed. </P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">End Distance</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Distance from start of COGO path to end of Lane group.  This value must be greater then the Start Distance. Use this value to define where on the referenced COGO path the lane group ends.  It does not have to be at the bridge ends.  Loads positioned off the bridge are not processed. </P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Offset to Left Edge</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Specify the <A href="..\..\Load_Generation\Live_Load_Placement.html">Left edge</A> , looking up station, as an offset distance from the center COGO path.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Offset to Right Edge</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Specify the <A href="..\..\Load_Generation\Live_Load_Placement.html">Righteft edge</A> , looking up station, as an offset distance from the center COGO path.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Max Number Lanes</span></P>
-<P style="margin-left:72.00pt;">When the <A href="..\..\Load_Generation\Lane_Group_Positioning_Methods.html">lane placement method</A> is CTR, LCR, or LCRQ then this value will limit the total number of lanes that are loaded on the bridge at one time.  This value must get greater then zero and is limited to the number of lanes that will fit between the right and left edges.</P>
-<P>&nbsp;<span style="font-weight:bold; ">Motion Mode</span></P>
-<P>&nbsp;&nbsp;Select one of the automatic load generation modes or NONE.</P>
-<UL>
- <P style="margin-left:60.00pt;">
- <LI style="margin-left:59.75pt;">CTR - Center of Lane Group<BR></LI>
- <LI style="margin-left:59.75pt;">LCR - Left, Center, and Right<BR></LI>
- <LI style="margin-left:59.75pt;">LCRQ - Left, Left Quarter, Center, Right Quarter, Right<BR></LI>
- <LI style="margin-left:60.00pt;">NONE - Use this mode when the Truck group only references “trucks”  with static loads or sequenced movement. <BR></LI></P>
-</UL>
-</BODY>
-</HTML>
+Lane Group Definition
+=========================
+
+.. image:: ../../image/ebd_Ebd67.gif
+    :alt: image/ebd_Ebd67.gif
+
+.. image:: ../../image/ebd_Ebd68.gif
+    :alt: image/ebd_Ebd68.gif
+
+
+Description
+---------------
+
+The definition of a group of lanes is used in conjunction with a definition of
+a group of trucks from :ref:`Truck Group Definition` to describe the full
+range of loading that is used to compute a live load envelope.
+In the :ref:`Load Combination Definition` both a Lane Group name and a
+Truck Group name are referenced.
+Refer to the :ref:`Live Load Theory` section of this manual to understand how
+these entries are used.
+
+
+Parameters
+----------------
+
+.. rubric:: Lane Group Name
+..
+
+    Use a unique name for each lane group.
+
+.. rubric:: COGO Path
+..
+
+    This is a reference to an existing COGO path that will define center line for the Lane group.
+
+.. rubric:: Start Distance
+..
+
+    Distance from start of COGO path to start of Lane group.  Use this value to define where on the referenced COGO path the lane group starts.  It does not have to be at a bridge end.  Loads positioned off the bridge are not processed. 
+
+.. rubric:: End Distance
+..
+
+    Distance from start of COGO path to end of Lane group.  This value must be greater then the Start Distance. Use this value to define where on the referenced COGO path the lane group ends.  It does not have to be at the bridge ends.  Loads positioned off the bridge are not processed. 
+
+.. rubric:: Offset to Left Edge
+..
+
+    Specify the <A href="../../Load_Generation/Live_Load_Placement.html">Left edge</A> , looking up station, as an offset distance from the center COGO path.
+
+.. rubric:: Offset to Right Edge
+..
+
+    Specify the <A href="../../Load_Generation/Live_Load_Placement.html">Righteft edge</A> , looking up station, as an offset distance from the center COGO path.
+
+.. rubric:: Max Number Lanes</span>
+..
+
+    When the <A href="../../Load_Generation/Lane_Group_Positioning_Methods.html">lane placement method</A> is CTR, LCR, or LCRQ then this value will limit the total number of lanes that are loaded on the bridge at one time.  This value must get greater then zero and is limited to the number of lanes that will fit between the right and left edges.
+
+.. rubric:: Motion Mode</span>
+..
+
+    Select one of the automatic load generation modes or NONE.
+
+    * `CTR` - Center of Lane Group
+    * `LCR` - Left, Center, and Right
+    * `LCRQ` - Left, Left Quarter, Center, Right Quarter, Right
+    * `NONE` - Use this mode when the Truck group only references trucks  with static loads or sequenced movement.

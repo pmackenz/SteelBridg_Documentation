@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Input Transvers Stiffner Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Lateral_Bracing_Placement.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Longitudinal_Stiffner_Placement.html" /> 
+    <link rel="next" title="Input Lateral Bracing Placement" href="Lateral_Bracing_Placement.html" />
+    <link rel="prev" title="Input Longitudinal Stiffner Placement" href="Longitudinal_Stiffner_Placement.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,8 +39,30 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Shape_Placement.html">Input Shape Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Web_Placement.html">Input Web Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Web_Haunch_Definition.html">Input Web Haunch Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Flange_Placement.html">Input Flange Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cover_Plate_Placement.html">Input Cover Plate Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Longitudinal_Stiffner_Placement.html">Input Longitudinal Stiffner Placement</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Input Transvers Stiffner Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lateral_Bracing_Placement.html">Input Lateral Bracing Placement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#deprecated">Deprecated</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +83,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Input Transvers Stiffner Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Property_Assignment/Transvers_Stiffner_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,34 +93,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Input Transvers Stiffner Definition&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Input Transvers Stiffner Definition&lt;/H1&gt;
-&lt;P&gt;&lt;A href=”..Input_Navigator.html”&gt;&lt;IMG SRC=”....imageBTN_Navigator.gif” border=”0” height=”18” width=”56” alt=”imageBTN_Navigator.gif”&gt;&lt;/A&gt;  &lt;A href=”....ReferenceNotes_on_Steel_MembersExplanation_of_Start_and_End_Distances.html”&gt;&lt;IMG SRC=”....imageBTN_Stop_and_Start_Points96.gif” border=”0” height=”18” width=”111” alt=”imageBTN_Stop_and_Start_Points96.gif”&gt;&lt;/A&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd130.gif” border=”0” height=”194” width=”529” alt=”imageebd_Ebd130.gif”&gt;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd131.gif” border=”0” height=”528” width=”981” alt=”imageebd_Ebd131.gif”&gt;&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+  <section id="input-transvers-stiffner-definition">
+<h1>Input Transvers Stiffner Definition<a class="headerlink" href="#input-transvers-stiffner-definition" title="Permalink to this heading"></a></h1>
+<img alt="image/ebd_Ebd130.gif" src="../../_images/ebd_Ebd130.gif" />
+<img alt="image/ebd_Ebd131.gif" src="../../_images/ebd_Ebd131.gif" />
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Longitudinal_Stiffner_Placement.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Lateral_Bracing_Placement.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Longitudinal_Stiffner_Placement.html" class="btn btn-neutral float-left" title="Input Longitudinal Stiffner Placement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lateral_Bracing_Placement.html" class="btn btn-neutral float-right" title="Input Lateral Bracing Placement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

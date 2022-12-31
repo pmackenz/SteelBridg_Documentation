@@ -1,43 +1,72 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Load Combination Definition</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Load Combination Definition</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<H2><IMG src="..\..\image\ebd_Ebd75.gif" border="0" height="71" width="561" alt="image\ebd_Ebd75.gif"></H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:41.75pt;text-indent:30.25pt;"><IMG src="..\..\image\ebd_Ebd76.gif" border="0" height="71" width="201" alt="image\ebd_Ebd76.gif"></P>
-<H2><span style="font-size:10pt; font-weight:normal; "> (See bottom of page for sample entry)</span></H2>
-<H2>Description</H2>
-<P style="margin-left:36.00pt;">This table is used to reference sets of trucks, lanes, and factors into a set that are combined for capacity and rating calculations. </P>
-<H2>Parameters</H2>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Name</span></P>
-<P style="margin-left:72.00pt;">Specify a unique name for a loading configuration.</P>
-<P>&nbsp;<span style="font-weight:bold; ">Truck Group</span></P>
-<P>&nbsp;&nbsp;Reference a <A href="Truck_Group_Definition.html">Truck Group</A> </P>
-<P>&nbsp;<span style="font-weight:bold; ">Lane Group</span></P>
-<P>&nbsp;&nbsp;Reference a <A href="Lane_Group_Definition.html">Lane Group</A> </P>
-<P>&nbsp;<span style="font-weight:bold; ">Lane Load Reduction</span></P>
-<P>&nbsp;&nbsp;Reference a set of lane <A href="..\Rating_and_Factors\Lane_Load_Reduction_Definition.html">load reduction factors</A> </P>
-<P>&nbsp;<span style="font-weight:bold; ">Rate Location</span></P>
-<P>&nbsp;&nbsp;Reference a <A href="..\Rating_and_Factors\Rate_Location.html">rate location</A> collection name.</P>
-<P>&nbsp;<span style="font-weight:bold; ">Std</span></P>
-<P>&nbsp;&nbsp;Put a <span style="font-weight:bold; ">Y</span> in this column to do a “Standard / WSDOT” capacity and rating calculation.</P>
-<P>&nbsp;<span style="font-weight:bold; ">Inv</span></P>
-<P>&nbsp;&nbsp;Put a <span style="font-weight:bold; ">Y</span> in this column to do an Inventory capacity and rating calculation.</P>
-<P>&nbsp;<span style="font-weight:bold; ">Opr</span></P>
-<P>&nbsp;&nbsp;Put a <span style="font-weight:bold; ">Y</span> in this column to do an Operating capacity and rating calculation.</P>
-<P>&nbsp;<span style="font-weight:bold; ">OverLoad</span></P>
-<P>&nbsp;&nbsp;Put a <span style="font-weight:bold; ">Y</span> in this column then the Overload <A href="..\Rating_and_Factors\Rating_Factors.html">ultimate factor</A> for denominator live loads will be used.</P>
-<P style="margin-left:72.00pt;">&nbsp;</P>
-<P>Sample of filled out table:</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd77.gif" border="0" height="322" width="730" alt="image\ebd_Ebd77.gif"></P>
-</BODY>
-</HTML>
+Load Combination Definition
+===============================
+
+.. image:: ../../image/ebd_Ebd75.gif
+    :alt: image/ebd_Ebd75.gif
+
+.. image:: ../../image/ebd_Ebd76.gif
+    :alt: image/ebd_Ebd76.gif
+
+(See bottom of page for :ref:`Example Entry`)
+
+
+Description
+----------------
+
+This table is used to reference sets of trucks, lanes, and factors into a set that are combined for capacity and rating calculations.     
+
+
+Parameters
+----------------
+
+.. rubric:: Name    
+..
+
+    Specify a unique name for a loading configuration.
+
+.. rubric:: Truck Group    
+..
+
+    Reference a Truck Group from :ref:`Truck Group Definition`
+
+.. rubric:: Lane Group    
+..
+
+    Reference a Lane Group from :ref:`Lane Group Definition`
+
+.. rubric:: Lane Load Reduction   
+..
+
+    Reference a set of lane load reduction factors from :ref:`Lane Load Reduction Definition`
+
+.. rubric:: Rate Location    
+..
+
+    Reference a :ref:`Rate Location` collection name.
+
+.. rubric:: Std    
+..
+
+    Put a **Y** in this column to do a "Standard / WSDOT" capacity and rating calculation.
+
+.. rubric:: Inv
+..
+
+    Put a **Y** in this column to do an Inventory capacity and rating calculation.
+
+.. rubric:: Opr
+..
+
+    Put a **Y** in this column to do an Operating capacity and rating calculation.
+
+.. rubric:: OverLoad
+..
+
+    Put a **Y** in this column then the Overload :ref:`Rating Factors for LFR` for denominator live loads will be used.
+
+
+Example Entry
+----------------
+
+.. figure:: ../../image/ebd_Ebd77.gif
+    :alt: image/ebd_Ebd77.gif

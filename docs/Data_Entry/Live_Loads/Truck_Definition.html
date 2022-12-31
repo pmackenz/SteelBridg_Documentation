@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Truck Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Live_Load_Definition.html" />
+    <link rel="next" title="Live Load Definition" href="Live_Load_Definition.html" />
     <link rel="prev" title="Superimposed Dead Load Definition" href="../Dead_Loads/Superimposed_Dead_Load_Definition.html" /> 
 </head>
 
@@ -39,8 +39,31 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#loads">Loads</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Dead_Loads/Dead_Load_Defintion.html">Dead Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Dead_Loads/Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Truck Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Definition.html">Live Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Definition.html">Load Combination Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#deprecated">Deprecated</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +84,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Truck Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Live_Loads/Truck_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,52 +94,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+  <section id="truck-definition">
+<h1>Truck Definition<a class="headerlink" href="#truck-definition" title="Permalink to this heading"></a></h1>
+<img alt="image/ebd_Ebd63.gif" src="../../_images/ebd_Ebd63.gif" />
+<img alt="image/ebd_Ebd64.gif" src="../../_images/ebd_Ebd64.gif" />
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>The truck definition table defines both trucks and / or lane loading  with moment and shear riders.</p>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<p class="rubric">Truck Name</p>
 <blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Truck Definition&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
+<div><p>Unique truck name. Use same name here as on the <a class="reference internal" href="../../input/loading.html#live-load-definition"><span class="std std-ref">Live Load Definition</span></a> entry to include stationary forces.</p>
 </div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Truck Definition&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd63.gif” border=”0” height=”59” width=”578” alt=”imageebd_Ebd63.gif”&gt;&lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;&lt;IMG src=”....imageebd_Ebd64.gif” border=”0” height=”42” width=”449” alt=”imageebd_Ebd64.gif”&gt;&lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;H2&gt;Description&lt;/H2&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The truck definition table defines both trucks and / or lane loading  with moment and shear riders.&lt;/P&gt;
-&lt;H2&gt;Parameters&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Truck Name&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Unique truck name. Use same name here as on the ?&lt;A href=”Live_Load_Definition.html”&gt;Live Load Definiton&lt;/A&gt; ? entry to include stationary forces.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The Px and Dx parameters defines the truck axle loads and location.  If more than four axles are required, continue entering more axle loads on the next line.  You need only repeat the truck number on subsequent lines since the program only reads the uniform loading, lane loading, and title from the first line for any truck definition.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;P1&lt;/span&gt;&amp;nbsp;Enter axle Load (not required) (Kip)&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;D1&lt;/span&gt;&amp;nbsp;Enter spacing to next axle (not required) (Feet)&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;P2&lt;/span&gt;&amp;nbsp;Enter axle Load (not required) (Kip)&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;D2&lt;/span&gt;&amp;nbsp;Enter spacing to next axle (not required) (Feet)&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;P3&lt;/span&gt;&amp;nbsp;Enter axle Load (not required) (Kip)&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The Unif, Mom, and Shear entries are only needed on the first line of a truck definition and are used to specify the alternate lane loading forces. Enter values in the uniform, moment, and shear fields if an alternate lane loading is to be compared with the axle/truck loading.  The load resulting in the greatest forces on the bridge will be used. If you want to keep these results separate from the axle loading condition, then create two trucks, one with only axle loads, and another with only lane loads.  Combine the two using the Truck Group and Lane Group entries.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Unif&lt;/span&gt;&amp;nbsp;Enter alternate lane loading uniform load (not required) (KLF)&lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Mom&lt;/span&gt;&amp;nbsp;Enter alternate lane loading moment rider (not required) (Kip)&lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Shear&lt;/span&gt;&amp;nbsp;Enter alternate lane loading shear rider (not required) (Kip)&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p>The <cite>Px</cite> and <cite>Dx</cite> parameters defines the truck axle loads and location.  If more than four axles are required,
+continue entering more axle loads on the next line.  You need only repeat the truck number on subsequent
+lines since the program only reads the uniform loading, lane loading, and title from the first line for any
+truck definition.</p>
+<p class="rubric">P1</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">D1</p>
+<blockquote>
+<div><p>Enter spacing to next axle (not required) (Feet)</p>
+</div></blockquote>
+<p class="rubric">P2</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">D2</p>
+<blockquote>
+<div><p>Enter spacing to next axle (not required) (Feet)</p>
+</div></blockquote>
+<p class="rubric">P3</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p>The <cite>Unif</cite>, <cite>Mom</cite>, and <cite>Shear</cite> entries are only needed on the first line
+of a truck definition and are used to specify the alternate lane loading
+forces. Enter values in the uniform, moment, and shear fields if an
+alternate lane loading is to be compared with the axle/truck loading.
+The load resulting in the greatest forces on the bridge will be used.
+If you want to keep these results separate from the axle loading condition,
+then create two trucks, one with only axle loads, and another with only lane
+loads.  Combine the two using the Truck Group and Lane Group entries.</p>
+<p class="rubric">Unif</p>
+<blockquote>
+<div><p>Enter alternate lane loading uniform load (not required) (KLF)</p>
+</div></blockquote>
+<p class="rubric">Mom</p>
+<blockquote>
+<div><p>Enter alternate lane loading moment rider (not required) (Kip)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Shear Enter alternate lane loading shear rider (not required) (Kip)</p>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Dead_Loads/Superimposed_Dead_Load_Definition.html" class="btn btn-neutral float-left" title="Superimposed Dead Load Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Live_Load_Definition.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Live_Load_Definition.html" class="btn btn-neutral float-right" title="Live Load Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

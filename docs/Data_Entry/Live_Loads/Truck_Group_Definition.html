@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Truck Group Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Live_Load_Envelope_Definition.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Lane_Group_Definition.html" /> 
+    <link rel="next" title="Live Load Envelope Definition" href="Live_Load_Envelope_Definition.html" />
+    <link rel="prev" title="Lane Group Definition" href="Lane_Group_Definition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,8 +39,41 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#deprecated">Deprecated</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Definition.html">Lane Group Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Truck Group Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Envelope_Definition.html">Live Load Envelope Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Bolt_Fastener_Library.html">Input Bolt Fastener Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +94,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Truck Group Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Live_Loads/Truck_Group_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,47 +104,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Truck Group Definition&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Truck Group Definition&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd69.gif” border=”0” height=”74” width=”447” alt=”imageebd_Ebd69.gif”&gt;&lt;/P&gt;
-&lt;H2&gt;Description&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;The definition of a group of trucks is used in conjunction with a definition of a &lt;A href=”Lane_Group_Definition.html”&gt;group of lanes &lt;/A&gt; to describe the full range of loading that is used to compute a live load envelope. In the&lt;A href=”Load_Combination_Definition.html”&gt; Load Combination Definition&lt;/A&gt; both a Lane Group name and a Truck Group name are referenced.  Refer to the &lt;A href=”....Load_GenerationLoad_Generation.html”&gt;Live Load Theory&lt;/A&gt; section of this manual to understand how these entries are used.&lt;/P&gt;
+  <section id="truck-group-definition">
+<h1>Truck Group Definition<a class="headerlink" href="#truck-group-definition" title="Permalink to this heading"></a></h1>
+<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG src=”../../image/ebd_Ebd69.gif” border=”0” height=”74” width=”447” alt=”image/ebd_Ebd69.gif”&gt;&lt;/P&gt;</p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;The definition of a group of trucks is used in conjunction with a definition of a &lt;A href=”Lane_Group_Definition.html”&gt;group of lanes &lt;/A&gt; to describe the full range of loading that is used to compute a live load envelope. In the&lt;A href=”Load_Combination_Definition.html”&gt; Load Combination Definition&lt;/A&gt; both a Lane Group name and a Truck Group name are referenced.  Refer to the &lt;A href=”../../Load_Generation/Load_Generation.html”&gt;Live Load Theory&lt;/A&gt; section of this manual to understand how these entries are used.&lt;/P&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;If there are more lanes then trucks, then the last truck in the group is repeated.  Thus it is very important for overload groups, because the overload truck must be listed &lt;span style=”font-weight:bold; “&gt;first&lt;/span&gt; so that it is not repeated.&lt;/P&gt;
 &lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;Note that the order that the trucks are listed in this table is the order that the trucks will be placed in the corresponding lanes that are listed in the associated Lane Group.  For a bridge that is transversely symmetric, this is probably not a concern, but it is up to the engineer to specify enough different truck groupings to produce the maximum effects.  This specifically refers to where in a group of trucks the heavier trucks are placed. Refer to the graphic&lt;A href=”....Load_GenerationExample_of_Lane_Loading_Combinations_Using_LCR.html”&gt; Example of Lane Loading Combinations Using LCR&lt;/A&gt; and the location of the first truck, the purple one.&lt;/P&gt;
-&lt;H2&gt;Parameters&lt;/H2&gt;
-&lt;P style=”margin-left:41.75pt;text-indent:-36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;Note that the order that the trucks are listed in this table is the order that the trucks will be placed in the corresponding lanes that are listed in the associated Lane Group.  For a bridge that is transversely symmetric, this is probably not a concern, but it is up to the engineer to specify enough different truck groupings to produce the maximum effects.  This specifically refers to where in a group of trucks the heavier trucks are placed. Refer to the graphic&lt;A href=”../../Load_Generation/Example_of_Lane_Loading_Combinations_Using_LCR.html”&gt; Example of Lane Loading Combinations Using LCR&lt;/A&gt; and the location of the first truck, the purple one.&lt;/P&gt;</p>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<p>&lt;P style=”margin-left:41.75pt;text-indent:-36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Truck Group Name&amp;nbsp;&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P style=”margin-left:108.00pt;text-indent:-36.00pt;”&gt;Use a unique name for each truck group. Repeat this name for each additional lane in the group.&lt;/P&gt;
 &lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Truck Name&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:108.00pt;text-indent:-36.00pt;”&gt;Reference a ?Truck? that specified in either the &lt;A href=”Live_Load_Definition.html”&gt;Live Load Definition&lt;/A&gt; , &lt;A href=”Truck_Definition.html”&gt;Truck Definition&lt;/A&gt; , or &lt;A href=”Live_Load_Envelope_Definition.html”&gt;Live Load Envelope definition&lt;/A&gt; . &lt;/P&gt;
+&lt;P style=”margin-left:108.00pt;text-indent:-36.00pt;”&gt;Reference a �Truck� that specified in either the &lt;A href=”Live_Load_Definition.html”&gt;Live Load Definition&lt;/A&gt; , &lt;A href=”Truck_Definition.html”&gt;Truck Definition&lt;/A&gt; , or &lt;A href=”Live_Load_Envelope_Definition.html”&gt;Live Load Envelope definition&lt;/A&gt; . &lt;/P&gt;
 &lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Axle Force Multiplier&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;&amp;nbsp;&lt;/span&gt;The values from the envelope data for the referenced ?truck? will be multiplied by this factor.&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;&amp;nbsp;&lt;/span&gt;The values from the envelope data for the referenced �truck� will be multiplied by this factor.&lt;/P&gt;
 &lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Numerator Denominator Code&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&amp;nbsp;All live load envelopes have two parts, a numerator and a denominator part.  This is required because some forms of the rating equation have live load data in both the numerator and denominator.  Specify in this field which envelope this truck?s forces are to be applied.  Use a ?N? for numerator, and a ?D? for denominator. &lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&amp;nbsp;All live load envelopes have two parts, a numerator and a denominator part.  This is required because some forms of the rating equation have live load data in both the numerator and denominator.  Specify in this field which envelope this truck�s forces are to be applied.  Use a �N� for numerator, and a �D� for denominator. &lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;</p>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Lane_Group_Definition.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Live_Load_Envelope_Definition.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Lane_Group_Definition.html" class="btn btn-neutral float-left" title="Lane Group Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Live_Load_Envelope_Definition.html" class="btn btn-neutral float-right" title="Live Load Envelope Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

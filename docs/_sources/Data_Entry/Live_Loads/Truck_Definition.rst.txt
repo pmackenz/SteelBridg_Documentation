@@ -1,37 +1,77 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Truck Definition</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Truck Definition</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd63.gif" border="0" height="59" width="578" alt="image\ebd_Ebd63.gif"></P>
-<P style="text-indent:30.25pt;"><IMG src="..\..\image\ebd_Ebd64.gif" border="0" height="42" width="449" alt="image\ebd_Ebd64.gif"></P>
-<P style="text-indent:30.25pt;">&nbsp;</P>
-<H2>Description</H2>
-<P style="margin-left:36.00pt;">The truck definition table defines both trucks and / or lane loading  with moment and shear riders.</P>
-<H2>Parameters</H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Truck Name</span>&nbsp;</P>
-<P style="margin-left:72.00pt;">Unique truck name. Use same name here as on the “<A href="Live_Load_Definition.html">Live Load Definiton</A> ” entry to include stationary forces.</P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P style="margin-left:36.00pt;">The Px and Dx parameters defines the truck axle loads and location.  If more than four axles are required, continue entering more axle loads on the next line.  You need only repeat the truck number on subsequent lines since the program only reads the uniform loading, lane loading, and title from the first line for any truck definition.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">P1</span>&nbsp;Enter axle Load (not required) (Kip)</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">D1</span>&nbsp;Enter spacing to next axle (not required) (Feet)</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">P2</span>&nbsp;Enter axle Load (not required) (Kip)</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">D2</span>&nbsp;Enter spacing to next axle (not required) (Feet)</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">P3</span>&nbsp;Enter axle Load (not required) (Kip)</P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P style="margin-left:36.00pt;">The Unif, Mom, and Shear entries are only needed on the first line of a truck definition and are used to specify the alternate lane loading forces. Enter values in the uniform, moment, and shear fields if an alternate lane loading is to be compared with the axle/truck loading.  The load resulting in the greatest forces on the bridge will be used. If you want to keep these results separate from the axle loading condition, then create two trucks, one with only axle loads, and another with only lane loads.  Combine the two using the Truck Group and Lane Group entries.</P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Unif</span>&nbsp;Enter alternate lane loading uniform load (not required) (KLF)</P>
-<P style="text-indent:30.25pt;"><span style="font-weight:bold; ">Mom</span>&nbsp;Enter alternate lane loading moment rider (not required) (Kip)</P>
-<P style="text-indent:30.25pt;"><span style="font-weight:bold; ">Shear</span>&nbsp;Enter alternate lane loading shear rider (not required) (Kip)</P>
-</BODY>
-</HTML>
+Truck Definition
+==================
+
+.. image:: ../../image/ebd_Ebd63.gif
+    :alt: image/ebd_Ebd63.gif
+
+.. image:: ../../image/ebd_Ebd64.gif
+    :alt: image/ebd_Ebd64.gif
+
+
+Description
+------------
+
+The truck definition table defines both trucks and / or lane loading  with moment and shear riders.
+
+
+Parameters
+-----------
+
+.. rubric:: Truck Name
+..
+
+    Unique truck name. Use same name here as on the :ref:`Live Load Definition` entry to include stationary forces.
+
+The `Px` and `Dx` parameters defines the truck axle loads and location.  If more than four axles are required,
+continue entering more axle loads on the next line.  You need only repeat the truck number on subsequent
+lines since the program only reads the uniform loading, lane loading, and title from the first line for any
+truck definition.
+
+.. rubric:: P1
+..
+
+    Enter axle Load (not required) (Kip)
+
+.. rubric:: D1
+..
+
+    Enter spacing to next axle (not required) (Feet)
+
+.. rubric:: P2
+..
+
+    Enter axle Load (not required) (Kip)
+
+.. rubric:: D2
+..
+
+    Enter spacing to next axle (not required) (Feet)
+
+.. rubric:: P3
+..
+
+    Enter axle Load (not required) (Kip)
+
+The `Unif`, `Mom`, and `Shear` entries are only needed on the first line
+of a truck definition and are used to specify the alternate lane loading
+forces. Enter values in the uniform, moment, and shear fields if an
+alternate lane loading is to be compared with the axle/truck loading.
+The load resulting in the greatest forces on the bridge will be used.
+If you want to keep these results separate from the axle loading condition,
+then create two trucks, one with only axle loads, and another with only lane
+loads.  Combine the two using the Truck Group and Lane Group entries.
+
+.. rubric:: Unif
+..
+
+    Enter alternate lane loading uniform load (not required) (KLF)
+
+.. rubric:: Mom
+..
+
+    Enter alternate lane loading moment rider (not required) (Kip)
+
+.. rubric::
+..
+
+    Shear Enter alternate lane loading shear rider (not required) (Kip)

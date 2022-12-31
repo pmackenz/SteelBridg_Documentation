@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Input Bolt Fastener Library &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Input Stringer Definition" href="../Members/Stringer_Definition.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Angle_Bearing_Stiffner_Library.html" /> 
+    <link rel="next" title="Theory" href="../../theory.html" />
+    <link rel="prev" title="Input Angle Bearing Stiffner Library" href="Angle_Bearing_Stiffner_Library.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,8 +39,37 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#deprecated">Deprecated</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Live_Loads/Lane_Group_Definition.html">Lane Group Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Live_Loads/Truck_Group_Definition.html">Truck Group Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Live_Loads/Live_Load_Envelope_Definition.html">Live Load Envelope Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Input Bolt Fastener Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +90,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Input Bolt Fastener Library</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Libraries/Bolt_Fastener_Library.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,36 +100,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Input Bolt Fastener Library&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Input Bolt Fastener Library&lt;/H1&gt;
-&lt;H1&gt;&lt;A href=”..Input_Navigator.html”&gt;&lt;IMG SRC=”....imageBTN_Navigator.gif” border=”0” height=”18” width=”56” alt=”imageBTN_Navigator.gif”&gt;&lt;/A&gt;&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;span style=”font-size:9pt; font-weight:bold; font-style:italic; “&gt;&lt;font  color=’red’&gt;*** This feature not implemented yet and currently under development. <a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a>&lt;/font&gt;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd85.gif” border=”0” height=”30” width=”400” alt=”imageebd_Ebd85.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;H1&gt;&lt;IMG src=”....imageebd_Ebd86.gif” border=”0” height=”228” width=”601” alt=”imageebd_Ebd86.gif”&gt;&lt;/H1&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+  <section id="input-bolt-fastener-library">
+<h1>Input Bolt Fastener Library<a class="headerlink" href="#input-bolt-fastener-library" title="Permalink to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>* This feature not implemented yet and currently under development. *</strong></p>
+</div>
+<img alt="image/ebd_Ebd85.gif" src="Data_Entry/Libraries/image/ebd_Ebd85.gif" />
+<img alt="image/ebd_Ebd86.gif" src="../../_images/ebd_Ebd86.gif" />
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Angle_Bearing_Stiffner_Library.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Members/Stringer_Definition.html" class="btn btn-neutral float-right" title="Input Stringer Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Angle_Bearing_Stiffner_Library.html" class="btn btn-neutral float-left" title="Input Angle Bearing Stiffner Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../theory.html" class="btn btn-neutral float-right" title="Theory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
