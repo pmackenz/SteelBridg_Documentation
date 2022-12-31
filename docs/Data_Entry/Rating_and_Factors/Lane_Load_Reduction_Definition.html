@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Lane Load Reduction Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -39,8 +39,27 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lane Load Reduction Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExplicitLLDF.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rate_Location.html">Rate Location</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#depricated">Depricated</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +80,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Lane Load Reduction Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,37 +90,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Lane Load Reduction Definition&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Lane Load Reduction Definition&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;H2&gt;&lt;IMG src=”....imageebd_Ebd70.gif” border=”0” height=”39” width=”320” alt=”imageebd_Ebd70.gif”&gt;&lt;/H2&gt;
-&lt;H2&gt;Description&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;These factors are applied directly to the &lt;A href=”....Load_GenerationLoad_Combination_Theory.html#Truck_Path_Envelope_TPE”&gt;TPEs&lt;/A&gt; when building the composite load combination force envelopes.  Refer to the AASHTO live load specification for ?Reduction in Load Intensity? for the values to use.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;From the 1996 ?Standard Specifications for Highway Bridges? Sixteenth Edition section 3.12.1&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;text-indent:36.00pt;”&gt;For 1&amp;amp;2 lanes loaded=1.0&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;text-indent:36.00pt;”&gt;3 lanes loaded=0.9&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;text-indent:36.00pt;”&gt;4 or more lanes loaded=0.75&lt;/P&gt;
-&lt;H2&gt;Parameters&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;1 Lane&amp;nbsp;&lt;/span&gt;Factor that is applied to the TPE if only one lane is loaded.&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;2 Lane&amp;nbsp;&lt;/span&gt;Factor that is applied to the TPE if two lanes are loaded.&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;3 Lane&amp;nbsp;&lt;/span&gt;Factor that is applied to the TPE if three lanes are loaded.&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;4 Lane&amp;nbsp;&lt;/span&gt;Factor that is applied to the TPE if four or more lanes are loaded.&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+  <section id="lane-load-reduction-definition">
+<h1>Lane Load Reduction Definition<a class="headerlink" href="#lane-load-reduction-definition" title="Permalink to this heading"></a></h1>
+<p><strong>Description</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Unique name for lane load reduction set</p></td>
+</tr>
+<tr class="row-odd"><td><p>One</p></td>
+<td><p>Load reduction factor if 1 lane is loaded</p></td>
+</tr>
+<tr class="row-even"><td><p>Two</p></td>
+<td><p>Load reduction factor if 2 lanes are loaded</p></td>
+</tr>
+<tr class="row-odd"><td><p>Three</p></td>
+<td><p>Load reduction factor if 3 lanes are loaded</p></td>
+</tr>
+<tr class="row-even"><td><p>Four</p></td>
+<td><p>Load reduction factor if 4 lanes are loaded</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 
 
            </div>

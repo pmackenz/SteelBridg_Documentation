@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Explicit Live Load Distribution Factors &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Rate_Location.html" />
+    <link rel="next" title="Rate Location" href="Rate_Location.html" />
     <link rel="prev" title="Rating Factors for LRFR" href="Rating_Factors_LRFR.html" /> 
 </head>
 
@@ -39,8 +39,27 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rate_Location.html">Rate Location</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#depricated">Depricated</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +80,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Explicit Live Load Distribution Factors</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Rating_and_Factors/ExplicitLLDF.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,98 +90,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;html&gt;
-&lt;head&gt;</p>
-<blockquote>
-<div><p>&lt;title&gt;&lt;/title&gt;</p>
-</div></blockquote>
-<p>&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;&lt;span style=”font-size:18px;”&gt;&lt;strong&gt;Explicit Live Load Distribution Factors&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</p>
-<dl>
-<dt>&lt;table align=”left” border=”1” cellpadding=”1” cellspacing=”1” style=”width: 800px;”&gt;</dt><dd><dl>
-<dt>&lt;thead&gt;</dt><dd><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Field Name&lt;/th&gt;
-&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Data Type&lt;/th&gt;
-&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Description&lt;/th&gt;</p>
-</dd>
-</dl>
-<p>&lt;/tr&gt;</p>
-</dd>
-</dl>
-<p>&lt;/thead&gt;
-&lt;tbody&gt;</p>
-<blockquote>
-<div><dl class="simple">
-<dt>&lt;tr&gt;</dt><dd><p>&lt;td&gt;Name&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Member name&lt;/span&gt;&lt;/td&gt;</p>
-</dd>
-</dl>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;Code&lt;/td&gt;
-&lt;td&gt;letter&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;[I|E] Code: I=Interior E=Exterior&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;SD&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Shear &amp;nbsp;(Design)&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;MD&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Moment &amp;nbsp;(Design)&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;SP&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Shear (Permit)&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;MP&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Moment (Permit)&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;
-&lt;tr&gt;</p>
-<blockquote>
-<div><p>&lt;td&gt;LIM&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Limit factor - only used for external girder&lt;/span&gt;&lt;/td&gt;</p>
-</div></blockquote>
-<p>&lt;/tr&gt;</p>
-</div></blockquote>
-<p>&lt;/tbody&gt;</p>
-</dd>
-</dl>
-<p>&lt;/table&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
-<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</p>
+  <section id="explicit-live-load-distribution-factors">
+<h1>Explicit Live Load Distribution Factors<a class="headerlink" href="#explicit-live-load-distribution-factors" title="Permalink to this heading"></a></h1>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LLDF_ID</p></td>
+<td><p>Unique ID for this entry. Used in <a class="reference internal" href="../../input.html#steel-members"><span class="std std-ref">Steel Members</span></a> to associate factors.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MD</p></td>
+<td><p>Moment Design factor used for Inventory|Operating</p></td>
+</tr>
+<tr class="row-even"><td><p>SD</p></td>
+<td><p>Shear Design factor used for Inventory|Operating</p></td>
+</tr>
+<tr class="row-odd"><td><p>IMPDesign</p></td>
+<td><p>Impact for Design factor used for Inventory|Operating</p></td>
+</tr>
+<tr class="row-even"><td><p>MP</p></td>
+<td><p>Moment factor for Legal | Permit | Emergency Vehicle</p></td>
+</tr>
+<tr class="row-odd"><td><p>SP</p></td>
+<td><p>Shear factor  for Legal | Permit | Emergency Vehicle</p></td>
+</tr>
+<tr class="row-even"><td><p>IMPpermit</p></td>
+<td><p>Impact factor for Legal | Permit | Emergency Vehicle</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Impact factor are greater than 1.00.
+An impact factor of 33% according to AASHTO shall be entered as
+IMPDesign = (1 + IMP) = 1.33</p>
+</div>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Rating_Factors_LRFR.html" class="btn btn-neutral float-left" title="Rating Factors for LRFR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Rate_Location.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Rate_Location.html" class="btn btn-neutral float-right" title="Rate Location" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
