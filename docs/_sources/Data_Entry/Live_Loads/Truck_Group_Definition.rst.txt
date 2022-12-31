@@ -1,31 +1,60 @@
 Truck Group Definition
 ===========================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="../../image/ebd_Ebd69.gif" border="0" height="74" width="447" alt="image/ebd_Ebd69.gif"></P>
+.. image:: ../../image/ebd_Ebd69.gif
+    :alt: image/ebd_Ebd69.gif
+
 
 Description
 --------------
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:36.00pt;">The definition of a group of trucks is used in conjunction with a definition of a <A href="Lane_Group_Definition.html">group of lanes </A> to describe the full range of loading that is used to compute a live load envelope. In the<A href="Load_Combination_Definition.html"> Load Combination Definition</A> both a Lane Group name and a Truck Group name are referenced.  Refer to the <A href="../../Load_Generation/Load_Generation.html">Live Load Theory</A> section of this manual to understand how these entries are used.</P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P style="margin-left:36.00pt;">If there are more lanes then trucks, then the last truck in the group is repeated.  Thus it is very important for overload groups, because the overload truck must be listed <span style="font-weight:bold; ">first</span> so that it is not repeated.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:36.00pt;">Note that the order that the trucks are listed in this table is the order that the trucks will be placed in the corresponding lanes that are listed in the associated Lane Group.  For a bridge that is transversely symmetric, this is probably not a concern, but it is up to the engineer to specify enough different truck groupings to produce the maximum effects.  This specifically refers to where in a group of trucks the heavier trucks are placed. Refer to the graphic<A href="../../Load_Generation/Example_of_Lane_Loading_Combinations_Using_LCR.html"> Example of Lane Loading Combinations Using LCR</A> and the location of the first truck, the purple one.</P>
+
+The definition of a group of trucks is used in conjunction with a definition
+of a group of lanes from :ref:`Lane Group Definition` to describe the
+full range of loading that is used to compute a live load envelope.
+In the :ref:`Load Combination Definition` both a Lane Group name and a
+Truck Group name are referenced.  Refer to the :ref:`Live Load Theory` section of this
+manual to understand how these entries are used.
+
+If there are more lanes then trucks, then the last truck in the group is
+repeated.  Thus it is very important for overload groups, because the
+overload truck must be listed **first** so that it is not repeated.
+
+Note that the order that the trucks are listed in this table is the order that
+the trucks will be placed in the corresponding lanes that are listed in the
+associated Lane Group.  For a bridge that is transversely symmetric, this is
+probably not a concern, but it is up to the engineer to specify enough different
+truck groupings to produce the maximum effects.  This specifically refers to
+where in a group of trucks the heavier trucks are placed.
+Refer to the graphic :ref:`Example of Lane Loading Combinations Using LCR`
+and the location of the first truck, the purple one.
 
 
 Parameters
 --------------
 
-<P style="margin-left:41.75pt;text-indent:-36.00pt;">&nbsp;</P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Truck Group Name&nbsp;</span>&nbsp;</P>
-<P style="margin-left:108.00pt;text-indent:-36.00pt;">Use a unique name for each truck group. Repeat this name for each additional lane in the group.</P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Truck Name&nbsp;</span></P>
-<P style="margin-left:108.00pt;text-indent:-36.00pt;">Reference a �Truck� that specified in either the <A href="Live_Load_Definition.html">Live Load Definition</A> , <A href="Truck_Definition.html">Truck Definition</A> , or <A href="Live_Load_Envelope_Definition.html">Live Load Envelope definition</A> . </P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Axle Force Multiplier</span></P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">&nbsp;</span>The values from the envelope data for the referenced �truck� will be multiplied by this factor.</P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Numerator Denominator Code</span></P>
-<P style="margin-left:72.00pt;text-indent:-36.00pt;">&nbsp;All live load envelopes have two parts, a numerator and a denominator part.  This is required because some forms of the rating equation have live load data in both the numerator and denominator.  Specify in this field which envelope this truck�s forces are to be applied.  Use a �N� for numerator, and a �D� for denominator. </P>
-</BODY>
-</HTML>
+.. rubric:: Truck Group Name
+..
+
+    Use a unique name for each truck group. Repeat this name for each
+    additional lane in the group.
+
+.. rubric:: Truck Name
+..
+
+    Reference a "Truck" that specified in either the
+    :ref:`Live Load Definition`,
+    :ref:`Truck Definition`</A>` , or
+    :ref:`Live Load Envelope Definition`.`
+
+.. rubric:: Axle Force Multiplier
+..
+
+    The values from the envelope data for the referenced "truck" will be
+    multiplied by this factor.
+
+.. rubric:: Numerator Denominator Code
+..
+
+    All live load envelopes have two parts, a numerator and a denominator part.  This is required because some forms of the rating equation have live load data in both the numerator and denominator.  Specify in this field which envelope this truck�s forces are to be applied.
+    Use a **N** for numerator, and a **D** for denominator.
