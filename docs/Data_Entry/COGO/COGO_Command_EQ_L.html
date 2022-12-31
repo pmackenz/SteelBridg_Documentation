@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Standard Shape Library &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>COGO Command: EQ/L &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Input Material Library" href="../Libraries/Material_Library.html" />
-    <link rel="prev" title="Rate Location" href="../Rating_and_Factors/Rate_Location.html" /> 
+    <link rel="next" title="COGO Command: HCURV" href="COGO_Command_HCURV.html" />
+    <link rel="prev" title="COGO Command: DI/L" href="COGO_Command_DI_L.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,18 +42,36 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#library">Library</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Standard Shape Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/Material_Library.html">Input Material Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Plate_Library.html">Input Plate Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Built_up_Shape_Library.html">Input Built-up Shape Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../input.html#archive">Archive</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#general-info">General Info</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../General/Bridge_Description.html">Input Bridge Description</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_Data.html">Input COGO Command Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_ADDPT.html">COGO Command: ADDPT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_DI_L.html">COGO Command: DI/L</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">COGO Command: EQ/L</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_HCURV.html">COGO Command: HCURV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_L_AZ.html">COGO Command: L/AZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_L_BR.html">COGO Command: L/BR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_L_TG.html">COGO Command: L/TG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_MAPHV.html">COGO Command: MAPHV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_OFFSET.html">COGO Command: OFFSET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_OSPATH.html">COGO Command: OSPATH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_PAST.html">COGO Command: PAST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_PATH.html">COGO Command: PATH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_RCOOR.html">COGO Command: RCOOR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_STAT.html">COGO Command: STAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_STOR.html">COGO Command: STOR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_VCURV.html">COGO Command: VCURV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COGO_Command_Example.html">COGO Command: Example</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../General/Capacity_Trace.html">Capacity Trace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
@@ -81,9 +99,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>Standard Shape Library</li>
+          <li><a href="COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a> &raquo;</li>
+      <li>COGO Command: EQ/L</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Data_Entry/Shapes/Standard_Shape_Library.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Data_Entry/COGO/COGO_Command_EQ_L.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -91,24 +110,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="standard-shape-library">
-<h1>Standard Shape Library<a class="headerlink" href="#standard-shape-library" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p>Entering a default shape: <a class="reference internal" href="#shape-input"><span class="std std-ref">Defining a standard shape.</span></a></p></li>
-<li><p>Default member orientation: <a class="reference internal" href="#member-orientation"><span class="std std-ref">Default member orientation</span></a></p></li>
-</ul>
-<p>Properties for most common standard shapes can be found using the <strong>AISC Filter</strong> in the <cite>Tools</cite> menu.</p>
-<figure class="align-default" id="id1">
-<span id="shape-input"></span><img alt="image/ebd_Ebd104.gif" src="../../_images/ebd_Ebd104.gif" />
-<figcaption>
-<p><span class="caption-text">Defining a standard shape.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id2">
-<span id="member-orientation"></span><img alt="image/ebd_Ebd105.gif" src="../../_images/ebd_Ebd105.gif" />
-<figcaption>
-<p><span class="caption-text">Default member orientation</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
-</figcaption>
+  <section id="cogo-command-eq-l">
+<h1>COGO Command: EQ/L<a class="headerlink" href="#cogo-command-eq-l" title="Permalink to this heading"></a></h1>
+<figure class="align-default">
+<img alt="EQ_L.gif" src="../../_images/EQ_L.gif" />
 </figure>
 </section>
 
@@ -116,8 +121,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Rating_and_Factors/Rate_Location.html" class="btn btn-neutral float-left" title="Rate Location" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Libraries/Material_Library.html" class="btn btn-neutral float-right" title="Input Material Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="COGO_Command_DI_L.html" class="btn btn-neutral float-left" title="COGO Command: DI/L" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="COGO_Command_HCURV.html" class="btn btn-neutral float-right" title="COGO Command: HCURV" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
