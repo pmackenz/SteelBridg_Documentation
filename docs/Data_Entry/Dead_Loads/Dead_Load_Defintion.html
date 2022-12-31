@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Dead Load Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Superimposed_Dead_Load_Definition.html" />
+    <link rel="next" title="Superimposed Dead Load Definition" href="Superimposed_Dead_Load_Definition.html" />
     <link rel="prev" title="&lt;no title&gt;" href="../Property_Assignment/Lateral_Bracing_Placement.html" /> 
 </head>
 
@@ -39,8 +39,28 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#loads">Loads</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Dead Load Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#depricated">Depricated</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -61,7 +81,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../input.html">Model Definition</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Dead Load Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Dead_Loads/Dead_Load_Defintion.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,71 +91,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+  <section id="dead-load-definition">
+<h1>Dead Load Definition<a class="headerlink" href="#dead-load-definition" title="Permalink to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<p>Dead loads in addition to the computer generated gravity forces can be applied to member lines and COGO points explicitly.
+Use this entry sheet to describe <strong>either</strong> a “Load at Point”
+<strong>or</strong> a “distributed member load” applied to a member line.</p>
+<p>A full length uniform load can easily be applied by just entering the a Start Value and leaving the End Value, Start Distance, and End Distances blank.</p>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<p class="rubric">Stage</p>
 <blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Dead Load Defintion&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
+<div><p>Enter dead load stage number. This number can not exceed the maximum defined dead load stage that is derived by scanning the stages used when entering member stiffness parameters. If a force is applied to a member that is not active in the stage specified, then a warning message will be displayed and this load ignored.</p>
 </div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;Dead Load Definition&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd57.gif” border=”0” height=”70” width=”257” alt=”imageebd_Ebd57.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd58.gif” border=”0” height=”70” width=”385” alt=”imageebd_Ebd58.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;H2&gt;Description&lt;/H2&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;Dead loads in addition to the computer generated gravity forces can be applied to member lines and COGO points explicitly.  Use this entry sheet to describe &lt;span style=”font-weight:bold; “&gt;either&lt;/span&gt; a ?Load at Point? or a member load applied to a member line.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;A full length uniform load can easily be applied by just entering the a Start Value and leaving the End Value, Start Distance, and End Distances blank.&lt;/P&gt;
-&lt;H2&gt;Parameters&lt;/H2&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Stage&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Enter dead load stage number. This number can not exceed the maximum defined dead load stage that is derived by scanning the stages used when entering member stiffness parameters. If a force is applied to a member that is not active in the stage specified, then a warning message will be displayed and this load ignored.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;COGO Point&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;If this entry is being use to describe a point load, then specify the point where the force will be applied.  Member loading does not use this entry.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Force Dir&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Forces are applied in the &lt;span style=”font-weight:bold; “&gt;global coordinate system&lt;/span&gt;. Note that unlike the member loads, the sense of these loads is consistent with the directions of the global coordinate system.  Use one of the following six direction codes: FX, FY, FZ, MX, My, or MZ.  Member loading does not use this part of the dead load entry.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Force&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Enter the force in units of Kips and Feet. Member loading does not use this entry.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Mrb Line&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Specify which member line to apply this load.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Load Code&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Loads are applied to the major local axis of the member.  Unless changed by the user, the Y direction is up and the Z direction is to the right when looking up station.  For convenience, the Y forces are negated so that a positive value will apply a downward forces. Use the following codes to apply point, linear, and moment forces:&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;PY&lt;/span&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Downward&lt;/span&gt; point load.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;PZ&lt;/span&gt;&amp;nbsp;Point Load in  right direction when looking up station.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LY&lt;/span&gt;&amp;nbsp;Linear &lt;span style=”font-weight:bold; “&gt;downward&lt;/span&gt; load applied along a member. &lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LZ&lt;/span&gt;&amp;nbsp;Linear right direction load applied along a member.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;MY&lt;/span&gt;&amp;nbsp;Moment about the local Y axis. Looking down on the bridge, this load will be in the counterclockwise direction.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&amp;nbsp;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;MZ&lt;/span&gt;&amp;nbsp;Moment about the local Z axis.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Start Dist&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of member line.  Use to specify location of point or moment forces, and beginning of linear load.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;End Dist&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:130.50pt;text-indent:-58.50pt;”&gt;Distance from start of member line.  Used to specify ending location of linear load.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Start Value&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:130.50pt;text-indent:-58.50pt;”&gt;Point or moment force value, or starting linear load.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Ending Value&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:72.00pt;”&gt;Ending force value for linear load.&lt;/P&gt;
-&lt;P style=”margin-left:94.50pt;text-indent:-58.50pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Description&amp;nbsp;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-left:130.50pt;text-indent:-58.50pt;”&gt;Optional description.&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p class="rubric">COGO Point</p>
+<blockquote>
+<div><p>If this entry is being use to describe a point load, then specify the point where the force will be applied.  Member loading does not use this entry.</p>
+</div></blockquote>
+<p class="rubric">Force Dir</p>
+<blockquote>
+<div><p>Forces are applied in the &lt;span style=”font-weight:bold; “&gt;global coordinate system. Note that unlike the member loads, the sense of these loads is consistent with the directions of the global coordinate system.  Use one of the following six direction codes: FX, FY, FZ, MX, My, or MZ.  Member loading does not use this part of the dead load entry.</p>
+</div></blockquote>
+<p class="rubric">Force</p>
+<blockquote>
+<div><p>Enter the force in units of Kips and Feet. Member loading does not use this entry.</p>
+</div></blockquote>
+<p class="rubric">Mrb Line</p>
+<blockquote>
+<div><p>Specify which member line to apply this load.</p>
+</div></blockquote>
+<p class="rubric">Load Code</p>
+<blockquote>
+<div><p>Loads are applied to the major local axis of the member.  Unless changed by the user, the Y direction is up and the Z direction is to the right when looking up station.  For convenience, the Y forces are negated so that a positive value will apply a downward forces. Use the following codes to apply point, linear, and moment forces:</p>
+</div></blockquote>
+<p class="rubric">PY</p>
+<blockquote>
+<div><p>Magnitude of <strong>downward</strong> point load.</p>
+</div></blockquote>
+<p class="rubric">PZ</p>
+<blockquote>
+<div><p>Point Load in  right direction when looking up station.</p>
+</div></blockquote>
+<p class="rubric">LY</p>
+<blockquote>
+<div><p>Linear &lt;span style=”font-weight:bold; “&gt;downward load applied along a member.</p>
+</div></blockquote>
+<p class="rubric">LZ</p>
+<blockquote>
+<div><p>Linear right direction load applied along a member.</p>
+</div></blockquote>
+<p class="rubric">MY</p>
+<blockquote>
+<div><p>Moment about the local Y axis. Looking down on the bridge, this load will be in the counterclockwise direction.</p>
+</div></blockquote>
+<p class="rubric">MZ</p>
+<blockquote>
+<div><p>Moment about the local Z axis.</p>
+</div></blockquote>
+<p class="rubric">Start Dist</p>
+<blockquote>
+<div><p>Distance from start of member line.  Use to specify location of point or moment forces, and beginning of linear load.</p>
+</div></blockquote>
+<p class="rubric">End Dist</p>
+<blockquote>
+<div><p>Distance from start of member line.  Used to specify ending location of linear load.</p>
+</div></blockquote>
+<p class="rubric">Start Value</p>
+<blockquote>
+<div><p>Point or moment force value, or starting linear load.</p>
+</div></blockquote>
+<p class="rubric">Ending Value</p>
+<blockquote>
+<div><p>Ending force value for linear load.</p>
+</div></blockquote>
+<p class="rubric">Description</p>
+<blockquote>
+<div><p>Optional description.</p>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Property_Assignment/Lateral_Bracing_Placement.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Superimposed_Dead_Load_Definition.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Superimposed_Dead_Load_Definition.html" class="btn btn-neutral float-right" title="Superimposed Dead Load Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

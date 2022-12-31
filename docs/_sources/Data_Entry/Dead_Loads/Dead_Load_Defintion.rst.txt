@@ -1,56 +1,106 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Dead Load Defintion</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<P><span style="font-weight:bold; ">Dead Load Definition</span></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd57.gif" border="0" height="70" width="257" alt="image\ebd_Ebd57.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd58.gif" border="0" height="70" width="385" alt="image\ebd_Ebd58.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<H2>Description</H2>
-<P style="margin-left:36.00pt;">Dead loads in addition to the computer generated gravity forces can be applied to member lines and COGO points explicitly.  Use this entry sheet to describe <span style="font-weight:bold; ">either</span> a “Load at Point” or a member load applied to a member line.</P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P style="margin-left:36.00pt;">A full length uniform load can easily be applied by just entering the a Start Value and leaving the End Value, Start Distance, and End Distances blank.</P>
-<H2>Parameters</H2>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">Stage&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Enter dead load stage number. This number can not exceed the maximum defined dead load stage that is derived by scanning the stages used when entering member stiffness parameters. If a force is applied to a member that is not active in the stage specified, then a warning message will be displayed and this load ignored.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">COGO Point&nbsp;</span></P>
-<P style="margin-left:72.00pt;">If this entry is being use to describe a point load, then specify the point where the force will be applied.  Member loading does not use this entry.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Force Dir&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Forces are applied in the <span style="font-weight:bold; ">global coordinate system</span>. Note that unlike the member loads, the sense of these loads is consistent with the directions of the global coordinate system.  Use one of the following six direction codes: FX, FY, FZ, MX, My, or MZ.  Member loading does not use this part of the dead load entry.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Force&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Enter the force in units of Kips and Feet. Member loading does not use this entry.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Mrb Line&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Specify which member line to apply this load.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Load Code&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Loads are applied to the major local axis of the member.  Unless changed by the user, the Y direction is up and the Z direction is to the right when looking up station.  For convenience, the Y forces are negated so that a positive value will apply a downward forces. Use the following codes to apply point, linear, and moment forces:</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">PY</span>&nbsp;<span style="font-weight:bold; ">Downward</span> point load.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">PZ</span>&nbsp;Point Load in  right direction when looking up station.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">LY</span>&nbsp;Linear <span style="font-weight:bold; ">downward</span> load applied along a member. </P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">LZ</span>&nbsp;Linear right direction load applied along a member.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">MY</span>&nbsp;Moment about the local Y axis. Looking down on the bridge, this load will be in the counterclockwise direction.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;">&nbsp;&nbsp;<span style="font-weight:bold; ">MZ</span>&nbsp;Moment about the local Z axis.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">Start Dist&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Distance from start of member line.  Use to specify location of point or moment forces, and beginning of linear load.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">End Dist&nbsp;</span></P>
-<P style="margin-left:130.50pt;text-indent:-58.50pt;">Distance from start of member line.  Used to specify ending location of linear load.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">Start Value&nbsp;</span></P>
-<P style="margin-left:130.50pt;text-indent:-58.50pt;">Point or moment force value, or starting linear load.</P>
-<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Ending Value&nbsp;</span></P>
-<P style="margin-left:72.00pt;">Ending force value for linear load.</P>
-<P style="margin-left:94.50pt;text-indent:-58.50pt;"><span style="font-weight:bold; ">Description&nbsp;</span></P>
-<P style="margin-left:130.50pt;text-indent:-58.50pt;">Optional description.</P>
-</BODY>
-</HTML>
+Dead Load Definition
+=======================
+
+.. comment::
+    .. image:: ../../image/ebd_Ebd57.gif
+        :alt: image/ebd_Ebd57.gif
+
+    .. image:: ../../image/ebd_Ebd58.gif
+        :alt: image/ebd_Ebd58.gif
+
+Description
+-------------
+
+Dead loads in addition to the computer generated gravity forces can be applied to member lines and COGO points explicitly.  
+Use this entry sheet to describe **either** a "Load at Point" 
+**or** a "distributed member load" applied to a member line.
+
+A full length uniform load can easily be applied by just entering the a Start Value and leaving the End Value, Start Distance, and End Distances blank.
+
+Parameters
+--------------
+
+.. rubric:: Stage
+..
+
+    Enter dead load stage number. This number can not exceed the maximum defined dead load stage that is derived by scanning the stages used when entering member stiffness parameters. If a force is applied to a member that is not active in the stage specified, then a warning message will be displayed and this load ignored.
+
+.. rubric:: COGO Point
+..
+
+    If this entry is being use to describe a point load, then specify the point where the force will be applied.  Member loading does not use this entry.
+
+.. rubric:: Force Dir
+..
+
+    Forces are applied in the <span style="font-weight:bold; ">global coordinate system. Note that unlike the member loads, the sense of these loads is consistent with the directions of the global coordinate system.  Use one of the following six direction codes: FX, FY, FZ, MX, My, or MZ.  Member loading does not use this part of the dead load entry.
+
+.. rubric:: Force
+..
+
+    Enter the force in units of Kips and Feet. Member loading does not use this entry.
+
+.. rubric:: Mrb Line
+..
+
+    Specify which member line to apply this load.
+
+.. rubric:: Load Code
+..
+
+    Loads are applied to the major local axis of the member.  Unless changed by the user, the Y direction is up and the Z direction is to the right when looking up station.  For convenience, the Y forces are negated so that a positive value will apply a downward forces. Use the following codes to apply point, linear, and moment forces:
+
+.. rubric:: PY
+..
+
+    Magnitude of **downward** point load.
+
+.. rubric:: PZ
+..
+
+    Point Load in  right direction when looking up station.
+
+.. rubric:: LY
+..
+
+    Linear <span style="font-weight:bold; ">downward load applied along a member.
+
+.. rubric:: LZ
+..
+
+    Linear right direction load applied along a member.
+
+.. rubric:: MY
+..
+
+    Moment about the local Y axis. Looking down on the bridge, this load will be in the counterclockwise direction.
+
+.. rubric:: MZ
+..
+
+    Moment about the local Z axis.
+
+.. rubric:: Start Dist
+..
+
+    Distance from start of member line.  Use to specify location of point or moment forces, and beginning of linear load.
+
+.. rubric:: End Dist
+..
+
+    Distance from start of member line.  Used to specify ending location of linear load.
+
+.. rubric:: Start Value
+..
+
+    Point or moment force value, or starting linear load.
+
+.. rubric:: Ending Value
+..
+
+    Ending force value for linear load.
+
+.. rubric:: Description
+..
+
+    Optional description.

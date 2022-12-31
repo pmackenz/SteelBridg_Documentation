@@ -36,10 +36,10 @@ this table is referenced by the following member entries:
 
 
 Parameters
-------------
+-----------
 
-   There are three sets of factors for Standard (WSDOT),
-   Inventory, and Operating conditions.
+There are three sets of factors for Standard (WSDOT),
+Inventory, and Operating conditions.
 
 * **Name**
 
@@ -124,7 +124,7 @@ Parameters
     - Shear Strength Reduction Factor
 
 Example Entry
-^^^^^^^^^^^^^^
+----------------
 
 *  Example shows different factors for Redundant Line members,
    NonRedundant line members, and Truss members.
