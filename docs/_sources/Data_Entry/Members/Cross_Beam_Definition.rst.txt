@@ -1,17 +1,13 @@
 Input Cross Beam Definition
 -----------------------------
 
-* <A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Auto_Connect_Switch.html"><IMG SRC="../../image/BTN_AutoCn.gif" border="0" height="18" width="46" alt="image/BTN_AutoCn.gif"></A>  
-* <A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html"><IMG SRC="../../image/BTN_Wt_and_Stf_Codes96.gif" border="0" height="18" width="95" alt="image/BTN_Wt_and_Stf_Codes96.gif"></A> 
-* <A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Member_of_Release_Codes.html"><IMG SRC="../../image/BTN_Member_End_Release_Codes96.gif" border="0" height="18" width="145" alt="image/BTN_Member_End_Release_Codes96.gif"></A>
+.. comment::
+    .. figure:: ../../image/ebd_Ebd139.gif
+        :alt: image/ebd_Ebd139.gif
 
 
-.. figure:: ../../image/ebd_Ebd139.gif
-    :alt: image/ebd_Ebd139.gif
-
-
-.. figure:: ../../image/ebd_Ebd140.gif
-    :alt: image/ebd_Ebd140.gif
+    .. figure:: ../../image/ebd_Ebd140.gif
+        :alt: image/ebd_Ebd140.gif
 
 
 .. figure:: ../../image/ebd_Ebd141.gif
