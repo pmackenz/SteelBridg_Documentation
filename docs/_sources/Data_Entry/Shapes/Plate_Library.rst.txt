@@ -1,0 +1,17 @@
+Input Plate Library
+=====================
+
+.. comment::
+    .. figure:: ../../image/ebd_Ebd81.gif
+        :alt: image/ebd_Ebd81.gif
+
+    .. figure:: ../../image/ebd_Ebd82.gif
+        :alt: image/ebd_Ebd82.gif
+
+.. figure:: ../../image/ebd_Ebd83.gif
+    :alt: image/ebd_Ebd83.gif
+
+.. figure:: ../../image/ebd_Ebd84.gif
+    :alt: image/ebd_Ebd84.gif
+
+    Dimensions and coordinate system

@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Input Angle Bearing Stiffner Library</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Input Angle Bearing Stiffner Library</H1>
+<H1><A href="..\Input_Navigator.html"><IMG SRC="..\..\image\BTN_Navigator.gif" border="0" height="18" width="56" alt="image\BTN_Navigator.gif"></A></H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-size:9pt; font-weight:bold; font-style:italic; "><font  color='red'>*** This feature not implemented yet and currently under development. ***</font></span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\ebd_Ebd99.gif" border="0" height="30" width="457" alt="image\ebd_Ebd99.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\ebd_Ebd100.gif" border="0" height="30" width="457" alt="image\ebd_Ebd100.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<H1><IMG src="..\..\image\ebd_Ebd101.gif" border="0" height="296" width="521" alt="image\ebd_Ebd101.gif"></H1>
+</BODY>
+</HTML>

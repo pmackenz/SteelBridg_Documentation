@@ -1,0 +1,33 @@
+Input Built-up Shape Library
+=============================
+
+
+.. figure:: ../../image/ebd_Ebd106.gif
+    :alt: image/ebd_Ebd106.gif
+
+
+.. figure:: ../../image/shapes_shg.gif
+    :alt: image/shapes_shg.gif
+
+    Available built-up shapes
+
+
+.. toctree::
+    :maxdepth: 5
+
+    Built_up_Shape_Types_A1.rst
+    Built_up_Shape_Types_A1R.rst
+    Built_up_Shape_Types_A2.rst
+    Built_up_Shape_Types_A2A.rst
+    Built_up_Shape_Types_A2R.rst
+    Built_up_Shape_Types_A2AR.rst
+    Built_up_Shape_Types_A3.rst
+    Built_up_Shape_Types_A3A.rst
+    Built_up_Shape_Types_A3R.rst
+    Built_up_Shape_Types_A3AR.rst
+    Built_up_Shape_Types_A4.rst
+    Built_up_Shape_Types_A5.rst
+    Built_up_Shape_Types_B1.rst
+    Built_up_Shape_Types_C1.rst
+    Built_up_Shape_Types_C2.rst
+    Built_up_Shape_Types_W1.rst

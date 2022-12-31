@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="Truck_Group_Definition.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../Property_Assignment/Shear_Connector_Placement.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../input.html">Model Definition</a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Live_Loads/Lane_Group_Definition.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+<blockquote>
+<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
+&lt;TITLE&gt;Lane Group Definition&lt;/TITLE&gt;
+&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
+&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
+&lt;/SCRIPT&gt;</p>
+</div></blockquote>
+<p>&lt;/HEAD&gt;
+&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
+&lt;H1&gt;Lane Group Definition&lt;/H1&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;H2&gt;&lt;IMG src=”....imageebd_Ebd67.gif” border=”0” height=”74” width=”301” alt=”imageebd_Ebd67.gif”&gt;&lt;/H2&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”text-indent:30.25pt;”&gt;&lt;IMG src=”....imageebd_Ebd68.gif” border=”0” height=”74” width=”315” alt=”imageebd_Ebd68.gif”&gt;&lt;/P&gt;
+&lt;H2&gt;Description&lt;/H2&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;The definition of a group of lanes is used in conjunction with a definition of a&lt;A href=”Truck_Group_Definition.html”&gt; group of trucks&lt;/A&gt; to describe the full range of loading that is used to compute a live load envelope. In the&lt;A href=”Load_Combination_Definition.html”&gt; Load Combination Definition&lt;/A&gt; both a Lane Group name and a Truck Group name are referenced.  Refer to the &lt;A href=”....Load_GenerationLoad_Generation.html”&gt;Live Load Theory&lt;/A&gt; section of this manual to understand how these entries are used.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;H2&gt;Parameters&lt;/H2&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Lane Group Name&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Use a unique name for each lane group.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;COGO Path&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;This is a reference to an existing COGO path that will define center line for the Lane group.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Start Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of COGO path to start of Lane group.  Use this value to define where on the referenced COGO path the lane group starts.  It does not have to be at a bridge end.  Loads positioned off the bridge are not processed. &lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;End Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of COGO path to end of Lane group.  This value must be greater then the Start Distance. Use this value to define where on the referenced COGO path the lane group ends.  It does not have to be at the bridge ends.  Loads positioned off the bridge are not processed. &lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Offset to Left Edge&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Specify the &lt;A href=”....Load_GenerationLive_Load_Placement.html”&gt;Left edge&lt;/A&gt; , looking up station, as an offset distance from the center COGO path.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Offset to Right Edge&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Specify the &lt;A href=”....Load_GenerationLive_Load_Placement.html”&gt;Righteft edge&lt;/A&gt; , looking up station, as an offset distance from the center COGO path.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Max Number Lanes&lt;/span&gt;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;When the &lt;A href=”....Load_GenerationLane_Group_Positioning_Methods.html”&gt;lane placement method&lt;/A&gt; is CTR, LCR, or LCRQ then this value will limit the total number of lanes that are loaded on the bridge at one time.  This value must get greater then zero and is limited to the number of lanes that will fit between the right and left edges.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Motion Mode&lt;/span&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&amp;nbsp;Select one of the automatic load generation modes or NONE.&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:60.00pt;”&gt;
+&lt;LI style=”margin-left:59.75pt;”&gt;CTR - Center of Lane Group&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:59.75pt;”&gt;LCR - Left, Center, and Right&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:59.75pt;”&gt;LCRQ - Left, Left Quarter, Center, Right Quarter, Right&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:60.00pt;”&gt;NONE - Use this mode when the Truck group only references ?trucks?  with static loads or sequenced movement. &lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Property_Assignment/Shear_Connector_Placement.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Truck_Group_Definition.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

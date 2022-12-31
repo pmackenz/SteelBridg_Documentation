@@ -1,0 +1,163 @@
+Rating Factors for LFR
+===========================
+
+.. comment::
+    .. figure:: ../../image/ebd_Ebd71.gif
+        :alt: image/ebd_Ebd71.gif
+
+
+    .. figure:: ../../image/ebd_Ebd72.gif
+        :alt: image/ebd_Ebd72.gif
+
+
+    (Note: See bottom of page for example data entry.)
+
+Description
+------------
+
+Use this table to create a library of factors that are used when
+computing the member capacity and rating. Rating factors are applied
+on a per member basis, thus the name given for a set of factors on
+this table is referenced by the following member entries:
+
+* :ref:`Input Girder Definition`
+* :ref:`Input Stringer Definition`
+* :ref:`Input Cross Beam_Definition`
+* :ref:`Input Floor Beam_Definition`
+* :ref:`Input Truss Member`
+
+.. note::
+
+    As a convenience, the name `DEFAULT` all in
+    upper case is reserved for all members that have the
+    **Factors** field left blank. Thus you only need one entry,
+    named DEFAULT, if most or all members are using the same factors, you
+    do not need to put any text in their **Factors** field.
+
+
+Parameters
+------------
+
+   There are three sets of factors for Standard (WSDOT),
+   Inventory, and Operating conditions.
+
+* **Name**
+
+   Unique name for set of factors. See note above about special DEFAULT name.
+
+* **Mode**
+
+   Each set of factors can have up to three lines of data, one for the 
+   standard factors, one of inventory factors, and one for operating 
+   factors. The same set name is repeated for each of the three lines.
+
+* **Ultimate Load Factors**
+
+    .. list-table::
+      :widths: 20 70
+      :header-rows: 0
+
+      * - Dead Load
+        - Ultimate Dead Load Factor
+      * - SI-Dead Load
+        - Ultimate Superimposed Dead Load Factor
+      * - Pre-Stress
+        - Ultimate Prestress Secondary Load Factor
+      * - Live Load (N)
+        - Ultimate Live Load factor for trucks used in numerator part of rating equation
+      * - Live Load (D)
+        - Ultimate Live Load factor for trucks used in denominator part of rating equation
+      * - Overload (N)
+        - Ultimate Overload Live Load factor for numerator part of rating equation.
+      * - Overload (D)
+        - Ultimate Overload Live Load factor for denominator part of rating equation.
+      * - Impact
+        - Impact factor. See notes below.
+      * - General Live Load Factor
+        - Per AASHTO 1989 Guide Spec. Table 1, a
+          factor of 1.07 should be applied to live load forces on line members.
+          The factor in the column "General Live Load Multiplier" is  for this purpose.
+
+    -  If Overload switch is selected in
+       :ref:`Load Combination Definition`
+       table entry, then the Overload values will be used
+       instead of the Live Load values.
+
+    -  The entered impact factor is used for all STD live load factoring.
+       For INV and OPR, if the member is a line member, the impact factor is
+       computed per<A HREF="../../Load_Generation/Impact_Factor_Calculation.html">
+       AASHTO specifications</A> as a function of span configuration, and
+       load type. If the member is a truss member, then this explicit impact
+       factor is used for the inventory and operating ratings.
+
+
+* **Capacity Adjustment Factors**
+
+  - Tensile Axial Strength Reduction
+
+    This is the :math:`\phi` factor used in the strength ratio equation for
+    computation of SR1 and SR2.
+    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html">SS-5.3.1</A>
+
+  - Compression Axial Strength Reduction
+
+    This is the :math:`\phi` factor used in the strength ratio equation for
+    computation of SR3 and  SR4.
+    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html">SS-5.3.5</A>
+
+  - Moment Strength Reduction Factor
+
+    This is the :math:`\phi`  factor used in the moment rating equation for
+    line members.
+    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html">SS-6.1.1</A>
+
+  - Shear Strength Reduction Factor
+
+    This is the :math:`\phi` factor used in the shear rating equation for
+    line members.
+    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html">SS-6.1.2</A>
+
+* **Capacity Reduction Factors**
+
+    - Axial Strength Reduction Factors for tension and compression.
+    - Moment Strength Reduction Factor
+    - Shear Strength Reduction Factor
+
+Example Entry
+^^^^^^^^^^^^^^
+
+*  Example shows different factors for Redundant Line members,
+   NonRedundant line members, and Truss members.
+*  Values shown are example only! Factors are for new bridge with no deterioration.
+*  A blank cell shown below indicates where a value is not needed or used by the program.
+*  STD (WSDOT BDM) specifies a 0.8 factor for non-redundant members.
+
+
+.. figure:: ../../image/ebd_Ebd73.gif
+    :alt: image/ebd_Ebd73.gif
+
+Reference: WSDOT BDM 14.1.5,14.1.6.1 and 1985 Guide Spec. for
+Evaluation of Truss Bridges.
+
+.. note::
+
+    (1) INV and OPR impact factor for line members calculated per
+    :ref:`Impact Factor Calculation` AASHTO 3.8.2.
+
+.. note::
+
+   (2) For INV and OPR compute impact factor for truss members using
+   equation :math:`1 + (50/(L+125))` limited to maximum of 1.3. Use distance
+   between truss supports for L. Enter value in table. For STD truss 
+   impact factor, use the same value as the line members.
+   See topic page :ref:`Impact Factor Calculation`.
+
+
+The compression axial strength reduction factors for line members are
+only used when a line member requires analysis as a non-line member.
+See theory flow charts
+<A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html">SS-5.2.1</A>
+and
+<A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html">SS-5.2.2</A>.
+If these entries are left blank, then default valuse of 0.80 for STD
+and 0.85 for INV and OPR will be used.

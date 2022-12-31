@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capacity Trace &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2DT Parameters" href="../../input/transverse.html" />
+    <link rel="prev" title="Input Nodal Boundary Condition" href="Nodal_Boundary_Condition.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#general-info">General Info</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Bridge_Description.html">Input Bridge Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Capacity Trace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#library">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#depricated">Depricated</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../input.html">Model Definition</a> &raquo;</li>
+      <li>Capacity Trace</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/General/Capacity_Trace.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="capacity-trace">
+<h1>Capacity Trace<a class="headerlink" href="#capacity-trace" title="Permalink to this heading"></a></h1>
+<blockquote>
+<div><p>This help system has the full documentation in flow chart form of how
+a member’s capacity and rating are computed. The terminology
+used in the flow charts is used in the trace report.</p>
+<p>So that you can better validate and understand the results, you can
+instruct the program to trace all the calculations performed on each
+member, at each position on the member, and by each factor type.
+Since the resulting trace file can easily consume an entire hard
+drive, you control the trace by specifying members and positions in
+the <cite>CapTrace</cite> table. The parameter <cite>CapTrace</cite> in the <cite>AnalysisControls</cite>
+table must also be “Y” for the trace to occur. The trace is
+performed during the capacity and rating calculations phase so these
+switches and tables must be set before the analysis is performed.</p>
+</div></blockquote>
+<p><strong>DEFINITIONS:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Enter the member name, or the word ALL for all members.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Distance</p></td>
+<td><p>The distance along the member at a point of interest.
+Review the standard capacity and rating report to find the valid
+distance list per member. An invalid distance will result in no
+trace. Use a negative value, such as -1.0 for all points of interest.</p></td>
+</tr>
+<tr class="row-even"><td><p>Std</p></td>
+<td><p>Select this column to trace the standard factors analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Inv</p></td>
+<td><p>Select this column to trace the inventory factors analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p>Opr</p></td>
+<td><p>Select this column to trace the operating factors analysis.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Nodal_Boundary_Condition.html" class="btn btn-neutral float-left" title="Input Nodal Boundary Condition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../input/transverse.html" class="btn btn-neutral float-right" title="2DT Parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

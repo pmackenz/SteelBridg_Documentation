@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Lane Load Reduction Definition</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Lane Load Reduction Definition</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<H2><IMG src="..\..\image\ebd_Ebd70.gif" border="0" height="39" width="320" alt="image\ebd_Ebd70.gif"></H2>
+<H2>Description</H2>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-left:36.00pt;">These factors are applied directly to the <A href="..\..\Load_Generation\Load_Combination_Theory.html#Truck_Path_Envelope_TPE">TPEs</A> when building the composite load combination force envelopes.  Refer to the AASHTO live load specification for “Reduction in Load Intensity” for the values to use.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">From the 1996 “Standard Specifications for Highway Bridges” Sixteenth Edition section 3.12.1</P>
+<P style="margin-left:36.00pt;text-indent:36.00pt;">For 1&amp;2 lanes loaded=1.0</P>
+<P style="margin-left:36.00pt;text-indent:36.00pt;">3 lanes loaded=0.9</P>
+<P style="margin-left:36.00pt;text-indent:36.00pt;">4 or more lanes loaded=0.75</P>
+<H2>Parameters</H2>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">1 Lane&nbsp;</span>Factor that is applied to the TPE if only one lane is loaded.&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">2 Lane&nbsp;</span>Factor that is applied to the TPE if two lanes are loaded.&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">3 Lane&nbsp;</span>Factor that is applied to the TPE if three lanes are loaded.&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">4 Lane&nbsp;</span>Factor that is applied to the TPE if four or more lanes are loaded.</P>
+</BODY>
+</HTML>

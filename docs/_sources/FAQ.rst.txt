@@ -1,0 +1,9 @@
+Frequently asked Questions
+############################
+
+1. How cool is SteelBridg?
+
+.. note::
+
+   Pretty darn cool!
+  

@@ -1,0 +1,47 @@
+Input Bridge Description
+-----------------------------
+
+**PURPOSE:**
+
+Provide descriptive information about the bridge.
+These comments are not used in the rating process but are used by the report generator.
+
+**DEFINITIONS:**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - BNUM
+     - Bridge Number
+   * - DATE
+     - Year bridge was built and other pertinent date information.
+   * - ENGR
+     - Design Engineer
+   * - RATER
+     - Enter name of company, date, and person rating bridge.
+   * - CHKBY
+     - Rating Checked By.
+   * - NAME
+     - Bridge Name
+   * - LOC
+     - Bridge location, include route/hwy number, milepost, and descriptive location.
+   * - ADTV
+     - Average Daily Traffic Reports, and Count Date if supplied.
+   * - FOOT1
+     - Footing that appears on bottom of report. Line 1. Typically company name.
+   * - FOOT2
+     - Footing that appears on bottom of report. Line 2. Typically company type.
+   * - DESCx
+     - Any other descriptive information that should be included with the computer database info. ( x is in range of 1 to 20)
+
+
+Standard uses for `DESC` card are:
+
+* Description of bridge structural system. Example: Composite Box Girder.
+* Type of reinforcing. Example: Conventional Reinforcing.
+* Latest inspection report date. Example: Latest inspection report  12/31/22.
+* Statement specifying whether or not bridge has a wearing surface.
+
+

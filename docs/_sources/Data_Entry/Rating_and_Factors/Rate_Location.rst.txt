@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Rate Location</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Rate Location</H1>
+<P><IMG src="..\..\image\ebd_Ebd74.gif" border="0" height="71" width="385" alt="image\ebd_Ebd74.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<H2>Description</H2>
+<P style="margin-left:36.00pt;">For line members, it is up to the engineer to specify where the program will compute a capacity and a rating value.  For non-line members, since their section properties do not change along their length, every member is checked using the worst case loading and a single rating per member is generated.  This table is only concerned with line member locations.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">Although it is up to the engineer to identify critical locations, the program will automatically use the locations along line members per the <span style="font-weight:bold; ">MbrPts</span> parameter in the <A href="..\General\Input_Analysis_Controls.html">AnalysisControls</A> table.  These automatically generated locations are used in addition to any explicitly defined locations defined by entries in this table.  The MbrPts parameter specifies the number of equal spaced locations along the length of a member including the two end points.  For example, a MbrPts of 5 will create rating locations at the member ends and the three internal third points.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">More then one entry per member line can be specified, and all of the resulting locations will be used.  </P>
+<H2>Parameters</H2>
+<P>&nbsp;<span style="font-weight:bold; ">Name</span></P>
+<P style="margin-left:72.00pt;">Give each collection of rating locations a unique. This name will be referenced in the Load Combination definition table.  Repeat the name for as many entries are in the collection.</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Mbr Line</span></P>
+<P style="margin-left:72.00pt;">Specify the member line to be scanned. The same member line can be entered more then once to create multiple scanning regions per member line.</P>
+<P>&nbsp;<span style="font-weight:bold; ">Start Dist</span>&nbsp;&nbsp;</P>
+<P style="margin-left:72.00pt;">Distance from start of member line to begin scanning</P>
+<P>&nbsp;<span style="font-weight:bold; ">End Distance</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Distance from start of member line to stop scanning</P>
+<P>&nbsp;<span style="font-weight:bold; ">Num</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Number of locations to scan between the starting and ending locations. A value of 1 will result in the two end locations and a mid-point location being scanned.</P>
+<P>&nbsp;<span style="font-weight:bold; ">Constant Distance</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">This is an alternate entry to Num and used instead of Num.  When a constant distance is specified, the rate locations will be created by marching down the member line starting at the Start Dist and continuing at the specified intervals until the End Distance is reached.</P>
+</BODY>
+</HTML>

@@ -1,0 +1,15 @@
+Lane Load Reduction Factors
+---------------------------------
+
+Rating Factors for LFR
+---------------------------------
+
+Rating Factors for LRFR
+---------------------------------
+
+Distribution Factors for LRFR
+---------------------------------
+
+Rate Location
+---------------------------------
+

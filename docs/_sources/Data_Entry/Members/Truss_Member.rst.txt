@@ -1,0 +1,38 @@
+Input Truss Member
+---------------------
+
+.. comments::
+    .. figure:: ../../image/ebd_Ebd148.gif
+        :alt: image/ebd_Ebd148.gif
+
+    .. figure:: ../../image/ebd_Ebd149.gif
+        :alt: image/ebd_Ebd149.gif
+
+    .. figure:: ../../image/ebd_Ebd150.gif
+        :alt: image/ebd_Ebd150.gif
+
+.. figure:: ../../image/ebd_Ebd151.gif
+    :alt: image/ebd_Ebd151.gif
+
+
+.. note::
+
+    If the Local Buckling length is not entered, then no local buckling length
+    check is performed.  A warning is issued that no local buckling length check
+    has been done.
+
+
+* If a member's `TCCode` is `T` then that member will only be checked for tension rating,
+and if it is `C` then that member will only be checked for compression rating.
+
+* The `Type` field is informational only, but is used by the viewer when chaining truss members.
+  If you select a truss member in the viewer and then select the `Auto Chain` switch,
+  then all connecting truss members from the selected one with the same `Type` are
+  plotted.  A convenient method for plotting the forces, capacity, rating, etc.
+  for an entire top cord or bottom cord of a truss.
+
+* The effective length of a member is it's node to node distance times the effective length factor.  For calculations that involve the major axis of bending, bending about the local Z axis, the effective length factor <span style="font-weight:bold; ">MajEffL</span> is used.  For bending about the minor axis, the local Y axis, the factor <span style="font-weight:bold; ">MinEffL</span> is used.</P>
+
+.. image:: ../../image/Effective_Length.gif
+    :alt: image/Effective_Length.gif
+

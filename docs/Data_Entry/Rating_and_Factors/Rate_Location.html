@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Standard Shape Library" href="../Shapes/Standard_Shape_Library.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="ExplicitLLDF.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../input.html">Model Definition</a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Rating_and_Factors/Rate_Location.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+<blockquote>
+<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
+&lt;TITLE&gt;Rate Location&lt;/TITLE&gt;
+&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
+&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
+&lt;/SCRIPT&gt;</p>
+</div></blockquote>
+<p>&lt;/HEAD&gt;
+&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
+&lt;H1&gt;Rate Location&lt;/H1&gt;
+&lt;P&gt;&lt;IMG src=”....imageebd_Ebd74.gif” border=”0” height=”71” width=”385” alt=”imageebd_Ebd74.gif”&gt;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;H2&gt;Description&lt;/H2&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;For line members, it is up to the engineer to specify where the program will compute a capacity and a rating value.  For non-line members, since their section properties do not change along their length, every member is checked using the worst case loading and a single rating per member is generated.  This table is only concerned with line member locations.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;Although it is up to the engineer to identify critical locations, the program will automatically use the locations along line members per the &lt;span style=”font-weight:bold; “&gt;MbrPts&lt;/span&gt; parameter in the &lt;A href=”..GeneralInput_Analysis_Controls.html”&gt;AnalysisControls&lt;/A&gt; table.  These automatically generated locations are used in addition to any explicitly defined locations defined by entries in this table.  The MbrPts parameter specifies the number of equal spaced locations along the length of a member including the two end points.  For example, a MbrPts of 5 will create rating locations at the member ends and the three internal third points.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;More then one entry per member line can be specified, and all of the resulting locations will be used.  &lt;/P&gt;
+&lt;H2&gt;Parameters&lt;/H2&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Name&lt;/span&gt;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Give each collection of rating locations a unique. This name will be referenced in the Load Combination definition table.  Repeat the name for as many entries are in the collection.&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;text-indent:-36.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;Mbr Line&lt;/span&gt;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Specify the member line to be scanned. The same member line can be entered more then once to create multiple scanning regions per member line.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Start Dist&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of member line to begin scanning&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;End Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Distance from start of member line to stop scanning&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Num&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;Number of locations to scan between the starting and ending locations. A value of 1 will result in the two end locations and a mid-point location being scanned.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;Constant Distance&lt;/span&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-left:72.00pt;”&gt;This is an alternate entry to Num and used instead of Num.  When a constant distance is specified, the rate locations will be created by marching down the member line starting at the Start Dist and continuing at the specified intervals until the End Distance is reached.&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ExplicitLLDF.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Shapes/Standard_Shape_Library.html" class="btn btn-neutral float-right" title="Standard Shape Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

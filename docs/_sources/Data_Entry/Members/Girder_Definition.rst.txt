@@ -1,0 +1,25 @@
+Input Girder Definition
+------------------------
+
+<A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Auto_Connect_Switch.html"><IMG SRC="../../image/BTN_AutoCn.gif" border="0" height="18" width="46" alt="image/BTN_AutoCn.gif"></A>
+<A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html"><IMG SRC="../../image/BTN_Wt_and_Stf_Codes96.gif" border="0" height="18" width="95" alt="image/BTN_Wt_and_Stf_Codes96.gif"></A>  
+<A href="../../Reference/Notes_on_Steel_Members/Explanation_of_Member_of_Release_Codes.html"><IMG SRC="../../image/BTN_Member_End_Release_Codes96.gif" border="0" height="18" width="145" alt="image/BTN_Member_End_Release_Codes96.gif"></A></H1>
+
+
+.. image:: ../../image/ebd_Ebd133.gif
+    :alt: image/ebd_Ebd133.gif"></P>
+
+
+.. image:: ../../image/ebd_Ebd134.gif
+    :alt: image/ebd_Ebd134.gif"></P>
+
+
+.. image:: ../../image/ebd_Ebd135.gif
+    :alt: image/ebd_Ebd135.gif"></P>
+
+
+.. note::
+
+    Member will be composite if in the live load stage: the slab has stiffness, 
+    the member has stiffness, there are shear studs present, and the slab is 
+    coupled to the members.

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Input Shear Connector Placement</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Input Shear Connector Placement</H1>
+<P><A href="..\Input_Navigator.html"><IMG SRC="..\..\image\BTN_Navigator.gif" border="0" height="18" width="56" alt="image\BTN_Navigator.gif"></A>  <A href="..\..\Reference\Notes_on_Steel_Members\Explanation_of_Start_and_End_Distances.html"><IMG SRC="..\..\image\BTN_Stop_and_Start_Points96.gif" border="0" height="18" width="111" alt="image\BTN_Stop_and_Start_Points96.gif"></A></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\ebd_Ebd129.gif" border="0" height="400" width="529" alt="image\ebd_Ebd129.gif"></P>
+</BODY>
+</HTML>

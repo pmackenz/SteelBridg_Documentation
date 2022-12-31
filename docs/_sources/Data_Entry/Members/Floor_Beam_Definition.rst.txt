@@ -1,0 +1,16 @@
+Input Floor Beam Definition
+------------------------------
+
+.. image:: ../../image/ebd_Ebd142.gif
+    :alt: image/ebd_Ebd142.gif
+
+.. image:: ../../image/ebd_Ebd143.gif
+    :alt: image/ebd_Ebd143.gif
+
+.. image:: ../../image/ebd_Ebd144.gif
+    :alt: image/ebd_Ebd144.gif
+
+.. note:: 
+
+    Member will be composite if in the live load stage: the slab has stiffness, the member has stiffness, 
+    there are shear studs present, and the slab is coupled to the members.

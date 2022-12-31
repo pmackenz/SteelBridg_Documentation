@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Live Load Envelope Definition</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Live Load Envelope Definition</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\ebd_Ebd65.gif" border="0" height="71" width="201" alt="image\ebd_Ebd65.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>(These optional entries are not operational yet!)</P>
+<P><IMG src="..\..\image\ebd_Ebd66.gif" border="0" height="71" width="663" alt="image\ebd_Ebd66.gif"></P>
+<H2>Description</H2>
+<P style="margin-left:36.00pt;">One step in the creation of the final load envelope that is used to rate a bridge, is the creation of load envelopes of each truck along each path that it is used.  These envelopes will then be used to create composite envelopes for multiple truck and multiple lane configurations.  The longitudinal motion for each truck along each path is defined with this table.  Typically, only the first three fields need data, the remaining fields are for the special truck sequencing method of motion control that is <span style="font-weight:bold; ">not</span> required for bridge rating. </P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-left:36.00pt;">The truck sequencing option provides an alternate method for control of motion for moving live loads. This optional entry allows you to control the motion of one or more trucks in any number of steps. You use this command in conjunction with existing <A href="Truck_Definition.html">Truck Definitions</A> to precisely control the range of motion and axle loading configurations during the development of the force, reaction, and displacement envelopes.  You specify a new “truck” name to represent the final composite envelope that is generated.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">Where as an envelope is developed for each truck for each path that it is used on, a “truck” this is created using the SEQ method is assumed to apply to all referenced paths.  Thus, if a sequenced “truck” is referenced in another table, it will only have one envelope that is used for every specified path.  This is different the other modes that generate an envelope for each used path.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">A Truck Sequencing entry defines a new truck that is a combination of one or more trucks that have specific ranges of motion, relative velocity, and sequence of events.  The system will use this information to compute a single composite live load envelope that can be referenced through out the program the same as a normal truck entry is used.</P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">Note. Only Live Load Definitions and axle load entries in the Truck Definition are used with this option.  Lane loading is not active for truck sequencing.  </P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<H2>Parameters</H2>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Truck Name</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Enter the name of a truck referenced in the<A href="Live_Load_Definition.html"> Live Load</A> or <A href="Truck_Definition.html">Truck</A> definition tables.  If the Motion Mode is <span style="font-weight:bold; ">SEQ</span> then specify a new truck name.</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Motion Mode</span></P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;">&nbsp;The longitudinal motion of the truck along a path is controlled by this parameter. Use one of the following codes:</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;">&nbsp;<span style="font-weight:bold; ">AUTO</span> </P>
+<P style="margin-left:72.00pt;">The truck will be moved such that every axle and the truck’s center of action will be positioned directly over the location of the intersection of the truck’s current path and each cross beam or floor beam.  Also, each axle will be placed at a number of evenly spaced locations between the cross beam / floor beam intersection points.  The number of these intermediate points is specified by an integer value in the <span style="font-weight:bold; ">Motion Data</span> field.  The truck will be run in both directions along the path.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;"><span style="font-weight:bold; ">FIXED</span></P>
+<P style="margin-left:72.00pt;">Specify a constant distance in Feet in the <span style="font-weight:bold; ">Motion Data</span> field.  For each iteration, the truck will be moved this distance along the path. The truck will be run in both directions along the path.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;"><span style="font-weight:bold; ">SEQ</span></P>
+<P style="margin-left:72.00pt;">This method  allows for multiple trucks to be moved along paths on the bridge in a very controlled and complex sequence of motion.  </P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Motion Data</span></P>
+<P style="margin-left:72.00pt;">If the motion mode is either AUTO or FIXED then this field is used as described above.  For the SEQ mode, this field is ignored.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">The following entries are needed <span style="font-weight:bold; ">only</span> if the motion mode is <span style="font-weight:bold; ">SEQ</span>.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Step</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Each truck sequence can have more then one configuration.  For example, a truck sequence could describe step 1 as having truck 1 start at location 100 and proceed to location 200 then stop.  The next step, step 2, could then specify that truck 2 start at location 100 and that truck 1 continue from where it left off and both trucks run until they are both off of the end of the bridge.  The end of a step is defined as when no trucks are in motion.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Ref Truck</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Reference a existing “Truck” as defined the Truck Definition and Live Load Definition entries.  Use multiple entries with the same “Truck Name” and Step to define more then one referenced truck in motion at one time.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Dir</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Use the code L for left to right axle orientation, and R for right to left.  The assumed coordinate system is that left to right is going up station and visa versa for right to left.  For example, if the L code is used, the first axle is placed at the start location, and the remaining axles are located to the left of that point.  Also, a truck given a code of L and then having a start position to the right of the ending position will infect describe a truck going backwards.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">COGO Path</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Specify the path that the referenced truck is to follow. Use the next entry to create a path parallel to an existing COGO path.</P>
+<P style="margin-left:72.00pt;text-indent:-36.00pt;"><span style="font-weight:bold; ">Offset from Path</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Specify an offset distance from the specified COGO Path to use a path that is parallel to an existing COGO path. Looking up station, a positive direction is to the right.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Start Distance</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Distance from start of COGO path for initial location of truck’s front axle..</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">End Distance</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">Distance from start of COGO path that will be the farthest the front axle of the truck can move. Once the front axle of a truck reaches the End Distance it is stopped. When all trucks in the current step have stopped then that step is complete.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">VFlag</span>&nbsp;</P>
+<P style="margin-left:72.00pt;">The Velocity flag is used to determine how fast the truck should move.  Velocity has the units of feet per iteration.  Four codes are allowed here:</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-left:72.00pt;">1) Space: Use the value of SeqVel in the Analysis Controls entries to set the speed.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;">2) P: The velocity will be computer as proportional to the initial range of motions between this entry and the first entry of the step.  If P is used in the first entry of the step the value of SeqVel is used. The computed speed is then multiplied by the factor Velocity which defaults to 1.0. </P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:108.00pt;">V1 = Velocity for truck in first entry in step.</P>
+<P style="margin-left:108.00pt;">D1 = Range of motion of first entry in step.</P>
+<P style="margin-left:108.00pt;">D2 = Range of motion of this entry.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:108.00pt;">Speed = V1 * (D1 / D2) * Velocity</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;">3) R: The velocity of the truck referenced in this entry will be relative to the first entry in this step.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:108.00pt;">V1 = Velocity for truck in first entry in step.</P>
+<P style="margin-left:108.00pt;">Speed = V1 * Velocity</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:72.00pt;">4) A: Use this code to enter an absolute velocity that is not derived from any other information.</P>
+<P style="margin-left:72.00pt;">&nbsp;</P>
+<P style="margin-left:108.00pt;">Speed = Velocity</P>
+<P style="margin-left:108.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">Velocity&nbsp;</span></P>
+<P style="margin-left:72.00pt;">The relative / absolute velocity factor as describe above.</P>
+<P style="margin-left:36.00pt;"><span style="font-weight:bold; ">TruckStop&nbsp;</span></P>
+<P style="margin-left:72.00pt;">There are two ways to have a truck stop during a step. One is when the first axle reaches the end position.  The other is to use this field to tie the motion of this entry to another entry in the same step.  Reference another Truck that is used in this step.  When that truck stops, this one will stop also. This option is not valid for the first truck specified in a step.</P>
+</BODY>
+</HTML>

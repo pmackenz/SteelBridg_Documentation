@@ -1,0 +1,9 @@
+Input Built-up Shape Types - C1 & C1R
+--------------------------------------
+
+* Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
+
+
+.. image:: ../../image/ebd_Ebd117.gif
+    :alt: image/ebd_Ebd117.gif
+

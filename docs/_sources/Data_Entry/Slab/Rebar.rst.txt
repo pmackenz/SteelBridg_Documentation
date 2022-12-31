@@ -1,0 +1,34 @@
+Rebar Definition
+-----------------
+
+Rebar entries are referenced in the
+<A href="Input_Concrete_Slab_Definition.html">Slab Definition table</A> .
+Rebar data is only used for computation of the concrete compression block
+for composite member positive moment capacity calculations.
+Since only one entry is allowed per slab definition, and not including
+the rebar steel is conservative, if your rebar steel varies, entry of a
+low average might be appropriate, but dependent on engineering judgment.
+
+.. list-table::
+    :header-rows: 1
+
+    * - Field
+      - Description
+    * - Name
+      - A unique rebar entry name. Only one entry per name.
+    * - Long. Dist. From Top
+      - For rebar in the longitudinal direction, enter distance in inches from top of slab, not including the crown distance.
+    * - Long. Top Steel Area
+      - For top rebar in the longitudinal direction , enter area of steel in square inches per square foot of slab.
+    * - Long. Dist. From Bottom
+      - For rebar in the longitudinal direction, enter distance up in inches from bottom of slab. Bottom of slab is defined as the �Thk� distance.
+    * - Long. Bottom Steel Area
+      - For bottom rebar in the longitudinal direction , enter area of steel in square inches per square foot of slab.
+    * - Tran. Dist. From Top
+      - For rebar in the transverse direction, enter distance in inches from top of slab, not including the crown distance.
+    * - Tran. Top Steel Area
+      - For top rebar in the transverse direction , enter area of steel in square inches per square foot of slab.
+    * - Tran. Dist. From Bottom
+      - For rebar in the transverse direction, enter distance up in inches from bottom of slab. Bottom of slab is defined as the �Thk� distance.
+    * - Tran. Bottom Steel Area
+      - For bottom rebar in the transverse direction , enter area of steel in square inches per square foot of slab.

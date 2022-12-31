@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Rating_and_Factors/LLDF.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;html&gt;
+&lt;head&gt;</p>
+<blockquote>
+<div><p>&lt;title&gt;&lt;/title&gt;</p>
+</div></blockquote>
+<p>&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;span style=”font-size:18px;”&gt;&lt;strong&gt;Live Load Distribution Factor&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<dl>
+<dt>&lt;table align=”left” border=”1” cellpadding=”1” cellspacing=”1” style=”width: 800px;”&gt;</dt><dd><dl>
+<dt>&lt;thead&gt;</dt><dd><dl class="simple">
+<dt>&lt;tr&gt;</dt><dd><p>&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Field Name&lt;/th&gt;
+&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Data Type&lt;/th&gt;
+&lt;th scope=”col” style=”background-color: rgb(204, 204, 204);”&gt;Description&lt;/th&gt;</p>
+</dd>
+</dl>
+<p>&lt;/tr&gt;</p>
+</dd>
+</dl>
+<p>&lt;/thead&gt;
+&lt;tbody&gt;</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;tr&gt;</dt><dd><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Name&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Member name&lt;/span&gt;&lt;/td&gt;</p>
+</dd>
+</dl>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;SectType&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Cross Section Type according to AASHTO 2010 LRFD Manual - Table 4.6.2.2.1-1&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;EFF&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Y/N&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Effective span length (in feet) according &amp;nbsp;AASHTO 2010 LRFD Manual - Table C4.6.2.2.1-1. If nothing given, the span length from model will be used.&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;NDL&lt;/td&gt;
+&lt;td&gt;Y/N&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Number of design lanes&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Theta&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;degrees&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Theta Skew = skew angle in degrees between adjacent girders : DEFAULT = 0.0&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;SingleUnit&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Y/N&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Does cross section act as a single unit?&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;NumBeams&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;integer&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Number of beams. If not entered then will use &amp;quot;Bridge Width / Beam Width&amp;quot;&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;DistCtrLine&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;feet&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Distance to center line.&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;NumCells&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;integer&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Number of cells in girder&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;NumBrace&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;integer&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Number of braces in girder&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;SpcIntr&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;feet&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Interior girder spacing&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;SpcExtr&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;feet&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Exterior girder spacing&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;OvHangLeft&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;feet&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Left Overhang&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;
+&lt;tr&gt;</p>
+<blockquote>
+<div><p>&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;OvHangRight&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;feet&lt;/td&gt;
+&lt;td&gt;&lt;span style=”font-family: sans-serif;”&gt;Right Overhang&lt;/span&gt;&lt;/td&gt;</p>
+</div></blockquote>
+<p>&lt;/tr&gt;</p>
+</div></blockquote>
+<p>&lt;/tbody&gt;</p>
+</dd>
+</dl>
+<p>&lt;/table&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>
+<p>&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</p>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

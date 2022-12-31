@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Input Analysis Controls" href="Data_Entry/General/Analysis_Controls.html" />
+    <link rel="prev" title="Welcome to SteelBridg LRFR documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model Definition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Analysis_Controls.html">Input Analysis Controls</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-info">General Info</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Bridge_Description.html">Input Bridge Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Capacity_Trace.html">Capacity Trace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#d-transverse-analysis">2D Transverse Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="input/transverse.html">2DT Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-transfer-model">2DT Transfer Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-reactions">2DT Reactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-load-combinations">2DT Load Combinations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#factors-rating-controls">Factors &amp; Rating Controls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#library">Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Standard_Shape_Library.html">Standard Shape Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Material_Library.html">Input Material Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Plate_Library.html">Input Plate Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Library.html">Input Built-up Shape Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#archive">Archive</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Data_Entry/Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#steel-members">Steel Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Stringer_Definition.html">Input Stringer Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Truss_Member.html">Input Truss Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Column_Definition.html">Input Column Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#concrete">Concrete</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Slab/Rebar.html">Rebar Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#steel-shape-placement">Steel Shape Placement</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loads">Loads</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#depricated">Depricated</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Model Definition</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/input.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="model-definition">
+<h1>Model Definition<a class="headerlink" href="#model-definition" title="Permalink to this heading"></a></h1>
+<section id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Analysis_Controls.html">Input Analysis Controls</a></li>
+</ul>
+</div>
+</section>
+<section id="general-info">
+<h2>General Info<a class="headerlink" href="#general-info" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Bridge_Description.html">Input Bridge Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Capacity_Trace.html">Capacity Trace</a></li>
+</ul>
+</div>
+</section>
+<section id="d-transverse-analysis">
+<h2>2D Transverse Analysis<a class="headerlink" href="#d-transverse-analysis" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="input/transverse.html">2DT Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-transfer-model">2DT Transfer Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-reactions">2DT Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-load-combinations">2DT Load Combinations</a></li>
+</ul>
+</div>
+</section>
+<section id="factors-rating-controls">
+<h2>Factors &amp; Rating Controls<a class="headerlink" href="#factors-rating-controls" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#parameters">Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#example-entry">Example Entry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
+</ul>
+</div>
+</section>
+<section id="library">
+<h2>Library<a class="headerlink" href="#library" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Standard_Shape_Library.html">Standard Shape Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Material_Library.html">Input Material Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Plate_Library.html">Input Plate Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Library.html">Input Built-up Shape Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A1.html">Input Built-up Shape Types - A1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A1R.html">Input Built-up Shape Types - A1R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2.html">Input Built-up Shape Types - A2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2A.html">Input Built-up Shape Types - A2A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2R.html">Input Built-up Shape Types - A2R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2AR.html">Input Built-up Shape Types - A2AR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3.html">Input Built-up Shape Types - A3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3A.html">Input Built-up Shape Types - A3A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3R.html">Input Built-up Shape Types - A3R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3AR.html">Input Built-up Shape Types - A3AR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A4.html">Input Built-up Shape Types - A4 &amp; A4A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A5.html">Input Built-up Shape Types - A5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_B1.html">Input Built-up Shape Types - B1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_C1.html">Input Built-up Shape Types - C1 &amp; C1R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_C2.html">Input Built-up Shape Types - C2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_W1.html">Input Built-up Shape Types - W1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="archive">
+<h3>Archive<a class="headerlink" href="#archive" title="Permalink to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="steel-members">
+<h2>Steel Members<a class="headerlink" href="#steel-members" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Stringer_Definition.html">Input Stringer Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Truss_Member.html">Input Truss Member</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Column_Definition.html">Input Column Definition</a></li>
+</ul>
+</div>
+</section>
+<section id="concrete">
+<h2>Concrete<a class="headerlink" href="#concrete" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Slab/Rebar.html">Rebar Definition</a></li>
+</ul>
+</div>
+</section>
+<section id="steel-shape-placement">
+<h2>Steel Shape Placement<a class="headerlink" href="#steel-shape-placement" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="loads">
+<h2>Loads<a class="headerlink" href="#loads" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="depricated">
+<h2>Depricated<a class="headerlink" href="#depricated" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to SteelBridg LRFR documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Data_Entry/General/Analysis_Controls.html" class="btn btn-neutral float-right" title="Input Analysis Controls" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

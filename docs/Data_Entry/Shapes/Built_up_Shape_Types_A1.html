@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Built-up Shape Types - A1 &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Input Built-up Shape Types - A1R" href="Built_up_Shape_Types_A1R.html" />
+    <link rel="prev" title="Input Built-up Shape Library" href="Built_up_Shape_Library.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#general-info">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#d-transverse-analysis">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../input.html#library">Library</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Standard_Shape_Library.html">Standard Shape Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Material_Library.html">Input Material Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plate_Library.html">Input Plate Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Built_up_Shape_Library.html">Input Built-up Shape Library</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Input Built-up Shape Types - A1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A1R.html">Input Built-up Shape Types - A1R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A2.html">Input Built-up Shape Types - A2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A2A.html">Input Built-up Shape Types - A2A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A2R.html">Input Built-up Shape Types - A2R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A2AR.html">Input Built-up Shape Types - A2AR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3.html">Input Built-up Shape Types - A3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3A.html">Input Built-up Shape Types - A3A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3R.html">Input Built-up Shape Types - A3R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3AR.html">Input Built-up Shape Types - A3AR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A4.html">Input Built-up Shape Types - A4 &amp; A4A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A5.html">Input Built-up Shape Types - A5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_B1.html">Input Built-up Shape Types - B1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_C1.html">Input Built-up Shape Types - C1 &amp; C1R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_C2.html">Input Built-up Shape Types - C2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_W1.html">Input Built-up Shape Types - W1</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../input.html#archive">Archive</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-members">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#concrete">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#steel-shape-placement">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#loads">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../input.html#depricated">Depricated</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../input.html">Model Definition</a> &raquo;</li>
+          <li><a href="Built_up_Shape_Library.html">Input Built-up Shape Library</a> &raquo;</li>
+      <li>Input Built-up Shape Types - A1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Shapes/Built_up_Shape_Types_A1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="input-built-up-shape-types-a1">
+<h1>Input Built-up Shape Types - A1<a class="headerlink" href="#input-built-up-shape-types-a1" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p>Back to other available built-up shapes: <a class="reference internal" href="Built_up_Shape_Library.html#input-built-up-shape-library"><span class="std std-ref">Input Built-up Shape Library</span></a></p></li>
+</ul>
+<img alt="image/ebd_Ebd107.gif" src="../../_images/ebd_Ebd107.gif" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Built_up_Shape_Library.html" class="btn btn-neutral float-left" title="Input Built-up Shape Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Built_up_Shape_Types_A1R.html" class="btn btn-neutral float-right" title="Input Built-up Shape Types - A1R" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

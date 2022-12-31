@@ -1,0 +1,37 @@
+Capacity Trace
+----------------------
+
+   This help system has the full documentation in flow chart form of how 
+   a member's capacity and rating are computed. The terminology
+   used in the flow charts is used in the trace report.
+
+   So that you can better validate and understand the results, you can 
+   instruct the program to trace all the calculations performed on each 
+   member, at each position on the member, and by each factor type. 
+   Since the resulting trace file can easily consume an entire hard 
+   drive, you control the trace by specifying members and positions in 
+   the `CapTrace` table. The parameter `CapTrace` in the `AnalysisControls`
+   table must also be "Y" for the trace to occur. The trace is
+   performed during the capacity and rating calculations phase so these 
+   switches and tables must be set before the analysis is performed.
+
+**DEFINITIONS:**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Name
+     - Enter the member name, or the word ALL for all members.
+   * - Distance
+     - The distance along the member at a point of interest.
+       Review the standard capacity and rating report to find the valid
+       distance list per member. An invalid distance will result in no
+       trace. Use a negative value, such as -1.0 for all points of interest.
+   * - Std
+     - Select this column to trace the standard factors analysis.
+   * - Inv
+     - Select this column to trace the inventory factors analysis.
+   * - Opr
+     - Select this column to trace the operating factors analysis.

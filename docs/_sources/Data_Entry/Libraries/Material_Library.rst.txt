@@ -1,0 +1,7 @@
+Input Material Library
+--------------------------
+
+Table shown with standard default value.
+
+.. figure:: ../../image/ebd_Ebd80.gif
+    :alt:  image/ebd_Ebd80.gif

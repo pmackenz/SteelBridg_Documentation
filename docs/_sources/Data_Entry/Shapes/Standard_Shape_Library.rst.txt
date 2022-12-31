@@ -1,0 +1,24 @@
+Standard Shape Library
+==============================
+
+* Entering a default shape: :ref:`Shape_Input`
+* Default member orientation: :ref:`Member_Orientation`
+
+
+Properties for most common standard shapes can be found using the **AISC Filter** in the `Tools` menu.
+
+.. _Shape_Input:
+
+.. figure:: ../../image/ebd_Ebd104.gif
+    :alt: image/ebd_Ebd104.gif
+
+    Defining a standard shape.
+
+
+.. _Member_Orientation:
+
+.. figure:: ../../image/ebd_Ebd105.gif
+    :alt: image/ebd_Ebd105.gif
+
+    Default member orientation
+

@@ -1,0 +1,180 @@
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","e22b8a","Blue Violet","0") -->
+  <!-- $MVD$:fontset("Untitled Font Set 1","MS Sans Serif") -->
+  <!-- $MVD$:fontset("Arial","Arial") -->
+  <!-- $MVD$:fontset("Verdana","Verdana") -->
+  <TITLE>COGO Command:Command Descriptions</TITLE>
+  <META NAME="copyright">
+  <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT><LINK REL="StyleSheet" HREF="..\..\HTMLHELP.css">
+ <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
+ <META NAME="MS-HAID" CONTENT="Command Definitions">
+ <META NAME="MS-HAID" CONTENT="COGO"></HEAD>
+  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
+  <H1 VALUE="BRIDG 97 &copy; Alan K. Gordon and Associates">
+   COGO Command:Command Descriptions</H1>
+  <P STYLE="margin-top : 0.0;margin-bottom : 0.0;">
+   <TABLE WIDTH="579" CELLPADDING="1" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD HEIGHT="21" WIDTH="101" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;font-size : 12.0pt;"><FONT COLOR="BLACK"><FONT FACE="Arial">Command</FONT></FONT></SPAN></TD>
+     <TD HEIGHT="21" WIDTH="477" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;font-size : 12.0pt;"><FONT COLOR="BLACK"><FONT FACE="Arial">Descriptions</FONT></FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_STOR.html"><FONT FACE="Arial">STOR</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To input the known (or 
+       assumed) coordinates of selected points.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_OFFSET.html"><FONT FACE="Arial">OFFSET</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To locate a new point on a new 
+       path from an existing point and existing path</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_PAST.html"><FONT FACE="Arial">PAST</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To refer an existing point to 
+       an existing path ( referral path)</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_L_BR.html"><FONT FACE="Arial">L/BR</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To locate a point NL from a 
+       point NF with a distance and a bearing.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_L_AZ.html"><FONT FACE="Arial">L/AZ</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To locate a point NL from a 
+       point NF with a distance and a azimuth.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_L_TG.html"><FONT FACE="Arial">L/TG</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To locate a point NL from a 
+       point NF in the direction of DT with a distance D.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_DI_L.html"><FONT FACE="Arial">DI/L</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To divided the line from NF to 
+       NT into NP+1 equal segments.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_COmmand_EQ_L.html"><FONT FACE="Arial">EQ/L</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To establish NP point along a 
+       line from point NF to point NT.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_ADDPT.html"><FONT FACE="Arial">ADDPT</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To locate a new point between 
+       two existing points</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P STYLE="text-align : right;" ALIGN=RIGHT>
+       &nbsp;</TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P STYLE="text-align : right;" ALIGN=RIGHT>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_STAT.html"><FONT FACE="Arial">STAT</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To assign a point to a path</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_PATH.html"><FONT FACE="Arial">PATH</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To assign a path between two 
+       existing points</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_MAPHV.html"><FONT FACE="Arial">MAPHV</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">Map a point on the horizontal 
+       path to a point on the vertical path.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_OSPATH.html"><FONT FACE="Arial">OSPATH</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To assign a new path by 
+       offsetting from an existing path</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_HCURV.html"><FONT FACE="Arial">HCURV</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To specify a horizontal curve.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_VCURV.html"><FONT FACE="Arial">VCURV</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">To specify a vertical curve.</FONT></FONT></TD>
+    </TR>
+    <TR>
+     <TD HEIGHT="17" WIDTH="101" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <A HREF="COGO_Command_RCOOR.html"><FONT FACE="Arial">RCOOR</FONT></A></TD>
+     <TD HEIGHT="17" WIDTH="477" VALIGN=TOP STYLE="border-top:0.75pt solid black; border-bottom:0.75pt solid black; border-left:0.75pt solid black; border-right:0.75pt solid black; ">
+      <P>
+       <FONT COLOR="BLACK"><FONT FACE="Arial">Rotate and translate the local 
+       XZ coordinate system.</FONT></FONT></TD>
+    </TR>
+   </TABLE>
+ </BODY>
+</HTML>

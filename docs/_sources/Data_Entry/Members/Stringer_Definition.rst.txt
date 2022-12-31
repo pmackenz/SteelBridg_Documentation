@@ -1,0 +1,11 @@
+Input Stringer Definition
+---------------------------
+
+.. figure:: ../../image/ebd_Ebd138.gif
+    :alt: image/ebd_Ebd138.gif
+
+.. note::
+
+    Member will be composite if in the live load stage: the slab has stiffness,
+    the member has stiffness, there are shear studs present, and the slab is
+    coupled to the members.

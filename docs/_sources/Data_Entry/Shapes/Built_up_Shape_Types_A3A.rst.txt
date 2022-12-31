@@ -1,0 +1,9 @@
+Input Built-up Shape Types - A3A
+----------------------------------
+
+* Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
+
+
+.. image:: ../../image/ebd_Ebd113.gif
+    :alt: image/ebd_Ebd113.gif
+

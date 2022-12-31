@@ -1,0 +1,9 @@
+COGO Syntax
+************
+
+.. toctree::
+    :maxdepth: 2
+
+    whatever.rst
+ 
+

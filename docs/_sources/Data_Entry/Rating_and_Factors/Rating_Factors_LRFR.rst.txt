@@ -1,0 +1,25 @@
+Rating Factors for LRFR
+===========================
+
+* **Load Factors**
+
+.. list-table::
+    :widths: 20 70
+    :header-rows: 1
+
+    *  - Field
+       - Description
+    *  - Name
+       - Unique factor name; used for referencing factors for members
+    *  - Mode
+       - suitable modes: `Inv`, `Opr`, `Leg`, `Per`, `EV`
+    *  - DC
+       - Dead load facter for structural components and nonstructural attachments, :math:`\gamma_{DC}`
+    *  - DW
+       - Dead load factor for wearing surfaces and utilities, :math:`\gamma_{DW}`
+    *  - LL
+       - Live load factor, :math:`\gamma_{LL}`
+
+* **Resistance Factors**
+
+   Resistance factors reside in :ref:`Input Analysis Controls`

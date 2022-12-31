@@ -1,0 +1,11 @@
+Input Weld Fastener Library
+-----------------------------
+
+.. warning::
+
+    *** This feature not implemented yet and currently under development. ***
+
+
+.. figure:: ../../image/ebd_Ebd87.gif
+    :alt: image/ebd_Ebd87.gif
+

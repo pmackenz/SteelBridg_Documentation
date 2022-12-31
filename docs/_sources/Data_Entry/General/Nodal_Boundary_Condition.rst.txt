@@ -1,0 +1,12 @@
+Input Nodal Boundary Condition
+-----------------------------------
+
+   If the same Cogo Point is listed multiple times for the same stage, 
+   then the resulting boundary condition is the "OR" of all
+   fixity codes. For example, if point **AA** is listed once with a
+   constraint in the *x*-direction, and on another line is listed as
+   having a constraint in the *y*-direction, then point **AA** will be
+   constrained in both the *x*- and *y*-directions. This makes entry more
+   convenient when point constrains are listed by purpose, not by point 
+   number. For example listing all physical supports, then 
+   simplification constrains, then model stability constraints.

@@ -1,0 +1,40 @@
+Concrete Slab Definition
+=================================
+
+.. comment::
+    <META NAME="MS-HAID" CONTENT="Input Sheet">
+    <META NAME="MS-HAID" CONTENT="Concrete Slab">
+    <META NAME="MS-HAID" CONTENT="Slab Entry"></HEAD>
+    <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
+
+**Input Concrete Slab Definition**
+
+* `REF1`_
+* `REF2`_
+* `REF3`_
+* `REF4`_
+
+.. image:: ../../image/ebd_Ebd220.gif
+    :alt: image/ebd_Ebd220.gif
+
+
+.. image:: ../../image/ebd_Ebd221.gif
+    :alt: image/ebd_Ebd221.gif
+
+
+.. image:: ../../image/ebd_Ebd222.gif
+    :alt: image/ebd_Ebd222.gif
+
+
+.. image:: ../../image/ebd_Ebd223.gif
+    :alt: image/ebd_Ebd223.gif
+
+
+.. image:: ../../image/ebd_Ebd224.gif
+    :alt: image/ebd_Ebd224.gif
+
+
+.. _REF1: ../../Reference/Notes_on_DeckSlab/Input_Concrete_Slab_Definition_Graphic.html
+.. _REF2: ../../Reference/Notes_on_DeckSlab/Concrete_Slab_Expansion_Joint.html
+.. _REF3: ../../Reference/Notes_on_DeckSlab/Concrete_Slab_Mesh_Generator_Notes.html
+.. _REF4: ../../Reference/Notes_on_DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html
