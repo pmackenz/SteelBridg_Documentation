@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Load Generation</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Load Generation</H1>
+<P>Theory</P>
+<P>&nbsp;<A href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html">WSDOT 3D Live Load Modeling Guidelines for Truss Bridges</A> </P>
+<P>&nbsp;<A href="Load_Generation_Theory_of_Operation.html">Load Generation Theory of Operation</A> </P>
+<P>&nbsp;<A href="Load_Combination_Theory.html">Load Combination Theory</A> </P>
+<P>&nbsp;<A href="Live_Load_Placement.html">Live Load Placement</A>  </P>
+<P>&nbsp;<A href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</A> </P>
+<P>&nbsp;<A href="Example_of_How_BRIDG_Generates_Live_Load_Envelopes.html">Example of How BRIDG Generates Live Load Envelopes</A> </P>
+<P>&nbsp;<A href="Impact_Factor_Calculation.html">Impact Factor Calculation</A> </P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Input Data Sheets</P>
+<P style="margin-left:36.00pt;">Dead Loads</P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Dead_Loads\Dead_Load_Defintion.html">Dead Load Defintion</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Dead_Loads\Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</A> </P>
+<P style="margin-left:36.00pt;">Trucks / Live Load Definition</P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Live_Load_Definition.html">Live Load Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Truck_Definition.html">Truck Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Live_Load_Envelope_Definition.html">Live Load Envelope Definition</A> </P>
+<P style="margin-left:36.00pt;">Load Combinations and Rating Factors</P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Lane_Group_Definition.html">Lane Group Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">Truck Group Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html">Rating Factors Definition</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Rate_Location.html">Rate Locations</A> </P>
+<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Load_Combination_Definition.html">Load Combination Definition</A> </P>
+</BODY>
+</HTML>

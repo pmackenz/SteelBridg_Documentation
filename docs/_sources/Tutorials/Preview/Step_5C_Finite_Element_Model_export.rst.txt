@@ -1,0 +1,13 @@
+Step 5C - Finite Element Model export
+--------------------------------------------------
+
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>During the development of the BRIDG program, a number of other general purpose finite element analysis programs were used for testing.  The program was equipped with a number of file translators that generated input files for these other programs.  It was decided to keep this capability in the program and make it available for general use.</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>To export the current bridge�s finite element model, use the Options tab �Diagnostics and File Exports� tab that can be found in the Options dialog.  To do this, first open the �Options� dialog by selecting the �View� menu and then selecting the �Options� menu pick.  Then select the �Diagnostics and File Exports� tab.</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\Options_File_Export.gif" border="0" height="305" width="419" alt="image\Options_File_Export.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>The file will be generated in the same directory as the BDF file with the appropriate file extension.</P>
+</BODY>
+</HTML>

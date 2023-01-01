@@ -1,5 +1,6 @@
+***************************
 Truss Example
-==============
+***************************
 
 Some insteresting truss example
 

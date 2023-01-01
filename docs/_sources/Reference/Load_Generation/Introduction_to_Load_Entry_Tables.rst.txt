@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Introduction to Load Entry Tables</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<P><span style="font-weight:bold; ">Introduction to Load Entry Tables</span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>There are eleven data tables that are used to define the non gravity loads on a model.  Read the discussion on load <A href="Load_Combination_Theory.html">combination theory</A> to see how and when the data specified in the following tables are used.</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<H1><A href="..\Data_Entry\Dead_Loads\Dead_Load_Defintion.html"><span style="font-weight:normal; ">Dead Load Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">Use this table to specify nodal or member loads for any dead load stage.</P>
+<H1><A href="..\Data_Entry\Dead_Loads\Superimposed_Dead_Load_Definition.html"><span style="font-weight:normal; ">Superimposed Dead Load Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">Use this table to specify nodal or member loads for the superimposed dead load stage.</P>
+<H1><A href="..\Data_Entry\Live_Loads\Live_Load_Definition.html"><span style="font-weight:normal; ">Live Load Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">A “Truck” can have static loads associated with it.  These can be either nodal or member forces that are applied to the model with the moving loads.</P>
+<H1><A href="..\Data_Entry\Live_Loads\Truck_Definition.html"><span style="font-weight:normal; ">Truck Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">BRIDG uses the word “Truck” quite loosely.  It is used to reference a collection of static and moving loads.  This table is used to define the axle loads and their spacing.  It also is used to define the lane load forces.  This entry in addition to the “Live Load Definition” create a complete set of loadings that can be referenced by one name, i.e. the Truck Name.</P>
+<H1><A href="..\Data_Entry\Live_Loads\Live_Load_Envelope_Definition.html"><span style="font-weight:normal; ">Live Load Envelope Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">BRIDG positions the movable portion of a Truck’s loads along a path in discrete iterations.  For each iteration, the forces throughout the bridge are scanned and a set of envelopes are generated.  This table is used to define how the moving loads are incrementally positioned. </P>
+<H1><A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html"><span style="font-weight:normal; ">Truck Group Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">This table has a dual purpose. It is used to create a collection of one or more trucks that are used in conjunction with the Lane Group Definition to specify what trucks to use when generating a load combination envelope. It also is used to specify the <span style="font-weight:bold; ">axle force multiplier</span> and <span style="font-weight:bold; ">ultimate load factors</span> to apply to the truck’s loads when used in the specified group.  </P>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-left:36.00pt;">There is also the Numerator / Denominator switch that tells the program whether the loads for this truck in the group will be applied to the Numerator or Denominator of the rating equation.  BRIDG keeps these loads separate for when the rating equation requires that not all of the live loads be summed together.</P>
+<H1><A href="..\Data_Entry\Live_Loads\Lane_Group_Definition.html"><span style="font-weight:normal; ">Lane Group Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">Except when the special sequenced truck motion method is specified in the Live Load Envelope Definition table, the range of positioning the truck transverse to the bridge is specified using this table.  </P>
+<H1><A href="..\Data_Entry\Rating_and_Factors\Lane_Load_Reduction_Definition.html"><span style="font-weight:normal; ">Lane Load Reduction</span></A> </H1>
+<P style="margin-left:36.00pt;">This table defines the factors that are applied to the truck loads when one or more trucks are combined using the Truck Group and Lane Group combination.</P>
+<H1><A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html"><span style="font-weight:normal; ">Rating Factors</span></A> </H1>
+<P style="margin-left:36.00pt;">This table defines the ultimate dead load factors and the strength reduction factors. </P>
+<H1><A href="..\Data_Entry\Rating_and_Factors\Rate_Location.html"><span style="font-weight:normal; ">Rate Location</span></A> </H1>
+<P style="margin-left:36.00pt;">Except for non-line members, the user needs to specify where the program will compute capacities and rate the structure.  Non-line members are always analyzed at their critical locations.</P>
+<H1><A href="..\Data_Entry\Live_Loads\Load_Combination_Definition.html"><span style="font-weight:normal; ">Load Combination Definition</span></A> </H1>
+<P style="margin-left:36.00pt;">This is where all the entry tables listed above come together to form a bridge loading condition.  Only load combinations generate member capacities and ratings.</P>
+</BODY>
+</HTML>

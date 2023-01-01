@@ -1,0 +1,12 @@
+Truss Example: Step 2
+================================
+
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-size:10pt; font-weight:bold; ">Define COGO points and paths not on profile grade.</span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\image\ebd_Ebd35.gif" border=0 height=1333 width=1627 alt="image\ebd_Ebd35.gif"></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\image\ebd_Ebd36.gif" border=0 height=279 width=656 alt="image\ebd_Ebd36.gif"></P>
+</BODY>
+</HTML>

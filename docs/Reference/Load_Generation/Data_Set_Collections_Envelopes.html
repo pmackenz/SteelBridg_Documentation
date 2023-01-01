@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="Impact_Factor_Calculation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../theory.html">Theory</a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Reference/Load_Generation/Data_Set_Collections_Envelopes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+<blockquote>
+<div><p>&lt;LINK rel=”StyleSheet” href=”..HTMLHELP.css”&gt;
+&lt;TITLE&gt;Data Set Collections ( Envelopes )&lt;/TITLE&gt;
+&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
+&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”..BSSCDHTM.js”&gt;
+&lt;/SCRIPT&gt;</p>
+</div></blockquote>
+<p>&lt;/HEAD&gt;
+&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
+&lt;H1&gt;Data Set Collections ( Envelopes )&lt;/H1&gt;
+&lt;P&gt;The number of data set collections required is:&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:24.15pt;”&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One for each dead load stage&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One for the superimposed dead load stage&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One for each truck in each lane in each lane group used in a load combination.&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;Two for each load combination; one for the numerator and one for the denominator part.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;A simple Example&lt;/span&gt;&lt;/P&gt;
+&lt;P&gt;Assume:&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:24.15pt;”&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;Five member lines that are 200 feet long&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One hundred truss members&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One Lane Group with 4 lanes maximum&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One Truck Group with two different  trucks referenced&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;One Load Combination that uses &lt;A href=”Lane_Group_Positioning_Methods.html”&gt;LCR&lt;/A&gt; lane mode.&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;Two dead load stages&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.15pt;”&gt;No explicit rate locations&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Compute number of DS per DSC&lt;/P&gt;
+&lt;P style=”text-indent:30.25pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;A = Number of &lt;A href=”Points_of_Interest.html”&gt;POIs&lt;/A&gt; per Line members.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;B = Total number of line member POIs.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;C = Number of POIs for truss members. &lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Compute number of load cases:&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;(two deal load) + (one superimposed dead load) + &lt;/P&gt;
+&lt;P&gt;&amp;nbsp;(8 unfactored truck loads, one for each truck on each possible path) + &lt;/P&gt;
+&lt;P style=”text-indent:30.25pt;”&gt;(two for the one load combination, denominator and numerator parts) = 13&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Total number of DS collected for all load cases = 605  * 13 = 7865&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Storage requirements ( approximate):  Dead loads = 40 bytes per DS and Live loads = 96 bytes per DS&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;(605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320  bytes.&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Impact_Factor_Calculation.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

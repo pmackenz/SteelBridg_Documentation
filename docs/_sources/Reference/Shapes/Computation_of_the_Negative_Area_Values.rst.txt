@@ -1,0 +1,44 @@
+Computation of the Negative Area Values
+============================
+
+The following Net Area calculations are performed:
+
+Given:
+--------
+
+* :math:`A_g` = Gross Cross Section Area 
+* :math:`A_f` = Area of fastener holes
+* :math:`A_h` = Area of hand holes
+
+For Tension Capacity Calculations:
+----------------------------------------
+
+Compute Net Area (:math:`A_n`)
+
+.. math::
+
+    A_n = A_g - A_h - (A_g - A_h)*{ f}
+
+Compute factor for negative area in excess of 15% of gross area:
+
+.. math::
+
+    { f} = \frac{A_f}{A_g - A_h} - 0.15      \ge 0.0
+
+Compute Net Area Bar (:math:`A_{nb}`)
+
+.. math::
+
+    A_{nb} = A_g - A_h - A_f
+
+
+For Compression Capacity Calculations:
+-------------------------------------
+
+Compute Gross Effective Area:
+
+.. math::
+
+    A_{ge} = A_g - A_h
+
+**Reference**: AASHTO Table 10.32.1A(i)

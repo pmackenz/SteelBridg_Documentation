@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Data Set Collections ( Envelopes )</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Data Set Collections ( Envelopes )</H1>
+<P>The number of data set collections required is:</P>
+<UL>
+ <P style="margin-left:24.15pt;">
+ <LI style="margin-left:24.15pt;">One for each dead load stage<BR></LI>
+ <LI style="margin-left:24.15pt;">One for the superimposed dead load stage<BR></LI>
+ <LI style="margin-left:24.15pt;">One for each truck in each lane in each lane group used in a load combination.<BR></LI>
+ <LI style="margin-left:24.15pt;">Two for each load combination; one for the numerator and one for the denominator part.<BR></LI></P>
+</UL>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-weight:bold; ">A simple Example</span></P>
+<P>Assume:</P>
+<UL>
+ <P style="margin-left:24.15pt;">
+ <LI style="margin-left:24.15pt;">Five member lines that are 200 feet long<BR></LI>
+ <LI style="margin-left:24.15pt;">One hundred truss members<BR></LI>
+ <LI style="margin-left:24.15pt;">One Lane Group with 4 lanes maximum<BR></LI>
+ <LI style="margin-left:24.15pt;">One Truck Group with two different  trucks referenced<BR></LI>
+ <LI style="margin-left:24.15pt;">One Load Combination that uses <A href="Lane_Group_Positioning_Methods.html">LCR</A> lane mode.<BR></LI>
+ <LI style="margin-left:24.15pt;">Two dead load stages<BR></LI>
+ <LI style="margin-left:24.15pt;">No explicit rate locations<BR></LI></P>
+</UL>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Compute number of DS per DSC</P>
+<P style="text-indent:30.25pt;">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>&nbsp;A = Number of <A href="Points_of_Interest.html">POIs</A> per Line members.</P>
+<P>&nbsp;B = Total number of line member POIs.</P>
+<P>&nbsp;C = Number of POIs for truss members. </P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Compute number of load cases:</P>
+<P>&nbsp;(two deal load) + (one superimposed dead load) + </P>
+<P>&nbsp;(8 unfactored truck loads, one for each truck on each possible path) + </P>
+<P style="text-indent:30.25pt;">(two for the one load combination, denominator and numerator parts) = 13</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Total number of DS collected for all load cases = 605  * 13 = 7865</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Storage requirements ( approximate):  Dead loads = 40 bytes per DS and Live loads = 96 bytes per DS</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>(605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320  bytes.</P>
+</BODY>
+</HTML>

@@ -1,0 +1,9 @@
+Truss Example: Step 3
+================================
+
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-size:10pt; font-weight:bold; ">Define Nodal Boundary Conditions</span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\image\ebd_Ebd37.gif" border=0 height=138 width=897 alt="image\ebd_Ebd37.gif"></P>
+</BODY>
+</HTML>

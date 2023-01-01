@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="Live_Load_Multiple_Lane_Sequencing.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="Example_of_Lane_Loading_Combinations_Using_LCR.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../theory.html">Theory</a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Reference/Load_Generation/Load_Combination_Theory.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+<blockquote>
+<div><p>&lt;LINK rel=”StyleSheet” href=”..HTMLHELP.css”&gt;
+&lt;TITLE&gt;Load Combination Theory&lt;/TITLE&gt;
+&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
+&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”..BSSCDHTM.js”&gt;
+&lt;/SCRIPT&gt;</p>
+</div></blockquote>
+<p>&lt;/HEAD&gt;
+&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
+&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;Load Combination Theory&lt;/span&gt;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;The envelope data used in a load combination is computed using the dead load data set collections, and the Truck-Path envelopes.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;Terminology&lt;/span&gt;&lt;/P&gt;
+&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=”font-weight:bold; font-style:italic; “&gt;Forces&lt;/span&gt;&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:23.85pt;”&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;span style=”font-weight:bold; “&gt;One Data Set&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:24.00pt;”&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;DSC = One Data Set Collection&lt;/span&gt; = The collection of all data sets for all points of interest in the analysis.&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;DLC = DSC for final effective dead loads&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;SDLC = DSC for superimposed dead loads &lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;PSC = DSC for Prestress secondary loads&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;TPE = DSC for each Truck-Path envelope. One truck running on one path(lane).&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; font-style:italic; “&gt;Factors&lt;/span&gt;&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:23.85pt;”&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryLive_LoadsTruck_Group_Definition.html”&gt;AFM&lt;/A&gt;&amp;nbsp;= Axle Force Multiplier &lt;span style=”font-style:italic; “&gt;(TruckGroupDef)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryRating_and_FactorsLane_Load_Reduction_Definition.html”&gt;LLR&lt;/A&gt;= Lane Load Reduction &lt;span style=”font-style:italic; “&gt;(LaneLoadReductionDef)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryLive_LoadsLoad_Combination_Definition.html”&gt;IF&lt;/A&gt; &amp;nbsp;= Impact Factor &lt;span style=”font-style:italic; “&gt;(LoadCombinationDef)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:23.85pt;”&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryRating_and_FactorsRating_Factors.html”&gt;UDLF&lt;/A&gt; &amp;nbsp;= Ultimate Dead Load Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryRating_and_FactorsRating_Factors.html”&gt;USDLF&lt;/A&gt; &amp;nbsp;= Ultimate Dead Load Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryRating_and_FactorsRating_Factors.html”&gt;UPSF&lt;/A&gt; &amp;nbsp;= Ultimate Prestress Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;&lt;A href=”..Data_EntryLive_LoadsTruck_Group_Definition.html”&gt;ULLF&lt;/A&gt; &amp;nbsp;= Ultimate Live Load Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;These factors are not used to factor the forces but included here for reference purposes.&lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:23.85pt;”&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;MSRF&amp;nbsp;= Moment Strength Reduction Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;SSRF&amp;nbsp;= Shear Strength Reduction Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:23.85pt;”&gt;ASRF&amp;nbsp;= Axial Strength Reduction Factor &lt;span style=”font-style:italic; “&gt;(RatingFactors)&lt;/span&gt;&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;Combinations&lt;/span&gt;&lt;/P&gt;
+&lt;P&gt;The forces used when rating a member are created by combining the following force data sets with the appropriate factors.&lt;/P&gt;
+&lt;P&gt;The term &lt;span style=”font-weight:bold; “&gt;WCTPE&lt;/span&gt; refers to the worst case live load forces that result when scanning all of the possible truck and lane configurations specified by the Lane Group and Truck Group combination. For example, all of the truck loading configurations shown in the ?&lt;A href=”Example_of_Lane_Loading_Combinations_Using_LCR.html”&gt;Example of Lane Loading Combinations Using LCR&lt;/A&gt; ? would be scanned and the most extreme value for the requested force type (Max Moment, Max Shear, etc. ) would be saved as the WCTPE.  There are in fact two WCTPE?s calculated, one for the Numerator and one for the Denominator portions of the equations.  Which trucks contribute to which is defined in the &lt;A href=”..Data_EntryLive_LoadsTruck_Group_Definition.html”&gt;Truck Group definition&lt;/A&gt; table.&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Example_of_Lane_Loading_Combinations_Using_LCR.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Live_Load_Multiple_Lane_Sequencing.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

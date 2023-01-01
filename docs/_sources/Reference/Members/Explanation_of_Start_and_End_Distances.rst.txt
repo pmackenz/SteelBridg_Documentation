@@ -1,0 +1,16 @@
+Explanation of Start and End Distances
+==========================================
+
+For member shape placement, the start location is the only one required.
+Once you specify the location from the start of the member line for a shape to begin,
+it will continue until the end of member unless one of the following occur.
+
+1. A Stop distance was entered.
+#. Another shape has been specified to start at a distance greater then the current shapes start distance.
+#. End of member is reached.
+
+Note that if a member is given a stop distance that is greater then the start distance for another shape, then this stop distance is used for that other shape as well.
+
+A stop, or end, distance is hardly ever needed!  Its primary use is for starting and stopping flange doubler plates that might be discontinuous.
+A zero value for **End** distance is considered a "non-entry".
+

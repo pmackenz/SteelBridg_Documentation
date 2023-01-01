@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Load Combination Theory</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<P><span style="font-weight:bold; ">Load Combination Theory</span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>The envelope data used in a load combination is computed using the dead load data set collections, and the Truck-Path envelopes.</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-weight:bold; ">Terminology</span></P>
+<P><span style="font-weight:bold; ">&nbsp;</span><span style="font-weight:bold; font-style:italic; ">Forces</span></P>
+<UL>
+ <P style="margin-left:23.85pt;">
+ <LI style="margin-left:23.85pt;"><span style="font-weight:bold; ">One Data Set</span><BR></LI></P>
+</UL>
+<P style="margin-left:36.00pt;">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<UL>
+ <P style="margin-left:24.00pt;">
+ <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">DSC = One Data Set Collection</span> = The collection of all data sets for all points of interest in the analysis.<BR></LI>
+ <LI style="margin-left:24.00pt;">DLC = DSC for final effective dead loads<BR></LI>
+ <LI style="margin-left:24.00pt;">SDLC = DSC for superimposed dead loads <BR></LI>
+ <LI style="margin-left:24.00pt;">PSC = DSC for Prestress secondary loads<BR></LI>
+ <LI style="margin-left:24.00pt;">TPE = DSC for each Truck-Path envelope. One truck running on one path(lane).<BR></LI></P>
+</UL>
+<P>&nbsp;</P>
+<P>&nbsp;<span style="font-weight:bold; font-style:italic; ">Factors</span></P>
+<UL>
+ <P style="margin-left:23.85pt;">
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">AFM</A>&nbsp;= Axle Force Multiplier <span style="font-style:italic; ">(TruckGroupDef)</span><BR></LI>
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Rating_and_Factors\Lane_Load_Reduction_Definition.html">LLR</A>= Lane Load Reduction <span style="font-style:italic; ">(LaneLoadReductionDef)</span><BR></LI>
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Live_Loads\Load_Combination_Definition.html">IF</A> &nbsp;= Impact Factor <span style="font-style:italic; ">(LoadCombinationDef)</span><BR></LI></P>
+</UL>
+<P>&nbsp;</P>
+<UL>
+ <P style="margin-left:23.85pt;">
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html">UDLF</A> &nbsp;= Ultimate Dead Load Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI>
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html">USDLF</A> &nbsp;= Ultimate Dead Load Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI>
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html">UPSF</A> &nbsp;= Ultimate Prestress Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI>
+ <LI style="margin-left:23.85pt;"><A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">ULLF</A> &nbsp;= Ultimate Live Load Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI></P>
+</UL>
+<P>&nbsp;</P>
+<P>&nbsp;These factors are not used to factor the forces but included here for reference purposes.</P>
+<UL>
+ <P style="margin-left:23.85pt;">
+ <LI style="margin-left:23.85pt;">MSRF&nbsp;= Moment Strength Reduction Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI>
+ <LI style="margin-left:23.85pt;">SSRF&nbsp;= Shear Strength Reduction Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI>
+ <LI style="margin-left:23.85pt;">ASRF&nbsp;= Axial Strength Reduction Factor <span style="font-style:italic; ">(RatingFactors)</span><BR></LI></P>
+</UL>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-weight:bold; ">Combinations</span></P>
+<P>The forces used when rating a member are created by combining the following force data sets with the appropriate factors.</P>
+<P>The term <span style="font-weight:bold; ">WCTPE</span> refers to the worst case live load forces that result when scanning all of the possible truck and lane configurations specified by the Lane Group and Truck Group combination. For example, all of the truck loading configurations shown in the “<A href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</A> ” would be scanned and the most extreme value for the requested force type (Max Moment, Max Shear, etc. ) would be saved as the WCTPE.  There are in fact two WCTPE’s calculated, one for the Numerator and one for the Denominator portions of the equations.  Which trucks contribute to which is defined in the <A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">Truck Group definition</A> table.</P>
+</BODY>
+</HTML>

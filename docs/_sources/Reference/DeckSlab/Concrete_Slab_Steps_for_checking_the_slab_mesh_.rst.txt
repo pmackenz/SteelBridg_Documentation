@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Concrete Slab - Steps for checking the slab mesh.</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Concrete Slab - Steps for checking the slab mesh.</H1>
+<OL>
+ <P>
+ <LI style="font-size:8pt; ">View the model in the FEM view.<BR></LI>
+ <LI style="font-size:8pt; ">Set only the line members ON.<BR></LI>
+ <LI style="font-size:8pt; ">Set the view to XZ plane.<BR></LI>
+ <LI style="font-size:8pt; ">Set shrink ON.<BR></LI>
+ <LI style="font-size:8pt; ">Observe that the corners of the plates coincide with breaks in the line members. The shrink option shows where the member node locations are by shrinking the member between all connecting nodes.  Turn on the point label option also, although this mode is not very useful unless the view is zoomed up enough to not blur all the node labels together.<BR></LI></P>
+</OL>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\Mesh_Help_Graphic_1_TMP.gif" border="0" height="426" width="820" alt="image\Mesh_Help_Graphic_1_TMP.gif"></P>
+</BODY>
+</HTML>

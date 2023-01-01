@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 5A - The Capacity and Rating TRACE feature. &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Truss Example" href="../TRUSS_EXAMPLE/Truss_Example.html" />
+    <link rel="prev" title="Step 3 - The Excel Input File" href="Step_3_The_Excel_Input_File.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../examples/truss_example.html">Truss Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/stringer_example.html">Stringer Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/crossbeam_example.html">Cross-Beam Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_2_The_Data_Viewer.html">Step 2 - The Data Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_5B_The_internal_tables_and_ACCESS_interface_.html">Step 5B - The internal tables and ACCESS interface.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 5A - The Capacity and Rating TRACE feature.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example.html">Truss Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_1.html">Truss Example: Step 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_2.html">Truss Example: Step 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_3.html">Truss Example: Step 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_4.html">Truss Example: Step 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_5.html">Truss Example: Step 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_6.html">Truss Example: Step 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_7.html">Truss Example: Step 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_8.html">Truss Example: Step 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example_Step_9.html">Truss Example: Step 9</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+      <li>Step 5A - The Capacity and Rating TRACE feature.</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Tutorials/Preview/Step_5A_The_Capacity_and_Rating_TRACE_feature_.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-5a-the-capacity-and-rating-trace-feature">
+<h1>Step 5A - The Capacity and Rating TRACE feature.<a class="headerlink" href="#step-5a-the-capacity-and-rating-trace-feature" title="Permalink to this heading"></a></h1>
+<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Every equation and critical calculation performed when computing a member�s capacity and rating can be written to a report file.  This report file is annotated using the AASHTO equation and paragraph numbers, as well as the BRIDG &lt;A href=”....PreviewCapacity_and_Rating_Theory.html”&gt;Capacity and Rating flow chart&lt;/A&gt; numbers.  The flow chart numbers used by BRIDG each represent an internal sub-system in the program.  It is advised that you bring up the help system, BRIDG.HLP, and display or print out the flow charts to best interpret the trace report.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;If you were to ask the program to trace all members, for all load cases, for all factoring configurations, at all points of interest, you will easily fill up your hard disk.  Because of this, you will need to tell BRIDG which members to trace and also supply some other filtering criteria.  A feature that will soon be implemented will be to generate these traces on demand after the analysis is complete, for now, you need to set up the trace criteria prior to running the analysis. (Note, the demonstration file 101-314.BDF already has the trace set for two critical members.)&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;The first step in setting up a trace is to turn on the trace switch.  This is in the Analysis Controls table. Set the CapTrace parameter to �Y�.  &lt;/P&gt;
+&lt;P&gt;&amp;nbsp;[&lt;A href=”....Data_EntryGeneralInput_Analysis_Controls.html”&gt;AnalysisControls&lt;/A&gt; ]&lt;/P&gt;
+&lt;P style=”text-indent:30.25pt;”&gt;&lt;IMG src=”....imageebd_Ebd169.gif” border=”0” height=”21” width=”581” alt=”imageebd_Ebd169.gif”&gt;&lt;/P&gt;
+&lt;P style=”text-indent:30.25pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Next, list the members and the locations to be traced.  This example is from the 101-314 example. As documented, the use of a location value of  -1.0 will result in all points of interest on the member being traced.  The location value must be a valid point of interest location, as reported in the capacity report file, else no trace will result.  Also, only the standard factoring case will be traced.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;[&lt;A href=”....Data_EntryGeneralCapacity_Trace.html”&gt;CapTrace&lt;/A&gt; ]&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;IMG src=”....imageebd_Ebd170.gif” border=”0” height=”52” width=”253” alt=”imageebd_Ebd170.gif”&gt;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;The last thing to do before running the analysis is to restrict the load combinations to one or two.  The example file has all but the HS20 load case for standard factoring turned off.  &lt;/P&gt;
+&lt;P&gt;&amp;nbsp;[&lt;A href=”....Data_EntryLive_LoadsLoad_Combination_Definition.html”&gt;LoadCombDef&lt;/A&gt; ]&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&lt;IMG src=”....imageebd_Ebd171.gif” border=”0” height=”135” width=”953” alt=”imageebd_Ebd171.gif”&gt;&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Now run the analysis by pressing the toolbar button labeled �FEA�.  When done the report file 101-314_CapTrace.RPT can be found in the same directory that the 101-314.BDF file is.  You will need to view the file using an external file viewer such as Notepad.  A planned feature that will be available soon is to a built in file viewer.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;The following is an excerpt of the trace file generated by the default values in the example file.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG src=”....imageebd_Ebd172.gif” border=”0” height=”3968” width=”3600” alt=”imageebd_Ebd172.gif”&gt;&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Step_3_The_Excel_Input_File.html" class="btn btn-neutral float-left" title="Step 3 - The Excel Input File" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../TRUSS_EXAMPLE/Truss_Example.html" class="btn btn-neutral float-right" title="Truss Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

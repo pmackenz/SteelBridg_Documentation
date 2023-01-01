@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Multiple Lane Live Load Sequencing Example</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Multiple Lane Live Load Sequencing Example</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>The following diagram fully illustrates all of the truck lane positions that would be tested for a two lane bridge that has a road width of 26 feet.  The striped lanes are 12 feet, the rating lane is 10 feet,  and the transverse motion integration step size is 1 foot.  The maximum possible positions for these two lanes is 54, but 32 are repeats, so there are actually only 22 unique positions for this example.  If the two trucks are different types of trucks, then the 22 unique positions are tested twice, once for each truck being on the left and the right lanes.  (An “*” in the truck locations indicates a repeated position.)</P>
+<P><IMG src="..\image\ebd_Ebd52.gif" border=0 height=3658 width=3244 alt="image\ebd_Ebd52.gif"></P>
+</BODY>
+</HTML>

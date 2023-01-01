@@ -1,0 +1,11 @@
+Explanation of Member End Release Codes
+=====================================
+
+**References**
+
+* :ref:`Rotational Member End Release Guidelines`
+* :ref:`Bearing Seats`
+
+
+.. image:: ../../image/ebd_Ebd159.gif
+    :alt: image/ebd_Ebd159.gif

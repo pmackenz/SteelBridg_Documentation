@@ -1,0 +1,49 @@
+Explanation of Member Weight and Stiffness Codes
+===================================================
+
+The program needs to know when to apply member gravity loading and when a member
+is active in the analysis.  This is done with the member weight and stiffness codes.
+
+Stiffness Codes:
+------------------
+
+1. Only one code can be active in a stage.
+#. Enter the stage number that is the first stage for the program to start using 
+   the indicated stiffness.  To change the stiffness properties in a subsequent 
+   stage, enter that stage number in the appropriate field.
+#. Truss Members, Columns, and Misc. Members have their gravity dead load 
+   applied in the first stage that they become active.
+
+.. rubric:: MbrStf
+..
+
+    The member has only the stiffness of the beam portion of a composite section.
+
+.. rubric:: CompStf
+..
+
+    The member has the stiffness of a composite section, where the concrete slab
+    portion is calculated using 1n.
+
+.. rubric:: 3nStf
+..
+
+    The member has the stiffness of a composite section, where the concrete slab
+    portion is calculated using 3n.
+
+.. rubric:: MbrWt
+..
+
+    Gravity loads will be calculated for the beam portion of a composite section
+    only and applied to the analysis in the indicated stage. Note, the member
+    **MUST** be active, i.e., have a stiffness active, in the stage indicated.
+    
+.. rubric:: SlbWt
+..
+
+    Gravity loads will be calculated for the concrete portion of a composite
+    section only and applied to the analysis in the indicated stage.
+    Note, the member **MUST** be active, i.e. have a stiffness active, in the
+    stage indicated.  Slab sub-regions that are not associated with any member
+    will have their gravity loads applied in the **CompStf** stage specified
+    in the :ref:`Input Concrete Slab Definition` entry.

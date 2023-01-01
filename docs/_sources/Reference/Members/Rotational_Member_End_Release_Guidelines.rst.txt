@@ -1,0 +1,5 @@
+Rotational Member End Release Guidelines
+=====================================
+
+.. image:: ../../image/ebd_Ebd160.gif
+    :alt: image/ebd_Ebd160.gif

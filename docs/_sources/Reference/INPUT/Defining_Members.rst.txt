@@ -1,0 +1,54 @@
+Defining Members
+============================
+
+Sequence
+------------
+
+The following sequence of steps for building a model in BRIDG is not the only method.
+In fact, this sequence assumes that you are starting from scratch.
+Other methods are using the BRIDG Wizard (if available in this version),
+or coping an existing similar bridge model and modifying it.
+
+Also, do not think of these steps as a single pass operation.
+It should be an iterative approach, with each pass adding more complexity
+to the model, until the bridge is completely defined within the scope of
+this program.  Suggestions for the first few passes are described below.
+
+
+Terminology
+-------------
+
+.. rubric:: Line Member
+..
+
+    Those members that directly support the road surface and are modeled on the profile grade lines.
+
+.. rubric:: Non-Line Member
+..
+
+    Members that support the Line Members, such as trusses, columns, and other miscellaneous members.
+
+First Pass
+--------------
+
+#. Enter geometry for bridge center line and Line Members.
+#. Enter basic line member placement.
+#. Enter enough truss members to check general geometry.
+#. Enter a minimal set of materials and shapes.
+   These need not be the real data, but only needed in this pass so that the
+   entries that references these tables have some thing to reference.
+
+
+Geometry Definition
+----------------------
+
+See  :ref:`COGO Command Command Descriptions` entry sheet is used to create all of the necessary spatial coordinates and paths.
+The following **minimum** data is required:
+
+* A point at the beginning and end of all members
+* A point at all boundary condition locations
+* A path that defines the center line of traffic.
+  Multiple lanes will be centered about this path.
+
+Library Creation
+-------------------

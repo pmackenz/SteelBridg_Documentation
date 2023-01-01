@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="Multiple_Lane_Live_Load_Sequencing_Example.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="Load_Generation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../theory.html">Theory</a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Reference/Load_Generation/Lane_Group_Positioning_Methods.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
+<blockquote>
+<div><p>&lt;LINK rel=”StyleSheet” href=”..HTMLHELP.css”&gt;
+&lt;TITLE&gt;Lane Group Positioning Methods&lt;/TITLE&gt;
+&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
+&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”..BSSCDHTM.js”&gt;
+&lt;/SCRIPT&gt;</p>
+</div></blockquote>
+<p>&lt;/HEAD&gt;
+&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
+&lt;H1&gt;Lane Group Positioning Methods&lt;/H1&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;CTR&lt;/span&gt;&amp;nbsp;Center Of Bridge Only&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LCR&lt;/span&gt;&amp;nbsp;Left, Center, and Right of Bridge&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LCRQ&lt;/span&gt;&amp;nbsp;Left, Left Quarter, Center, Right Quarter, Right positions on the bridge.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;span style=”font-size:10pt; font-weight:bold; “&gt;&lt;font  face=’Times New Roman’&gt;Error! Not a valid link.&lt;/font&gt;&lt;/span&gt;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;A ?Lane Group? is a set of lanes of ?&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Lane Width&lt;/A&gt; ? placed side by side with no space between. &lt;/P&gt;
+&lt;UL&gt;</p>
+<blockquote>
+<div><p>&lt;P style=”margin-left:24.00pt;”&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;No gap between multiple loaded lanes.&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”margin-left:24.00pt;”&gt;Movement within a lane is not considered, but the ?&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Truck Clearance Width&lt;/A&gt; ? is positioned within the lane in accordance with the positioning codes: CTR, LCR, LCRQ. Please see the graphic below.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+</div></blockquote>
+<p>&lt;/UL&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;If the lane group can not be completely fit between the right and left edges, then that configuration is &lt;span style=”font-weight:bold; “&gt;not&lt;/span&gt; processed.  For example, if the lane group centered over the left quarter point causes the left side of the group to extend beyond the left edge, then that loading configuration would not be processed.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;The placement of the ?&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Truck Clearance Width&lt;/A&gt; ?,TCW,  within the lane depends on the placement of the lane group.  If the lane group position is ?Left? or ?Left Quarter?, then the TCW will be placed against the left edge of the lane boundary.  For ?Center? placement, the TCW will be centered in the lane.  For ?Right? and ?Right Quarter? placements, the TCW will be placed against the right edge of the lane boundary.&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG src=”..imageebd_Ebd49.gif” border=0 height=1110 width=2655 alt=”imageebd_Ebd49.gif”&gt;&lt;/P&gt;
+&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;On narrow bridges it is possible for a truck axle to leave the road surface.  When this happens, the program will issue a warning message.  Typically this will occure when the truck clearance width, and striped lane width is not reduced in accordance with the specifications defined in the &lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;lane width paragraph&lt;/A&gt; of the ?WSDOT Live Load Criteria? in topic page ?&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html”&gt;3D Live Load Modeling Guidelines for Truss Bridges&lt;/A&gt;.?  A truck axle leaving the road surface might not be a critical condition, and it is up to the engineer to determine if adjustments to the truck parameters is required.&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Load_Generation.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Multiple_Lane_Live_Load_Sequencing_Example.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

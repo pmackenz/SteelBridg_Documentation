@@ -1,5 +1,6 @@
+***************************
 Stringer Example
-==============
+***************************
 
 Some insteresting stringer analysis example
 

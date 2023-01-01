@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Concrete Slab Modeling Notes</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Concrete Slab Modeling Notes</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\image\Slab_Transfer_Members.gif" border="0" height="238" width="422" alt="image\Slab_Transfer_Members.gif"> </P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>The plates are modeled as a meshed surface that is attached to the line members through rigid links.  The link connection to the plates is always fully fixed, and can be either fixed or only support axial through the links when connected to the line members.  The following flow chart describes how the plates are modeled for different stages.</P>
+<P><IMG src="..\..\image\ebd_Ebd225.gif" border="0" height="899" width="1503" alt="image\ebd_Ebd225.gif"></P>
+</BODY>
+</HTML>

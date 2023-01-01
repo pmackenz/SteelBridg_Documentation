@@ -1,0 +1,46 @@
+Editor Key Assignments
+============================
+
+Function Keys:
+------------------
+
+* F1 - Help
+* F2 - Begin edit of current cell
+* F6 - Next child window
+* Ctrl-F6 - Previous child window
+* F9 - Activates information window.
+* F10 - Activates editor window.
+* F12 - New Window.
+   - In Editor window, create a new viewer window.
+   - In Viewer window, create a single pain viewer window of current tree item (same as Ctrl-Shift-V.)
+
+
+Character Keys:
+-----------------
+
+* Ctrl-C &nbsp;Copy current selection into paste buffer.
+* Ctrl-N &nbsp;Create a new file.
+* Ctrl-O &nbsp;Open an existing file
+* Ctrl-S &nbsp;Save current file
+* Ctrl-V &nbsp;Paste contents of paste buffer into current selected area.
+* Ctrl-Shift-V &nbsp; New Window.
+   - In Editor window, create a new viewer window.
+   - In Viewer window, create a single pain viewer window of current tree item (same as F12.)
+* Ctrl-X - Cut selection. Copy current selection into paste buffer and delete current selection.
+
+
+Special Keys:
+--------------
+
+* Alt-UpArrow - Next item up in tree list structure.
+* Alt-DownArrow - Next item down in tree list structure.
+* Alt-LeftArrow - If on expanded parent then collapse parent, otherwise go to parent.
+* Alt-RightArrow - If on collapsed parent then expand parent, otherwise go to first child of tree element.
+* Delete - Delete contents of current cell.
+* Ctrl-Delete - Delete selected rows.
+* Insert 
+   - For an ordered table, insert a new row before the current row.
+   - For a key order table, copy current record to create a new record.
+* Tab - Next cell in editor.
+* Shift-Tab - Previous cell in editor.
+* Ctrl-Tab - Next child window

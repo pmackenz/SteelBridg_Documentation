@@ -56,5 +56,8 @@ Parameters
 .. rubric:: Numerator Denominator Code
 ..
 
-    All live load envelopes have two parts, a numerator and a denominator part.  This is required because some forms of the rating equation have live load data in both the numerator and denominator.  Specify in this field which envelope this truck�s forces are to be applied.
+    All live load envelopes have two parts, a numerator and a denominator part.
+    This is required because some forms of the rating equation have live load
+    data in both the numerator and denominator.
+    Specify in this field which envelope this truck's forces are to be applied.
     Use a **N** for numerator, and a **D** for denominator.

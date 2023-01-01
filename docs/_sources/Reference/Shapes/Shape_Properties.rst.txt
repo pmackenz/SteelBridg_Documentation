@@ -1,0 +1,22 @@
+Shape Properties
+============================
+
+Coordinate Systems
+----------------------
+
+* :ref:`Shape Coordinate System`
+
+Basic Property Sets:
+------------------------
+
+* :ref:`Plate Properties`
+* :ref:`Standard Shape Properties`
+* :ref:`Built-up Shape Properties`
+
+
+Design / Capacity Properties
+------------------------------
+
+* :ref:`Line Member Design Properties`
+* :ref:`Non-Line Member Design Properties`
+* :ref:`Effective Length`

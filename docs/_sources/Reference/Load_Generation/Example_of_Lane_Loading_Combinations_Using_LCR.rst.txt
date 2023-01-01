@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\HTMLHELP.css">
+ <TITLE>Example of Lane Loading Combinations Using LCR</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Example of Lane Loading Combinations Using LCR</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P>Graph below shows lane position locations and truck placements within the lanes for all the loading cases that are tested when creating a worst case live load envelope. The individual truck envelopes for each truck in each lane are stored separately and then combined as shown.  In the example below, 33 different envelope combinations are tested.  A total of 18 separate  truck envelopes would have been computed prior to creating the combinations, 9 for the first truck in all possible paths, and 9 for the other truck that is used three times.</P>
+</BODY>
+</HTML>

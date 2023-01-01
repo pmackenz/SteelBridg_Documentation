@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shape Properties &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Computation of the Negative Area Values" href="Computation_of_the_Negative_Area_Values.html" />
+    <link rel="prev" title="Standard Shape Properties" href="Standard_Shape_Properties.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../INPUT/Defining_Members.html">Defining Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../INPUT/Editor_Key_Assignments.html">Editor Key Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../INPUT/Finite_Element_Processor_Error_and_Warning_Messages.html">Finite Element Processor Error and Warning Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../INPUT/Input_Local_Member_Orientation.html">Input Local Member Orientation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../INPUT/Simple_Truss_Example_Using_Nodal_BC.html">Simple Truss Example Using Nodal BC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Standard_Shape_Properties.html">Standard Shape Properties</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Shape Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coordinate-systems">Coordinate Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-property-sets">Basic Property Sets:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-capacity-properties">Design / Capacity Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Computation_of_the_Negative_Area_Values.html">Computation of the Negative Area Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shape_Coordinate_System.html">Shape Coordinate System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Built_up_Shape_Properties.html">Built-up Shape Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Shape_Geometry_Nomenclature.html">Shape Geometry Nomenclature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Truss_Member_End_Releases.html">Truss Member End Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Rotational_Member_End_Release_Guidelines.html">Rotational Member End Release Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Effective_Length.html">Effective Length</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html">Explanation of Member Weight and Stiffness Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Member_of_Release_Codes.html">Explanation of Member End Release Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Auto_Connect_Switch.html">Explanation of Auto Connect Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Start_and_End_Distances.html">Explanation of Start and End Distances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Non_Line_Member_Design_Properties.html">Non-Line Member Design Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Member_Coordinate_System.html">Member Coordinate System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Line_Member_Design_Properties.html">Line Member Design Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Bearing_Seats.html">Bearing Seats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../theory.html">Theory</a> &raquo;</li>
+      <li>Shape Properties</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Reference/Shapes/Shape_Properties.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="shape-properties">
+<h1>Shape Properties<a class="headerlink" href="#shape-properties" title="Permalink to this heading"></a></h1>
+<section id="coordinate-systems">
+<h2>Coordinate Systems<a class="headerlink" href="#coordinate-systems" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="Shape_Coordinate_System.html#shape-coordinate-system"><span class="std std-ref">Shape Coordinate System</span></a></p></li>
+</ul>
+</section>
+<section id="basic-property-sets">
+<h2>Basic Property Sets:<a class="headerlink" href="#basic-property-sets" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><span class="xref std std-ref">Plate Properties</span></p></li>
+<li><p><a class="reference internal" href="Standard_Shape_Properties.html#standard-shape-properties"><span class="std std-ref">Standard Shape Properties</span></a></p></li>
+<li><p><a class="reference internal" href="Built_up_Shape_Properties.html#built-up-shape-properties"><span class="std std-ref">Built-up Shape Properties</span></a></p></li>
+</ul>
+</section>
+<section id="design-capacity-properties">
+<h2>Design / Capacity Properties<a class="headerlink" href="#design-capacity-properties" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../Members/Line_Member_Design_Properties.html#line-member-design-properties"><span class="std std-ref">Line Member Design Properties</span></a></p></li>
+<li><p><a class="reference internal" href="../Members/Non_Line_Member_Design_Properties.html#non-line-member-design-properties"><span class="std std-ref">Non-Line Member Design Properties</span></a></p></li>
+<li><p><a class="reference internal" href="../Members/Effective_Length.html#effective-length"><span class="std std-ref">Effective Length</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Standard_Shape_Properties.html" class="btn btn-neutral float-left" title="Standard Shape Properties" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Computation_of_the_Negative_Area_Values.html" class="btn btn-neutral float-right" title="Computation of the Negative Area Values" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

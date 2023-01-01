@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Defining Members &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Editor Key Assignments" href="Editor_Key_Assignments.html" />
+    <link rel="prev" title="Theory" href="../../theory.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Defining Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sequence">Sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terminology">Terminology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#first-pass">First Pass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometry-definition">Geometry Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#library-creation">Library Creation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Editor_Key_Assignments.html">Editor Key Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite_Element_Processor_Error_and_Warning_Messages.html">Finite Element Processor Error and Warning Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Input_Local_Member_Orientation.html">Input Local Member Orientation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simple_Truss_Example_Using_Nodal_BC.html">Simple Truss Example Using Nodal BC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Standard_Shape_Properties.html">Standard Shape Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Shape_Properties.html">Shape Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Computation_of_the_Negative_Area_Values.html">Computation of the Negative Area Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Shape_Coordinate_System.html">Shape Coordinate System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Built_up_Shape_Properties.html">Built-up Shape Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Shapes/Shape_Geometry_Nomenclature.html">Shape Geometry Nomenclature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Truss_Member_End_Releases.html">Truss Member End Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Rotational_Member_End_Release_Guidelines.html">Rotational Member End Release Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Effective_Length.html">Effective Length</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html">Explanation of Member Weight and Stiffness Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Member_of_Release_Codes.html">Explanation of Member End Release Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Auto_Connect_Switch.html">Explanation of Auto Connect Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Explanation_of_Start_and_End_Distances.html">Explanation of Start and End Distances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Non_Line_Member_Design_Properties.html">Non-Line Member Design Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Member_Coordinate_System.html">Member Coordinate System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Line_Member_Design_Properties.html">Line Member Design Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Members/Bearing_Seats.html">Bearing Seats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../theory.html">Theory</a> &raquo;</li>
+      <li>Defining Members</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Reference/INPUT/Defining_Members.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="defining-members">
+<h1>Defining Members<a class="headerlink" href="#defining-members" title="Permalink to this heading"></a></h1>
+<section id="sequence">
+<h2>Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading"></a></h2>
+<p>The following sequence of steps for building a model in BRIDG is not the only method.
+In fact, this sequence assumes that you are starting from scratch.
+Other methods are using the BRIDG Wizard (if available in this version),
+or coping an existing similar bridge model and modifying it.</p>
+<p>Also, do not think of these steps as a single pass operation.
+It should be an iterative approach, with each pass adding more complexity
+to the model, until the bridge is completely defined within the scope of
+this program.  Suggestions for the first few passes are described below.</p>
+</section>
+<section id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this heading"></a></h2>
+<p class="rubric">Line Member</p>
+<blockquote>
+<div><p>Those members that directly support the road surface and are modeled on the profile grade lines.</p>
+</div></blockquote>
+<p class="rubric">Non-Line Member</p>
+<blockquote>
+<div><p>Members that support the Line Members, such as trusses, columns, and other miscellaneous members.</p>
+</div></blockquote>
+</section>
+<section id="first-pass">
+<h2>First Pass<a class="headerlink" href="#first-pass" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Enter geometry for bridge center line and Line Members.</p></li>
+<li><p>Enter basic line member placement.</p></li>
+<li><p>Enter enough truss members to check general geometry.</p></li>
+<li><p>Enter a minimal set of materials and shapes.
+These need not be the real data, but only needed in this pass so that the
+entries that references these tables have some thing to reference.</p></li>
+</ol>
+</section>
+<section id="geometry-definition">
+<h2>Geometry Definition<a class="headerlink" href="#geometry-definition" title="Permalink to this heading"></a></h2>
+<p>See  <span class="xref std std-ref">COGO Command Command Descriptions</span> entry sheet is used to create all of the necessary spatial coordinates and paths.
+The following <strong>minimum</strong> data is required:</p>
+<ul class="simple">
+<li><p>A point at the beginning and end of all members</p></li>
+<li><p>A point at all boundary condition locations</p></li>
+<li><p>A path that defines the center line of traffic.
+Multiple lanes will be centered about this path.</p></li>
+</ul>
+</section>
+<section id="library-creation">
+<h2>Library Creation<a class="headerlink" href="#library-creation" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../theory.html" class="btn btn-neutral float-left" title="Theory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Editor_Key_Assignments.html" class="btn btn-neutral float-right" title="Editor Key Assignments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Bearing Seats
+=====================================
+
+.. image:: ../../image/ebd_Ebd161.gif
+    :alt: image/ebd_Ebd161.gif

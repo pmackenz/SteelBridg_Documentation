@@ -1,0 +1,25 @@
+Explanation of Auto Connect Switch
+=====================================
+
+The finite element model's member connectivity is generated using the end 
+points specified in the member definition tables.  Every point that a member
+needs to be attached to must be specified.  If a member line intesect a 
+point along its path, this point is not automatically includded in that 
+member lines set unless explicitly instructed to do so.  
+Inorder to simplify data entry for member lines which have many intesecting
+points along its geometric path, the AutoConnect option is provided.  
+The AutoConnect  option has three possible conditions: 
+
+1. **No** - Do not scan the line between the end points for intermediate points.
+#. **Yes** - Scan the line between the end points for intermediate points and include them in the set of points for this member. The member end release codes only apply to the two end points specified for this member line segment.
+#. **All** - Scan the line between the end points for intermediate points and include them in the set of points for this member. The member end release codes apply to all the intermediate segments.
+
+.. image:: ../../image/ebd_Ebd156.gif
+    :alt: image/ebd_Ebd156.gif
+
+.. image:: ../../image/ebd_Ebd157.gif
+    :alt: image/ebd_Ebd157.gif
+
+.. image:: ../../image/ebd_Ebd158.gif
+    :alt: image/ebd_Ebd158.gif
+

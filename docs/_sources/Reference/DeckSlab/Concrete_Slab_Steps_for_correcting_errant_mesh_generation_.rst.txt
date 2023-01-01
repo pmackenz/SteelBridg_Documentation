@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
+ <TITLE>Concrete Slab - Steps for correcting errant mesh generation.</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>Concrete Slab - Steps for correcting errant mesh generation.</H1>
+<P>Some simple dos and don’ts:</P>
+<OL>
+ <P>
+ <LI style="font-size:8pt; ">Keep the meshing region as simple as possible. Create multiple regions if necessary.<BR></LI>
+ <LI style="font-size:8pt; ">Do not change member lines within mesh regions.<BR></LI></P>
+</OL>
+<P style="margin-left:23.75pt;"><IMG src="..\..\image\ebd_Ebd226.gif" border="0" height="1099" width="1132" alt="image\ebd_Ebd226.gif"></P>
+</BODY>
+</HTML>

@@ -1,0 +1,33 @@
+*************************
+Truss Example
+*************************
+
+* :ref:`Truss Example: Step 1`
+* :ref:`Truss Example: Step 2`
+* :ref:`Truss Example: Step 3`
+* :ref:`Truss Example: Step 4`
+* :ref:`Truss Example: Step 5`
+* :ref:`Truss Example: Step 8`
+* :ref:`Truss Example: Step 7`
+* :ref:`Truss Example: Step 8`
+* :ref:`Truss Example: Step 9`
+
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-size:12pt; font-weight:bold; text-decoration:underline;">Example two span truss bridge.</span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><span style="font-size:12pt; font-weight:bold; font-style:italic; "><font  color='red'>*** This example is still under development and not complete yet. </font></span></P>
+<P><span style="font-size:12pt; font-weight:bold; font-style:italic; "><font  color='red'>**** See the </font></span><A href="Introductory_Tutorial.html"><span style="font-size:12pt; font-weight:bold; font-style:italic; ">Tutorial</span></A><span style="font-size:12pt; font-weight:bold; font-style:italic; "><font  color='red'> and example files. </font></span></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><A href="Truss_Example_Step_1.html">Step 1 - Generate COGO data for points and paths on the profile grade. </A></P>
+<P><A href="Truss_Example_Step_2.html">Step 2 - Generate COGO data  for points and paths not on the profile grade. </A></P>
+<P><A href="Truss_Example_Step_3.html">Step 3 - Define nodal boundary conditions. </A></P>
+<P><A href="Truss_Example_Step_4.html">Step 4 - Identify member lines. </A></P>
+<P><A href="Truss_Example_Step_5.html">Step 5 - Define concrete slab. </A></P>
+<P><A href="Truss_Example_Step_6.html">Step 6 - Define materials and required shapes. </A></P>
+<P><A href="Truss_Example_Step_7.html">Step 7 - Place shapes on to member lines. </A></P>
+<P><A href="Truss_Example_Step_8.html">Step 8 - Place columns. </A></P>
+<P><A href="Truss_Example_Step_9.html">Step 9 - Place truss members. </A></P>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\image\ebd_Ebd32.gif" border=0 height=1387 width=1826 alt="image\ebd_Ebd32.gif"></P>
+</BODY>
+</HTML>

@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<!-- $MVD$:fontset("Courier New","Courier New") -->
+ <LINK rel="StyleSheet" href="..\..\..\HTMLHELP.css">
+ <TITLE>[SS-6.3.2] Compute Bearing on Stiffener</TITLE>
+ <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
+ <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\..\BSSCDHTM.js">
+ </SCRIPT>
+</HEAD>
+<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
+<H1>[SS-6.3.2] Compute Bearing on Stiffener</H1>
+<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+<P><IMG src="..\..\..\image\ebd_Ebd218.gif" border="0" height="1760" width="1840" alt="image\ebd_Ebd218.gif"></P>
+</BODY>
+</HTML>
