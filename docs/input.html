@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Input Analysis Controls" href="Data_Entry/General/Analysis_Controls.html" />
+    <link rel="next" title="Settings" href="Data_Entry/settings.html" />
     <link rel="prev" title="Welcome to SteelBridg LRFR documentation!" href="index.html" /> 
 </head>
 
@@ -41,89 +41,15 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Model Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Analysis_Controls.html">Input Analysis Controls</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#general-info">General Info</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Bridge_Description.html">Input Bridge Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/General/Capacity_Trace.html">Capacity Trace</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#d-transverse-analysis">2D Transverse Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="input/transverse.html">2DT Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-transfer-model">2DT Transfer Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-reactions">2DT Reactions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="input/transverse.html#dt-load-combinations">2DT Load Combinations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#factors-rating-controls">Factors &amp; Rating Controls</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/ExplicitLLDF.html">Explicit Live Load Distribution Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rate_Location.html">Rate Location</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#library">Library</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Standard_Shape_Library.html">Standard Shape Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Material_Library.html">Input Material Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Plate_Library.html">Input Plate Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Library.html">Input Built-up Shape Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Link_Hinge_Library.html">Input Link Hinge Library</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#steel-members">Steel Members</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Stringer_Definition.html">Input Stringer Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Truss_Member.html">Input Truss Member</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Column_Definition.html">Input Column Definition</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#concrete">Concrete</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Slab/Rebar.html">Rebar Definition</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#steel-shape-placement">Steel Shape Placement</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Shape_Placement.html">Input Shape Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Placement.html">Input Web Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Haunch_Definition.html">Input Web Haunch Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Flange_Placement.html">Input Flange Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Cover_Plate_Placement.html">Input Cover Plate Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Longitudinal_Stiffner_Placement.html">Input Longitudinal Stiffner Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Transvers_Stiffner_Definition.html">Input Transvers Stiffner Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Lateral_Bracing_Placement.html">Input Lateral Bracing Placement</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#loads">Loads</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html">Dead Load Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html">Truck Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html">Live Load Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html">Load Combination Definition</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#deprecated">Deprecated</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Girder_Definition.html">Input Girder Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html">Lane Group Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html">Truck Group Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html">Live Load Envelope Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Libraries/Bolt_Fastener_Library.html">Input Bolt Fastener Library</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/general.html">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/transverse.html">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/factors_and_rating.html">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/steel_members.html">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/concrete.html">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/shape_placement.html">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/loads.html">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
@@ -157,205 +83,144 @@
              
   <section id="model-definition">
 <h1>Model Definition<a class="headerlink" href="#model-definition" title="Permalink to this heading"></a></h1>
-<section id="settings">
-<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Analysis_Controls.html">Input Analysis Controls</a></li>
-</ul>
-</div>
-</section>
-<section id="general-info">
-<h2>General Info<a class="headerlink" href="#general-info" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Bridge_Description.html">Input Bridge Description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Data.html">Input COGO Command Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_ADDPT.html">COGO Command: ADDPT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_DI_L.html">COGO Command: DI/L</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_EQ_L.html">COGO Command: EQ/L</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_HCURV.html">COGO Command: HCURV</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_AZ.html">COGO Command: L/AZ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_BR.html">COGO Command: L/BR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_TG.html">COGO Command: L/TG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_MAPHV.html">COGO Command: MAPHV</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_OFFSET.html">COGO Command: OFFSET</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_OSPATH.html">COGO Command: OSPATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_PAST.html">COGO Command: PAST</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_PATH.html">COGO Command: PATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_RCOOR.html">COGO Command: RCOOR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_STAT.html">COGO Command: STAT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_STOR.html">COGO Command: STOR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_VCURV.html">COGO Command: VCURV</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Example.html">COGO Command: Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/settings.html">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/settings.html#input-analysis-controls">Input Analysis Controls</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/General/Capacity_Trace.html">Capacity Trace</a></li>
-</ul>
-</div>
-</section>
-<section id="d-transverse-analysis">
-<h2>2D Transverse Analysis<a class="headerlink" href="#d-transverse-analysis" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="input/transverse.html">2DT Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-transfer-model">2DT Transfer Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-reactions">2DT Reactions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input/transverse.html#dt-load-combinations">2DT Load Combinations</a></li>
-</ul>
-</div>
-</section>
-<section id="factors-rating-controls">
-<h2>Factors &amp; Rating Controls<a class="headerlink" href="#factors-rating-controls" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#example-entry">Example Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/general.html">General Info</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/General/Bridge_Description.html">Input Bridge Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Data.html">Input COGO Command Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_ADDPT.html">COGO Command: ADDPT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_DI_L.html">COGO Command: DI/L</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_EQ_L.html">COGO Command: EQ/L</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_HCURV.html">COGO Command: HCURV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_AZ.html">COGO Command: L/AZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_BR.html">COGO Command: L/BR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_L_TG.html">COGO Command: L/TG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_MAPHV.html">COGO Command: MAPHV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_OFFSET.html">COGO Command: OFFSET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_OSPATH.html">COGO Command: OSPATH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_PAST.html">COGO Command: PAST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_PATH.html">COGO Command: PATH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_RCOOR.html">COGO Command: RCOOR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_STAT.html">COGO Command: STAT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_STOR.html">COGO Command: STOR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_VCURV.html">COGO Command: VCURV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/COGO/COGO_Command_Example.html">COGO Command: Example</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/ExplicitLLDF.html">Explicit Live Load Distribution Factors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rate_Location.html">Rate Location</a></li>
-</ul>
-</div>
-</section>
-<section id="library">
-<h2>Library<a class="headerlink" href="#library" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Standard_Shape_Library.html">Standard Shape Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Material_Library.html">Input Material Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Plate_Library.html">Input Plate Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Library.html">Input Built-up Shape Library</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A1.html">Input Built-up Shape Types - A1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A1R.html">Input Built-up Shape Types - A1R</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2.html">Input Built-up Shape Types - A2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2A.html">Input Built-up Shape Types - A2A</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2R.html">Input Built-up Shape Types - A2R</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A2AR.html">Input Built-up Shape Types - A2AR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3.html">Input Built-up Shape Types - A3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3A.html">Input Built-up Shape Types - A3A</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3R.html">Input Built-up Shape Types - A3R</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A3AR.html">Input Built-up Shape Types - A3AR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A4.html">Input Built-up Shape Types - A4 &amp; A4A</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_A5.html">Input Built-up Shape Types - A5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_B1.html">Input Built-up Shape Types - B1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_C1.html">Input Built-up Shape Types - C1 &amp; C1R</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_C2.html">Input Built-up Shape Types - C2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Shapes/Built_up_Shape_Types_W1.html">Input Built-up Shape Types - W1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/General/Capacity_Trace.html">Capacity Trace</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Link_Hinge_Library.html">Input Link Hinge Library</a></li>
-</ul>
-</div>
-</section>
-<section id="steel-members">
-<h2>Steel Members<a class="headerlink" href="#steel-members" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Stringer_Definition.html">Input Stringer Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Truss_Member.html">Input Truss Member</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Column_Definition.html">Input Column Definition</a></li>
-</ul>
-</div>
-</section>
-<section id="concrete">
-<h2>Concrete<a class="headerlink" href="#concrete" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Slab/Rebar.html">Rebar Definition</a></li>
-</ul>
-</div>
-</section>
-<section id="steel-shape-placement">
-<h2>Steel Shape Placement<a class="headerlink" href="#steel-shape-placement" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Shape_Placement.html">Input Shape Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Placement.html">Input Web Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Haunch_Definition.html">Input Web Haunch Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Flange_Placement.html">Input Flange Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Cover_Plate_Placement.html">Input Cover Plate Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Longitudinal_Stiffner_Placement.html">Input Longitudinal Stiffner Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Transvers_Stiffner_Definition.html">Input Transvers Stiffner Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Lateral_Bracing_Placement.html">Input Lateral Bracing Placement</a></li>
-</ul>
-</div>
-</section>
-<section id="loads">
-<h2>Loads<a class="headerlink" href="#loads" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html">Dead Load Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html#parameters">Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/transverse.html">2D Transverse Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/transverse.html#dt-parameters">2DT Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/transverse.html#dt-transfer-model">2DT Transfer Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/transverse.html#dt-reactions">2DT Reactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/transverse.html#dt-load-combinations">2DT Load Combinations</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html#parameters">Parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html">Truck Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html#parameters">Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/factors_and_rating.html">Factors &amp; Rating Controls</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#parameters">Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#example-entry">Example Entry</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html">Live Load Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/ExplicitLLDF.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Rating_and_Factors/Rate_Location.html">Rate Location</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html">Load Combination Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#example-entry">Example Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/steel_members.html">Steel Members</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Stringer_Definition.html">Input Stringer Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Truss_Member.html">Input Truss Member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Column_Definition.html">Input Column Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/concrete.html">Concrete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Slab/Rebar.html">Rebar Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/shape_placement.html">Steel Shape Placement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Shape_Placement.html">Input Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Placement.html">Input Web Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Web_Haunch_Definition.html">Input Web Haunch Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Flange_Placement.html">Input Flange Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Cover_Plate_Placement.html">Input Cover Plate Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Longitudinal_Stiffner_Placement.html">Input Longitudinal Stiffner Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Transvers_Stiffner_Definition.html">Input Transvers Stiffner Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Lateral_Bracing_Placement.html">Input Lateral Bracing Placement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/loads.html">Loads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html">Dead Load Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Dead_Load_Defintion.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html">Truck Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html">Live Load Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html">Load Combination Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#parameters">Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Load_Combination_Definition.html#example-entry">Example Entry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_Entry/deprecated.html">Deprecated</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Girder_Definition.html">Input Girder Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html">Lane Group Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html">Truck Group Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html">Live Load Envelope Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Libraries/Bolt_Fastener_Library.html">Input Bolt Fastener Library</a></li>
 </ul>
 </li>
 </ul>
 </div>
-</section>
-<section id="deprecated">
-<h2>Deprecated<a class="headerlink" href="#deprecated" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Girder_Definition.html">Input Girder Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Cross_Beam_Definition.html">Input Cross Beam Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Floor_Beam_Definition.html">Input Floor Beam Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Members/Miscellaneous_Member.html">Input Miscellaneous Member</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Rivets_Placement.html">Input Rivets Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Property_Assignment/Shear_Connector_Placement.html">Input Shear Connector Placement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html">Lane Group Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Lane_Group_Definition.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html">Truck Group Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Truck_Group_Definition.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html">Live Load Envelope Definition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Pin_Hinge_Library.html">Input Pin Hinge Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Weld_Fastener_Library.html">Input Weld Fastener Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Misc_Bearing_Stiffner_Library.html">Input Misc. Bearing Stiffner Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Misc_Hinge_Library.html">Input Misc. Hinge Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Angle_Bearing_Stiffner_Library.html">Input Angle Bearing Stiffner Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Data_Entry/Libraries/Bolt_Fastener_Library.html">Input Bolt Fastener Library</a></li>
-</ul>
-</div>
-</section>
 </section>
 
 
@@ -363,7 +228,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to SteelBridg LRFR documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Data_Entry/General/Analysis_Controls.html" class="btn btn-neutral float-right" title="Input Analysis Controls" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Data_Entry/settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

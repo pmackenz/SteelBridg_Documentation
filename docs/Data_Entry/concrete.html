@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2DT Parameters &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Concrete &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lane Load Reduction Definition" href="../Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html" />
-    <link rel="prev" title="Capacity Trace" href="../Data_Entry/General/Capacity_Trace.html" /> 
+    <link rel="next" title="Concrete Slab Definition" href="Slab/Concrete_Slab_Definition.html" />
+    <link rel="prev" title="Input Column Definition" href="Members/Column_Definition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,22 +41,19 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../input.html">Model Definition</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../input.html#settings">Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#general-info">General Info</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../input.html#d-transverse-analysis">2D Transverse Analysis</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">2DT Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dt-transfer-model">2DT Transfer Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dt-reactions">2DT Reactions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dt-load-combinations">2DT Load Combinations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general.html">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transverse.html">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factors_and_rating.html">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="steel_members.html">Steel Members</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Concrete</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slab/Rebar.html">Rebar Definition</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#factors-rating-controls">Factors &amp; Rating Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#library">Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#steel-members">Steel Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#concrete">Concrete</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#steel-shape-placement">Steel Shape Placement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#loads">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../input.html#deprecated">Deprecated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape_placement.html">Steel Shape Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loads.html">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
@@ -79,9 +76,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../input.html">Model Definition</a> &raquo;</li>
-      <li>2DT Parameters</li>
+      <li>Concrete</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/input/transverse.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Data_Entry/concrete.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -89,25 +86,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="dt-parameters">
-<h1>2DT Parameters<a class="headerlink" href="#dt-parameters" title="Permalink to this heading"></a></h1>
-</section>
-<section id="dt-transfer-model">
-<h1>2DT Transfer Model<a class="headerlink" href="#dt-transfer-model" title="Permalink to this heading"></a></h1>
-</section>
-<section id="dt-reactions">
-<h1>2DT Reactions<a class="headerlink" href="#dt-reactions" title="Permalink to this heading"></a></h1>
-</section>
-<section id="dt-load-combinations">
-<h1>2DT Load Combinations<a class="headerlink" href="#dt-load-combinations" title="Permalink to this heading"></a></h1>
+  <section id="concrete">
+<h1>Concrete<a class="headerlink" href="#concrete" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Slab/Concrete_Slab_Definition.html">Concrete Slab Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slab/Rebar.html">Rebar Definition</a></li>
+</ul>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Data_Entry/General/Capacity_Trace.html" class="btn btn-neutral float-left" title="Capacity Trace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html" class="btn btn-neutral float-right" title="Lane Load Reduction Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Members/Column_Definition.html" class="btn btn-neutral float-left" title="Input Column Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Slab/Concrete_Slab_Definition.html" class="btn btn-neutral float-right" title="Concrete Slab Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

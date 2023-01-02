@@ -1,12 +1,9 @@
-Truss Example: Step 5
-================================
+Truss Example: Step 5 - Define Concrete Slab
+------------------------------
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:10pt; font-weight:bold; ">Define Concrete Slab</span></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd41.gif" border=0 height=534 width=1118 alt="image\ebd_Ebd41.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd42.gif" border=0 height=110 width=833 alt="image\ebd_Ebd42.gif"></P>
-</BODY>
-</HTML>
+
+.. image:: ../../image/ebd_Ebd41.gif
+    :alt: image/ebd_Ebd41.gif
+
+.. image:: ../../image/ebd_Ebd42.gif
+    :alt: image/ebd_Ebd42.gif

@@ -1,3 +1,8 @@
+
+**********************
+2D Transverse Analysis
+**********************
+
 2DT Parameters
 --------------------
 
@@ -9,4 +14,11 @@
 
 2DT Load Combinations
 --------------------
+
+
+.. toctree::
+    :maxdepth: 2
+
+    input/transverse.rst
+
 

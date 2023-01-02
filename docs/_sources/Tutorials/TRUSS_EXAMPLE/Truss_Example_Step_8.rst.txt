@@ -1,9 +1,5 @@
-Truss Example: Step 8
-================================
+Truss Example: Step 8 - Place Column Shapes
+------------------------------
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:10pt; font-weight:bold; ">Place Column Shapes</span></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd45.gif" border=0 height=110 width=568 alt="image\ebd_Ebd45.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd45.gif
+    :alt: image/ebd_Ebd45.gif

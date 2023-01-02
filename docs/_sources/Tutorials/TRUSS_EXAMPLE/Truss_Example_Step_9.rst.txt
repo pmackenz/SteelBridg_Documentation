@@ -1,12 +1,9 @@
-Truss Example: Step 9
-================================
+Truss Example: Step 9 - Place Truss Members
+------------------------------
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:10pt; font-weight:bold; ">Place Truss Members</span></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd46.gif" border=0 height=642 width=1237 alt="image\ebd_Ebd46.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd47.gif" border=0 height=681 width=885 alt="image\ebd_Ebd47.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd46.gif
+    :alt: image/ebd_Ebd46.gif
+
+.. image:: ../../image/ebd_Ebd47.gif
+    :alt: image/ebd_Ebd47.gif
+

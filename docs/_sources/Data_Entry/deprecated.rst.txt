@@ -1,0 +1,22 @@
+********************
+Deprecated
+********************
+
+.. toctree::
+    :maxdepth: 2
+
+    Members/Girder_Definition.rst
+    Members/Cross_Beam_Definition.rst
+    Members/Floor_Beam_Definition.rst
+    Members/Miscellaneous_Member.rst
+    Property_Assignment/Rivets_Placement.rst
+    Property_Assignment/Shear_Connector_Placement.rst
+    Live_Loads/Lane_Group_Definition.rst
+    Live_Loads/Truck_Group_Definition.rst
+    Live_Loads/Live_Load_Envelope_Definition.rst
+    Libraries/Pin_Hinge_Library.rst
+    Libraries/Weld_Fastener_Library.rst
+    Libraries/Misc_Bearing_Stiffner_Library.rst
+    Libraries/Misc_Hinge_Library.rst
+    Libraries/Angle_Bearing_Stiffner_Library.rst
+    Libraries/Bolt_Fastener_Library.rst

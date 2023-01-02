@@ -1,9 +1,6 @@
-Truss Example: Step 6
-================================
+Truss Example: Step 6 - Define Materials and required shapes.
+------------------------------
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:10pt; font-weight:bold; ">Define Materials and required shapes.</span></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd43.gif" border=0 height=317 width=659 alt="image\ebd_Ebd43.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd43.gif
+    :alt: image/ebd_Ebd43.gif
+

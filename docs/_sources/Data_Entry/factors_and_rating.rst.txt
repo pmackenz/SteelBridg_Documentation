@@ -1,0 +1,13 @@
+*************************
+Factors & Rating Controls
+*************************
+
+.. toctree::
+    :maxdepth: 2
+
+    Rating_and_Factors/Lane_Load_Reduction_Definition.rst
+    Rating_and_Factors/Rating_Factors_LFR.rst
+    Rating_and_Factors/Rating_Factors_LRFR.rst
+    Rating_and_Factors/ExplicitLLDF.rst
+    Rating_and_Factors/Rate_Location.rst
+

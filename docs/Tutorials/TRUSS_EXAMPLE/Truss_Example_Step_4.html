@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Truss Example: Step 4 &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Truss Example: Step 4 - Identify Member Lines &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Truss Example: Step 5" href="Truss_Example_Step_5.html" />
-    <link rel="prev" title="Truss Example: Step 3" href="Truss_Example_Step_3.html" /> 
+    <link rel="next" title="Truss Example: Step 5 - Define Concrete Slab" href="Truss_Example_Step_5.html" />
+    <link rel="prev" title="Truss Example: Step 3 - Define Nodal Boundary Conditions" href="Truss_Example_Step_3.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,16 +54,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../Preview/Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Preview/Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Preview/Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example.html">Truss Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_1.html">Truss Example: Step 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_2.html">Truss Example: Step 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_3.html">Truss Example: Step 3</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Truss Example: Step 4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_5.html">Truss Example: Step 5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_6.html">Truss Example: Step 6</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_7.html">Truss Example: Step 7</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_8.html">Truss Example: Step 8</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Truss_Example_Step_9.html">Truss Example: Step 9</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Truss_Example.html">Truss Example</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="Truss_Example.html#example-two-span-truss-bridge">Example two span truss bridge</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_1.html">Truss Example: Step 1 - Define COGO points and paths on the profile grade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_2.html">Truss Example: Step 2 - Define COGO points and paths not on profile grade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_3.html">Truss Example: Step 3 - Define Nodal Boundary Conditions</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Truss Example: Step 4 - Identify Member Lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_5.html">Truss Example: Step 5 - Define Concrete Slab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_6.html">Truss Example: Step 6 - Define Materials and required shapes.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_7.html">Truss Example: Step 7 - Place shapes on member lines.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_8.html">Truss Example: Step 8 - Place Column Shapes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss_Example_Step_9.html">Truss Example: Step 9 - Place Truss Members</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -83,7 +88,8 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../examples.html">Examples</a> &raquo;</li>
-      <li>Truss Example: Step 4</li>
+          <li><a href="Truss_Example.html">Truss Example</a> &raquo;</li>
+      <li>Truss Example: Step 4 - Identify Member Lines</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Tutorials/TRUSS_EXAMPLE/Truss_Example_Step_4.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -93,26 +99,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="truss-example-step-4">
-<h1>Truss Example: Step 4<a class="headerlink" href="#truss-example-step-4" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;span style=”font-size:10pt; font-weight:bold; “&gt;Identify Member Lines&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”..imageebd_Ebd38.gif” border=0 height=1037 width=2196 alt=”imageebd_Ebd38.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”..imageebd_Ebd39.gif” border=0 height=256 width=1033 alt=”imageebd_Ebd39.gif”&gt;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”..imageebd_Ebd40.gif” border=0 height=222 width=1010 alt=”imageebd_Ebd40.gif”&gt;&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+  <section id="truss-example-step-4-identify-member-lines">
+<h1>Truss Example: Step 4 - Identify Member Lines<a class="headerlink" href="#truss-example-step-4-identify-member-lines" title="Permalink to this heading"></a></h1>
+<img alt="image/ebd_Ebd38.gif" src="../../_images/ebd_Ebd38.gif" />
+<img alt="image/ebd_Ebd39.gif" src="../../_images/ebd_Ebd39.gif" />
+<img alt="image/ebd_Ebd40.gif" src="../../_images/ebd_Ebd40.gif" />
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Truss_Example_Step_3.html" class="btn btn-neutral float-left" title="Truss Example: Step 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Truss_Example_Step_5.html" class="btn btn-neutral float-right" title="Truss Example: Step 5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Truss_Example_Step_3.html" class="btn btn-neutral float-left" title="Truss Example: Step 3 - Define Nodal Boundary Conditions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Truss_Example_Step_5.html" class="btn btn-neutral float-right" title="Truss Example: Step 5 - Define Concrete Slab" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

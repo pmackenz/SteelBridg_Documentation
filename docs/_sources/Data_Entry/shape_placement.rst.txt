@@ -1,0 +1,20 @@
+**********************
+Steel Shape Placement
+**********************
+
+.. toctree::
+    :maxdepth: 2
+
+    Property_Assignment/Shape_Placement.rst
+    Property_Assignment/Web_Placement.rst
+    Property_Assignment/Web_Haunch_Definition.rst
+    Property_Assignment/Flange_Placement.rst
+    Property_Assignment/Cover_Plate_Placement.rst
+    Property_Assignment/Box_Stiffener_Definition.rst
+    Property_Assignment/Longitudinal_Stiffner_Placement.rst
+    Property_Assignment/Transvers_Stiffner_Definition.rst
+    Property_Assignment/Lateral_Bracing_Placement.rst
+    Property_Assignment/Hinge_Placement.rst
+    Property_Assignment/Bearing_Stiffener.rst
+
+

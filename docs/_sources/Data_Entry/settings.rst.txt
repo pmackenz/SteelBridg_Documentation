@@ -1,0 +1,11 @@
+**********************
+Settings
+**********************
+
+.. comment::
+    .. toctree::
+        :maxdepth: 2
+
+        General/Analysis_Controls.rst
+
+.. include:: General/Analysis_Controls.rst
