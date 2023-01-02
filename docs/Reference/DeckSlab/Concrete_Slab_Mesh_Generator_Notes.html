@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Concrete Slab - Steps for checking composite member generation." href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" />
-    <link rel="prev" title="Input Concrete Slab Definition � Corner Offset Graphic" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html" /> 
+    <link rel="next" title="Concrete Slab Modeling Notes" href="Concrete_Slab_Modeling_Notes.html" />
+    <link rel="prev" title="Input Concrete Slab Definition &amp; Corner Offset Graphic" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,15 +48,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition � Corner Offset Graphic</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Concrete Slab Mesh Generator Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html">Concrete Slab - Steps for checking composite member generation.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_correcting_errant_mesh_generation_.html">Concrete Slab - Steps for correcting errant mesh generation.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition &amp; Corner Offset Graphic</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Concrete Slab Mesh Generator Notes</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Modeling_Notes.html">Concrete Slab Modeling Notes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Graphic.html">Input Concrete Slab Definition Graphic</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Expansion_Joint.html">Concrete Slab Expansion Joint</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Plate_Properties.html">Plate Properties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_checking_the_slab_mesh_.html">Concrete Slab - Steps for checking the slab mesh.</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
@@ -93,29 +92,26 @@
              
   <section id="concrete-slab-mesh-generator-notes">
 <h1>Concrete Slab Mesh Generator Notes<a class="headerlink" href="#concrete-slab-mesh-generator-notes" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;The concrete mesh generator is one of the most complex subsystems in the entire program.  It is also the most likely process to not work as expected.  This page has some hints and rules to help discover and resolve mesh generation problems.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;After your model is defined, the first thing that should be done is to see if the deck slab is meshed correctly.  This involves checking that the mesh plates are positioned where expected and that they all tie into the line members where appropriate.  After this check is performed and the mesh is satisfactory, then you will need to check that the composite members have been created where expected. &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt; &amp;nbsp;&lt;/P&gt;
-&lt;OL&gt;</p>
-<blockquote>
-<div><p>&lt;P&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;A href=”<a href="#id1"><span class="problematic" id="id2">Concrete_Slab_Steps_for_checking_the_slab_mesh_</span></a>.html”&gt;Steps for checking the slab mesh.&lt;/A&gt; &lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;A href=”<a href="#id3"><span class="problematic" id="id4">Concrete_Slab_Steps_for_correcting_errant_mesh_generation_</span></a>.html”&gt;Steps for correcting errant mesh generation.&lt;/A&gt; &lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;A href=”<a href="#id5"><span class="problematic" id="id6">Concrete_Slab_Steps_for_checking_composite_member_generation_</span></a>.html”&gt;Steps for checking composite member generation&lt;/A&gt; .&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
-</div></blockquote>
-<p>&lt;/OL&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p>The concrete mesh generator is one of the most complex subsystems in
+the entire program.  It is also the most likely process to not work as expected.
+This page has some hints and rules to help discover and resolve mesh generation
+problems.</p>
+<p>After your model is defined, the first thing that should be done is to see
+if the deck slab is meshed correctly.  This involves checking that the mesh
+plates are positioned where expected and that they all tie into the line
+members where appropriate.  After this check is performed and the mesh is
+satisfactory, then you will need to check that the composite members have
+been created where expected.</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html" class="btn btn-neutral float-left" title="Input Concrete Slab Definition � Corner Offset Graphic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" class="btn btn-neutral float-right" title="Concrete Slab - Steps for checking composite member generation." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html" class="btn btn-neutral float-left" title="Input Concrete Slab Definition &amp; Corner Offset Graphic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Concrete_Slab_Modeling_Notes.html" class="btn btn-neutral float-right" title="Concrete Slab Modeling Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

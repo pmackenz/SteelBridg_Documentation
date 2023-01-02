@@ -1,8 +1,16 @@
 Concrete Slab - Steps for checking composite member generation.
-======================================================
+------------------------------------------------------------------
 
-#. Select the Viewer window and then select the FEM view.  This will force the system to compute all the composite member data if not done already.<BR></LI>
-#. Now return to the Editor view of the member and select the PLOT button.   Then select the Depth Profile view and check that the system shows concrete over the girder.<BR></LI>
-#. Also check that you have defines shear connectors because the system will not consider the member composite unless both concrete and shear connectors are present.<BR></LI></P>
+#. Select the Viewer window and then select the FEM view.
+   This will force the system to compute all the composite member
+   data if not done already.
+#. Now return to the Editor view of the member and select the `PLOT` button.
+   Then select the Depth Profile view and check that the system shows
+   concrete over the girder.
+#. Also check that you have defines shear connectors because the system will
+   not consider the member composite unless both concrete and shear connectors
+   are present.
 
-<P><IMG src="..\..\image\Mesh_Help_Graphic_2.gif" border="0" height="453" width="704" alt="image\Mesh_Help_Graphic_2.gif"></P>
+.. image:: ../../image/Mesh_Help_Graphic_2.gif
+    :alt: image/Mesh_Help_Graphic_2.gif
+

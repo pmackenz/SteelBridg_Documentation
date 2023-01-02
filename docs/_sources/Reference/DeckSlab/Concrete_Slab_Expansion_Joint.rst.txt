@@ -1,6 +1,7 @@
 Concrete Slab Expansion Joint
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-</BODY>
-</HTML>
+.. note::
+
+    This feature is not handled by the SteelBridg application.
+

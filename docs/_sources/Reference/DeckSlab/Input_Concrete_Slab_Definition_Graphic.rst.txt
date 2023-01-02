@@ -1,11 +1,15 @@
 Input Concrete Slab Definition Graphic
 ======================================================
 
-<P><A href="..\..\Data_Entry\Slab\Input_Concrete_Slab_Definition.html"><IMG SRC="..\..\image\BTN_Concrete_Slab_Definition64.gif" border="0" height="18" width="125" alt="image\BTN_Concrete_Slab_Definition64.gif"></A></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd227.gif" border="0" height="1542" width="2069" alt="image\ebd_Ebd227.gif"></P>
-<H1>Mesh Building Methodology</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd228.gif" border="0" height="2215" width="2315" alt="image\ebd_Ebd228.gif"></P>
-</BODY>
-</HTML>
+See also: :ref:`Input Concrete Slab Definition`
+
+
+.. image:: ../../image/ebd_Ebd227.gif
+    :alt: image/ebd_Ebd227.gif
+
+
+Mesh Building Methodology
+----------------------------
+
+.. image:: ../../image/ebd_Ebd228.gif
+    :alt: image/ebd_Ebd228.gif

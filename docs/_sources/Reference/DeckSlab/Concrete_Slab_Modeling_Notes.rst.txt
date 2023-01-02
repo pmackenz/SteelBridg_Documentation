@@ -1,10 +1,17 @@
 Concrete Slab Modeling Notes
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\Slab_Transfer_Members.gif" border="0" height="238" width="422" alt="image\Slab_Transfer_Members.gif"> </P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>The plates are modeled as a meshed surface that is attached to the line members through rigid links.  The link connection to the plates is always fully fixed, and can be either fixed or only support axial through the links when connected to the line members.  The following flow chart describes how the plates are modeled for different stages.</P>
-<P><IMG src="..\..\image\ebd_Ebd225.gif" border="0" height="899" width="1503" alt="image\ebd_Ebd225.gif"></P>
-</BODY>
-</HTML>
+
+.. image:: ../../image/Slab_Transfer_Members.gif
+    :alt: image/Slab_Transfer_Members.gif
+
+
+The plates are modeled as a meshed surface that is attached to the line
+members through rigid links.  The link connection to the plates is always
+fully fixed, and can be either fixed or only support axial through the links
+when connected to the line members.  The following flow chart describes how
+the plates are modeled for different stages.
+
+.. image:: ../../image/ebd_Ebd225.gif
+    :alt: image/ebd_Ebd225.gif
+

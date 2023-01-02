@@ -1,11 +1,17 @@
 Concrete Slab - Steps for checking the slab mesh.
 ======================================================
 
-#. View the model in the FEM view.<BR></LI>
-#. Set only the line members ON.<BR></LI>
-#. Set the view to XZ plane.<BR></LI>
-#. Set shrink ON.<BR></LI>
-#. Observe that the corners of the plates coincide with breaks in the line members. The shrink option shows where the member node locations are by shrinking the member between all connecting nodes.  Turn on the point label option also, although this mode is not very useful unless the view is zoomed up enough to not blur all the node labels together.<BR></LI></P>
+#. View the model in the FEM view.
+#. Set only the line members ON.
+#. Set the view to XZ plane.
+#. Set shrink ON.
+#. Observe that the corners of the plates coincide with breaks in the line members.
+   The shrink option shows where the member node locations are by shrinking
+   the member between all connecting nodes.  Turn on the point label option
+   also, although this mode is not very useful unless the view is zoomed up
+   enough to not blur all the node labels together.
 
-<IMG src="..\..\image\Mesh_Help_Graphic_1_TMP.gif" border="0" height="426" width="820" alt="image\Mesh_Help_Graphic_1_TMP.gif"></P>
+.. image:: ../../image/Mesh_Help_Graphic_1_TMP.gif
+    :alt: image/Mesh_Help_Graphic_1_TMP.gif
+
 

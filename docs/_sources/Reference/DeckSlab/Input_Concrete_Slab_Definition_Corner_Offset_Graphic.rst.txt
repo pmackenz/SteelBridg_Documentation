@@ -1,7 +1,5 @@
-Input Concrete Slab Definition � Corner Offset Graphic
+Input Concrete Slab Definition & Corner Offset Graphic
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\image\ebd_Ebd229.gif" border="0" height="974" width="1214" alt="image\ebd_Ebd229.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd229.gif
+    :alt: image/ebd_Ebd229.gif

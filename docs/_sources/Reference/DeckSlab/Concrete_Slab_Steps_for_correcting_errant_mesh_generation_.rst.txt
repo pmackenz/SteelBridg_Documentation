@@ -1,12 +1,11 @@
 Concrete Slab - Steps for correcting errant mesh generation.
 ======================================================
 
-<P>Some simple dos and don�ts:</P>
-<OL>
- <P>
- <LI style="font-size:8pt; ">Keep the meshing region as simple as possible. Create multiple regions if necessary.<BR></LI>
- <LI style="font-size:8pt; ">Do not change member lines within mesh regions.<BR></LI></P>
-</OL>
-<P style="margin-left:23.75pt;"><IMG src="..\..\image\ebd_Ebd226.gif" border="0" height="1099" width="1132" alt="image\ebd_Ebd226.gif"></P>
-</BODY>
-</HTML>
+Some simple dos and don'ts:
+
+#. Keep the meshing region as simple as possible. Create multiple regions if necessary.<BR></LI>
+#. Do not change member lines within mesh regions.<BR></LI></P>
+
+.. image:: ../../image/ebd_Ebd226.gif
+    :alt: image/ebd_Ebd226.gif
+

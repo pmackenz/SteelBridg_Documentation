@@ -18,9 +18,7 @@
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="[SS-5.1.2] Compute Capacities" href="../Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.html" />
-    <link rel="prev" title="Plate Properties" href="Plate_Properties.html" /> 
+    <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,29 +37,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition � Corner Offset Graphic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Mesh_Generator_Notes.html">Concrete Slab Mesh Generator Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html">Concrete Slab - Steps for checking composite member generation.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_correcting_errant_mesh_generation_.html">Concrete Slab - Steps for correcting errant mesh generation.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Modeling_Notes.html">Concrete Slab Modeling Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Graphic.html">Input Concrete Slab Definition Graphic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Expansion_Joint.html">Concrete Slab Expansion Joint</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Plate_Properties.html">Plate Properties</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Concrete Slab - Steps for checking the slab mesh.</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
@@ -80,7 +59,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../theory.html">Theory</a> &raquo;</li>
       <li>Concrete Slab - Steps for checking the slab mesh.</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/DeckSlab/Concrete_Slab_Steps_for_checking_the_slab_mesh_.rst.txt" rel="nofollow"> View page source</a>
@@ -94,22 +72,23 @@
   <section id="concrete-slab-steps-for-checking-the-slab-mesh">
 <h1>Concrete Slab - Steps for checking the slab mesh.<a class="headerlink" href="#concrete-slab-steps-for-checking-the-slab-mesh" title="Permalink to this heading"></a></h1>
 <ol class="arabic simple">
-<li><p>View the model in the FEM view.&lt;BR&gt;&lt;/LI&gt;</p></li>
-<li><p>Set only the line members ON.&lt;BR&gt;&lt;/LI&gt;</p></li>
-<li><p>Set the view to XZ plane.&lt;BR&gt;&lt;/LI&gt;</p></li>
-<li><p>Set shrink ON.&lt;BR&gt;&lt;/LI&gt;</p></li>
-<li><p>Observe that the corners of the plates coincide with breaks in the line members. The shrink option shows where the member node locations are by shrinking the member between all connecting nodes.  Turn on the point label option also, although this mode is not very useful unless the view is zoomed up enough to not blur all the node labels together.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p></li>
+<li><p>View the model in the FEM view.</p></li>
+<li><p>Set only the line members ON.</p></li>
+<li><p>Set the view to XZ plane.</p></li>
+<li><p>Set shrink ON.</p></li>
+<li><p>Observe that the corners of the plates coincide with breaks in the line members.
+The shrink option shows where the member node locations are by shrinking
+the member between all connecting nodes.  Turn on the point label option
+also, although this mode is not very useful unless the view is zoomed up
+enough to not blur all the node labels together.</p></li>
 </ol>
-<p>&lt;IMG src=”....imageMesh_Help_Graphic_1_TMP.gif” border=”0” height=”426” width=”820” alt=”imageMesh_Help_Graphic_1_TMP.gif”&gt;&lt;/P&gt;</p>
+<img alt="image/Mesh_Help_Graphic_1_TMP.gif" src="../../_images/Mesh_Help_Graphic_1_TMP.gif" />
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Plate_Properties.html" class="btn btn-neutral float-left" title="Plate Properties" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.html" class="btn btn-neutral float-right" title="[SS-5.1.2] Compute Capacities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

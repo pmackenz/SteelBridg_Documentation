@@ -83,13 +83,10 @@ Deck Slab
 
     Reference/DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.rst
     Reference/DeckSlab/Concrete_Slab_Mesh_Generator_Notes.rst
-    Reference/DeckSlab/Concrete_Slab_Steps_for_checking_composite_member_generation_.rst
-    Reference/DeckSlab/Concrete_Slab_Steps_for_correcting_errant_mesh_generation_.rst
     Reference/DeckSlab/Concrete_Slab_Modeling_Notes.rst
     Reference/DeckSlab/Input_Concrete_Slab_Definition_Graphic.rst
     Reference/DeckSlab/Concrete_Slab_Expansion_Joint.rst
     Reference/DeckSlab/Plate_Properties.rst
-    Reference/DeckSlab/Concrete_Slab_Steps_for_checking_the_slab_mesh_.rst
 
 ****************
 Capacity and Rating Theory
