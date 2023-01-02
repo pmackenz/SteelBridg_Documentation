@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\HTMLHELP.css">
- <TITLE>Example of How BRIDG Generates Live Load Envelopes</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Example of How BRIDG Generates Live Load Envelopes</H1>
+Example of How BRIDG Generates Live Load Envelopes
+======================================================
+
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P><IMG src="..\image\ebd_Ebd55.gif" border=0 height=5981 width=4909 alt="image\ebd_Ebd55.gif"></P>
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>

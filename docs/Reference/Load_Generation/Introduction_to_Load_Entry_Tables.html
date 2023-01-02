@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Introduction to Load Entry Tables &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Load_Generation_Theory_of_Operation.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" /> 
+    <link rel="next" title="Load Generation Theory of Operation" href="Load_Generation_Theory_of_Operation.html" />
+    <link rel="prev" title="3D Live Load Modeling Guidelines for Truss Bridges" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,9 +39,35 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Impact_Factor_Calculation.html">Impact Factor Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html">3D Live Load Modeling Guidelines for Truss Bridges</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction to Load Entry Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Theory_of_Operation.html">Load Generation Theory of Operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Example_of_How_BRIDG_Generates_Live_Load_Envelopes.html">Example of How BRIDG Generates Live Load Envelopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation.html">Load Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Placement.html">Live Load Placement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
@@ -61,7 +87,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../theory.html">Theory</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Introduction to Load Entry Tables</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,20 +97,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”..HTMLHELP.css”&gt;
-&lt;TITLE&gt;Introduction to Load Entry Tables&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”..BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;Introduction to Load Entry Tables&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
+  <section id="introduction-to-load-entry-tables">
+<h1>Introduction to Load Entry Tables<a class="headerlink" href="#introduction-to-load-entry-tables" title="Permalink to this heading"></a></h1>
+<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;There are eleven data tables that are used to define the non gravity loads on a model.  Read the discussion on load &lt;A href=”Load_Combination_Theory.html”&gt;combination theory&lt;/A&gt; to see how and when the data specified in the following tables are used.&lt;/P&gt;
 &lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryDead_LoadsDead_Load_Defintion.html”&gt;&lt;span style=”font-weight:normal; “&gt;Dead Load Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
@@ -92,13 +107,13 @@
 &lt;H1&gt;&lt;A href=”..Data_EntryDead_LoadsSuperimposed_Dead_Load_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Superimposed Dead Load Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;Use this table to specify nodal or member loads for the superimposed dead load stage.&lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryLive_LoadsLive_Load_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Live Load Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;A ?Truck? can have static loads associated with it.  These can be either nodal or member forces that are applied to the model with the moving loads.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;A �Truck� can have static loads associated with it.  These can be either nodal or member forces that are applied to the model with the moving loads.&lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryLive_LoadsTruck_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Truck Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;BRIDG uses the word ?Truck? quite loosely.  It is used to reference a collection of static and moving loads.  This table is used to define the axle loads and their spacing.  It also is used to define the lane load forces.  This entry in addition to the ?Live Load Definition? create a complete set of loadings that can be referenced by one name, i.e. the Truck Name.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;BRIDG uses the word �Truck� quite loosely.  It is used to reference a collection of static and moving loads.  This table is used to define the axle loads and their spacing.  It also is used to define the lane load forces.  This entry in addition to the �Live Load Definition� create a complete set of loadings that can be referenced by one name, i.e. the Truck Name.&lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryLive_LoadsLive_Load_Envelope_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Live Load Envelope Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;BRIDG positions the movable portion of a Truck?s loads along a path in discrete iterations.  For each iteration, the forces throughout the bridge are scanned and a set of envelopes are generated.  This table is used to define how the moving loads are incrementally positioned. &lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;BRIDG positions the movable portion of a Truck�s loads along a path in discrete iterations.  For each iteration, the forces throughout the bridge are scanned and a set of envelopes are generated.  This table is used to define how the moving loads are incrementally positioned. &lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryLive_LoadsTruck_Group_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Truck Group Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;This table has a dual purpose. It is used to create a collection of one or more trucks that are used in conjunction with the Lane Group Definition to specify what trucks to use when generating a load combination envelope. It also is used to specify the &lt;span style=”font-weight:bold; “&gt;axle force multiplier&lt;/span&gt; and &lt;span style=”font-weight:bold; “&gt;ultimate load factors&lt;/span&gt; to apply to the truck?s loads when used in the specified group.  &lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;This table has a dual purpose. It is used to create a collection of one or more trucks that are used in conjunction with the Lane Group Definition to specify what trucks to use when generating a load combination envelope. It also is used to specify the &lt;span style=”font-weight:bold; “&gt;axle force multiplier&lt;/span&gt; and &lt;span style=”font-weight:bold; “&gt;ultimate load factors&lt;/span&gt; to apply to the truck�s loads when used in the specified group.  &lt;/P&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;There is also the Numerator / Denominator switch that tells the program whether the loads for this truck in the group will be applied to the Numerator or Denominator of the rating equation.  BRIDG keeps these loads separate for when the rating equation requires that not all of the live loads be summed together.&lt;/P&gt;
 &lt;H1&gt;&lt;A href=”..Data_EntryLive_LoadsLane_Group_Definition.html”&gt;&lt;span style=”font-weight:normal; “&gt;Lane Group Definition&lt;/span&gt;&lt;/A&gt; &lt;/H1&gt;
@@ -113,13 +128,14 @@
 &lt;P style=”margin-left:36.00pt;”&gt;This is where all the entry tables listed above come together to form a bridge loading condition.  Only load combinations generate member capacities and ratings.&lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;</p>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Load_Generation_Theory_of_Operation.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html" class="btn btn-neutral float-left" title="3D Live Load Modeling Guidelines for Truss Bridges" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Load_Generation_Theory_of_Operation.html" class="btn btn-neutral float-right" title="Load Generation Theory of Operation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

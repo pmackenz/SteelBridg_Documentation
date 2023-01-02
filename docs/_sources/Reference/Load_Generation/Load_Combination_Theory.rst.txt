@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\HTMLHELP.css">
- <TITLE>Load Combination Theory</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<P><span style="font-weight:bold; ">Load Combination Theory</span></P>
+Load Combination Theory
+======================================================
+
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P>The envelope data used in a load combination is computed using the dead load data set collections, and the Truck-Path envelopes.</P>
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
@@ -55,6 +47,6 @@
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P><span style="font-weight:bold; ">Combinations</span></P>
 <P>The forces used when rating a member are created by combining the following force data sets with the appropriate factors.</P>
-<P>The term <span style="font-weight:bold; ">WCTPE</span> refers to the worst case live load forces that result when scanning all of the possible truck and lane configurations specified by the Lane Group and Truck Group combination. For example, all of the truck loading configurations shown in the “<A href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</A> ” would be scanned and the most extreme value for the requested force type (Max Moment, Max Shear, etc. ) would be saved as the WCTPE.  There are in fact two WCTPE’s calculated, one for the Numerator and one for the Denominator portions of the equations.  Which trucks contribute to which is defined in the <A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">Truck Group definition</A> table.</P>
+<P>The term <span style="font-weight:bold; ">WCTPE</span> refers to the worst case live load forces that result when scanning all of the possible truck and lane configurations specified by the Lane Group and Truck Group combination. For example, all of the truck loading configurations shown in the ï¿½<A href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</A> ï¿½ would be scanned and the most extreme value for the requested force type (Max Moment, Max Shear, etc. ) would be saved as the WCTPE.  There are in fact two WCTPEï¿½s calculated, one for the Numerator and one for the Denominator portions of the equations.  Which trucks contribute to which is defined in the <A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">Truck Group definition</A> table.</P>
 </BODY>
 </HTML>

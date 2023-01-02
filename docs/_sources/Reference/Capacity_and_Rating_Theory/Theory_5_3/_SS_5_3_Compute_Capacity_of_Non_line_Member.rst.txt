@@ -1,16 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\..\HTMLHELP.css">
- <TITLE>[SS- 5.3] Compute Capacity of Non-line Member</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>[SS- 5.3] Compute Capacity of Non-line Member</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\..\image\ebd_Ebd198.gif" border="0" height="3113" width="2308" alt="image\ebd_Ebd198.gif"></P>
-</BODY>
-</HTML>
+[SS- 5.3] Compute Capacity of Non-line Member
+======================================================
+
+.. image:: ../../../image/ebd_Ebd198.gif
+    :alt: image/ebd_Ebd198.gif
+

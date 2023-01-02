@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\HTMLHELP.css">
- <TITLE>Points of Interest</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Points of Interest</H1>
+Points of Interest
+======================================================
+
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P><span style="font-weight:bold; ">Points of Interest for Line Member Data Sets</span></P>
 <P>POIs are placed at the ends of every member line and by default at every 1/20 of the member length.  The distance between the POIs can be changed but it is constrained to not exceed ten feet or be less then one foot. POIs are also placed at every Rating Location.  Consequently, the number of data sets per collection on a line member is a function of the members length, and the number of explicit rating locations.</P>

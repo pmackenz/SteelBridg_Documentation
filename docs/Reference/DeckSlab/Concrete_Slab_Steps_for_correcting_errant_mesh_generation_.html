@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Concrete Slab - Steps for correcting errant mesh generation. &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Concrete_Slab_Modeling_Notes.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" /> 
+    <link rel="next" title="Concrete Slab Modeling Notes" href="Concrete_Slab_Modeling_Notes.html" />
+    <link rel="prev" title="Concrete Slab - Steps for checking composite member generation." href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,9 +39,29 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition � Corner Offset Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Mesh_Generator_Notes.html">Concrete Slab Mesh Generator Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html">Concrete Slab - Steps for checking composite member generation.</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Concrete Slab - Steps for correcting errant mesh generation.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Modeling_Notes.html">Concrete Slab Modeling Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Concrete_Slab_Definition_Graphic.html">Input Concrete Slab Definition Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Expansion_Joint.html">Concrete Slab Expansion Joint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plate_Properties.html">Plate Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concrete_Slab_Steps_for_checking_the_slab_mesh_.html">Concrete Slab - Steps for checking the slab mesh.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
@@ -61,7 +81,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../theory.html">Theory</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Concrete Slab - Steps for correcting errant mesh generation.</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/DeckSlab/Concrete_Slab_Steps_for_correcting_errant_mesh_generation_.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,20 +91,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”....HTMLHELP.css”&gt;
-&lt;TITLE&gt;Concrete Slab - Steps for correcting errant mesh generation.&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”....BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;Concrete Slab - Steps for correcting errant mesh generation.&lt;/H1&gt;
-&lt;P&gt;Some simple dos and don?ts:&lt;/P&gt;
+  <section id="concrete-slab-steps-for-correcting-errant-mesh-generation">
+<h1>Concrete Slab - Steps for correcting errant mesh generation.<a class="headerlink" href="#concrete-slab-steps-for-correcting-errant-mesh-generation" title="Permalink to this heading"></a></h1>
+<p>&lt;P&gt;Some simple dos and don�ts:&lt;/P&gt;
 &lt;OL&gt;</p>
 <blockquote>
 <div><p>&lt;P&gt;
@@ -95,13 +104,14 @@
 &lt;P style=”margin-left:23.75pt;”&gt;&lt;IMG src=”....imageebd_Ebd226.gif” border=”0” height=”1099” width=”1132” alt=”imageebd_Ebd226.gif”&gt;&lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;</p>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Concrete_Slab_Modeling_Notes.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Concrete_Slab_Steps_for_checking_composite_member_generation_.html" class="btn btn-neutral float-left" title="Concrete Slab - Steps for checking composite member generation." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Concrete_Slab_Modeling_Notes.html" class="btn btn-neutral float-right" title="Concrete Slab Modeling Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

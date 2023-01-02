@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Step 5B - The internal tables and ACCESS interface." href="Step_5B_The_internal_tables_and_ACCESS_interface_.html" />
-    <link rel="prev" title="Cross-Beam Example" href="../../examples/crossbeam_example.html" /> 
+    <link rel="next" title="Step 3 - The Excel Input File" href="Step_3_The_Excel_Input_File.html" />
+    <link rel="prev" title="Getting Started" href="Getting_Started.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,23 +40,17 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Getting_Started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 2 - The Data Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../examples/truss_example.html">Truss Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/stringer_example.html">Stringer Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/crossbeam_example.html">Cross-Beam Example</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 2 - The Data Viewer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5B_The_internal_tables_and_ACCESS_interface_.html">Step 5B - The internal tables and ACCESS interface.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example.html">Truss Example</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
 
         </div>
@@ -73,7 +67,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+          <li><a href="Getting_Started.html">Getting Started</a> &raquo;</li>
       <li>Step 2 - The Data Viewer</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Tutorials/Preview/Step_2_The_Data_Viewer.rst.txt" rel="nofollow"> View page source</a>
@@ -86,55 +80,78 @@
              
   <section id="step-2-the-data-viewer">
 <h1>Step 2 - The Data Viewer<a class="headerlink" href="#step-2-the-data-viewer" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Most of the work is done in the data viewer.  From this window you can review graphically the input model as well as analysis results.  BRIDG uses our �Data Driven Data� system, which has the program work only as much as necessary to display the requested plot. For example, a request for plotting section shapes will take very little time and result in an almost instantaneous plot.  Another request for dead load moments will cause the program to initiate the dead load analyzer and then plot the data. All subsequent dead load plots will be quickly displayed because more work is not required since all dead loads are done at one time. Live load plots will cause yet another delay as would capacity and rating plots.  This method is optimal for model checking and progressing through to the final results of capacities and ratings.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;&lt;IMG src=”....imageebd_Ebd166.gif” border=”0” height=”135” width=”326” alt=”imageebd_Ebd166.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;To start the viewer, select the third icon from the right on the main window tool bar.  This icon looks like a graph and is next to the one with the letters RUN. The RUN icon will cause the program to solve for all forces, member capacities and ratings. Use the RUN button it you do not want to step through the process using the viewer. You can have more then one viewer operating at one time.  To start another viewer, make the editor window the current one, and then select the viewer icon again.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;The viewer window operates very similar to the editor window.  Depending on the type of data being displayed, you will see either a 3D image or a 2D graph. What is graphed is selected by the �View Mode Explorer� that is in the left side panel.  The top right pane is the graphics area, and the bottom right pane is a dialog with any optional switches and controls.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd167.gif” border=”0” height=”237” width=”650” alt=”imageebd_Ebd167.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;The viewer has the controls shown in the graphic above. Not all of these controls are available in every view, and some might be �grayed out� or not visable.&lt;/P&gt;
-&lt;UL&gt;</p>
-<blockquote>
-<div><p>&lt;P&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;Mouse - Zoom Mode&lt;/span&gt;: Select this button to put the viewer into mouse zoom mode.  You can then zoom up on an area of the plot by holding down the left mouse button and scribing a zoom area rectangle. Also, a double click on the left mouse button will cause the window to zoom in about the center of the view.  A double click on the right mouse button will cause the window to zoom out.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;Mouse - Pan Mode&lt;/span&gt;: In this mode use the mouse to pan the view. While holding down the left mouse button, move the mouse, and the view will track accordingly.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;Mouse - Pick Mode&lt;/span&gt;: Some views allow you to select object for information or manipulation.  Select this button to place the view in object pick mode.  &lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;Some graphs, such as Results, allow you to select a member to launch a detail graph about that member. Other graphs do not have that feature active yet, so nothing will happen.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;3D View Rotation Controls&lt;/span&gt;: These controls will rotate the model in the 3D view about the view�s X and Z axis.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;View Pan Controls&lt;/span&gt;: These controls will pan the view in the directions indicated.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;span style=”font-weight:bold; “&gt;Zoom to Fit in Window&lt;/span&gt;: This will zoom the view so that the entire plot is visable.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
-</div></blockquote>
-<p>&lt;/UL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;For now, please do the following:&lt;/P&gt;
-&lt;OL&gt;</p>
-<blockquote>
-<div><p>&lt;P&gt;
-&lt;LI style=”font-size:8pt; “&gt;Explore the COGO view and practice with the view controls.  The program will compute the COGO coordinates and �connect the dots� to give a preliminary display of the bridge members.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;Now select �View FEM�.  This will cause the program to generate the actual member properties, deck mesh, and finite element model.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;Next, open the �Results� folder and select the �Full Model View�  This will launch the finite element analyzer.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;View the displaced plot and explore the member graphics by selecting a member from the �Member Actions� folder.  The member selector works from within the 3D results view but multiple member action views is not working so close the current one before launching another.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
-</div></blockquote>
-<p>&lt;/OL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;A href=”Step_3_The_Excel_Input_File.html”&gt;Please proceed to step 3.&lt;/A&gt; &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageebd_Ebd168.gif” border=”0” height=”426” width=”695” alt=”imageebd_Ebd168.gif”&gt;&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p>Most of the work is done in the data viewer.
+From this window you can review graphically the input model
+as well as analysis results.  BRIDG uses our “Data Driven Data” system,
+which has the program work only as much as necessary to display the
+requested plot. For example, a request for plotting section shapes will
+take very little time and result in an almost instantaneous plot.
+Another request for dead load moments will cause the program to
+initiate the dead load analyzer and then plot the data.
+All subsequent dead load plots will be quickly displayed because more
+work is not required since all dead loads are done at one time.
+Live load plots will cause yet another delay as would capacity and rating plots.
+This method is optimal for model checking and progressing through to the final
+results of capacities and ratings.</p>
+<img alt="image/ebd_Ebd166.gif" src="../../_images/ebd_Ebd166.gif" />
+<p>To start the viewer, select the third icon from the right on the main
+window tool bar.  This icon looks like a graph and is next to the one with
+the letters RUN. The RUN icon will cause the program to solve for all forces,
+member capacities and ratings. Use the RUN button it you do not want to step
+through the process using the viewer. You can have more then one viewer
+operating at one time.  To start another viewer, make the editor window the
+current one, and then select the viewer icon again.</p>
+<p>The viewer window operates very similar to the editor window.
+Depending on the type of data being displayed, you will see either a 3D image
+or a 2D graph. What is graphed is selected by the “View Mode Explorer”
+that is in the left side panel.  The top right pane is the graphics area,
+and the bottom right pane is a dialog with any optional switches and controls.</p>
+<img alt="image/ebd_Ebd167.gif" src="../../_images/ebd_Ebd167.gif" />
+<p>The viewer has the controls shown in the graphic above.
+Not all of these controls are available in every view, and some might
+be “grayed out” or not visable.</p>
+<ul class="simple">
+<li><p>Mouse - Zoom Mode: Select this button to put the viewer into mouse zoom mode.
+You can then zoom up on an area of the plot by holding down the left mouse button
+and scribing a zoom area rectangle. Also, a double click on the left mouse button
+will cause the window to zoom in about the center of the view.
+A double click on the right mouse button will cause the window to zoom out.</p></li>
+<li><p>Mouse - Pan Mode: In this mode use the mouse to pan the view.
+While holding down the left mouse button, move the mouse, and the view will track accordingly.</p></li>
+<li><p>Mouse - Pick Mode: Some views allow you to select object for information or
+manipulation.  Select this button to place the view in object pick mode.</p></li>
+<li><p>Some graphs, such as Results, allow you to select a member to launch a detail
+graph about that member. Other graphs do not have that feature active yet,
+so nothing will happen.</p></li>
+<li><p>3D View Rotation Controls: These controls will rotate the model in the
+3D view about the view’s X and Z axis.</p></li>
+<li><p>View Pan Controls: These controls will pan the view in the directions indicated.</p></li>
+<li><p>Zoom to Fit in Window: This will zoom the view so that the entire plot is visable.</p></li>
+</ul>
+<p>For now, please do the following:</p>
+<ol class="arabic simple">
+<li><p>Explore the COGO view and practice with the view controls.
+The program will compute the COGO coordinates and “connect the dots” to
+give a preliminary display of the bridge members.</p></li>
+<li><p>Now select <cite>View FEM</cite>.  This will cause the program to generate the actual
+member properties, deck mesh, and finite element model.</p></li>
+<li><p>Next, open the <cite>Results</cite> folder and select the <cite>Full Model View</cite> .
+This will launch the finite element analyzer.</p></li>
+<li><p>View the displaced plot and explore the member graphics by selecting a
+member from the <cite>Member Actions</cite> folder.  The member selector works from
+within the 3D results view but multiple member action views is not working
+so close the current one before launching another.</p></li>
+</ol>
+<p><a class="reference internal" href="Step_3_The_Excel_Input_File.html#step-3-the-excel-input-file"><span class="std std-ref">Step 3 - The Excel Input File</span></a></p>
+<img alt="image/ebd_Ebd168.gif" src="../../_images/ebd_Ebd168.gif" />
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../examples/crossbeam_example.html" class="btn btn-neutral float-left" title="Cross-Beam Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Step_5B_The_internal_tables_and_ACCESS_interface_.html" class="btn btn-neutral float-right" title="Step 5B - The internal tables and ACCESS interface." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Getting_Started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Step_3_The_Excel_Input_File.html" class="btn btn-neutral float-right" title="Step 3 - The Excel Input File" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

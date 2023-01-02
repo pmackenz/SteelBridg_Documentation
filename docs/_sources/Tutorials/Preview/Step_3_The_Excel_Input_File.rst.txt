@@ -1,21 +1,41 @@
 Step 3 - The Excel Input File
 ================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Future releases of BRIDG will have bridge model building wizards and more editor features and graphics to facilitate data entry and validation.  As an alternative method of data entry, BRIDG has a special Excel file with macros built in that facility data entry, as well as native BRIDG BDF file format import and export functions.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>The following Excel files are provided:</P>
-<UL>
- <P style="margin-left:24.00pt;">
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">BRIDG.XLS</span>:  This file is the template and blank XLS file that you can use to start a new file of your own.  Make a copy this file to a new name if you want to start a new one from scratch.  <BR></LI>
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">UPGRADE.XLS</span>: This Excel file has one macro that will automatically convert older BRIDG XLS files into the latest version.  You don�t need this file but its good to know that it exist.<BR></LI>
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">AISC.XLS</span>: This is AISC shapes tables.  The internal BRIDG editor will have this data available soon, but for now it is only available in the XLS input file.  Important note, in keeping with the BRIDG philosophy that there should be one and only one and never never never never ever be more then one file responsible for the <span style="font-weight:bold; ">complete</span> description of the bridge, data from the AISC table is copied into the main file, and never referenced.  (Personal note from the designers of BRIDG. If you come across a program that uses external data base references required to complete the data set description, run do not walk away as fast as you can!)<BR></LI></P>
-</UL>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Please close out the program if it is still running and open the Excel file DEMO.XLS.  Wander around and see how the data is organized and entered.  If the Help button doesn�t work and you get the message �Find Help File Yourself� or something to that effect, browse and find the file BRIDG.HLP.  If you don�t have Microsoft Excel, simply go out and buy the Microsoft Office Suite, install it, then open those Excel files.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>If you make changes, you will need to translate the XLS file into a standard BDF file.  On the �Navigator� page, select the �Create BDF File� button.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><A href="Step_4_The_Help_System.html">Please close all Excel files and proceed to step 4</A> </P>
-</BODY>
-</HTML>
+Future releases of BRIDG will have bridge model building wizards and more 
+editor features and graphics to facilitate data entry and validation.  
+As an alternative method of data entry, BRIDG has a special Excel file with
+macros built in that facility data entry, as well as native BRIDG BDF file
+format import and export functions.
+
+The following Excel files are provided:
+
+* BRIDG.XLS:  This file is the template and blank XLS file that you can use 
+  to start a new file of your own.  Make a copy this file to a new name if you
+  want to start a new one from scratch.
+* UPGRADE.XLS: This Excel file has one macro that will automatically convert
+  older BRIDG XLS files into the latest version.  You don't need this file
+  but its good to know that it exist.
+* AISC.XLS: This is AISC shapes tables.
+  The internal BRIDG editor will have this data available soon, but for now
+  it is only available in the XLS input file.  Important note, in keeping with
+  the BRIDG philosophy that there should be one and only one and never never
+  never never ever be more then one file responsible for the
+  **complete description** of the bridge, data from the AISC table is copied
+  into the main file, and never referenced.
+  (Personal note from the designers of BRIDG. If you come across a program that
+  uses external data base references required to complete the data set description,
+  run do not walk away as fast as you can!)
+
+Please close out the program if it is still running and open the Excel file DEMO.XLS.
+Wander around and see how the data is organized and entered.
+If the Help button doesn't work and you get the message "Find Help File Yourself" or
+something to that effect, browse and find the file BRIDG.HLP.
+If you don't have Microsoft Excel, simply go out and buy the Microsoft Office Suite,
+install it, then open those Excel files.
+
+If you make changes, you will need to translate the XLS file into a standard BDF file.
+On the **Navigator** page, select the **Create BDF File** button.
+
+Please close all Excel files and proceed to step 4: 
+:ref:`Step 4 - The Help System`.  
+

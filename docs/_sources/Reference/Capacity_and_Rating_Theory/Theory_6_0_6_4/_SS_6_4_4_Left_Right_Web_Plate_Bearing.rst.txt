@@ -1,15 +1,5 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\..\HTMLHELP.css">
- <TITLE>[SS-6.4.4] Left &amp; Right Web Plate Bearing</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>[SS-6.4.4] Left &amp; Right Web Plate Bearing</H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\..\image\ebd_Ebd214.gif" border="0" height="2108" width="2052" alt="image\ebd_Ebd214.gif"></P>
-</BODY>
-</HTML>
+[SS-6.4.4] Left & Right Web Plate Bearing
+======================================================
+
+.. image:: ../../../image/ebd_Ebd214.gif
+    :alt: image/ebd_Ebd214.gif

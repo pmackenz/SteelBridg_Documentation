@@ -1,14 +1,15 @@
 Step 5 - Miscellaneous Features
 ================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>BRIDG has many features, to many to all be described here in the tutorial.  The following is a list of some of the more interesting and potentially useful ones.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<OL>
- <P>
- <LI style="font-size:8pt; "><A href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature.</A> <BR></LI>
- <LI style="font-size:8pt; "><A href="Step_5B_The_internal_tables_and_ACCESS_interface_.html">Step 5B - The internal tables and ACCESS interface.</A> <BR></LI>
- <LI style="font-size:8pt; "><A href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export.</A> <BR></LI></P>
-</OL>
-</BODY>
-</HTML>
+BRIDG has many features, to many to all be described here in the tutorial.
+The following is a list of some of the more interesting and potentially
+useful ones.
+
+.. toctree::
+    :maxdepth: 3
+
+    Step_5A_The_Capacity_and_Rating_TRACE_feature_.rst
+    Step_5B_The_internal_tables_and_ACCESS_interface_.rst
+    Step_5C_Finite_Element_Model_export.rst
+
+

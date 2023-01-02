@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>[SS-6.4.4] Left &amp; Right Web Plate Bearing &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="_SS_6_4_5_Pin_Shear_Double.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="_SS_6_4_3_Top_Bottom_Pin_Bearing.html" /> 
+    <link rel="next" title="[SS-6.4.5] Pin Shear (Double)" href="_SS_6_4_5_Pin_Shear_Double.html" />
+    <link rel="prev" title="[SS-6.4.3] Top &amp; Bottom Pin Bearing" href="_SS_6_4_3_Top_Bottom_Pin_Bearing.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,9 +39,67 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../input.html">Model Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../theory.html">Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../theory.html#input">Input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../theory.html#shapes">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../theory.html#load-generation">Load Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../theory.html#members">Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../theory.html#deck-slab">Deck Slab</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.html">[SS-5.1.2] Compute Capacities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_1.html">[SS-5.2.1.1] Compactness of Type A(1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_2.html">[SS-5.2.1.1] Compactness of Type A (2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_3_Mu_for_Type_A.html">[SS-5.2.1.3] Mu for Type A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_Cal__Capacity_for_Line_Member.html">[SS-5.2] Cal. Capacity for Line Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_3_1_1_Compute_Mr_for_Section_Type_A_unbraced_noncompact_section.html">[SS-5.2.1.3.1.1] Compute Mr for Section Type A, unbraced noncompact section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_3_1_Compute_Mu_for_Type_A_unbraced_noncompact_section.html">[SS-5.2.1.3.1] Compute Mu for Type A, unbraced noncompact section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_3_1_2_Compute_Rb_for_Section_Type_A_unbraced_noncampact_section.html">[SS-5.2.1.3.1.2] Compute Rb for Section Type A, unbraced noncampact section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html">[SS-5.2.1] Negative Moment Capacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_4_1_Compute_Mu_for_unbraced_noncompact_section_Type_A.html">[SS-5.2.2.4.1] Compute Mu for unbraced noncompact section Type A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_2_Compactness_of_Type_B_2.html">[SS-5.2.2.2] Compactness of Type B (2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_1_1_Compactness_of_Type_A_2_Unsymmetrical_Member_Check.html">[SS-5.2.2.1.1] Compactness of Type A (2) Unsymmetrical Member  Check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html">[SS-5.2.2] Positive Moment Capacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_4_Mu_for_Type_A.html">[SS-5.2.2.4] Mu for Type A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_2_Compactness_of_Type_B_1.html">[SS-5.2.2.2] Compactness of Type B (1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_3_1_Compute_Mp_Dcp_for_Type_C_B.html">[SS-5.2.2.3.1] Compute Mp, Dcp, for  Type C (B)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_3_Shear_capacity.html">[SS-5.2.3] Shear capacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_4_1_2_Compute_Rb_for_Section_Type_A.html">[SS-5.2.2.4.1.2] Compute Rb for Section Type A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_5_2_Compute_Mu_for_Section_Type_C_w_non_compact_negative_moment.html">[SS-5.2.2.5.2] Compute Mu,  for Section Type C w/ non-compact negative moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_1_Compactness_of_Type_A_1.html">[SS-5.2.2.1] Compactness of Type A (1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_3_1_Compute_Mp_Dcp_for_Type_C.html">[SS-5.2.2.3.1] Compute Mp, Dcp, for  Type C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_4_1_1_Compute_Mr_for_Type_A_unbraced_noncompact_section.html">[SS-5.2.2.4.1.1] Compute Mr for Type A, unbraced noncompact section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_1_Compactness_of_Type_A_2.html">[SS-5.2.2.1] Compactness of Type A (2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_5_1_Compute_Mu_for_Section_Type_C_w_compact_negative_moment.html">[SS-5.2.2.5.1] Compute Mu,  for Section Type C w/ compact negative moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_2_2_5_2_3/_SS_5_2_2_5_Compute_Mu_for_Section_Type_C.html">[SS-5.2.2.5] Compute Mu for Section Type C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_Compute_Capacity_of_Non_line_Member.html">[SS- 5.3] Compute Capacity of Non-line Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html">[SS-5.3.1] Compute Strength Ratio for Tension / Moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_2_Compute_Mp_Fe_for_compression_members.html">[SS- 5.3.2] Compute Mp, Fe, for compression members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_3_Compute_Mu_for_Box_Section.html">[SS-5.3.3] Compute Mu for Box Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_4_Compute_Mu_for_Open_Section.html">[SS-5.3.4] Compute Mu for Open Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html">[SS-5.3.5] Compute Strength Ratio for Compression / Moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Theory_5_3/_SS_5_3_6_Check_local_Slenderness_Ratio_for_Compression_Members.html">[SS-5.3.6] Check local Slenderness Ratio for Compression Members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_0_Compute_Member_Rating.html">[SS-6.0] Compute Member Rating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_1_Compute_Line_Member_Rating.html">[SS-6.1] Compute Line Member Rating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html">[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html">[SS-6.1.2] Compute Shear Rating Factor for WSDOT Inventory, Operating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_3_Compute_Bearing_Rating.html">[SS-6.3] Compute Bearing Rating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_3_1_Compute_Column_Capacity.html">[SS-6.3.1] Compute Column Capacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_3_2_Compute_Bearing_on_Stiffener.html">[SS-6.3.2] Compute Bearing on Stiffener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_3_3_Compute_Connection_to_Web.html">[SS-6.3.3] Compute Connection to Web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_Compute_Hinge_Rating.html">[SS-6.4] Compute Hinge Rating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_1_Link_Plate_Tension.html">[SS-6.4.1] Link Plate Tension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_1_1_Compute_Ag_An.html">[SS-6.4.1.1] Compute Ag, An</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_2_Link_Plate_Bearing.html">[SS-6.4.2] Link Plate Bearing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_3_Top_Bottom_Pin_Bearing.html">[SS-6.4.3] Top &amp; Bottom Pin Bearing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">[SS-6.4.4] Left &amp; Right Web Plate Bearing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_SS_6_4_5_Pin_Shear_Double.html">[SS-6.4.5] Pin Shear (Double)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../examples.html">Examples</a></li>
 </ul>
@@ -61,7 +119,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../../theory.html">Theory</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>[SS-6.4.4] Left &amp; Right Web Plate Bearing</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/Reference/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_4_4_Left_Right_Web_Plate_Bearing.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,30 +129,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”......HTMLHELP.css”&gt;
-&lt;TITLE&gt;[SS-6.4.4] Left &amp;amp; Right Web Plate Bearing&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”......BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;H1&gt;[SS-6.4.4] Left &amp;amp; Right Web Plate Bearing&lt;/H1&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”......imageebd_Ebd214.gif” border=”0” height=”2108” width=”2052” alt=”imageebd_Ebd214.gif”&gt;&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+  <section id="ss-6-4-4-left-right-web-plate-bearing">
+<h1>[SS-6.4.4] Left &amp; Right Web Plate Bearing<a class="headerlink" href="#ss-6-4-4-left-right-web-plate-bearing" title="Permalink to this heading"></a></h1>
+<img alt="image/ebd_Ebd214.gif" src="../../../_images/ebd_Ebd214.gif" />
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="_SS_6_4_3_Top_Bottom_Pin_Bearing.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="_SS_6_4_5_Pin_Shear_Double.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_SS_6_4_3_Top_Bottom_Pin_Bearing.html" class="btn btn-neutral float-left" title="[SS-6.4.3] Top &amp; Bottom Pin Bearing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_SS_6_4_5_Pin_Shear_Double.html" class="btn btn-neutral float-right" title="[SS-6.4.5] Pin Shear (Double)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

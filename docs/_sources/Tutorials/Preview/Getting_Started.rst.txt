@@ -1,0 +1,13 @@
+*************************
+Getting Started
+*************************
+
+.. toctree::
+    :maxdepth: 3
+
+    Step_2_The_Data_Viewer.rst
+    Step_3_The_Excel_Input_File.rst
+    Step_4_The_Help_System.rst
+    Step_5_Miscellaneous_Features.rst
+
+

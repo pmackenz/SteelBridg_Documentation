@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Input Concrete Slab Definition  Corner Offset Graphic</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Input Concrete Slab Definition – Corner Offset Graphic</H1>
+Input Concrete Slab Definition ï¿½ Corner Offset Graphic
+======================================================
+
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P><IMG src="..\..\image\ebd_Ebd229.gif" border="0" height="974" width="1214" alt="image\ebd_Ebd229.gif"></P>
 </BODY>

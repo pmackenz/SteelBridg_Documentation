@@ -1,11 +1,16 @@
 Step 4 - The Help System
 ================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>From the editor window or your favorite browser you can access the HTML version of the BRIDG help system (it is located in the DOCS sub-directory. Start with <span style="font-style:italic; ">BRIDGContents.html</span>).  Instead, the standard BRIDG.HLP format might be better for general browsing and learning more about our program, and you can access that from the icon in the BRIDG group or from the system explorer.  </P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>The entire specifications and theory for capacity and rating calculations have been documented and are in a convenient flow chart format.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><A href="Step_5_Miscellaneous_Features.html">Proceed to Step 5.</A> </P>
-</BODY>
-</HTML>
+From the editor window or your favorite browser you can access the HTML version 
+of the `BRIDG help system <https://pmackenz.github.io/SteelBridg_Documentation>`_  (it is located  at `https://pmackenz.github.io/SteelBridg_Documentation`).
+
+.. warning::
+
+    If you own a copy of BRIDG.HLP, be aware that this document only covers the noew outdated Bridg97 version
+    of the Steel Bridge rating package.  It **does not** cover any LRFR updates, not will it cover any
+    recent updates to the input tables.
+
+The entire specifications and theory for capacity and rating calculations have 
+been documented and are in a convenient flow chart format.
+
+Proceed to Step 5: :ref:`Step 5 - Miscellaneous Features`

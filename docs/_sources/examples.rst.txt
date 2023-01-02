@@ -2,29 +2,9 @@
 Examples
 ##########
 
-
-.. toctree::
-    :maxdepth: 3
-
-    examples/truss_example.rst
-    examples/stringer_example.rst
-    examples/crossbeam_example.rst
-
-
-.. toctree::
-    :maxdepth: 3
-
-    Tutorials/Preview/Step_2_The_Data_Viewer.rst
-    Tutorials/Preview/Step_5B_The_internal_tables_and_ACCESS_interface_.rst
-    Tutorials/Preview/Step_4_The_Help_System.rst
-    Tutorials/Preview/Step_5_Miscellaneous_Features.rst
-    Tutorials/Preview/Step_5C_Finite_Element_Model_export.rst
-    Tutorials/Preview/Step_3_The_Excel_Input_File.rst
-    Tutorials/Preview/Step_5A_The_Capacity_and_Rating_TRACE_feature_.rst
-
-
-
 .. toctree::
     :maxdepth: 3
 
     Tutorials/TRUSS_EXAMPLE/Truss_Example.rst
+    examples/stringer_example.rst
+    examples/crossbeam_example.rst

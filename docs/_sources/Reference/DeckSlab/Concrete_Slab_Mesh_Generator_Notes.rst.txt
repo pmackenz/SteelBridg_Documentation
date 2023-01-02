@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Concrete Slab Mesh Generator Notes</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Concrete Slab Mesh Generator Notes</H1>
+Concrete Slab Mesh Generator Notes
+======================================================
+
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P>The concrete mesh generator is one of the most complex subsystems in the entire program.  It is also the most likely process to not work as expected.  This page has some hints and rules to help discover and resolve mesh generation problems.</P>
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>

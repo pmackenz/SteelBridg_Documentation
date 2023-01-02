@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Step 5B - The internal tables and ACCESS interface. &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Step 5B - The internal tables and ACCESS interface &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Step 4 - The Help System" href="Step_4_The_Help_System.html" />
-    <link rel="prev" title="Step 2 - The Data Viewer" href="Step_2_The_Data_Viewer.html" /> 
+    <link rel="next" title="Step 5C - Finite Element Model export" href="Step_5C_Finite_Element_Model_export.html" />
+    <link rel="prev" title="Step 5A - The Capacity and Rating TRACE feature" href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,23 +40,22 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Getting_Started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Step_2_The_Data_Viewer.html">Step 2 - The Data Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Step 5B - The internal tables and ACCESS interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../examples/truss_example.html">Truss Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/stringer_example.html">Stringer Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/crossbeam_example.html">Cross-Beam Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_2_The_Data_Viewer.html">Step 2 - The Data Viewer</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 5B - The internal tables and ACCESS interface.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_3_The_Excel_Input_File.html">Step 3 - The Excel Input File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example.html">Truss Example</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
 
         </div>
@@ -73,8 +72,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../examples.html">Examples</a> &raquo;</li>
-      <li>Step 5B - The internal tables and ACCESS interface.</li>
+          <li><a href="Getting_Started.html">Getting Started</a> &raquo;</li>
+          <li><a href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a> &raquo;</li>
+      <li>Step 5B - The internal tables and ACCESS interface</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Tutorials/Preview/Step_5B_The_internal_tables_and_ACCESS_interface_.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -85,40 +85,56 @@
            <div itemprop="articleBody">
              
   <section id="step-5b-the-internal-tables-and-access-interface">
-<h1>Step 5B - The internal tables and ACCESS interface.<a class="headerlink" href="#step-5b-the-internal-tables-and-access-interface" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;BRIDG uses the standard Microsoft �Jet� database format for its database files.  Typically, the database files created by the program are not saved and only used during the run.  If you wish to review these tables or use them in an other application, then you need to instruct BRIDG to not delete the database file on program exit, and tell it to populate the tables with internal values if you need access to this information as well. &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;During program operation, the JET database files are only used for storage of the input data and other values that are not access time critical.  Because databases are much to slow to be used during the operation of the program, the program uses a proprietary internal memory resident database system that mirrors the database tables in the JET file. The program can be instructed to �populate� the JET database (i.e. copy the memory data into the database file�s tables.) upon demand.  All the values that have been computed up to the time the populate command is given are copied to the JET database.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;You do not need a copy of Microsoft�s ACCESS to view the JET database file.  The �editor� window in the program is a view into that file.  To view the internal tables, turn on the �internal table view� switch as described below.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;To view and save the JET database do the following. The database file name is always �~bridg##.mdb�, where ## is a number that is incremented from 01 up until a unique unused file name is found.  The directory is the temporary file directory that is specified in the options panels illustrated below.  A future option will be to save this file by the broidge file name and put it in the bridge file�s directory.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Remember that only data computed at the time the populate tables command is given will be written into the tables. Thus, it is often advantageous to do a complete analysis with the �FEA� tool bar button and then run the populate tables processor.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;First, tell BRIDG to not delete the database file upon exit.  To do this, first open the �Options� dialog by selecting the �View� menu and then selecting the �Options� menu pick.  The following panel will appear.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageOptions_General.gif” border=”0” height=”307” width=”421” alt=”imageOptions_General.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt; &amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;In order to view the internal tables set the following switch in the �Appearance� tab of the options dialog.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageOptions_Appearance.gif” border=”0” height=”305” width=”419” alt=”imageOptions_Appearance.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Now tell the program to populate the JET database tables. Use the �Diagnostics and File Export� tab in the options dialog.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”....imageOptions_Diagnostics.gif” border=”0” height=”305” width=”419” alt=”imageOptions_Diagnostics.gif”&gt;&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<h1>Step 5B - The internal tables and ACCESS interface<a class="headerlink" href="#step-5b-the-internal-tables-and-access-interface" title="Permalink to this heading"></a></h1>
+<p>BRIDG uses the SQLITE3 database format for its database files.
+Typically, the database files created by the program are not saved and only
+used during the run.  If you wish to review these tables or use them in an
+other application, then you need to instruct BRIDG to not delete the database
+file on program exit, and tell it to populate the tables with internal values
+if you need access to this information as well.</p>
+<p>During program operation, the SQLITE3 database files are only used for storage
+of the input data and other values that are not access time critical.
+Because databases are much to slow to be used during the operation of
+the program, the program uses a proprietary internal memory resident
+database system that mirrors the database tables in the SQLITE3 file.
+The program can be instructed to populate the SQLITE3 database
+(i.e. copy the memory data into the database file’s tables.) upon demand.
+All the values that have been computed up to the time the populate command
+is given are copied to the SQLITE3 database.</p>
+<p>You do not need a copy of an SQL database viewer, e.g., Microsoft’s ACCESS,
+to view the SQLITE3 database file.
+The <cite>editor</cite> window in the program is a view into that file.
+To view the internal tables, turn on the <cite>internal table view</cite> switch as
+described below.</p>
+<p>To view and save the SQLITE3 database do the following.
+The database file name is always <code class="docutils literal notranslate"><span class="pre">~bridg##.mdb</span></code>, where <code class="docutils literal notranslate"><span class="pre">##</span></code> is a number
+that is incremented from 01 up until a unique unused file name is found.
+The directory is the temporary file directory that is specified in the
+options panels illustrated below.  A future option will be to save this file
+by the broidge file name and put it in the bridge file’s directory.</p>
+<p>Remember that only data computed at the time the populate tables command
+is given will be written into the tables. Thus, it is often advantageous
+to do a complete analysis with the <cite>FEA</cite> tool bar button and then run the
+populate tables processor.</p>
+<p>First, tell BRIDG to not delete the database file upon exit.
+To do this, first open the <cite>Options</cite> dialog by selecting the <cite>View</cite> menu
+and then selecting the <cite>Options</cite> menu pick.
+The following panel will appear.</p>
+<img alt="image/Options_General.gif" src="../../_images/Options_General.gif" />
+<p>In order to view the internal tables set the following switch in the
+<cite>Appearance</cite> tab of the options dialog.</p>
+<img alt="image/Options_Appearance.gif" src="../../_images/Options_Appearance.gif" />
+<p>Now tell the program to populate the SQLITE3 database tables.
+Use the <cite>Diagnostics and File Export</cite> tab in the options dialog.</p>
+<img alt="image/Options_Diagnostics.gif" src="../../_images/Options_Diagnostics.gif" />
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Step_2_The_Data_Viewer.html" class="btn btn-neutral float-left" title="Step 2 - The Data Viewer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Step_4_The_Help_System.html" class="btn btn-neutral float-right" title="Step 4 - The Help System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html" class="btn btn-neutral float-left" title="Step 5A - The Capacity and Rating TRACE feature" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Step_5C_Finite_Element_Model_export.html" class="btn btn-neutral float-right" title="Step 5C - Finite Element Model export" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

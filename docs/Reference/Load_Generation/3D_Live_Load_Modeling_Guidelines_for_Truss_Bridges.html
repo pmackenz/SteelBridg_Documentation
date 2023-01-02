@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>3D Live Load Modeling Guidelines for Truss Bridges &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Introduction_to_Load_Entry_Tables.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Data_Set_Collections_Envelopes.html" /> 
+    <link rel="next" title="Introduction to Load Entry Tables" href="Introduction_to_Load_Entry_Tables.html" />
+    <link rel="prev" title="Data Set Collections ( Envelopes )" href="Data_Set_Collections_Envelopes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,9 +39,35 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Impact_Factor_Calculation.html">Impact Factor Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3D Live Load Modeling Guidelines for Truss Bridges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Theory_of_Operation.html">Load Generation Theory of Operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Example_of_How_BRIDG_Generates_Live_Load_Envelopes.html">Example of How BRIDG Generates Live Load Envelopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation.html">Load Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Placement.html">Live Load Placement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
@@ -61,7 +87,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../theory.html">Theory</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>3D Live Load Modeling Guidelines for Truss Bridges</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/Load_Generation/3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,20 +97,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>&lt;HTML&gt;
-&lt;HEAD&gt;
-&lt;!– $MVD$:fontset(“Courier New”,”Courier New”) –&gt;</p>
-<blockquote>
-<div><p>&lt;LINK rel=”StyleSheet” href=”..HTMLHELP.css”&gt;
-&lt;TITLE&gt;3D Live Load Modeling Guidelines for Truss Bridges&lt;/TITLE&gt;
-&lt;meta name=”copyright” value=”BRIDG 97 ? Alan K. Gordon and Associates”&gt;
-&lt;SCRIPT LANGUAGE=”JavaScript” TITLE=”BSSC Special Effects” SRC=”..BSSCDHTM.js”&gt;
-&lt;/SCRIPT&gt;</p>
-</div></blockquote>
-<p>&lt;/HEAD&gt;
-&lt;BODY onLoad=”BSSCOnLoad();” onClick=”BSSCOnClick();” onUnLoad=”BSSCOnUnload();”&gt;
-&lt;P&gt;3D Live Load Modeling Guidelines for Truss Bridges&lt;/P&gt;
-&lt;P&gt;&lt;A href=”BRIDG12.chm::/Lane_Group_Positioning_Methods.html”&gt;&lt;IMG SRC=”..imageBTN_Lane_Position_Methods64.gif” border=0 height=18 width=118 alt=”imageBTN_Lane_Position_Methods64.gif”&gt;&lt;/A&gt;&lt;/P&gt;
+  <section id="d-live-load-modeling-guidelines-for-truss-bridges">
+<h1>3D Live Load Modeling Guidelines for Truss Bridges<a class="headerlink" href="#d-live-load-modeling-guidelines-for-truss-bridges" title="Permalink to this heading"></a></h1>
+<p>&lt;P&gt;&lt;A href=”BRIDG12.chm::/Lane_Group_Positioning_Methods.html”&gt;&lt;IMG SRC=”..imageBTN_Lane_Position_Methods64.gif” border=0 height=18 width=118 alt=”imageBTN_Lane_Position_Methods64.gif”&gt;&lt;/A&gt;&lt;/P&gt;
 &lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&lt;span style=”font-size:12pt; font-weight:bold; “&gt;WSDOT Live Load Criteria&lt;/span&gt;&lt;/P&gt;
 &lt;P&gt;The live loads to be considered,  and the application thereof, shall be consistent with those described in &lt;span style=”font-style:italic; “&gt;Guide Specifications For Strength Evaluation of Existing Steel and Concrete Bridges, 1989&lt;/span&gt;, and the &lt;span style=”font-style:italic; “&gt;WSDOT Bridge Design Manual&lt;/span&gt;.  To summarize the criteria:&lt;/P&gt;
@@ -94,15 +109,15 @@
 &lt;LI style=”font-size:8pt; “&gt;In computing load effects,  one vehicle shall be considered present in each rating lane.&lt;BR&gt;&lt;/LI&gt;
 &lt;LI style=”font-size:8pt; “&gt;The positioning of the vehicle in each rating lane shall be according to AASHTO specifications.  These specifications require the vehicle to be positioned in such a way as to produce the extreme structural response under consideration.&lt;BR&gt;&lt;/LI&gt;
 &lt;LI style=”font-size:8pt; “&gt;For the purpose of load rating the number of lanes loaded will be limited to the number of existing striped lanes (or planned for new designs).&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;The rating lane shall be position between the curbs in accordance with the AASHTO specifications.  For BRIDG, the ?Left Edge? and ?Right Edge? specification will be the left and righr curb lines respectivly.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”font-size:8pt; “&gt;&lt;A name=”Lane_Width_Definition”&gt;&lt;/A&gt;Thelane width is as specified in the AASHTO Manual for Condition Evaluation of Bridges, 1994 (MCEB94), edtion 6.7.2.2.  To summarize, the lanes will be 12 ft wide on bridges with curb to curb distance of 24 ft and over.  Lanes are to be narrowed to allow 2 lanes for curb to curb distance between 24 ft. and 20 ft.  The ?Truck Clearance Width? is to be decreased from 10 ft. to allow 2 lanes for curb to curb distance between 20 ft. and 18 ft.  Only 1 lane is to be used where the curb to curb distance is less than 18 ft.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+&lt;LI style=”font-size:8pt; “&gt;The rating lane shall be position between the curbs in accordance with the AASHTO specifications.  For BRIDG, the �Left Edge� and �Right Edge� specification will be the left and righr curb lines respectivly.&lt;BR&gt;&lt;/LI&gt;
+&lt;LI style=”font-size:8pt; “&gt;&lt;A name=”Lane_Width_Definition”&gt;&lt;/A&gt;Thelane width is as specified in the AASHTO Manual for Condition Evaluation of Bridges, 1994 (MCEB94), edtion 6.7.2.2.  To summarize, the lanes will be 12 ft wide on bridges with curb to curb distance of 24 ft and over.  Lanes are to be narrowed to allow 2 lanes for curb to curb distance between 24 ft. and 20 ft.  The �Truck Clearance Width� is to be decreased from 10 ft. to allow 2 lanes for curb to curb distance between 20 ft. and 18 ft.  Only 1 lane is to be used where the curb to curb distance is less than 18 ft.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
 </div></blockquote>
 <p>&lt;/UL&gt;
 &lt;P style=”margin-left:18.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-left:18.00pt;”&gt;The following describes how to modify the parameters in the ?&lt;A href=”..Data_EntryGeneralInput_Analysis_Controls.html”&gt;AnalysisControls&lt;/A&gt;? table to adjust for narrow bridges.&lt;/P&gt;
-&lt;P style=”margin-left:36.00pt;”&gt;For bridges with a curb to curb distance of 24? to 20?, the SLaneWidth should be reduced to accommodate two lanes. The 10? wide truck will then be positioned within the SlaneWidth per the diagram on topic page page ?&lt;A href=”Lane_Group_Positioning_Methods.html”&gt;Lane Group Positioning Methods&lt;/A&gt;.? &lt;/P&gt;
+&lt;P style=”margin-left:18.00pt;”&gt;The following describes how to modify the parameters in the �&lt;A href=”..Data_EntryGeneralInput_Analysis_Controls.html”&gt;AnalysisControls&lt;/A&gt;� table to adjust for narrow bridges.&lt;/P&gt;
+&lt;P style=”margin-left:36.00pt;”&gt;For bridges with a curb to curb distance of 24� to 20�, the SLaneWidth should be reduced to accommodate two lanes. The 10� wide truck will then be positioned within the SlaneWidth per the diagram on topic page page �&lt;A href=”Lane_Group_Positioning_Methods.html”&gt;Lane Group Positioning Methods&lt;/A&gt;.� &lt;/P&gt;
 &lt;P style=”margin-left:36.00pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P class=”Block-Text” &gt;For bridges with curb to curb distance of 20? to 18?, the SLaneWidth and RLaneWidth values should both be the same reduced value. For example, on an 18? curb to curb bridges, use a value of 9? for both entries.  The truck will consequently not be positioned differently within the striped lane for the left, center, and right group positioning.&lt;/P&gt;
+&lt;P class=”Block-Text” &gt;For bridges with curb to curb distance of 20� to 18�, the SLaneWidth and RLaneWidth values should both be the same reduced value. For example, on an 18� curb to curb bridges, use a value of 9� for both entries.  The truck will consequently not be positioned differently within the striped lane for the left, center, and right group positioning.&lt;/P&gt;
 &lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&lt;span style=”font-size:12pt; font-weight:bold; “&gt;Live Load Modeling Guidelines&lt;/span&gt;&lt;/P&gt;
 &lt;P&gt;The purpose of these guidelines is to provide the rating engineer with a live load modeling scheme that will capture the significant load effects for typical, well conditioned truss bridges,  while reducing the time required to perform a detailed live load analysis.  Typical truss bridges are symmetrical about their longitudinal axes, with parallel trusses,  straight members, and uniform spacing of floor beams.  It is ultimately the responsibility of the rating engineer to determine the minimum rating factor for the structure. For unique and/or poorly conditioned structures,  this may require a more detailed evaluation of the live load effects.&lt;/P&gt;
@@ -130,13 +145,14 @@
 &lt;P&gt;&lt;IMG src=”..imageebd_Ebd48.gif” border=0 height=623 width=3702 alt=”imageebd_Ebd48.gif”&gt;This method of transverse placement will be used to determine the Inventory and Operating Ratings for reporting to the National Bridge Inventory. This method will also to used to determine if the bridge needs further investigation by the WSDOT Bridge Preservation office.  This investigation will determine the need for posting, restriction to permit (a.k.a. overload) vehicles, and need for retrofit or rehabilitation. &lt;/P&gt;
 &lt;/BODY&gt;
 &lt;/HTML&gt;</p>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Data_Set_Collections_Envelopes.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Introduction_to_Load_Entry_Tables.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Data_Set_Collections_Envelopes.html" class="btn btn-neutral float-left" title="Data Set Collections ( Envelopes )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Introduction_to_Load_Entry_Tables.html" class="btn btn-neutral float-right" title="Introduction to Load Entry Tables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

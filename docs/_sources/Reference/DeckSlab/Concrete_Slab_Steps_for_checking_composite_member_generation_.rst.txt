@@ -1,21 +1,8 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Concrete Slab - Steps for checking composite member generation.</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Concrete Slab - Steps for checking composite member generation.</H1>
-<OL>
- <P>
- <LI style="font-size:8pt; ">Select the Viewer window and then select the FEM view.  This will force the system to compute all the composite member data if not done already.<BR></LI>
- <LI style="font-size:8pt; ">Now return to the Editor view of the member and select the PLOT button.   Then select the Depth Profile view and check that the system shows concrete over the girder.<BR></LI>
- <LI style="font-size:8pt; ">Also check that you have defines shear connectors because the system will not consider the member composite unless both concrete and shear connectors are present.<BR></LI></P>
-</OL>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+Concrete Slab - Steps for checking composite member generation.
+======================================================
+
+#. Select the Viewer window and then select the FEM view.  This will force the system to compute all the composite member data if not done already.<BR></LI>
+#. Now return to the Editor view of the member and select the PLOT button.   Then select the Depth Profile view and check that the system shows concrete over the girder.<BR></LI>
+#. Also check that you have defines shear connectors because the system will not consider the member composite unless both concrete and shear connectors are present.<BR></LI></P>
+
 <P><IMG src="..\..\image\Mesh_Help_Graphic_2.gif" border="0" height="453" width="704" alt="image\Mesh_Help_Graphic_2.gif"></P>
-</BODY>
-</HTML>

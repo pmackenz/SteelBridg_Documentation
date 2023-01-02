@@ -1,11 +1,16 @@
+#######
 Theory
 #######
 
 SteelBridge is based on the AASHTO LRFD manual and
 the WSDOT Bridge Rating Manual.
 
+****************
+Input
+****************
+
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/INPUT/Defining_Members.rst
     Reference/INPUT/Editor_Key_Assignments.rst
@@ -13,8 +18,12 @@ the WSDOT Bridge Rating Manual.
     Reference/INPUT/Input_Local_Member_Orientation.rst
     Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.rst
 
+****************
+Shapes
+****************
+
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/Shapes/Standard_Shape_Properties.rst
     Reference/Shapes/Shape_Properties.rst
@@ -23,8 +32,12 @@ the WSDOT Bridge Rating Manual.
     Reference/Shapes/Built_up_Shape_Properties.rst
     Reference/Shapes/Shape_Geometry_Nomenclature.rst
 
+****************
+Load Generation
+****************
+
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/Load_Generation/Impact_Factor_Calculation.rst
     Reference/Load_Generation/Data_Set_Collections_Envelopes.rst
@@ -42,8 +55,12 @@ the WSDOT Bridge Rating Manual.
     Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
     Reference/Load_Generation/Live_Load_Placement.rst
 
+****************
+Members
+****************
+
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/Members/Truss_Member_End_Releases.rst
     Reference/Members/Rotational_Member_End_Release_Guidelines.rst
@@ -57,8 +74,12 @@ the WSDOT Bridge Rating Manual.
     Reference/Members/Line_Member_Design_Properties.rst
     Reference/Members/Bearing_Seats.rst
 
+****************
+Deck Slab
+****************
+
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.rst
     Reference/DeckSlab/Concrete_Slab_Mesh_Generator_Notes.rst
@@ -69,6 +90,10 @@ the WSDOT Bridge Rating Manual.
     Reference/DeckSlab/Concrete_Slab_Expansion_Joint.rst
     Reference/DeckSlab/Plate_Properties.rst
     Reference/DeckSlab/Concrete_Slab_Steps_for_checking_the_slab_mesh_.rst
+
+****************
+Capacity and Rating Theory
+****************
 
 .. toctree::
     :maxdepth: 3

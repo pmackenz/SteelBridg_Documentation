@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Step 5A - The Capacity and Rating TRACE feature." href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html" />
-    <link rel="prev" title="Step 5C - Finite Element Model export" href="Step_5C_Finite_Element_Model_export.html" /> 
+    <link rel="next" title="Step 4 - The Help System" href="Step_4_The_Help_System.html" />
+    <link rel="prev" title="Step 2 - The Data Viewer" href="Step_2_The_Data_Viewer.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,23 +40,17 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Getting_Started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Step_2_The_Data_Viewer.html">Step 2 - The Data Viewer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 3 - The Excel Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../examples/truss_example.html">Truss Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/stringer_example.html">Stringer Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../examples/crossbeam_example.html">Cross-Beam Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_2_The_Data_Viewer.html">Step 2 - The Data Viewer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5B_The_internal_tables_and_ACCESS_interface_.html">Step 5B - The internal tables and ACCESS interface.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_4_The_Help_System.html">Step 4 - The Help System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5_Miscellaneous_Features.html">Step 5 - Miscellaneous Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5C_Finite_Element_Model_export.html">Step 5C - Finite Element Model export</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 3 - The Excel Input File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html">Step 5A - The Capacity and Rating TRACE feature.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../TRUSS_EXAMPLE/Truss_Example.html">Truss Example</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
 </ul>
 
         </div>
@@ -73,7 +67,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+          <li><a href="Getting_Started.html">Getting Started</a> &raquo;</li>
       <li>Step 3 - The Excel Input File</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Tutorials/Preview/Step_3_The_Excel_Input_File.rst.txt" rel="nofollow"> View page source</a>
@@ -86,34 +80,48 @@
              
   <section id="step-3-the-excel-input-file">
 <h1>Step 3 - The Excel Input File<a class="headerlink" href="#step-3-the-excel-input-file" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Future releases of BRIDG will have bridge model building wizards and more editor features and graphics to facilitate data entry and validation.  As an alternative method of data entry, BRIDG has a special Excel file with macros built in that facility data entry, as well as native BRIDG BDF file format import and export functions.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;The following Excel files are provided:&lt;/P&gt;
-&lt;UL&gt;</p>
-<blockquote>
-<div><p>&lt;P style=”margin-left:24.00pt;”&gt;
-&lt;LI style=”margin-left:24.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;BRIDG.XLS&lt;/span&gt;:  This file is the template and blank XLS file that you can use to start a new file of your own.  Make a copy this file to a new name if you want to start a new one from scratch.  &lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;UPGRADE.XLS&lt;/span&gt;: This Excel file has one macro that will automatically convert older BRIDG XLS files into the latest version.  You don�t need this file but its good to know that it exist.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.00pt;”&gt;&lt;span style=”font-weight:bold; “&gt;AISC.XLS&lt;/span&gt;: This is AISC shapes tables.  The internal BRIDG editor will have this data available soon, but for now it is only available in the XLS input file.  Important note, in keeping with the BRIDG philosophy that there should be one and only one and never never never never ever be more then one file responsible for the &lt;span style=”font-weight:bold; “&gt;complete&lt;/span&gt; description of the bridge, data from the AISC table is copied into the main file, and never referenced.  (Personal note from the designers of BRIDG. If you come across a program that uses external data base references required to complete the data set description, run do not walk away as fast as you can!)&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
-</div></blockquote>
-<p>&lt;/UL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Please close out the program if it is still running and open the Excel file DEMO.XLS.  Wander around and see how the data is organized and entered.  If the Help button doesn�t work and you get the message �Find Help File Yourself� or something to that effect, browse and find the file BRIDG.HLP.  If you don�t have Microsoft Excel, simply go out and buy the Microsoft Office Suite, install it, then open those Excel files.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;If you make changes, you will need to translate the XLS file into a standard BDF file.  On the �Navigator� page, select the �Create BDF File� button.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;A href=”Step_4_The_Help_System.html”&gt;Please close all Excel files and proceed to step 4&lt;/A&gt; &lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p>Future releases of BRIDG will have bridge model building wizards and more
+editor features and graphics to facilitate data entry and validation.
+As an alternative method of data entry, BRIDG has a special Excel file with
+macros built in that facility data entry, as well as native BRIDG BDF file
+format import and export functions.</p>
+<p>The following Excel files are provided:</p>
+<ul class="simple">
+<li><p>BRIDG.XLS:  This file is the template and blank XLS file that you can use
+to start a new file of your own.  Make a copy this file to a new name if you
+want to start a new one from scratch.</p></li>
+<li><p>UPGRADE.XLS: This Excel file has one macro that will automatically convert
+older BRIDG XLS files into the latest version.  You don’t need this file
+but its good to know that it exist.</p></li>
+<li><p>AISC.XLS: This is AISC shapes tables.
+The internal BRIDG editor will have this data available soon, but for now
+it is only available in the XLS input file.  Important note, in keeping with
+the BRIDG philosophy that there should be one and only one and never never
+never never ever be more then one file responsible for the
+<strong>complete description</strong> of the bridge, data from the AISC table is copied
+into the main file, and never referenced.
+(Personal note from the designers of BRIDG. If you come across a program that
+uses external data base references required to complete the data set description,
+run do not walk away as fast as you can!)</p></li>
+</ul>
+<p>Please close out the program if it is still running and open the Excel file DEMO.XLS.
+Wander around and see how the data is organized and entered.
+If the Help button doesn’t work and you get the message “Find Help File Yourself” or
+something to that effect, browse and find the file BRIDG.HLP.
+If you don’t have Microsoft Excel, simply go out and buy the Microsoft Office Suite,
+install it, then open those Excel files.</p>
+<p>If you make changes, you will need to translate the XLS file into a standard BDF file.
+On the <strong>Navigator</strong> page, select the <strong>Create BDF File</strong> button.</p>
+<p>Please close all Excel files and proceed to step 4:
+<a class="reference internal" href="Step_4_The_Help_System.html#step-4-the-help-system"><span class="std std-ref">Step 4 - The Help System</span></a>.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Step_5C_Finite_Element_Model_export.html" class="btn btn-neutral float-left" title="Step 5C - Finite Element Model export" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Step_5A_The_Capacity_and_Rating_TRACE_feature_.html" class="btn btn-neutral float-right" title="Step 5A - The Capacity and Rating TRACE feature." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Step_2_The_Data_Viewer.html" class="btn btn-neutral float-left" title="Step 2 - The Data Viewer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Step_4_The_Help_System.html" class="btn btn-neutral float-right" title="Step 4 - The Help System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

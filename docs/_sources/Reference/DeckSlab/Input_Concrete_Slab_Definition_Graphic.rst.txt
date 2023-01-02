@@ -1,14 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\HTMLHELP.css">
- <TITLE>Input Concrete Slab Definition Graphic</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>Input Concrete Slab Definition Graphic</H1>
+Input Concrete Slab Definition Graphic
+======================================================
+
 <P><A href="..\..\Data_Entry\Slab\Input_Concrete_Slab_Definition.html"><IMG SRC="..\..\image\BTN_Concrete_Slab_Definition64.gif" border="0" height="18" width="125" alt="image\BTN_Concrete_Slab_Definition64.gif"></A></P>
 <P style="margin-top:0;margin-bottom:0">&nbsp;</P>
 <P><IMG src="..\..\image\ebd_Ebd227.gif" border="0" height="1542" width="2069" alt="image\ebd_Ebd227.gif"></P>

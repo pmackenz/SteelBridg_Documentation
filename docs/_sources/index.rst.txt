@@ -11,6 +11,7 @@ Welcome to SteelBridg LRFR documentation!
     :maxdepth: 3
     :caption: Contents:
 
+    Tutorials/Preview/Getting_Started.rst
     input.rst
     theory.rst
     FAQ.rst

@@ -1,15 +1,6 @@
-<HTML>
-<HEAD>
-<!-- $MVD$:fontset("Courier New","Courier New") -->
- <LINK rel="StyleSheet" href="..\..\..\HTMLHELP.css">
- <TITLE>[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level</TITLE>
- <meta name="copyright" value="BRIDG 97 © Alan K. Gordon and Associates">
- <SCRIPT LANGUAGE="JavaScript" TITLE="BSSC Special Effects" SRC="..\..\..\BSSCDHTM.js">
- </SCRIPT>
-</HEAD>
-<BODY onLoad="BSSCOnLoad();" onClick="BSSCOnClick();" onUnLoad="BSSCOnUnload();">
-<H1>[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level </H1>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\..\..\image\ebd_Ebd207.gif" border="0" height="4770" width="3454" alt="image\ebd_Ebd207.gif"></P>
-</BODY>
-</HTML>
+[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level
+======================================================
+
+.. image:: ../../../image/ebd_Ebd207.gif
+    :alt: image/ebd_Ebd207.gif
+
