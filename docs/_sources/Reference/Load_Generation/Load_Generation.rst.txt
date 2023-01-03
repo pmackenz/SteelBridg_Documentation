@@ -4,29 +4,55 @@ Load Generation
 Theory
 --------
 
-<P>&nbsp;<A href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html">WSDOT 3D Live Load Modeling Guidelines for Truss Bridges</A> </P>
-<P>&nbsp;<A href="Load_Generation_Theory_of_Operation.html">Load Generation Theory of Operation</A> </P>
-<P>&nbsp;<A href="Load_Combination_Theory.html">Load Combination Theory</A> </P>
-<P>&nbsp;<A href="Live_Load_Placement.html">Live Load Placement</A>  </P>
-<P>&nbsp;<A href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</A> </P>
-<P>&nbsp;<A href="Example_of_How_BRIDG_Generates_Live_Load_Envelopes.html">Example of How BRIDG Generates Live Load Envelopes</A> </P>
-<P>&nbsp;<A href="Impact_Factor_Calculation.html">Impact Factor Calculation</A> </P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
+.. toctree::
+    :maxdepth: 2
+
+    3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.rst
+    Load_Generation_Theory_of_Operation.rst
+    Load_Combination_Theory.rst
+    Live_Load_Placement.rst
+    Example_of_Lane_Loading_Combinations_Using_LCR.rst
+    Example_of_How_BRIDG_Generates_Live_Load_Envelopes.rst
+    Impact_Factor_Calculation.rst
+
 
 Input Data Sheets
 -----------------------
 
-<P style="margin-left:36.00pt;">Dead Loads</P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Dead_Loads\Dead_Load_Defintion.html">Dead Load Defintion</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Dead_Loads\Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</A> </P>
-<P style="margin-left:36.00pt;">Trucks / Live Load Definition</P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Live_Load_Definition.html">Live Load Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Truck_Definition.html">Truck Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Live_Load_Envelope_Definition.html">Live Load Envelope Definition</A> </P>
-<P style="margin-left:36.00pt;">Load Combinations and Rating Factors</P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Lane_Group_Definition.html">Lane Group Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Truck_Group_Definition.html">Truck Group Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Rating_Factors.html">Rating Factors Definition</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Rating_and_Factors\Rate_Location.html">Rate Locations</A> </P>
-<P style="margin-left:36.00pt;">&nbsp;<A href="..\Data_Entry\Live_Loads\Load_Combination_Definition.html">Load Combination Definition</A> </P>
+.. toctree::
+    :maxdepth: 2
+
+    Data_Set_Collections_Envelopes.rst
+    Introduction_to_Load_Entry_Tables.rst
+    Points_of_Interest.rst
+    Live_Load_Multiple_Lane_Sequencing.rst
+    Load_Generation_Data_Sets.rst
+    Lane_Group_Positioning_Methods.rst
+    Multiple_Lane_Live_Load_Sequencing_Example.rst
+
+
+Dead Loads
+^^^^^^^^^^^^^^^^^
+
+    * :ref:`Dead Load Defintion`
+    * :ref:`Superimposed Dead Load Definition`
+
+Trucks / Live Load Definition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    * :ref:`Live Load Definition`
+    * :ref:`Truck Definition`
+    * :ref:`Live Load Envelope Definition`
+
+
+Load Combinations and Rating Factors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    * :ref:`Lane Group Definition`
+    * :ref:`Truck Group Definition`
+    * :ref:`Lane Load Reduction Definition`
+    * :ref:`Rating Factors for LFR`
+    * :ref:`Rating Factors for LRFR`
+    * :ref:`Rate Location`
+    * :ref:`Load Combination Definition`
+

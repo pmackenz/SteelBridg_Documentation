@@ -31,39 +31,52 @@ Parameters
 .. rubric:: COGO Path
 ..
 
-    This is a reference to an existing COGO path that will define center line for the Lane group.
+    This is a reference to an existing COGO path that will define center
+    line for the Lane group.
 
 .. rubric:: Start Distance
 ..
 
-    Distance from start of COGO path to start of Lane group.  Use this value to define where on the referenced COGO path the lane group starts.  It does not have to be at a bridge end.  Loads positioned off the bridge are not processed. 
+    Distance from start of COGO path to start of Lane group.
+    Use this value to define where on the referenced COGO path the
+    lane group starts.  It does not have to be at a bridge end.
+    Loads positioned off the bridge are not processed.
 
 .. rubric:: End Distance
 ..
 
-    Distance from start of COGO path to end of Lane group.  This value must be greater then the Start Distance. Use this value to define where on the referenced COGO path the lane group ends.  It does not have to be at the bridge ends.  Loads positioned off the bridge are not processed. 
+    Distance from start of COGO path to end of Lane group.
+    This value must be greater then the Start Distance.
+    Use this value to define where on the referenced COGO path the lane group ends.
+    It does not have to be at the bridge ends.
+    Loads positioned off the bridge are not processed.
 
 .. rubric:: Offset to Left Edge
 ..
 
-    Specify the <A href="../../Load_Generation/Live_Load_Placement.html">Left edge</A> , looking up station, as an offset distance from the center COGO path.
+    Specify the :ref:`Live Load Placement`:`Left edge`, looking up station,
+    as an offset distance from the center COGO path.
 
 .. rubric:: Offset to Right Edge
 ..
 
-    Specify the <A href="../../Load_Generation/Live_Load_Placement.html">Righteft edge</A> , looking up station, as an offset distance from the center COGO path.
+    Specify the :ref:`Live Load Placement`:`Righteft edge`,
+    looking up station, as an offset distance from the center COGO path.
 
 .. rubric:: Max Number Lanes</span>
 ..
 
-    When the <A href="../../Load_Generation/Lane_Group_Positioning_Methods.html">lane placement method</A> is CTR, LCR, or LCRQ then this value will limit the total number of lanes that are loaded on the bridge at one time.  This value must get greater then zero and is limited to the number of lanes that will fit between the right and left edges.
+    When the :ref:`Lane Group Positioning Methods` is `CTR`, `LCR`, or `LCRQ` then this
+    value will limit the total number of lanes that are loaded on the bridge at
+    one time.  This value must get greater then zero and is limited to the number
+    of lanes that will fit between the right and left edges.
 
 .. rubric:: Motion Mode</span>
 ..
 
     Select one of the automatic load generation modes or NONE.
 
-    * `CTR` - Center of Lane Group
-    * `LCR` - Left, Center, and Right
-    * `LCRQ` - Left, Left Quarter, Center, Right Quarter, Right
-    * `NONE` - Use this mode when the Truck group only references trucks  with static loads or sequenced movement.
+    :CTR:  Center of Lane Group
+    :LCR:  Left, Center, and Right
+    :LCRQ: Left, Left Quarter, Center, Right Quarter, Right
+    :NONE: Use this mode when the Truck group only references trucks  with static loads or sequenced movement.

@@ -33,29 +33,6 @@ Shapes
     Reference/Shapes/Shape_Geometry_Nomenclature.rst
 
 ****************
-Load Generation
-****************
-
-.. toctree::
-    :maxdepth: 2
-
-    Reference/Load_Generation/Impact_Factor_Calculation.rst
-    Reference/Load_Generation/Data_Set_Collections_Envelopes.rst
-    Reference/Load_Generation/3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.rst
-    Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst
-    Reference/Load_Generation/Load_Generation_Theory_of_Operation.rst
-    Reference/Load_Generation/Points_of_Interest.rst
-    Reference/Load_Generation/Example_of_Lane_Loading_Combinations_Using_LCR.rst
-    Reference/Load_Generation/Load_Combination_Theory.rst
-    Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.rst
-    Reference/Load_Generation/Example_of_How_BRIDG_Generates_Live_Load_Envelopes.rst
-    Reference/Load_Generation/Load_Generation_Data_Sets.rst
-    Reference/Load_Generation/Load_Generation.rst
-    Reference/Load_Generation/Lane_Group_Positioning_Methods.rst
-    Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
-    Reference/Load_Generation/Live_Load_Placement.rst
-
-****************
 Members
 ****************
 
@@ -74,6 +51,7 @@ Members
     Reference/Members/Line_Member_Design_Properties.rst
     Reference/Members/Bearing_Seats.rst
 
+
 ****************
 Deck Slab
 ****************
@@ -88,12 +66,31 @@ Deck Slab
     Reference/DeckSlab/Concrete_Slab_Expansion_Joint.rst
     Reference/DeckSlab/Plate_Properties.rst
 
+
+****************
+Load Generation
+****************
+
+.. toctree::
+    :maxdepth: 2
+
+    Reference/Load_Generation/Load_Combination_Theory.rst
+    Reference/Load_Generation/Load_Generation.rst
+    Reference/Load_Generation/Data_Set_Collections_Envelopes.rst
+    Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst
+    Reference/Load_Generation/Points_of_Interest.rst
+    Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.rst
+    Reference/Load_Generation/Load_Generation_Data_Sets.rst
+    Reference/Load_Generation/Lane_Group_Positioning_Methods.rst
+    Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
+
+
 ****************
 Capacity and Rating Theory
 ****************
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Reference/Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.rst
     Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_1.rst

@@ -1,45 +1,106 @@
 3D Live Load Modeling Guidelines for Truss Bridges
 ======================================================
 
-<P><A href="BRIDG12.chm::/Lane_Group_Positioning_Methods.html"><IMG SRC="..\image\BTN_Lane_Position_Methods64.gif" border=0 height=18 width=118 alt="image\BTN_Lane_Position_Methods64.gif"></A></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:12pt; font-weight:bold; ">WSDOT Live Load Criteria</span></P>
-<P>The live loads to be considered,  and the application thereof, shall be consistent with those described in <span style="font-style:italic; ">Guide Specifications For Strength Evaluation of Existing Steel and Concrete Bridges, 1989</span>, and the <span style="font-style:italic; ">WSDOT Bridge Design Manual</span>.  To summarize the criteria:</P>
-<UL>
- <P>
- <LI style="font-size:8pt; ">In computing load effects,  one vehicle shall be considered present in each rating lane.<BR></LI>
- <LI style="font-size:8pt; ">The positioning of the vehicle in each rating lane shall be according to AASHTO specifications.  These specifications require the vehicle to be positioned in such a way as to produce the extreme structural response under consideration.<BR></LI>
- <LI style="font-size:8pt; ">For the purpose of load rating the number of lanes loaded will be limited to the number of existing striped lanes (or planned for new designs).<BR></LI>
- <LI style="font-size:8pt; ">The rating lane shall be position between the curbs in accordance with the AASHTO specifications.  For BRIDG, the �Left Edge� and �Right Edge� specification will be the left and righr curb lines respectivly.<BR></LI>
- <LI style="font-size:8pt; "><A name="Lane_Width_Definition"></A>Thelane width is as specified in the AASHTO Manual for Condition Evaluation of Bridges, 1994 (MCEB94), edtion 6.7.2.2.  To summarize, the lanes will be 12 ft wide on bridges with curb to curb distance of 24 ft and over.  Lanes are to be narrowed to allow 2 lanes for curb to curb distance between 24 ft. and 20 ft.  The �Truck Clearance Width� is to be decreased from 10 ft. to allow 2 lanes for curb to curb distance between 20 ft. and 18 ft.  Only 1 lane is to be used where the curb to curb distance is less than 18 ft.<BR></LI></P>
-</UL>
-<P style="margin-left:18.00pt;">&nbsp;</P>
-<P style="margin-left:18.00pt;">The following describes how to modify the parameters in the �<A href="..\Data_Entry\General\Input_Analysis_Controls.html">AnalysisControls</A>� table to adjust for narrow bridges.</P>
-<P style="margin-left:36.00pt;">For bridges with a curb to curb distance of 24� to 20�, the SLaneWidth should be reduced to accommodate two lanes. The 10� wide truck will then be positioned within the SlaneWidth per the diagram on topic page page �<A href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</A>.� </P>
-<P style="margin-left:36.00pt;">&nbsp;</P>
-<P class="Block-Text" >For bridges with curb to curb distance of 20� to 18�, the SLaneWidth and RLaneWidth values should both be the same reduced value. For example, on an 18� curb to curb bridges, use a value of 9� for both entries.  The truck will consequently not be positioned differently within the striped lane for the left, center, and right group positioning.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-size:12pt; font-weight:bold; ">Live Load Modeling Guidelines</span></P>
-<P>The purpose of these guidelines is to provide the rating engineer with a live load modeling scheme that will capture the significant load effects for typical, well conditioned truss bridges,  while reducing the time required to perform a detailed live load analysis.  Typical truss bridges are symmetrical about their longitudinal axes, with parallel trusses,  straight members, and uniform spacing of floor beams.  It is ultimately the responsibility of the rating engineer to determine the minimum rating factor for the structure. For unique and/or poorly conditioned structures,  this may require a more detailed evaluation of the live load effects.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Because the maximum number of possible live load positionings for even a short truss bridge can become computationally prohibitive, the number of live load cases must be reduced.  These guidelines describe live load generation in terms of longitudinal step sizes for the movement of the trucks along the bridge and transverse lane positions between the curb lines.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-weight:bold; ">Minimum Longitudinal Step Size</span></P>
-<P>This is left up to the engineer, using the parameters in the <A href="..\Data_Entry\Live_Loads\Live_Load_Envelope_Definition.html">Live Load Envelope Definition</A> entry.  The truck motion mode AUTO will cause the truck to be placed over the Cross beams and Floor beams in the most critical manner, but it is left up to the user to define the number of mid span locations for axle loading.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-weight:bold; ">Transverse Placement of Rating Lanes</span></P>
-<UL>
- <P style="margin-bottom:6.00pt;">
- <LI style="margin-bottom:6.00pt;">Number of Rating Lanes is the equal to the number of lanes currently striped on the bridge..<BR></LI>
- <LI style="margin-bottom:6.00pt;">The number of design lanes is as specified by AASHTO Standard Specifications for Bridges.<BR></LI>
- <LI style="margin-bottom:6.00pt;">The transverse placement of rating lanes is guided by the Lane Shift Sensitivity Factor (LSSF).   This factor is used to determine if the response of the structure is sensitive to lane positioning.  <BR></LI></P>
-</UL>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>The Lane Shift Sensitivity Factor is computed by:</P>
-<P><span style="font-weight:bold; ">LSSF</span> = (# of DesignLanes - # of RatingLanes) / (# of RatingLanes)</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>The position of rating lanes is described in the following table:</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd48.gif" border=0 height=623 width=3702 alt="image\ebd_Ebd48.gif">This method of transverse placement will be used to determine the Inventory and Operating Ratings for reporting to the National Bridge Inventory. This method will also to used to determine if the bridge needs further investigation by the WSDOT Bridge Preservation office.  This investigation will determine the need for posting, restriction to permit (a.k.a. overload) vehicles, and need for retrofit or rehabilitation. </P>
-</BODY>
-</HTML>
+See also: :ref:`Lane Group Positioning Methods`
+
+
+WSDOT Live Load Criteria
+----------------------------
+
+The live loads to be considered,  and the application thereof, 
+shall be consistent with those described in 
+`Guide Specifications For Strength Evaluation of Existing Steel and Concrete Bridges, 1989`,
+and the `WSDOT Bridge Design Manual`.  
+To summarize the criteria:
+
+* In computing load effects,  one vehicle shall be considered present in each rating lane.
+* The positioning of the vehicle in each rating lane shall be according to AASHTO specifications.
+  These specifications require the vehicle to be positioned in such a way as
+  to produce the extreme structural response under consideration.
+* For the purpose of load rating the number of lanes loaded will be limited to
+  the number of existing striped lanes (or planned for new designs).
+* The rating lane shall be position between the curbs in accordance
+  with the AASHTO specifications.  For BRIDG, the  `Left Edge` and `Right Edge`
+  specification will be the left and righr curb lines respectivly.
+* :ref:`Lane Width Definition`.  The lane width is as specified in the 
+  `AASHTO Manual for Condition Evaluation of Bridges, 1994 (MCEB94), edtion 6.7.2.2`.  
+  To summarize, the lanes will be 12 ft wide on bridges with curb to curb 
+  distance of 24 ft and over.  Lanes are to be narrowed to allow 2 lanes for
+  curb to curb distance between 24 ft. and 20 ft.  
+  The `Truck Clearance Width` is to be decreased from 10 ft to allow 2 lanes 
+  for curb to curb distance between 20 ft and 18 ft.  
+  Only 1 lane is to be used where the curb to curb distance is less than 18 ft.
+
+
+The following describes how to modify the parameters in the
+:ref:`Input Analysis Controls` table to adjust for narrow bridges.
+
+For bridges with a curb to curb distance of 24 ft to 20 ft,
+the `SLaneWidth` should be reduced to accommodate two lanes.
+The 10 ft wide truck will then be positioned within the `SlaneWidth` per the
+diagram on topic page page :ref:`Lane Group Positioning Methods`.
+
+
+For bridges with curb to curb distance of 20 ft to 18 ft,
+the `SLaneWidth` and `RLaneWidth` values should both be the same reduced value.
+For example, on an 18 ft curb to curb bridges, use a value of 9 ft for both entries.
+The truck will consequently not be positioned differently within the striped
+lane for the left, center, and right group positioning.
+
+Live Load Modeling Guidelines
+----------------------------------
+
+The purpose of these guidelines is to provide the rating engineer with a
+live load modeling scheme that will capture the significant load effects
+for typical, well conditioned truss bridges,  while reducing the time
+required to perform a detailed live load analysis.  Typical truss bridges
+are symmetrical about their longitudinal axes, with parallel trusses,
+straight members, and uniform spacing of floor beams.
+It is ultimately the responsibility of the rating engineer to determine
+the minimum rating factor for the structure. For unique and/or poorly
+conditioned structures,  this may require a more detailed evaluation of the
+live load effects.
+
+Because the maximum number of possible live load positionings for even a
+short truss bridge can become computationally prohibitive, the number of
+live load cases must be reduced.  These guidelines describe live load
+generation in terms of longitudinal step sizes for the movement of the
+trucks along the bridge and transverse lane positions between the curb lines.
+
+.. rubric:: Minimum Longitudinal Step Size
+..
+
+    This is left up to the engineer, using the parameters in the
+    :ref:`Live Load Envelope Definition` entry.
+    The truck motion mode AUTO will cause the truck to be placed over the
+    Cross beams and Floor beams in the most critical manner, but it is left
+    up to the user to define the number of mid span locations for axle loading.
+
+.. rubric:: Transverse Placement of Rating Lanes
+..
+
+    * Number of Rating Lanes is the equal to the number of lanes currently striped on the bridge.
+    * The number of design lanes is as specified by AASHTO Standard Specifications for Bridges.
+    * The transverse placement of rating lanes is guided by the Lane Shift Sensitivity Factor (`LSSF`).
+      This factor is used to determine if the response of the structure is sensitive to lane positioning.
+
+    The Lane Shift Sensitivity Factor is computed by:
+
+.. rubric:: LSSF
+..
+
+    = (# of DesignLanes - # of RatingLanes) / (# of RatingLanes)
+
+
+    The position of rating lanes is described in the following table:
+
+    .. image:: ../../image/ebd_Ebd48.gif
+        :alt: image/ebd_Ebd48.gif
+
+    This method of transverse placement will be used to determine the Inventory
+    and Operating Ratings for reporting to the National Bridge Inventory.
+    This method will also to used to determine if the bridge needs further
+    investigation by the WSDOT Bridge Preservation office.
+    This investigation will determine the need for posting, restriction to
+    permit (a.k.a. overload) vehicles, and need for retrofit or rehabilitation.
+

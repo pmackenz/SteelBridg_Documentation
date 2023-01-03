@@ -41,7 +41,7 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Model Definition</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transverse.html">2D Transverse Analysis</a></li>
@@ -93,7 +93,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../input.html">Model Definition</a> &raquo;</li>
+          <li><a href="../../input.html">Data Entry</a> &raquo;</li>
           <li><a href="../deprecated.html">Deprecated</a> &raquo;</li>
       <li>Lane Group Definition</li>
       <li class="wy-breadcrumbs-aside">
@@ -127,37 +127,58 @@ these entries are used.</p>
 </div></blockquote>
 <p class="rubric">COGO Path</p>
 <blockquote>
-<div><p>This is a reference to an existing COGO path that will define center line for the Lane group.</p>
+<div><p>This is a reference to an existing COGO path that will define center
+line for the Lane group.</p>
 </div></blockquote>
 <p class="rubric">Start Distance</p>
 <blockquote>
-<div><p>Distance from start of COGO path to start of Lane group.  Use this value to define where on the referenced COGO path the lane group starts.  It does not have to be at a bridge end.  Loads positioned off the bridge are not processed.</p>
+<div><p>Distance from start of COGO path to start of Lane group.
+Use this value to define where on the referenced COGO path the
+lane group starts.  It does not have to be at a bridge end.
+Loads positioned off the bridge are not processed.</p>
 </div></blockquote>
 <p class="rubric">End Distance</p>
 <blockquote>
-<div><p>Distance from start of COGO path to end of Lane group.  This value must be greater then the Start Distance. Use this value to define where on the referenced COGO path the lane group ends.  It does not have to be at the bridge ends.  Loads positioned off the bridge are not processed.</p>
+<div><p>Distance from start of COGO path to end of Lane group.
+This value must be greater then the Start Distance.
+Use this value to define where on the referenced COGO path the lane group ends.
+It does not have to be at the bridge ends.
+Loads positioned off the bridge are not processed.</p>
 </div></blockquote>
 <p class="rubric">Offset to Left Edge</p>
 <blockquote>
-<div><p>Specify the &lt;A href=”../../Load_Generation/Live_Load_Placement.html”&gt;Left edge&lt;/A&gt; , looking up station, as an offset distance from the center COGO path.</p>
+<div><p>Specify the <a class="reference internal" href="../../Reference/Load_Generation/Live_Load_Placement.html#live-load-placement"><span class="std std-ref">Live Load Placement</span></a>:<cite>Left edge</cite>, looking up station,
+as an offset distance from the center COGO path.</p>
 </div></blockquote>
 <p class="rubric">Offset to Right Edge</p>
 <blockquote>
-<div><p>Specify the &lt;A href=”../../Load_Generation/Live_Load_Placement.html”&gt;Righteft edge&lt;/A&gt; , looking up station, as an offset distance from the center COGO path.</p>
+<div><p>Specify the <a class="reference internal" href="../../Reference/Load_Generation/Live_Load_Placement.html#live-load-placement"><span class="std std-ref">Live Load Placement</span></a>:<cite>Righteft edge</cite>,
+looking up station, as an offset distance from the center COGO path.</p>
 </div></blockquote>
 <p class="rubric">Max Number Lanes&lt;/span&gt;</p>
 <blockquote>
-<div><p>When the &lt;A href=”../../Load_Generation/Lane_Group_Positioning_Methods.html”&gt;lane placement method&lt;/A&gt; is CTR, LCR, or LCRQ then this value will limit the total number of lanes that are loaded on the bridge at one time.  This value must get greater then zero and is limited to the number of lanes that will fit between the right and left edges.</p>
+<div><p>When the <a class="reference internal" href="../../Reference/Load_Generation/Lane_Group_Positioning_Methods.html#lane-group-positioning-methods"><span class="std std-ref">Lane Group Positioning Methods</span></a> is <cite>CTR</cite>, <cite>LCR</cite>, or <cite>LCRQ</cite> then this
+value will limit the total number of lanes that are loaded on the bridge at
+one time.  This value must get greater then zero and is limited to the number
+of lanes that will fit between the right and left edges.</p>
 </div></blockquote>
 <p class="rubric">Motion Mode&lt;/span&gt;</p>
 <blockquote>
 <div><p>Select one of the automatic load generation modes or NONE.</p>
-<ul class="simple">
-<li><p><cite>CTR</cite> - Center of Lane Group</p></li>
-<li><p><cite>LCR</cite> - Left, Center, and Right</p></li>
-<li><p><cite>LCRQ</cite> - Left, Left Quarter, Center, Right Quarter, Right</p></li>
-<li><p><cite>NONE</cite> - Use this mode when the Truck group only references trucks  with static loads or sequenced movement.</p></li>
-</ul>
+<dl class="field-list simple">
+<dt class="field-odd">CTR</dt>
+<dd class="field-odd"><p>Center of Lane Group</p>
+</dd>
+<dt class="field-even">LCR</dt>
+<dd class="field-even"><p>Left, Center, and Right</p>
+</dd>
+<dt class="field-odd">LCRQ</dt>
+<dd class="field-odd"><p>Left, Left Quarter, Center, Right Quarter, Right</p>
+</dd>
+<dt class="field-even">NONE</dt>
+<dd class="field-even"><p>Use this mode when the Truck group only references trucks  with static loads or sequenced movement.</p>
+</dd>
+</dl>
 </div></blockquote>
 </section>
 </section>

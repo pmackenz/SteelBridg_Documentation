@@ -11,7 +11,7 @@ Truck Definition
 Description
 ------------
 
-The truck definition table defines both trucks and / or lane loading  with moment and shear riders.
+The truck definition table defines both trucks and/or lane loading  with moment and shear riders.
 
 
 Parameters

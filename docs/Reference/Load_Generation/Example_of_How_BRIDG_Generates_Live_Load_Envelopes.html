@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Load Generation Data Sets" href="Load_Generation_Data_Sets.html" />
-    <link rel="prev" title="Live Load Multiple Lane Sequencing" href="Live_Load_Multiple_Lane_Sequencing.html" /> 
+    <link rel="next" title="Impact Factor Calculation" href="Impact_Factor_Calculation.html" />
+    <link rel="prev" title="Example of Lane Loading Combinations Using LCR" href="Example_of_Lane_Loading_Combinations_Using_LCR.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,30 +41,28 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../input.html">Model Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../input.html">Data Entry</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Impact_Factor_Calculation.html">Impact Factor Calculation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
-<li class="toctree-l3"><a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html">3D Live Load Modeling Guidelines for Truss Bridges</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Theory_of_Operation.html">Load Generation Theory of Operation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example_of_Lane_Loading_Combinations_Using_LCR.html">Example of Lane Loading Combinations Using LCR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Example of How BRIDG Generates Live Load Envelopes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Generation.html">Load Generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Live_Load_Placement.html">Live Load Placement</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Load_Generation.html">Load Generation</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="Load_Generation.html#theory">Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Load_Generation.html#input-data-sheets">Input Data Sheets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
 </ul>
 </li>
@@ -87,6 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../theory.html">Theory</a> &raquo;</li>
+          <li><a href="Load_Generation.html">Load Generation</a> &raquo;</li>
       <li>Example of How BRIDG Generates Live Load Envelopes</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/Load_Generation/Example_of_How_BRIDG_Generates_Live_Load_Envelopes.rst.txt" rel="nofollow"> View page source</a>
@@ -111,8 +110,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Live_Load_Multiple_Lane_Sequencing.html" class="btn btn-neutral float-left" title="Live Load Multiple Lane Sequencing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Load_Generation_Data_Sets.html" class="btn btn-neutral float-right" title="Load Generation Data Sets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Example_of_Lane_Loading_Combinations_Using_LCR.html" class="btn btn-neutral float-left" title="Example of Lane Loading Combinations Using LCR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Impact_Factor_Calculation.html" class="btn btn-neutral float-right" title="Impact Factor Calculation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,8 +1,8 @@
 Load Generation Theory of Operation
 ======================================================
 
-<P><A href="BRIDG12.chm::/Load_Generation_Data_Sets.html"><IMG SRC="..\image\BTN_DS.gif" border=0 height=18 width=24 alt="image\BTN_DS.gif"></A>  <A href="BRIDG12.chm::/Load_Combination_Theory.html"><IMG SRC="..\image\BTN_Load_Combination32.gif" border=0 height=18 width=95 alt="image\BTN_Load_Combination32.gif"></A></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd53.gif" border=0 height=2181 width=1816 alt="image\ebd_Ebd53.gif"></P>
-</BODY>
-</HTML>
+See also: :ref:`Load Generation Data Sets`
+
+
+.. image:: ../../image/ebd_Ebd53.gif
+    :alt: image/ebd_Ebd53.gif

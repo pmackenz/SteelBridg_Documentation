@@ -44,7 +44,7 @@ Parameters
 
     Reference a "Truck" that specified in either the
     :ref:`Live Load Definition`,
-    :ref:`Truck Definition`</A>` , or
+    :ref:`Truck Definition` , or
     :ref:`Live Load Envelope Definition`.`
 
 .. rubric:: Axle Force Multiplier

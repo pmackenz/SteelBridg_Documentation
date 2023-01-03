@@ -1,5 +1,5 @@
 ##################
-Model Definition
+Data Entry
 ##################
 
 .. toctree::
@@ -7,7 +7,6 @@ Model Definition
 
     Data_Entry/settings.rst
     Data_Entry/general.rst
-    Data_Entry/.rst
     Data_Entry/transverse.rst
     Data_Entry/factors_and_rating.rst
     Data_Entry/steel_members.rst
