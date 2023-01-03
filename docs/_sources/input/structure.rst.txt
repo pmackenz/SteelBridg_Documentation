@@ -1,7 +1,0 @@
-Defining the Structure
-***********************
-
-.. toctree::
-    :maxdepth: 2
-
-    settings.rst

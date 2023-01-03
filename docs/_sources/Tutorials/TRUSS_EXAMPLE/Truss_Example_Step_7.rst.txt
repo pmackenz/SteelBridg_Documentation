@@ -1,5 +1,5 @@
 Truss Example: Step 7 - Place shapes on member lines.
-------------------------------
+---------------------------------------------------------
 
 .. image:: ../../image/ebd_Ebd44.gif
     :alt: image/ebd_Ebd44.gif

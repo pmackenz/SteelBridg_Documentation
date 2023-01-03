@@ -16,6 +16,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -50,7 +51,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Load_Generation.html">Load Generation</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Data Set Collections ( Envelopes )</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Data Set Collections ( Envelopes )</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#a-simple-example">A simple Example</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
@@ -94,51 +98,52 @@
              
   <section id="data-set-collections-envelopes">
 <h1>Data Set Collections ( Envelopes )<a class="headerlink" href="#data-set-collections-envelopes" title="Permalink to this heading"></a></h1>
-<p>&lt;P&gt;The number of data set collections required is:&lt;/P&gt;
-&lt;UL&gt;</p>
+<p>The number of data set collections required is:</p>
 <blockquote>
-<div><p>&lt;P style=”margin-left:24.15pt;”&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One for each dead load stage&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One for the superimposed dead load stage&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One for each truck in each lane in each lane group used in a load combination.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;Two for each load combination; one for the numerator and one for the denominator part.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+<div><ul class="simple">
+<li><p>One for each dead load stage</p></li>
+<li><p>One for the superimposed dead load stage</p></li>
+<li><p>One for each truck in each lane in each lane group used in a load combination.</p></li>
+<li><p>Two for each load combination; one for the numerator and one for the denominator part.</p></li>
+</ul>
 </div></blockquote>
-<p>&lt;/UL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;span style=”font-weight:bold; “&gt;A simple Example&lt;/span&gt;&lt;/P&gt;
-&lt;P&gt;Assume:&lt;/P&gt;
-&lt;UL&gt;</p>
+<section id="a-simple-example">
+<h2>A simple Example<a class="headerlink" href="#a-simple-example" title="Permalink to this heading"></a></h2>
+<p>Assume:</p>
 <blockquote>
-<div><p>&lt;P style=”margin-left:24.15pt;”&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;Five member lines that are 200 feet long&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One hundred truss members&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One Lane Group with 4 lanes maximum&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One Truck Group with two different  trucks referenced&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;One Load Combination that uses &lt;A href=”Lane_Group_Positioning_Methods.html”&gt;LCR&lt;/A&gt; lane mode.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;Two dead load stages&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.15pt;”&gt;No explicit rate locations&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
+<div><ul class="simple">
+<li><p>Five member lines that are 200 feet long</p></li>
+<li><p>One hundred truss members</p></li>
+<li><p>One Lane Group with 4 lanes maximum</p></li>
+<li><p>One Truck Group with two different  trucks referenced</p></li>
+<li><p>One Load Combination that uses <a class="reference internal" href="Lane_Group_Positioning_Methods.html#lane-group-positioning-methods"><span class="std std-ref">Lane Group Positioning Methods</span></a>:<cite>LCR</cite> lane mode.</p></li>
+<li><p>Two dead load stages* No explicit rate locations</p></li>
+</ul>
 </div></blockquote>
-<p>&lt;/UL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Compute number of DS per DSC&lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;A = Number of &lt;A href=”Points_of_Interest.html”&gt;POIs&lt;/A&gt; per Line members.&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;B = Total number of line member POIs.&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;C = Number of POIs for truss members. &lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Compute number of load cases:&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;(two deal load) + (one superimposed dead load) + &lt;/P&gt;
-&lt;P&gt;&amp;nbsp;(8 unfactored truck loads, one for each truck on each possible path) + &lt;/P&gt;
-&lt;P style=”text-indent:30.25pt;”&gt;(two for the one load combination, denominator and numerator parts) = 13&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Total number of DS collected for all load cases = 605  * 13 = 7865&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;Storage requirements ( approximate):  Dead loads = 40 bytes per DS and Live loads = 96 bytes per DS&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;(605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320  bytes.&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<p>Compute number of <cite>DS</cite> per <cite>DSC</cite>:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">A</dt>
+<dd class="field-odd"><p>Number of <a class="reference internal" href="Points_of_Interest.html#points-of-interest"><span class="std std-ref">Points of Interest</span></a>:<cite>POIs</cite> per Line members.</p>
+</dd>
+<dt class="field-even">B</dt>
+<dd class="field-even"><p>Total number of line member <cite>POIs</cite>.</p>
+</dd>
+<dt class="field-odd">C</dt>
+<dd class="field-odd"><p>Number of <cite>POIs</cite> for truss members.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Compute number of load cases:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}(two~deal~load) + (one~superimposed~dead~load) + {} \\\end{split}\\\begin{split}(8~unfactored~truck~loads,~one~for~each~truck~on~each~possible~path) + {} \\\end{split}\\(two~for~the~one~load~combination,~denominator~and~numerator~parts) = 13\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[Total~number~of~DS~collected~for~all~load~cases = 605 * 13 = 7865\]</div>
+<p>Storage requirements ( approximate):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Dead~loads = 40~bytes~per~DS~and~Live~loads = 96~bytes~per~DS \\
+(605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320 ~bytes.\end{split}\]</div>
+</section>
 </section>
 
 

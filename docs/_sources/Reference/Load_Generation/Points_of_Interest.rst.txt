@@ -1,12 +1,20 @@
 Points of Interest
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-weight:bold; ">Points of Interest for Line Member Data Sets</span></P>
-<P>POIs are placed at the ends of every member line and by default at every 1/20 of the member length.  The distance between the POIs can be changed but it is constrained to not exceed ten feet or be less then one foot. POIs are also placed at every Rating Location.  Consequently, the number of data sets per collection on a line member is a function of the members length, and the number of explicit rating locations.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-weight:bold; ">Points of Interest for Non-Line Member Data Sets</span></P>
-<P>For non-line members, such as truss members, the POIs are placed at the 1/5 points. This puts a POI at both ends, the center, and the quarter points.  </P>
-<P></P>
-</BODY>
-</HTML>
+Points of Interest for Line Member Data Sets
+---------------------------------------------
+
+`POIs` are placed at the ends of every member line and by default at every
+1/20 of the member length.
+The distance between the `POIs` can be changed but it is constrained to not
+exceed ten feet or be less then one foot. POIs are also placed at every
+:ref:`Rate Location`.
+Consequently, the number of data sets per collection on a line member is a
+function of the members length, and the number of explicit rating locations.
+
+Points of Interest for Non-Line Member Data Sets
+-------------------------------------------------------
+
+For non-line members, such as truss members, the `POIs` are placed at
+the 1/5 points. This puts a POI at both ends, the center, and the
+quarter points.

@@ -1,5 +1,5 @@
 Truss Example: Step 2 - Define COGO points and paths not on profile grade
-------------------------------
+------------------------------------------------------------------------------------
 
 .. image:: ../../image/ebd_Ebd35.gif
     :alt: image/ebd_Ebd35.gif

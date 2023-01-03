@@ -1,5 +1,5 @@
 Truss Example: Step 8 - Place Column Shapes
-------------------------------
+---------------------------------------------------------
 
 .. image:: ../../image/ebd_Ebd45.gif
     :alt: image/ebd_Ebd45.gif

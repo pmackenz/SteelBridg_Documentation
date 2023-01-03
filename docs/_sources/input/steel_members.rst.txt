@@ -1,9 +1,0 @@
-Stringer Definition
-----------------------------
-
-Truss Members
-----------------------------
-
-Column Definition
-----------------------------
-

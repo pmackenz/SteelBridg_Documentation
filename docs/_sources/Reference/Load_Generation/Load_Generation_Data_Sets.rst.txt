@@ -1,10 +1,13 @@
 Load Generation Data Sets
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>A �Data Set Collection�, DSC, is the set of all �Data Sets�, DS, in the model. There is a DS for every <A href="Points_of_Interest.html">point of interest, POI</A> ,  in the model.  Note that the amount of data stored per POI is a function of both member type and loading type. The following chart shows what data is stored in a DS for each type of member and loading condition.</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd54.gif" border=0 height=529 width=478 alt="image\ebd_Ebd54.gif"></P>
-</BODY>
-</HTML>
+A :ref:`Data Set Collection`, `DSC`, is the set of all `Data Sets`, `DS`,
+in the model. There is a `DS` for every
+:ref:`Points of Interest`, `POI`,  in the model.
+Note that the amount of data stored per `POI` is a function of both member
+type and loading type.
+The following chart shows what data is stored in a `DS` for each type of
+member and loading condition.
+
+.. image:: ../../image/ebd_Ebd54.gif
+    :alt: image/ebd_Ebd54.gif

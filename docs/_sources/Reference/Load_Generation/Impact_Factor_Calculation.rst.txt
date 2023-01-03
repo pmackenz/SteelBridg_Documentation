@@ -1,11 +1,11 @@
 Impact Factor Calculation
 ======================================================
 
-<P><IMG src="..\image\ebd_Ebd78.gif" border=0 height=5831 width=4514 alt="image\ebd_Ebd78.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>For Truss members, the impact factor is calculated using the following equation:</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd79.gif" border=0 height=989 width=2504 alt="image\ebd_Ebd79.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd78.gif
+    :alt: image/ebd_Ebd78.gif
+
+
+For Truss members, the impact factor is calculated using the following equation:</P>
+
+.. image:: ../../image/ebd_Ebd79.gif
+    :alt: image/ebd_Ebd79.gif

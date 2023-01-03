@@ -1,5 +1,5 @@
 Truss Example: Step 9 - Place Truss Members
-------------------------------
+---------------------------------------------------------
 
 .. image:: ../../image/ebd_Ebd46.gif
     :alt: image/ebd_Ebd46.gif

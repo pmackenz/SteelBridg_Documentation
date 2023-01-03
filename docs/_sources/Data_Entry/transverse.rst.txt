@@ -13,12 +13,8 @@
 --------------------
 
 2DT Load Combinations
---------------------
+-----------------------
 
 
-.. toctree::
-    :maxdepth: 2
-
-    input/transverse.rst
 
 

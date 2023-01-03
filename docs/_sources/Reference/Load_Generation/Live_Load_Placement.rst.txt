@@ -1,15 +1,13 @@
 Live Load Placement
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd50.gif" border=0 height=2243 width=2116 alt="image\ebd_Ebd50.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>These parameters are defined in the �AnalysisControls� table.  The entries are:</P>
-<UL>
- <P style="margin-left:24.00pt;">
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">Wheel Distance</span> is the parameter �<span style="font-weight:bold; ">AxleDist</span>�<BR></LI>
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">Truck Clearance Width</span> is the parameter �<span style="font-weight:bold; ">RLaneWidth</span>�, the rating lane width.<BR></LI>
- <LI style="margin-left:24.00pt;"><span style="font-weight:bold; ">Lane Width</span> is the parameter �<span style="font-weight:bold; ">SlaneWidth</span>�, the striped lane width.<BR></LI></P>
-</UL>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd50.gif
+    :alt: image/ebd_Ebd50.gif
+
+
+These parameters are defined in the `AnalysisTable` (:ref:`Input Analysis Controls`).
+The entries are:
+
+* *Wheel Distance* is the parameter **AxleDist**
+* *Truck Clearance Width* is the parameter **RLaneWidth**, the rating lane width.
+* *Lane Width* is the parameter **SlaneWidth**, the striped lane width.

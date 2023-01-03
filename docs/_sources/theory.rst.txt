@@ -85,9 +85,9 @@ Load Generation
     Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
 
 
-****************
+********************************
 Capacity and Rating Theory
-****************
+********************************
 
 .. toctree::
     :maxdepth: 2

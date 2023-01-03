@@ -16,7 +16,7 @@ been created where expected.
 .. toctree::
     :maxdepth: 2
 
-    Reference/DeckSlab/Concrete_Slab_Steps_for_checking_the_slab_mesh_.rst
-    Reference/DeckSlab/Concrete_Slab_Steps_for_correcting_errant_mesh_generation_.rst
-    Reference/DeckSlab/Concrete_Slab_Steps_for_checking_composite_member_generation_.rst
+    Concrete_Slab_Steps_for_checking_the_slab_mesh.rst
+    Concrete_Slab_Steps_for_correcting_errant_mesh_generation.rst
+    Concrete_Slab_Steps_for_checking_composite_member_generation.rst
 

@@ -94,31 +94,50 @@
              
   <section id="lane-group-positioning-methods">
 <h1>Lane Group Positioning Methods<a class="headerlink" href="#lane-group-positioning-methods" title="Permalink to this heading"></a></h1>
-<p>&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;CTR&lt;/span&gt;&amp;nbsp;Center Of Bridge Only&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LCR&lt;/span&gt;&amp;nbsp;Left, Center, and Right of Bridge&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;span style=”font-weight:bold; “&gt;LCRQ&lt;/span&gt;&amp;nbsp;Left, Left Quarter, Center, Right Quarter, Right positions on the bridge.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;span style=”font-size:10pt; font-weight:bold; “&gt;&lt;font  face=’Times New Roman’&gt;Error! Not a valid link.&lt;/font&gt;&lt;/span&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;A �Lane Group� is a set of lanes of �&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Lane Width&lt;/A&gt; � placed side by side with no space between. &lt;/P&gt;
-&lt;UL&gt;</p>
-<blockquote>
-<div><p>&lt;P style=”margin-left:24.00pt;”&gt;
-&lt;LI style=”margin-left:24.00pt;”&gt;No gap between multiple loaded lanes.&lt;BR&gt;&lt;/LI&gt;
-&lt;LI style=”margin-left:24.00pt;”&gt;Movement within a lane is not considered, but the �&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Truck Clearance Width&lt;/A&gt; � is positioned within the lane in accordance with the positioning codes: CTR, LCR, LCRQ. Please see the graphic below.&lt;BR&gt;&lt;/LI&gt;&lt;/P&gt;</p>
-</div></blockquote>
-<p>&lt;/UL&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;If the lane group can not be completely fit between the right and left edges, then that configuration is &lt;span style=”font-weight:bold; “&gt;not&lt;/span&gt; processed.  For example, if the lane group centered over the left quarter point causes the left side of the group to extend beyond the left edge, then that loading configuration would not be processed.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;The placement of the �&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;Truck Clearance Width&lt;/A&gt; �,TCW,  within the lane depends on the placement of the lane group.  If the lane group position is �Left� or �Left Quarter�, then the TCW will be placed against the left edge of the lane boundary.  For �Center� placement, the TCW will be centered in the lane.  For �Right� and �Right Quarter� placements, the TCW will be placed against the right edge of the lane boundary.&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;IMG src=”..imageebd_Ebd49.gif” border=0 height=1110 width=2655 alt=”imageebd_Ebd49.gif”&gt;&lt;/P&gt;
-&lt;P style=”margin-top:0;margin-bottom:0”&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;On narrow bridges it is possible for a truck axle to leave the road surface.  When this happens, the program will issue a warning message.  Typically this will occure when the truck clearance width, and striped lane width is not reduced in accordance with the specifications defined in the &lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#Lane_Width_Definition”&gt;lane width paragraph&lt;/A&gt; of the �WSDOT Live Load Criteria� in topic page �&lt;A href=”3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html”&gt;3D Live Load Modeling Guidelines for Truss Bridges&lt;/A&gt;.�  A truck axle leaving the road surface might not be a critical condition, and it is up to the engineer to determine if adjustments to the truck parameters is required.&lt;/P&gt;
-&lt;/BODY&gt;
-&lt;/HTML&gt;</p>
+<dl class="field-list simple">
+<dt class="field-odd">CTR</dt>
+<dd class="field-odd"><p>Center Of Bridge Only</p>
+</dd>
+<dt class="field-even">LCR</dt>
+<dd class="field-even"><p>Left, Center, and Right of Bridge</p>
+</dd>
+<dt class="field-odd">LCRQ</dt>
+<dd class="field-odd"><p>Left, Left Quarter, Center, Right Quarter, Right positions on the bridge.</p>
+</dd>
+</dl>
+<p>A <cite>Lane Group</cite> is a set of lanes of
+<a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#d-live-load-modeling-guidelines-for-truss-bridges"><span class="std std-ref">3D Live Load Modeling Guidelines for Truss Bridges</span></a>:<cite>Lane Width</cite>
+placed side by side with no space between.</p>
+<ul class="simple">
+<li><p>No gap between multiple loaded lanes.</p></li>
+<li><p>Movement within a lane is not considered, but the
+<a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#d-live-load-modeling-guidelines-for-truss-bridges"><span class="std std-ref">3D Live Load Modeling Guidelines for Truss Bridges</span></a>:<span class="xref std std-ref">Lane Width Definition</span>
+is positioned within the lane in accordance with the positioning codes: <cite>CTR</cite>, <cite>LCR</cite>, <cite>LCRQ</cite>.
+Please see the graphic below.</p></li>
+</ul>
+<p>If the lane group can not be completely fit between the right and left edges,
+then that configuration is <strong>not</strong> processed.
+For example, if the lane group centered over the left quarter point causes
+the left side of the group to extend beyond the left edge, then that loading
+configuration would not be processed.</p>
+<p>The placement of the <a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#d-live-load-modeling-guidelines-for-truss-bridges"><span class="std std-ref">3D Live Load Modeling Guidelines for Truss Bridges</span></a>:<span class="xref std std-ref">Lane Width Definition</span>, <cite>TCW</cite>,
+within the lane depends on the placement of the lane group.
+If the lane group position is <cite>Left</cite> or <cite>Left Quarter</cite>, then the <cite>TCW</cite> will
+be placed against the left edge of the lane boundary.
+For <cite>Center</cite> placement, the <cite>TCW</cite> will be centered in the lane.
+For <cite>Right</cite> and <cite>Right Quarter</cite> placements, the <cite>TCW</cite> will be placed
+against the right edge of the lane boundary.</p>
+<img alt="image/ebd_Ebd49.gif" src="../../_images/ebd_Ebd49.gif" />
+<p>On narrow bridges it is possible for a truck axle to leave the road surface.
+When this happens, the program will issue a warning message.
+Typically this will occure when the truck clearance width, and striped
+lane width is not reduced in accordance with the specifications defined
+in the <a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#d-live-load-modeling-guidelines-for-truss-bridges"><span class="std std-ref">3D Live Load Modeling Guidelines for Truss Bridges</span></a>:<span class="xref std std-ref">Lane Width Definition</span>
+of the <a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#wsdot-live-load-criteria"><span class="std std-ref">WSDOT Live Load Criteria</span></a> in topic page
+<a class="reference internal" href="3D_Live_Load_Modeling_Guidelines_for_Truss_Bridges.html#d-live-load-modeling-guidelines-for-truss-bridges"><span class="std std-ref">3D Live Load Modeling Guidelines for Truss Bridges</span></a>.
+A truck axle leaving the road surface might not be a critical condition,
+and it is up to the engineer to determine if adjustments to the truck
+parameters is required.</p>
 </section>
 
 

@@ -9,6 +9,7 @@ Data Entry
     Data_Entry/general.rst
     Data_Entry/transverse.rst
     Data_Entry/factors_and_rating.rst
+    Data_Entry/library.rst
     Data_Entry/steel_members.rst
     Data_Entry/concrete.rst
     Data_Entry/shape_placement.rst

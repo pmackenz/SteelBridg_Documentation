@@ -6,7 +6,7 @@ Input Bolt Fastener Library
     *** This feature not implemented yet and currently under development. ***
 
 
-.. image:: "../../image/ebd_Ebd85.gif
+.. image:: ../../image/ebd_Ebd85.gif
     :alt: image/ebd_Ebd85.gif
 
 .. image:: ../../image/ebd_Ebd86.gif

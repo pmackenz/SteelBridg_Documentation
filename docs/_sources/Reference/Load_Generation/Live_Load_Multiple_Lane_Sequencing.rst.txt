@@ -1,8 +1,9 @@
 Live Load Multiple Lane Sequencing
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Starting from the left side of the bridge, looking up station, the trucks will be placed side by side within their lanes and then run on paths that cascade transversely across the bridge.  </P>
-<P><IMG src="..\image\ebd_Ebd51.gif" border=0 height=6370 width=4082 alt="image\ebd_Ebd51.gif"></P>
-</BODY>
-</HTML>
+Starting from the left side of the bridge, looking up station,
+the trucks will be placed side by side within their lanes and then run
+on paths that cascade transversely across the bridge.
+
+.. image:: ../../image/ebd_Ebd51.gif
+    :alt: image/ebd_Ebd51.gif

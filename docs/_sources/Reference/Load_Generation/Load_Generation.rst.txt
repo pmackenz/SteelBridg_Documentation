@@ -34,7 +34,7 @@ Input Data Sheets
 Dead Loads
 ^^^^^^^^^^^^^^^^^
 
-    * :ref:`Dead Load Defintion`
+    * :ref:`Dead Load Definition`
     * :ref:`Superimposed Dead Load Definition`
 
 Trucks / Live Load Definition

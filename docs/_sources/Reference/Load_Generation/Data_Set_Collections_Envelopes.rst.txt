@@ -1,44 +1,49 @@
 Data Set Collections ( Envelopes )
 ======================================================
 
-<P>The number of data set collections required is:</P>
-<UL>
- <P style="margin-left:24.15pt;">
- <LI style="margin-left:24.15pt;">One for each dead load stage<BR></LI>
- <LI style="margin-left:24.15pt;">One for the superimposed dead load stage<BR></LI>
- <LI style="margin-left:24.15pt;">One for each truck in each lane in each lane group used in a load combination.<BR></LI>
- <LI style="margin-left:24.15pt;">Two for each load combination; one for the numerator and one for the denominator part.<BR></LI></P>
-</UL>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><span style="font-weight:bold; ">A simple Example</span></P>
-<P>Assume:</P>
-<UL>
- <P style="margin-left:24.15pt;">
- <LI style="margin-left:24.15pt;">Five member lines that are 200 feet long<BR></LI>
- <LI style="margin-left:24.15pt;">One hundred truss members<BR></LI>
- <LI style="margin-left:24.15pt;">One Lane Group with 4 lanes maximum<BR></LI>
- <LI style="margin-left:24.15pt;">One Truck Group with two different  trucks referenced<BR></LI>
- <LI style="margin-left:24.15pt;">One Load Combination that uses <A href="Lane_Group_Positioning_Methods.html">LCR</A> lane mode.<BR></LI>
- <LI style="margin-left:24.15pt;">Two dead load stages<BR></LI>
- <LI style="margin-left:24.15pt;">No explicit rate locations<BR></LI></P>
-</UL>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Compute number of DS per DSC</P>
-<P style="text-indent:30.25pt;">&nbsp;</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>&nbsp;A = Number of <A href="Points_of_Interest.html">POIs</A> per Line members.</P>
-<P>&nbsp;B = Total number of line member POIs.</P>
-<P>&nbsp;C = Number of POIs for truss members. </P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Compute number of load cases:</P>
-<P>&nbsp;(two deal load) + (one superimposed dead load) + </P>
-<P>&nbsp;(8 unfactored truck loads, one for each truck on each possible path) + </P>
-<P style="text-indent:30.25pt;">(two for the one load combination, denominator and numerator parts) = 13</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Total number of DS collected for all load cases = 605  * 13 = 7865</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>Storage requirements ( approximate):  Dead loads = 40 bytes per DS and Live loads = 96 bytes per DS</P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P>(605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320  bytes.</P>
-</BODY>
-</HTML>
+The number of data set collections required is:
+
+    * One for each dead load stage
+    * One for the superimposed dead load stage
+    * One for each truck in each lane in each lane group used in a load combination.
+    * Two for each load combination; one for the numerator and one for the denominator part.
+
+A simple Example
+-------------------
+
+Assume:
+
+    * Five member lines that are 200 feet long
+    * One hundred truss members
+    * One Lane Group with 4 lanes maximum
+    * One Truck Group with two different  trucks referenced
+    * One Load Combination that uses :ref:`Lane Group Positioning Methods`:`LCR` lane mode.
+    * Two dead load stages* No explicit rate locations
+
+Compute number of `DS` per `DSC`:
+
+    :A:  Number of :ref:`Points of Interest`:`POIs` per Line members.
+    :B:  Total number of line member `POIs`.
+    :C:  Number of `POIs` for truss members.
+
+
+Compute number of load cases:
+
+.. math::
+
+    (two~deal~load) + (one~superimposed~dead~load) + {} \\
+
+    (8~unfactored~truck~loads,~one~for~each~truck~on~each~possible~path) + {} \\
+
+    (two~for~the~one~load~combination,~denominator~and~numerator~parts) = 13
+
+.. math::
+
+    Total~number~of~DS~collected~for~all~load~cases = 605 * 13 = 7865
+
+Storage requirements ( approximate):
+
+.. math::
+
+    Dead~loads = 40~bytes~per~DS~and~Live~loads = 96~bytes~per~DS \\
+    (605 * 40 * 3 ) + ( 605 * 96 * 9) =  595,320 ~bytes.

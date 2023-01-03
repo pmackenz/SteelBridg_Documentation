@@ -1,9 +1,9 @@
 Example of How BRIDG Generates Live Load Envelopes
 ======================================================
 
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd55.gif" border=0 height=5981 width=4909 alt="image\ebd_Ebd55.gif"></P>
-<P style="margin-top:0;margin-bottom:0">&nbsp;</P>
-<P><IMG src="..\image\ebd_Ebd56.gif" border=0 height=938 width=428 alt="image\ebd_Ebd56.gif"></P>
-</BODY>
-</HTML>
+.. image:: ../../image/ebd_Ebd55.gif
+    :alt: image/ebd_Ebd55.gif
+
+
+.. image:: ../../image/ebd_Ebd56.gif
+    :alt: image/ebd_Ebd56.gif

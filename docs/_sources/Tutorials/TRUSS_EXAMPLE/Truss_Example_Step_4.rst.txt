@@ -1,5 +1,5 @@
 Truss Example: Step 4 - Identify Member Lines
-------------------------------
+---------------------------------------------------------
 
 .. image:: ../../image/ebd_Ebd38.gif
     :alt: image/ebd_Ebd38.gif

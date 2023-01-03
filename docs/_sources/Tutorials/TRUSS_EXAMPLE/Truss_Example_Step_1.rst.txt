@@ -1,5 +1,5 @@
 Truss Example: Step 1 - Define COGO points and paths on the profile grade
-------------------------------
+------------------------------------------------------------------------------------
 
 
 (See :ref:`COGO Command: Command Descriptions` for more on COGO)
