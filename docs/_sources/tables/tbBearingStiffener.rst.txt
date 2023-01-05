@@ -1,0 +1,56 @@
+BearingStiffener
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - CogoPt
+     - text
+     - 
+     - Support point on member.
+   * - Shape
+     - text
+     - 
+     - Reference to plate or angle.
+   * - Num
+     - int
+     - 
+     - Number of stiffener pairs (assume each side of web.)
+   * - Spacing
+     - real
+     - INC
+     - Spacing between stiffeners.
+   * - K
+     - real
+     - 
+     - Effective Length factor (Default=1.0)
+   * - Cope
+     - real
+     - INC
+     - Cope distance on each stiffener end.
+   * - RateFactor
+     - text
+     - 
+     - Rating Factors
+   * - CxS
+     - real
+     - 
+     - Condition factor * System factor (phi_c * phi_s) (default = 1.00)
+   * - ShearLag
+     - real
+     - 
+     - Shear lag reduction factor (U = ShearLag)   (see AASHTO 6.8.2.2)

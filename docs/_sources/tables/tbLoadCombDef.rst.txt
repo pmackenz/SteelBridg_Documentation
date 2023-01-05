@@ -1,0 +1,52 @@
+LoadCombDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Unique name for loading configuration
+   * - Active
+     - chr
+     - 
+     - [Y|N]  Y=Run this load case.
+   * - Truck_A
+     - text
+     - 
+     - First Truck Name
+   * - Truck_A_AxlFrcMult
+     - real
+     - 
+     - First Truck's axle force multiplyer
+   * - Truck_B
+     - text
+     - 
+     - Second Truck Name (optional) If used as uniform lane load truck it MUST be named UNIFORM_LANE_1KPF
+   * - Truck_B_AxlFrcMult
+     - real
+     - 
+     - Second Truck's axle force multiplyer (if second truck defined)
+   * - LFR
+     - text
+     - 
+     - [D|P] D=Inventory&Operating  P=Overload Inv&Opr
+   * - LRFR
+     - text
+     - 
+     - [H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated
+   * - NegOnly
+     - chr
+     - 
+     - [Y|N] LRFR Neg only rating flag.

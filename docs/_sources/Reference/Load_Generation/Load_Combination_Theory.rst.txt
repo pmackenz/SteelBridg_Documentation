@@ -23,9 +23,9 @@ Terminology
     :AFM:   :ref:`Truck Group Definition`:AFM = Axle Force Multiplier (TruckGroupDef)
     :LLR:   :ref:`Lane Load Reduction Definition`:LLR = Lane Load Reduction (LaneLoadReductionDef)
     :IF:    :ref:`Load Combination Definition`:IF = Impact Factor (LoadCombinationDef)
-    :UDLF:  :ref:`Rating Factors`:UDLF = Ultimate Dead Load Factor (RatingFactors)
-    :USDLF: :ref:`Rating Factors`:USDLF = Ultimate Dead Load Factor (RatingFactors)
-    :UPSF:  :ref:`Rating Factors`:UPSF = Ultimate Prestress Factor (RatingFactors)
+    :UDLF:  :ref:`Rating Factors for LFR`:UDLF = Ultimate Dead Load Factor (RatingFactors)
+    :USDLF: :ref:`Rating Factors for LFR`:USDLF = Ultimate Dead Load Factor (RatingFactors)
+    :UPSF:  :ref:`Rating Factors for LFR`:UPSF = Ultimate Prestress Factor (RatingFactors)
     :ULLF:  :ref:`Truck Group Definition`:ULLF = Ultimate Live Load Factor (RatingFactors)
 
     These factors are not used to factor the forces but included here for reference purposes.

@@ -1,0 +1,108 @@
+TrussMember
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Truss member name
+   * - Type
+     - text
+     - 
+     - Member type code.  For information purpose only, not used by program.
+   * - StartPoint
+     - text
+     - 
+     - Name of COGO point at start of truss                       2
+   * - EndPoint
+     - text
+     - 
+     - Name of COGO point at end of truss
+   * - AutoCn
+     - text
+     - 
+     - [N|Y|YS|A|AS] Automatically connect with intersecting lines and points.
+   * - Shape
+     - text
+     - 
+     - Select shape from  either Plate, Std.Shape, or Built-up libraries.
+   * - BetaAngle
+     - real
+     - DEG
+     - Beta Angle
+   * - NegFArea
+     - real
+     - IN2
+     - Area of fastener holes
+   * - NegHArea
+     - real
+     - IN2
+     - Area of hand holes
+   * - RelEndA
+     - text
+     - 
+     - Member end releases at end A
+   * - RelEndB
+     - text
+     - 
+     - Member end releases at end B
+   * - MajEffL
+     - real
+     - 
+     - Kz Major axis of bending effective length factor (Kz factor).
+   * - MinEffL
+     - real
+     - 
+     - Ky Minor axis of bending effective length factor (Ky factor).
+   * - StageIn
+     - int
+     - 
+     - Stage that member becomes active in the analysis.
+   * - StageOut
+     - int
+     - 
+     - Stage that member is removed from the analysis (Member  is not active in this stage).
+   * - Slender
+     - chr
+     - 
+     - [Y/N] Treat as slender member (default is No)
+   * - Reduce
+     - real
+     - 
+     - If slender, override any shape slenderness reductions (using Q = Reduce)
+   * - ShearLag
+     - real
+     - 
+     - Shear lag reduction factor (U = ShearLag)   (see AASHTO 6.8.2.1)
+   * - TCCode
+     - chr
+     - 
+     - [ |T|C] Tension or compression only.
+   * - RateFactor
+     - text
+     - 
+     - Rating Factors (from tbRatingFactorsLFRDef or tbRatingFactorsLRFRDef)
+   * - LLDF_ID
+     - text
+     - 
+     - LLDF Factors from tbExplicitLLDF (for LRFR only; LFR uses tbRatingFactorsLFRDef)
+   * - LBL
+     - real
+     - INC
+     - Local Buckling Length
+   * - CxS
+     - real
+     - 
+     - Condition factor * System factor (phi_c * phi_s) (default = 1.00)

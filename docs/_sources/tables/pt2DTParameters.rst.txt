@@ -1,0 +1,71 @@
+2DTParameters
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths: 20 8 4 4 70
+   :header-rows: 1
+
+   * - Parameter
+     - Data
+     - Units
+     - Type
+     - Description
+   * - Dist2Edge
+     - 0
+     - FET
+     - real
+     - Distance from left edge of transverse beam to left edge of slab.
+   * - DistShyL
+     - 0
+     - FET
+     - real
+     - Left shy distance.
+   * - DistShyR
+     - 0
+     - FET
+     - real
+     - Right shy distance.
+   * - MultDL
+     - 1
+     - 
+     - real
+     - Dead load reaction multiplier.
+   * - MultSDL_DC
+     - 1
+     - 
+     - real
+     - Superimposed DC dead load reaction multiplier.
+   * - MultSDL_DW
+     - 1
+     - 
+     - real
+     - Superimposed DW dead load reaction multiplier.
+   * - MultSecEff
+     - 1
+     - 
+     - real
+     - PS Secondary effects reaction load multiplier.
+   * - REAfile
+     - 
+     - 
+     - text
+     - Name of REA file.
+   * - SlabWidth
+     - 0
+     - FET
+     - real
+     - Slab width.
+   * - Stiffness
+     - S
+     - 
+     - chr
+     - [S|F] Stiffness of transfer model.  S=stiff F=flexible
+   * - SupportLoc
+     - 0
+     - FET
+     - real
+     - Location of support. (Used to select data from REA file.)

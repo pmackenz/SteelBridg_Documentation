@@ -1,0 +1,56 @@
+WebHaunchDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - NumDiv
+     - int
+     - 
+     - Number of divisions
+   * - Type
+     - chr
+     - 
+     - [H|S] H=Haunched, S=Sloped
+   * - StartD
+     - real
+     - INC
+     - Starting plate depth
+   * - EndD
+     - real
+     - INC
+     - Ending plate depth
+   * - Location
+     - chr
+     - 
+     - [S|E] Location of slope (S=Start, E=End)
+   * - Slope
+     - real
+     - 
+     - Initial Slope when Type=Haunch
+   * - CoeffZ
+     - real
+     - FT2
+     - Coefficient Z  (y=A*X^Z) when Type=Haunch

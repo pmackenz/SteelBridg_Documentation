@@ -1,0 +1,28 @@
+2DTransferModel
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Distance
+     - real
+     - FET
+     - Distance from left edge of transverse beam.
+   * - Space
+     - real
+     - FET
+     - Spacing between supports.
+   * - Duplicate
+     - int
+     - 
+     - Number of support.

@@ -1,0 +1,76 @@
+TruckDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - TruckName
+     - text
+     - 
+     - Truck Name
+   * - Description
+     - text
+     - 
+     - Description of Truck
+   * - P1
+     - real
+     - KIP
+     - Axle load
+   * - D1
+     - real
+     - FET
+     - Spacing to next axle
+   * - P2
+     - real
+     - KIP
+     - Axle load
+   * - D2
+     - real
+     - FET
+     - Spacing to next axle
+   * - P3
+     - real
+     - KIP
+     - Axle load
+   * - D3
+     - real
+     - FET
+     - Spacing to next axle
+   * - P4
+     - real
+     - KIP
+     - Axle load
+   * - D4
+     - real
+     - FET
+     - Spacing to next axle
+   * - Unif
+     - real
+     - KLF
+     - Altemate lane loading uniform load
+   * - Mom
+     - real
+     - KIP
+     - Altemate lane loading moment rider
+   * - Shear
+     - real
+     - KIP
+     - Altemate lane loading shear rider
+   * - LLImpact
+     - chr
+     - 
+     - [Y|N] LRFR - Include live load impact
+   * - TruckTrain
+     - chr
+     - 
+     - [Y|N] LRFR - Truck train

@@ -1,0 +1,36 @@
+LaneLoadReductionDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Unique name for lane load reduction set
+   * - One
+     - real
+     - 
+     - Load reduction for 1 loaded lane
+   * - Two
+     - real
+     - 
+     - Load reduction for 2 loaded lanes
+   * - Three
+     - real
+     - 
+     - Load reduction for 3 loaded lanes
+   * - Four
+     - real
+     - 
+     - Load reduction for 4 or more loaded lanes

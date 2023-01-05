@@ -1,0 +1,44 @@
+WebDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - Shape
+     - text
+     - 
+     - Plate
+   * - NegFArea
+     - real
+     - IN2
+     - Area of fastener holes
+   * - NegHArea
+     - real
+     - IN2
+     - Area of hand holes
+   * - FlangeDist
+     - real
+     - IN2
+     - Distance between web and flange. Used for derived A3 shapes when flange is angle.

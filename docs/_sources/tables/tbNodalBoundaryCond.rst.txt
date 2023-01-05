@@ -1,0 +1,40 @@
+NodalBoundaryCond
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - CogoPoint
+     - text
+     - 
+     - Cogo Point Name
+   * - Fx
+     - chr
+     - 
+     - [Y/N] Constrain node translation in X direction
+   * - Fy
+     - chr
+     - 
+     - [Y/N] Constrain node translation in Y direction
+   * - Mz
+     - chr
+     - 
+     - [Y/N] Constrain node in rotation axis
+   * - Stage
+     - int
+     - 
+     - Stage that this condition becomes effective.
+   * - ReactionStage
+     - int
+     - 
+     - Stage to apply reactions back into analysis.

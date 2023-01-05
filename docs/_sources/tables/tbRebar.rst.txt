@@ -1,0 +1,56 @@
+Rebar
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Rebar entry name
+   * - LongTopDist
+     - real
+     - INC
+     - Longitudinal top steel distance from top of slab
+   * - LongTopArea
+     - real
+     - IN2
+     - Longitudinal top steel area per square foot of slab.
+   * - LongBotDist
+     - real
+     - INC
+     - Longitudinal Bot steel distance from Bottom of slab
+   * - LongBotArea
+     - real
+     - IN2
+     - Longitudinal Bottom steel area per square foot of slab.
+   * - TranTopDist
+     - real
+     - INC
+     - Transverse top steel distance from top of slab
+   * - TranTopArea
+     - real
+     - IN2
+     - Transverse top steel area per square foot of slab.
+   * - TranBotDist
+     - real
+     - INC
+     - Transverse Bot steel distance from Bottom of slab
+   * - TranBotArea
+     - real
+     - IN2
+     - Transverse Bottom steel area per square foot of slab.
+   * - Material
+     - text
+     - 
+     - Material Library Reference

@@ -1,0 +1,48 @@
+FlangeDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - Plate
+     - text
+     - 
+     - Plate Library table name
+   * - Tp_Bt
+     - chr
+     - 
+     - [ |T|B] Flange location (T=Top, B=Bottom, Blank=Both)
+   * - NegFArea
+     - real
+     - IN2
+     - Area of fastener holes
+   * - NegHArea
+     - real
+     - IN2
+     - Area of hand holes
+   * - Code
+     - text
+     - 
+     - Special code (See documentation)

@@ -1,0 +1,56 @@
+LinkHingeLibrary
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Pin Hinge Name
+   * - WebThk
+     - real
+     - INC
+     - Web Thickness
+   * - LinkPltThk
+     - real
+     - INC
+     - Link Plate Thickness
+   * - PinDiam
+     - real
+     - INC
+     - Pin Diameter
+   * - V
+     - real
+     - INC
+     - Link plate top clearance.
+   * - W
+     - real
+     - INC
+     - Link plate side clearance.
+   * - LPFy
+     - real
+     - KSI
+     - Link plate Fy. (ksi)
+   * - LPFu
+     - real
+     - KSI
+     - Link plate ultimate shear capacity, Fu (ksi) (Default = 27 + 0.8Fy)
+   * - PinFy
+     - real
+     - KSI
+     - Pin Fy  (ksi)
+   * - WebFy
+     - real
+     - KSI
+     - Web Fy  (ksi)
