@@ -1,0 +1,40 @@
+HingePlacement
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - Point
+     - text
+     - 
+     - Point on Member line at hinge.
+   * - Hinge
+     - text
+     - 
+     - Reference Hinge
+   * - RateFactor
+     - text
+     - 
+     - Rating Factors
+   * - CxS
+     - real
+     - 
+     - Condition factor * System factor (phi_c * phi_s) (default = 1.00)
+   * - ShearLag
+     - real
+     - 
+     - Shear lag reduction factor (U = ShearLag)   (see AASHTO 6.8.2.2)

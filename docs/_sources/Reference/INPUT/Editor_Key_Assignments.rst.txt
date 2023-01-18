@@ -18,12 +18,12 @@ Function Keys:
 Character Keys:
 -----------------
 
-* Ctrl-C &nbsp;Copy current selection into paste buffer.
-* Ctrl-N &nbsp;Create a new file.
-* Ctrl-O &nbsp;Open an existing file
-* Ctrl-S &nbsp;Save current file
-* Ctrl-V &nbsp;Paste contents of paste buffer into current selected area.
-* Ctrl-Shift-V &nbsp; New Window.
+* Ctrl-C Copy current selection into paste buffer.
+* Ctrl-N Create a new file.
+* Ctrl-O Open an existing file
+* Ctrl-S Save current file
+* Ctrl-V Paste contents of paste buffer into current selected area.
+* Ctrl-Shift-V  New Window.
    - In Editor window, create a new viewer window.
    - In Viewer window, create a single pain viewer window of current tree item (same as F12.)
 * Ctrl-X - Cut selection. Copy current selection into paste buffer and delete current selection.

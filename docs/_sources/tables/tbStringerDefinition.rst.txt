@@ -1,0 +1,60 @@
+StringerDefinition
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Stringer line name / number
+   * - StartPoint
+     - text
+     - 
+     - Name of COGO point for start of stringer reference.
+   * - EndPoint
+     - text
+     - 
+     - Name of COGO point that end of member is referenced from.
+   * - AutoCn
+     - text
+     - 
+     - [N|Y|YS|A|AS] Automatically connect with intersecting lines and points.
+   * - RelEndA
+     - text
+     - 
+     - Member end releases at end A. code:[RZ,TY,TX] or Y-->Release moment (100)  blank/default/N-->continuous (000)
+   * - RelEndB
+     - text
+     - 
+     - Member end releases at end B. code:[RZ,TY,TX] or Y-->Release moment&no axial(101)  blank/default/N-->continuous(000 for stringer rating)&no axial(001 f
+   * - MbrWt
+     - int
+     - 
+     - Stage to apply stringer weight.
+   * - MbrStf
+     - int
+     - 
+     - Stage to start using the stiffness properties of the non-composit stringer.
+   * - RateFactor
+     - text
+     - 
+     - Rating Factors
+   * - LLDF_ID
+     - text
+     - 
+     - LRFR only - Live Load Distribution Factor reference to tbExlicitLLDF
+   * - CxS
+     - real
+     - 
+     - Condition factor * System factor (phi_c * phi_s) (default = 1.00)

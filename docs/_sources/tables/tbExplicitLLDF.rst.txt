@@ -1,0 +1,44 @@
+ExplicitLLDF
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - LLDF_ID
+     - text
+     - 
+     - Unique ID for this entry. Used in mbr def. to assoc mbr.
+   * - MD
+     - real
+     - FET
+     - Moment Design factor used for Inventory|Operating
+   * - SD
+     - real
+     - FET
+     - Shear Design factor used for Inventory|Operating
+   * - IMPDesign
+     - real
+     - FET
+     - Impact for Design factor used for Inventory|Operating
+   * - MP
+     - real
+     - FET
+     - Moment factor for Legal|Permit|Emergency Vehicle
+   * - SP
+     - real
+     - FET
+     - Shear factor  for Legal|Permit|Emergency Vehicle
+   * - IMPpermit
+     - real
+     - FET
+     - Impact factor for Legal|Permit|Emergency Vehicle

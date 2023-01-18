@@ -1,0 +1,191 @@
+AnalysisControls
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths: 20 8 4 4 70
+   :header-rows: 1
+
+   * - Parameter
+     - Data
+     - Units
+     - Type
+     - Description
+   * - AnalysisMethod
+     - LRFR
+     - 
+     - text
+     - LFR or LRFR  (default is LRFR)
+   * - AnalysisMode
+     - 2DL
+     - 
+     - text
+     - 2DL or 2DT (for transverse) Default is 2D. (Legacy 2DL=2D)
+   * - AxleDist
+     - 6
+     - FET
+     - real
+     - (Feet) 2DT mode. Distance between wheels on an axle
+   * - DLMult
+     - 1
+     - 
+     - real
+     - Dead Load multiplyer. Factor to be applied to computed member gravity load.
+   * - DLNetSection
+     - Y
+     - 
+     - chr
+     - [Y/N] Use section with hand holes removed for gravity load calculations.
+   * - FilterByMbrType
+     - Y
+     - 
+     - chr
+     - [Y/N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis
+   * - IntrBeam
+     - Y
+     - 
+     - chr
+     - [Y/N] for LRFR is this an interior beam analysis
+   * - LFRAutoCv
+     - Y
+     - 
+     - chr
+     - [Y/N/R] LFR automatic loading (Y=Add loads if not already defined. R=Clear all live loads and add new LFR loads.
+   * - LLMotionSpcFct
+     - 2
+     - 
+     - int
+     - Live Load Longitudinal truck motion spacing factor, (See Doc.)
+   * - LRFRAutoCv
+     - Y
+     - 
+     - chr
+     - [Y/N/R] LRFR automatic loading (Y=Add loads if not already defined. R=Clear all live loads and add new LRFR loads.
+   * - MRatio
+     - 8
+     - 
+     - real
+     - Modular Ratio Override. If not zero use this value instead of computed Es/Ec
+   * - MbrPTPts
+     - 2
+     - 
+     - int
+     - Number of integration points per pinned-end truss members
+   * - MbrPts
+     - 5
+     - 
+     - int
+     - Number of integration points per member (In addition to rate locations)
+   * - MidStgNodes
+     - N
+     - 
+     - chr
+     - [Y/N] Allow mesh generator to create nodes between stringers.
+   * - Phi_b
+     - 1.00
+     - 
+     - real
+     - LRFR Resistance factor for bearings (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_bs
+     - 0.80
+     - 
+     - real
+     - LRFR Resistance factor for block shear (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_c
+     - 0.95
+     - 
+     - real
+     - LRFR Resistance factor for axial compression (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_f
+     - 1.00
+     - 
+     - real
+     - LRFR Resistance factor for flexure (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_s
+     - 0.80
+     - 
+     - real
+     - LRFR Resistance factor for bolts in shear (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_u
+     - 0.80
+     - 
+     - real
+     - LRFR Resistance factor for tension, fracture in net section (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_v
+     - 1.00
+     - 
+     - real
+     - LRFR Resistance factor for shear (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_y
+     - 0.95
+     - 
+     - real
+     - LRFR Resistance factor for tension, yielding in gross section (AASHTO 6.5.4.2 -- 2020 edition)
+   * - RLaneWidth
+     - 10
+     - FET
+     - real
+     - (Feet) Width of rating / design lane
+   * - RiderDist
+     - 0
+     - FET
+     - real
+     - Distance per iteration for lane load rider (default if 0 is tenth of span).
+   * - Rp
+     - 1
+     - 
+     - real
+     - Reduction factor for holes. Use 0.90 for bolt holes punched full size and 1.0 for bolt holes drilled full size or subpunched and reamed to size
+   * - RptCap
+     - Y
+     - 
+     - chr
+     - [Y/N] Y=Generate capacity and rating calculations file.
+   * - RptFEA
+     - N
+     - 
+     - chr
+     - [Y/N] Y=Generate FEA forces file. (Warning, file can be quite large!)
+   * - RptInfSurf
+     - N
+     - 
+     - text
+     - [Y/N/(m@p)] Influence surface report. Use MBR@POI Can use key word ALL for MBR or POI. Y=ALL@ALL (warning large file generated)
+   * - RptSect
+     - Y
+     - 
+     - chr
+     - [Y/N] Y=Generate section properties report.
+   * - RptSummary
+     - Y
+     - 
+     - chr
+     - [Y/N] Y=Generate Rating summary report.
+   * - SLaneWidth
+     - 12
+     - FET
+     - real
+     - (Feet) Width of Striped lane
+   * - ShrCapFct
+     - Y
+     - 
+     - chr
+     - [Y/N] Y=For Inv. & Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.
+   * - StopAtDL
+     - N
+     - 
+     - chr
+     - [Y/N] Y= Run bridge only up through Deadload analysis.
+   * - TrussDLonEnds
+     - N
+     - 
+     - chr
+     - [Y/N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.
+   * - WetSlab
+     - Y
+     - 
+     - chr
+     - [Y/N] Y= Use a very low E for slab plates in final DL stage.

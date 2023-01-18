@@ -1,0 +1,40 @@
+RateLocation
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - RecordId
+     - 
+     - 
+     - Auto Increment
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line to begin scanning
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to stop scanning
+   * - Num
+     - int
+     - 
+     - Number of locations to scan between the starting and ending locations
+   * - ConstDist
+     - real
+     - FET
+     - Constant distance used instead of Num

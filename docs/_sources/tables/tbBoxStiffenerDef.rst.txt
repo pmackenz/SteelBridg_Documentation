@@ -1,0 +1,40 @@
+BoxStiffenerDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 4 4 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - Shape
+     - text
+     - 
+     - Stiffener shape from Library table name  (plates or std shapes)
+   * - LocationCode
+     - chr
+     - 
+     - [W|F] W:Web(side)  F:Flange(bottom) Symmetry assumed both horizontal and vertical
+   * - Dist
+     - real
+     - INC
+     - W: Distance up from bottom of girder.   F: Distance from left edge (not to exceed half distance)
