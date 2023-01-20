@@ -9,10 +9,6 @@ Concrete Slab Definition
 
 **Input Concrete Slab Definition**
 
-* `REF1`_
-* `REF2`_
-* `REF3`_
-* `REF4`_
 
 .. image:: ../../image/ebd_Ebd220.gif
     :alt: image/ebd_Ebd220.gif
