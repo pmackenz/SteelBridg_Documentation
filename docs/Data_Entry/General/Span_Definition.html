@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Input Nodal Boundary Condition &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Span Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Staging Definition" href="Staging.html" />
-    <link rel="prev" title="COGO Command: Command Descriptions" href="../COGO/COGO_Command_Command_Descriptions.html" /> 
+    <link rel="next" title="Transverse Analysis" href="../transverse.html" />
+    <link rel="prev" title="Staging Definition" href="Staging.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,9 +46,9 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../general.html">General Info</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Bridge_Description.html">Input Bridge Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../COGO/COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Input Nodal Boundary Condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Staging.html">Staging Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Span_Definition.html">Span Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Span Definition</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
@@ -83,9 +83,9 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../DataEntry.html">Data Entry</a> &raquo;</li>
           <li><a href="../general.html">General Info</a> &raquo;</li>
-      <li>Input Nodal Boundary Condition</li>
+      <li>Span Definition</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Data_Entry/General/Nodal_Boundary_Condition.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Data_Entry/General/Span_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -93,58 +93,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="input-nodal-boundary-condition">
-<h1>Input Nodal Boundary Condition<a class="headerlink" href="#input-nodal-boundary-condition" title="Permalink to this heading"></a></h1>
+  <section id="span-definition">
+<h1>Span Definition<a class="headerlink" href="#span-definition" title="Permalink to this heading"></a></h1>
 <p>Example:</p>
 <figure class="align-default">
-<img alt="image/tbNodalBoundaryCond.png" src="../../_images/tbNodalBoundaryCond.png" />
+<img alt="image/tbSpanDef.gif" src="../../_images/tbSpanDef.png" />
 </figure>
-<dl>
-<dt>Parameters</dt><dd><ul>
-<li><p>CogoPt</p>
-<blockquote>
-<div><p>Enter a name of a COGO point to be constrained. The same point can be listed multiple times. See the notes below on multiple point entry.</p>
-</div></blockquote>
-</li>
-</ul>
-<blockquote>
-<div><ul>
-<li><p>Fx,Fy, and Mz</p>
-<p>Enter a “Y” in this field to constrain the point in that DOF.</p>
-</li>
-</ul>
-</div></blockquote>
-<ul>
-<li><p>Stage</p>
-<blockquote>
-<div><p>Normally a constraint is active in every stage, but this field can be used to specify that a constraint only be active in a single stage.
-If this entry is used, also use the Reaction Stage entry or else the forces resisted by this constraint will be lost and not re-applied to the model.
-This might be what is intended but typically not if this feature is used to simulate form-work.</p>
-</div></blockquote>
-</li>
-<li><p>Reaction Stage</p>
-<blockquote>
-<div><p>If the Stage feature is used (described above) then specify the stage that the constrained forces are to be re-applied to the model.</p>
-</div></blockquote>
-</li>
-</ul>
 <dl class="simple">
-<dt>Duplicate Point Entry Note</dt><dd><p>If the same Cogo Point is listed multiple times for the same stage, then the resulting boundary condition is the “OR” of all fixity codes.
-For example, if point AA is listed once with a constraint in the Fx direction, and on another line is listed as having a constraint in the Fy direction,
-then point AA will be constrained in both the Fx and Fy directions. This makes entry more convenient when point constrains are listed by purpose,
-not by point number. For example listing all physical supports, then simplification constrains, then model stability constraints.</p>
+<dt>Description</dt><dd><p>This table is used to explicitly define the spans. If used you MUST define ALL spans.
+If this table is empty the program will automatically find spans by looking for nodal boundary conditions.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+<p>Parameters</p>
+<blockquote>
+<div><p>Start</p>
+<blockquote>
+<div><p>The start of a span is defined by specifying the left most line member. (Truss members are invalid for span definition)</p>
+</div></blockquote>
+<p>End</p>
+<blockquote>
+<div><p>The end of a span is defined by specifying the right most line member. (Truss members are invalid for span definition)</p>
+</div></blockquote>
+</div></blockquote>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../COGO/COGO_Command_Command_Descriptions.html" class="btn btn-neutral float-left" title="COGO Command: Command Descriptions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Staging.html" class="btn btn-neutral float-right" title="Staging Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Staging.html" class="btn btn-neutral float-left" title="Staging Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../transverse.html" class="btn btn-neutral float-right" title="Transverse Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

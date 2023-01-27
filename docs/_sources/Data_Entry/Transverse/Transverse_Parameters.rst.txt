@@ -1,0 +1,63 @@
+Transverse Parameters
+=================================
+Example:
+
+
+
+.. list-table::
+    :widths: 15 10 10 40
+    :header-rows: 1
+   
+    * - Parameter
+      - Data
+      - Units
+      - Description
+    * - Dist2Edge
+      - Distance
+      - Feet
+      - Distance from edge of crossbeam to edge of deck. See :ref:`Transverse Theory`
+    * - DistShyL
+      - Distance 
+      - Feet
+      - Distance from left edge of deck to edge of first left side lane. See :ref:`Transverse Theory`
+    * - DistShyR
+      - Distance 
+      - Feet
+      - Distance from right edge of deck to edge of first right side lane. See :ref:`Transverse Theory`
+    * - MultDL
+      - Multiplyer 
+      - Real number
+      - If DL reactions from single lane analysis then multiply for total lanes.      
+    * - MultSDL_DC
+      - Multiplyer
+      - Real number
+      - If superimposed DC DL reactions from single lane analysis then multiply for total lanes.      
+    * - MultSDL_DW
+      - Multiplyer 
+      - Real number
+      - If superimposed DW DL reactions from single lane analysis then multiply for total lanes.  
+    * - MultSecEff
+      - Multiplyer
+      - Real number
+      - The MultSecEff is used for magnifying secondary effect reactions that can be result of a post-stressed concrete beam  analysis.  
+    * - REAFile
+      - Full path to a REA file. 
+      - OS file path
+      - see :ref:`Transverse Reactions`  
+    * - SlabWidth
+      - Distance
+      - Feet
+      - The full width of the deck including shy distances. See :ref:`Transverse Theory` 
+    * - Stiffness
+      - code 
+      - S:Stiff  F:Flexible
+      - Used to determine if the transfer model should use a very stiff or very flexible beam properties. See :ref:`Transverse Theory` 
+    * - SupportLoc
+      - Value from REA file.
+      - Real number
+      - Only needed if using REAFile reader. Location of the support to select from the REA file. See :ref:`Transverse Reactions`  
+
+Example:
+
+    .. figure:: ../../image/TransverseParameters.png
+        :alt: image/TransverseParameters.png

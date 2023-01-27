@@ -1,0 +1,22 @@
+Span Definition
+=================================
+Example:
+
+.. figure:: ../../image/tbSpanDef.png
+   :alt: image/tbSpanDef.gif
+
+Description
+   This table is used to explicitly define the spans. If used you MUST define ALL spans.  
+   If this table is empty the program will automatically find spans by looking for nodal boundary conditions.  
+
+
+Parameters 
+
+   Start  
+
+      The start of a span is defined by specifying the left most line member. (Truss members are invalid for span definition)
+
+   End  
+
+      The end of a span is defined by specifying the right most line member. (Truss members are invalid for span definition)
+

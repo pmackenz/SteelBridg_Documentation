@@ -1,0 +1,52 @@
+Transverse Reactions
+=================================
+Example:
+
+    .. figure:: ../../image/tb2DReactions.png
+        :alt: image/tb2DReactions.png
+
+
+- Description
+    This table is used for explicit entry of reaction loads to be used with a 2D transverse analysis. The alternate is to use data from an REA file (Please see 2DT Parameters).  Do NOT use both!
+
+- Parameters
+    - Type 
+
+      Enter key word:
+         DEAD for dead loads.
+
+         SDL for superimposed dead loads. 
+
+         TRUCK for un-factored truck live load.
+
+    - Truck Name 
+
+        If reaction type is TRUCK then this name must correspond to a truck referenced in the 2DTLoadCombDef.
+
+    - Reaction 
+
+        Enter reaction load in kips.  Use  unfactored loads, and for tucks, use the unfactored total truck reaction value including impact.  
+        Only use positive reactions.
+
+    - Stage 
+
+        If the load type is DEAD, then enter an option stage for applying the load. If left blank or zero, the last dead load stage will be used.
+
+
+
+- The REA File
+    
+    Whenever a longitudinal analysis is run, a reaction, REA, file is generated. 
+    
+    You can specify this file name instead of entering data in the reactions table but this is not advised. The better approach is to reference this file once in the 
+    parameters table, let the program import the data, then remove the reference, and save the file. This way the one BDF file has all the data needed and not dependant
+    on a file REA file that might go walk-about and get lost.
+
+    The reaction locations are taken at the ends of all stringer members in the model. Thus, some entries might have zero reactions if that location is not at a support point.  
+
+    The "Reaction Minimum" column is for information only and not used in the analysis.  Only positive reaction values are used from this file for crossbeam analysis.
+
+    Example REA file:
+
+    .. figure:: ../../image/REAfile.png
+       :alt: image/REAfile.png

@@ -1,0 +1,18 @@
+##################
+Data Entry
+##################
+
+.. toctree::
+    :maxdepth: 3
+
+    Data_Entry/settings.rst
+    Data_Entry/general.rst
+    Data_Entry/transverse.rst
+    Data_Entry/factors_and_rating.rst
+    Data_Entry/library.rst
+    Data_Entry/steel_members.rst
+    Data_Entry/concrete.rst
+    Data_Entry/shape_placement.rst
+    Data_Entry/loads.rst
+    Data_Entry/deprecated.rst
+

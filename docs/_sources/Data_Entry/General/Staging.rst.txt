@@ -1,0 +1,14 @@
+Staging Definition
+=================================
+Example:
+
+.. figure:: ../../image/tbStaging.png
+   :alt: image/tbStaging.gif
+
+This is an optional table you can use to document the different dead load stages in the model. 
+
+The program scans all tables that use staging before processing the data to see how many stages are going to be run. 
+One technique to investigate the gravity effects of different member groups is to assign their weight to individual stages. 
+In the resulting analysis report files the forces for each stage are listed seporately. 
+All deadload stage forces are superimposed to create the final effective deadload forces used in the capacity and rating calculations.
+

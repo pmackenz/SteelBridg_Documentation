@@ -1,20 +1,12 @@
-
 **********************
-2D Transverse Analysis
+Transverse Analysis
 **********************
 
-2DT Parameters
---------------------
+.. toctree::
+    :maxdepth: 2
 
-2DT Transfer Model
---------------------
-
-2DT Reactions
---------------------
-
-2DT Load Combinations
------------------------
-
-
-
-
+    Transverse/Transverse_Theory.rst
+    Transverse/Transverse_Parameters.rst
+    Transverse/Transverse_Transfer_Model.rst
+    Transverse/Transverse_Reactions.rst
+    Transverse/Transverse_Load_Combinations.rst

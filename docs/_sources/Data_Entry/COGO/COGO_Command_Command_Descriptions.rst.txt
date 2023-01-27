@@ -1,6 +1,16 @@
 COGO Command: Command Descriptions
 ====================================
 
+For historical reasons BRIDG includes a near complete COGO package which has many features not needed for 2D data input. 
+Only these 3 commands are commonly used:
+
+* STOR
+  
+* OFFSET
+  
+* PATH  (used to define the truck path)
+  
+
 
 .. list-table::
     :widths: 30 70

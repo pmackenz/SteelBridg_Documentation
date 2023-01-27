@@ -1,0 +1,17 @@
+Transverse Theory
+=================================
+
+
+The following diagrams shows how a transverse beam analysis is performed.  
+The main feature is an intermediate model that distributes the reaction loads from the deck to the supporting structure.  
+This intermediate model's job is to approximate the load distribution effects of the longitudinal structure to the transverse members.
+
+
+
+    .. figure:: ../../image/TransverseTheory_model.png
+        :alt: image/TransverseTheory_model.png
+
+---------
+
+    .. figure:: ../../image/TransverseTheory_Loading.png
+        :alt: image/TransverseTheory_Loading.png

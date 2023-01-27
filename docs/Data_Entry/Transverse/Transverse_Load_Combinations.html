@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Input Nodal Boundary Condition &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>Transverse Load Combinations &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Staging Definition" href="Staging.html" />
-    <link rel="prev" title="COGO Command: Command Descriptions" href="../COGO/COGO_Command_Command_Descriptions.html" /> 
+    <link rel="next" title="Factors &amp; Rating Controls" href="../factors_and_rating.html" />
+    <link rel="prev" title="Transverse Reactions" href="Transverse_Reactions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,15 +43,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../general.html">General Info</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Bridge_Description.html">Input Bridge Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../COGO/COGO_Command_Command_Descriptions.html">COGO Command: Command Descriptions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Input Nodal Boundary Condition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Staging.html">Staging Definition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Span_Definition.html">Span Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../transverse.html">Transverse Analysis</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Transverse_Theory.html">Transverse Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Transverse_Parameters.html">Transverse Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Transverse_Transfer_Model.html">Transverse Transfer Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Transverse_Reactions.html">Transverse Reactions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Transverse Load Combinations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../library.html">Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../steel_members.html">Steel Members</a></li>
@@ -82,10 +82,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../DataEntry.html">Data Entry</a> &raquo;</li>
-          <li><a href="../general.html">General Info</a> &raquo;</li>
-      <li>Input Nodal Boundary Condition</li>
+          <li><a href="../transverse.html">Transverse Analysis</a> &raquo;</li>
+      <li>Transverse Load Combinations</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Data_Entry/General/Nodal_Boundary_Condition.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Data_Entry/Transverse/Transverse_Load_Combinations.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -93,58 +93,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="input-nodal-boundary-condition">
-<h1>Input Nodal Boundary Condition<a class="headerlink" href="#input-nodal-boundary-condition" title="Permalink to this heading"></a></h1>
+  <section id="transverse-load-combinations">
+<h1>Transverse Load Combinations<a class="headerlink" href="#transverse-load-combinations" title="Permalink to this heading"></a></h1>
 <p>Example:</p>
-<figure class="align-default">
-<img alt="image/tbNodalBoundaryCond.png" src="../../_images/tbNodalBoundaryCond.png" />
+<blockquote>
+<div><figure class="align-default">
+<img alt="image/tb2DLoadComb.png" src="../../_images/tb2DLoadComb.png" />
 </figure>
-<dl>
-<dt>Parameters</dt><dd><ul>
-<li><p>CogoPt</p>
-<blockquote>
-<div><p>Enter a name of a COGO point to be constrained. The same point can be listed multiple times. See the notes below on multiple point entry.</p>
-</div></blockquote>
-</li>
-</ul>
-<blockquote>
-<div><ul>
-<li><p>Fx,Fy, and Mz</p>
-<p>Enter a “Y” in this field to constrain the point in that DOF.</p>
-</li>
-</ul>
 </div></blockquote>
 <ul>
-<li><p>Stage</p>
-<blockquote>
-<div><p>Normally a constraint is active in every stage, but this field can be used to specify that a constraint only be active in a single stage.
-If this entry is used, also use the Reaction Stage entry or else the forces resisted by this constraint will be lost and not re-applied to the model.
-This might be what is intended but typically not if this feature is used to simulate form-work.</p>
-</div></blockquote>
+<li><dl>
+<dt>Parameters</dt><dd><ul>
+<li><dl class="simple">
+<dt>Name</dt><dd><p>Enter a unique name for this load combination</p>
+</dd>
+</dl>
 </li>
-<li><p>Reaction Stage</p>
-<blockquote>
-<div><p>If the Stage feature is used (described above) then specify the stage that the constrained forces are to be re-applied to the model.</p>
-</div></blockquote>
+<li><dl class="simple">
+<dt>Active</dt><dd><p>Enter Y for active load case or N for not active.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Truck_A</dt><dd><p>Enter a truck name that is listed in the 2DReactions table.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Truck_A_MaxLanes</dt><dd><p>Enter number of lanes for Truck_A to use. The program will place the truck(s) in as many different locations as possible.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Truck_B</dt><dd><p>Enter a truck name that is listed in the 2DReactions table. This entry is NOT valid if no Truck_A is defined.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Truck_B_MaxLanes</dt><dd><p>Enter number of lanes for Truck_B to use. The program will place these truck(s) and the Truck_A trucks in as many different locations and lanes as possible.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>LnLdRdctn</dt><dd><p>Reference an entry in the LaneLoadRFeduction table. Used when more then one lane is loaded.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>LFR</dt><dd><p>When runing a LFR analysis select which rating factor mode to use.</p>
+<p>[D|P] D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>LRFR</dt><dd><p>When runing a LRFR analysis select which rating factor mode to use.</p>
+<p>[H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>NegOnly</dt><dd><p>Only use this load combination for Negative moment rating.</p>
+<p>Enter a Y or N</p>
+</dd>
+</dl>
 </li>
 </ul>
-<dl class="simple">
-<dt>Duplicate Point Entry Note</dt><dd><p>If the same Cogo Point is listed multiple times for the same stage, then the resulting boundary condition is the “OR” of all fixity codes.
-For example, if point AA is listed once with a constraint in the Fx direction, and on another line is listed as having a constraint in the Fy direction,
-then point AA will be constrained in both the Fx and Fy directions. This makes entry more convenient when point constrains are listed by purpose,
-not by point number. For example listing all physical supports, then simplification constrains, then model stability constraints.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</li>
+</ul>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../COGO/COGO_Command_Command_Descriptions.html" class="btn btn-neutral float-left" title="COGO Command: Command Descriptions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Staging.html" class="btn btn-neutral float-right" title="Staging Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Transverse_Reactions.html" class="btn btn-neutral float-left" title="Transverse Reactions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../factors_and_rating.html" class="btn btn-neutral float-right" title="Factors &amp; Rating Controls" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

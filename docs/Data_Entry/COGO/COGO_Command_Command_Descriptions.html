@@ -41,16 +41,17 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Data Entry</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../general.html">General Info</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../General/Bridge_Description.html">Input Bridge Description</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">COGO Command: Command Descriptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../General/Nodal_Boundary_Condition.html">Input Nodal Boundary Condition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../General/Capacity_Trace.html">Capacity Trace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../General/Staging.html">Staging Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../General/Span_Definition.html">Span Definition</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../transverse.html">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../library.html">Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../steel_members.html">Steel Members</a></li>
@@ -80,7 +81,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../input.html">Data Entry</a> &raquo;</li>
+          <li><a href="../../DataEntry.html">Data Entry</a> &raquo;</li>
           <li><a href="../general.html">General Info</a> &raquo;</li>
       <li>COGO Command: Command Descriptions</li>
       <li class="wy-breadcrumbs-aside">
@@ -94,6 +95,13 @@
              
   <section id="cogo-command-command-descriptions">
 <h1>COGO Command: Command Descriptions<a class="headerlink" href="#cogo-command-command-descriptions" title="Permalink to this heading"></a></h1>
+<p>For historical reasons BRIDG includes a near complete COGO package which has many features not needed for 2D data input.
+Only these 3 commands are commonly used:</p>
+<ul class="simple">
+<li><p>STOR</p></li>
+<li><p>OFFSET</p></li>
+<li><p>PATH  (used to define the truck path)</p></li>
+</ul>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 30%" />

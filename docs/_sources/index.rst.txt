@@ -12,7 +12,7 @@ Welcome to SteelBridg LRFR documentation!
     :caption: Contents:
 
     Tutorials/Preview/Getting_Started.rst
-    input.rst
+    DataEntry.rst
     theory.rst
     FAQ.rst
     examples.rst

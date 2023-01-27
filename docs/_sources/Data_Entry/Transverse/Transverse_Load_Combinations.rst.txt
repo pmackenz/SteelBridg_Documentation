@@ -1,0 +1,44 @@
+Transverse Load Combinations
+=============================
+
+Example:
+
+    .. figure:: ../../image/tb2DLoadComb.png
+        :alt: image/tb2DLoadComb.png
+
+- Parameters
+    - Name 
+        Enter a unique name for this load combination
+
+    - Active
+        Enter Y for active load case or N for not active.
+
+    - Truck_A
+        Enter a truck name that is listed in the 2DReactions table. 
+
+    - Truck_A_MaxLanes
+        Enter number of lanes for Truck_A to use. The program will place the truck(s) in as many different locations as possible.  
+
+    - Truck_B
+        Enter a truck name that is listed in the 2DReactions table. This entry is NOT valid if no Truck_A is defined.
+
+    - Truck_B_MaxLanes
+        Enter number of lanes for Truck_B to use. The program will place these truck(s) and the Truck_A trucks in as many different locations and lanes as possible.  
+
+    - LnLdRdctn
+        Reference an entry in the LaneLoadRFeduction table. Used when more then one lane is loaded.
+
+    - LFR
+        When runing a LFR analysis select which rating factor mode to use.
+
+        [D|P] D=Inventory&Operating  P=Overload Inv&Opr
+
+    - LRFR
+        When runing a LRFR analysis select which rating factor mode to use.
+        
+        [H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated
+
+    - NegOnly
+        Only use this load combination for Negative moment rating.
+
+        Enter a Y or N        
