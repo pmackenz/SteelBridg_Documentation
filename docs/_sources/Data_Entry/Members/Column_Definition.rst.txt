@@ -1,15 +1,6 @@
 Input Column Definition
 --------------------------
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd145.gif
-        :alt: image/ebd_Ebd145.gif
-
-
-    .. figure:: ../../image/ebd_Ebd146.gif
-        :alt: image/ebd_Ebd146.gif
-
-
-.. figure:: ../../image/ebd_Ebd147.gif
-    :alt: image/ebd_Ebd147.gif
+.. figure:: ../../image/ebd_Ebd147.png
+    :alt: image/ebd_Ebd147.png
 

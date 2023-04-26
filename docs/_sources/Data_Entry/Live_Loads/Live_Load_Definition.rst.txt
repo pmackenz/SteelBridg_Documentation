@@ -1,11 +1,11 @@
 Live Load Definition
 =========================
 
-.. image:: ../../image/ebd_Ebd61.gif
-    :alt: image/ebd_Ebd61.gif
+.. image:: ../../image/ebd_Ebd61.png
+    :alt: image/ebd_Ebd61.png
     
-.. image:: ../../image/ebd_Ebd62.gif
-    :alt: image/ebd_Ebd62.gif
+.. image:: ../../image/ebd_Ebd62.png
+    :alt: image/ebd_Ebd62.png
 
 
 Description

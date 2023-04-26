@@ -30,8 +30,8 @@ For `Center` placement, the `TCW` will be centered in the lane.
 For `Right` and `Right Quarter` placements, the `TCW` will be placed
 against the right edge of the lane boundary.
 
-.. image:: ../../image/ebd_Ebd49.gif
-    :alt: image/ebd_Ebd49.gif
+.. image:: ../../image/ebd_Ebd49.png
+    :alt: image/ebd_Ebd49.png
 
 On narrow bridges it is possible for a truck axle to leave the road surface.
 When this happens, the program will issue a warning message.

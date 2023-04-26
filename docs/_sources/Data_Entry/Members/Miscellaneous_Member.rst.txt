@@ -1,15 +1,8 @@
 Input Miscellaneous Member
 -----------------------------
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd152.gif
-        :alt: image/ebd_Ebd152.gif
-
-    .. image:: ../../image/ebd_Ebd153.gif
-        :alt: image/ebd_Ebd153.gif
-
-.. image:: ../../image/ebd_Ebd154.gif
-    :alt: image/ebd_Ebd154.gif
+.. image:: ../../image/ebd_Ebd154.png
+    :alt: image/ebd_Ebd154.png
 
 
 A Miscellaneous member has the special feature of `Gravity Only.`
@@ -32,6 +25,6 @@ This is useful where the gravity only member ties into a real member,
 such as a diagonal or horizontal truss member, and the effect of a point load
 in the direction of gravity at that connecting point is not desired.
 
-.. figure:: ../../image/ebd_Ebd155.gif
-    :alt: image/ebd_Ebd155.gif
+.. figure:: ../../image/ebd_Ebd155.png
+    :alt: image/ebd_Ebd155.png
 

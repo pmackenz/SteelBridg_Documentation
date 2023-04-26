@@ -54,6 +54,11 @@
      - 
      - text
      - Name of REA file.
+   * - SimpleSpans
+     - Y
+     - 
+     - chr
+     - [Y|N] Build transfer model with simple spans between load locations
    * - SlabWidth
      - 0
      - FET
@@ -63,7 +68,7 @@
      - S
      - 
      - chr
-     - [S|F] Stiffness of transfer model.  S=stiff F=flexible
+     - [S|F] Stiffness of transfer model.  S=stiff F=flexible (also see SimpleSpans switch)
    * - SupportLoc
      - 0
      - FET

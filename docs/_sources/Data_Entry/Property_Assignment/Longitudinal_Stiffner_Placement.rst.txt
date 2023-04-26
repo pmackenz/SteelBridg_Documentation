@@ -1,8 +1,8 @@
 Input Longitudinal Stiffner Placement
 ======================================
 
-.. image:: ../../image/ebd_Ebd127.gif
-    :alt: image/ebd_Ebd127.gif
+.. image:: ../../image/ebd_Ebd127.png
+    :alt: image/ebd_Ebd127.png
 
-.. image:: ../../image/ebd_Ebd128.gif
-    :alt: image/ebd_Ebd128.gif
+.. image:: ../../image/ebd_Ebd128.png
+    :alt: image/ebd_Ebd128.png

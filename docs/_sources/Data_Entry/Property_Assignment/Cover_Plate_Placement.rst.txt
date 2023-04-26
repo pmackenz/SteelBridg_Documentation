@@ -1,5 +1,5 @@
 Input Cover Plate Placement
 ================================
 
-.. image:: ../../image/ebd_Ebd125.gif
-    :alt: image/ebd_Ebd125.gif
+.. image:: ../../image/ebd_Ebd125.png
+    :alt: image/ebd_Ebd125.png

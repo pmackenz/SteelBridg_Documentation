@@ -21,15 +21,15 @@ NodalBoundaryCond
    * - Fx
      - chr
      - 
-     - [Y/N] Constrain node translation in X direction
+     - [Y|N] Constrain node translation in X direction
    * - Fy
      - chr
      - 
-     - [Y/N] Constrain node translation in Y direction
+     - [Y|N] Constrain node translation in Y direction
    * - Mz
      - chr
      - 
-     - [Y/N] Constrain node in rotation axis
+     - [Y|N] Constrain node in rotation axis
    * - Stage
      - int
      - 

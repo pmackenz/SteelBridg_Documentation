@@ -1,6 +1,6 @@
 COGO Command: EQ/L
 ----------------------
 
-.. figure:: EQ_L.gif
-    :alt: EQ_L.gif
+.. figure:: EQ_L.png
+    :alt: EQ_L.png
 

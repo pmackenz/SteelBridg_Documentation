@@ -1,7 +1,7 @@
 [SS-5.2.1.1] Compactness of Type A(1)
 ======================================================
 
-.. image:: ../../../Graphics/5.2.1.1_Section_Type_A(1).gif
-    :alt: Graphics/5.2.1.1_Section_Type_A(1).gif
+.. image:: ../../../Graphics/5.2.1.1_Section_Type_A(1).png
+    :alt: Graphics/5.2.1.1_Section_Type_A(1).png
 
 

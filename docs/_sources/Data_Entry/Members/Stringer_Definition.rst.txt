@@ -1,8 +1,8 @@
 Input Stringer Definition
 ---------------------------
 
-.. figure:: ../../image/ebd_Ebd138.gif
-    :alt: image/ebd_Ebd138.gif
+.. figure:: ../../image/ebd_Ebd138.png
+    :alt: image/ebd_Ebd138.png
 
 .. note::
 

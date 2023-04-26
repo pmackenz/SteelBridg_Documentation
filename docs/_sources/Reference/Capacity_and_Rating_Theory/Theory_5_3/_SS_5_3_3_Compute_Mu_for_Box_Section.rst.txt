@@ -1,6 +1,6 @@
 [SS-5.3.3] Compute Mu for Box Section
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd201.gif
-    :alt: image/ebd_Ebd201.gif
+.. image:: ../../../image/ebd_Ebd201.png
+    :alt: image/ebd_Ebd201.png
 

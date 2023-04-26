@@ -1,5 +1,5 @@
 COGO Command: RCOOR
 ----------------------
 
-.. figure:: RCoor.gif
-    :alt: RCoor.gif
+.. figure:: RCoor.png
+    :alt: RCoor.png

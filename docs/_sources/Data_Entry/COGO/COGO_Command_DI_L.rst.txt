@@ -1,6 +1,6 @@
 COGO Command: DI/L
 ----------------------
 
-.. figure:: DI_L.gif
-    :alt: DI_L.gif
+.. figure:: DI_L.png
+    :alt: DI_L.png
 

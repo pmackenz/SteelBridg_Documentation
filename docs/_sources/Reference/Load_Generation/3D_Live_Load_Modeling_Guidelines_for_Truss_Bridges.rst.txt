@@ -94,8 +94,8 @@ trucks along the bridge and transverse lane positions between the curb lines.
 
     The position of rating lanes is described in the following table:
 
-    .. image:: ../../image/ebd_Ebd48.gif
-        :alt: image/ebd_Ebd48.gif
+    .. image:: ../../image/ebd_Ebd48.png
+        :alt: image/ebd_Ebd48.png
 
     This method of transverse placement will be used to determine the Inventory
     and Operating Ratings for reporting to the National Bridge Inventory.

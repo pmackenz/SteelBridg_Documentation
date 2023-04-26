@@ -1,6 +1,6 @@
 COGO Command: L/AZ
 ----------------------
 
-.. figure:: L_AZ.gif
-    :alt: L_AZ.gif
+.. figure:: L_AZ.png
+    :alt: L_AZ.png
 

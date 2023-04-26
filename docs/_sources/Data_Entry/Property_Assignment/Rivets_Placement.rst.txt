@@ -5,10 +5,10 @@ Input Rivets Placement
 
 .. warning::
 
-    *** This feature not implemented yet and currently under development. ***</font></span></P>
+    ** This feature has not been implemented yet. **
 
-.. image:: ../../image/ebd_Ebd126.gif
-    :alt: image/ebd_Ebd126.gif
+.. image:: ../../image/ebd_Ebd126.png
+    :alt: image/ebd_Ebd126.png
 
 .. rubric:: Loctn Codes
 ..

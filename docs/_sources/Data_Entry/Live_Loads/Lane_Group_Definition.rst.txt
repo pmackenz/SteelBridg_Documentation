@@ -1,11 +1,11 @@
 Lane Group Definition
 =========================
 
-.. image:: ../../image/ebd_Ebd67.gif
-    :alt: image/ebd_Ebd67.gif
+.. image:: ../../image/ebd_Ebd67.png
+    :alt: image/ebd_Ebd67.png
 
-.. image:: ../../image/ebd_Ebd68.gif
-    :alt: image/ebd_Ebd68.gif
+.. image:: ../../image/ebd_Ebd68.png
+    :alt: image/ebd_Ebd68.png
 
 
 Description

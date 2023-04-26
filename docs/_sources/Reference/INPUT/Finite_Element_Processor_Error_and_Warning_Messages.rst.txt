@@ -1,5 +1,5 @@
 Finite Element Processor Error and Warning Messages
-============================
+========================================================
 
 During the finite element analysis process, the program my find that your model
 is not stable.  If the instability is in a translation direction, the analysis
@@ -29,12 +29,12 @@ constraint is hardly ever used.
 Consider the following examples of unstable models.
 
 
-.. image:: ../../image/ebd_Ebd29.gif
-    :alt: image/ebd_Ebd29.gif
+.. image:: ../../image/ebd_Ebd29.png
+    :alt: image/ebd_Ebd29.png
 
-.. image:: ../../image/ebd_Ebd30.gif
-    :alt: image/ebd_Ebd30.gif
+.. image:: ../../image/ebd_Ebd30.png
+    :alt: image/ebd_Ebd30.png
 
-.. image:: ../../image/ebd_Ebd31.gif
-    :alt: image/ebd_Ebd31.gif
+.. image:: ../../image/ebd_Ebd31.png
+    :alt: image/ebd_Ebd31.png
 

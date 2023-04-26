@@ -41,7 +41,7 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../input.html">Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DataEntry.html">Data Entry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
@@ -163,19 +163,19 @@
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Use section with hand holes removed for gravity load calculations.</p></td>
+<td><p>[Y|N] Use section with hand holes removed for gravity load calculations.</p></td>
 </tr>
 <tr class="row-odd"><td><p>FilterByMbrType</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis</p></td>
+<td><p>[Y|N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis</p></td>
 </tr>
 <tr class="row-even"><td><p>IntrBeam</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] for LRFR is this an interior beam analysis</p></td>
+<td><p>[Y|N] for LRFR is this an interior beam analysis</p></td>
 </tr>
 <tr class="row-odd"><td><p>LFRAutoCv</p></td>
 <td><p>Y</p></td>
@@ -217,7 +217,7 @@
 <td><p>N</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Allow mesh generator to create nodes between stringers.</p></td>
+<td><p>[Y|N] Allow mesh generator to create nodes between stringers.</p></td>
 </tr>
 <tr class="row-even"><td><p>Phi_b</p></td>
 <td><p>1.00</p></td>
@@ -273,77 +273,83 @@
 <td><p>real</p></td>
 <td><p>(Feet) Width of rating / design lane</p></td>
 </tr>
-<tr class="row-odd"><td><p>RiderDist</p></td>
+<tr class="row-odd"><td><p>RatePlotLimit</p></td>
+<td><p>2.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>When plotting rating, limit the scale to this value</p></td>
+</tr>
+<tr class="row-even"><td><p>RiderDist</p></td>
 <td><p>0</p></td>
 <td><p>FET</p></td>
 <td><p>real</p></td>
 <td><p>Distance per iteration for lane load rider (default if 0 is tenth of span).</p></td>
 </tr>
-<tr class="row-even"><td><p>Rp</p></td>
+<tr class="row-odd"><td><p>Rp</p></td>
 <td><p>1</p></td>
 <td></td>
 <td><p>real</p></td>
 <td><p>Reduction factor for holes. Use 0.90 for bolt holes punched full size and 1.0 for bolt holes drilled full size or subpunched and reamed to size</p></td>
 </tr>
-<tr class="row-odd"><td><p>RptCap</p></td>
+<tr class="row-even"><td><p>RptCap</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=Generate capacity and rating calculations file.</p></td>
+<td><p>[Y|N] Y=Generate capacity and rating calculations file.</p></td>
 </tr>
-<tr class="row-even"><td><p>RptFEA</p></td>
+<tr class="row-odd"><td><p>RptFEA</p></td>
 <td><p>N</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=Generate FEA forces file. (Warning, file can be quite large!)</p></td>
+<td><p>[Y|N] Y=Generate FEA forces file. (Warning, file can be quite large!)</p></td>
 </tr>
-<tr class="row-odd"><td><p>RptInfSurf</p></td>
+<tr class="row-even"><td><p>RptInfSurf</p></td>
 <td><p>N</p></td>
 <td></td>
 <td><p>text</p></td>
 <td><p>[Y/N/(m&#64;p)] Influence surface report. Use <a class="reference external" href="mailto:MBR&#37;&#52;&#48;POI">MBR<span>&#64;</span>POI</a> Can use key word ALL for MBR or POI. <a class="reference external" href="mailto:Y=ALL&#37;&#52;&#48;ALL">Y=ALL<span>&#64;</span>ALL</a> (warning large file generated)</p></td>
 </tr>
-<tr class="row-even"><td><p>RptSect</p></td>
+<tr class="row-odd"><td><p>RptSect</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=Generate section properties report.</p></td>
+<td><p>[Y|N] Y=Generate section properties report.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RptSummary</p></td>
+<tr class="row-even"><td><p>RptSummary</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=Generate Rating summary report.</p></td>
+<td><p>[Y|N] Y=Generate Rating summary report.</p></td>
 </tr>
-<tr class="row-even"><td><p>SLaneWidth</p></td>
+<tr class="row-odd"><td><p>SLaneWidth</p></td>
 <td><p>12</p></td>
 <td><p>FET</p></td>
 <td><p>real</p></td>
 <td><p>(Feet) Width of Striped lane</p></td>
 </tr>
-<tr class="row-odd"><td><p>ShrCapFct</p></td>
+<tr class="row-even"><td><p>ShrCapFct</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y=For Inv. &amp; Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.</p></td>
+<td><p>[Y|N] Y=For Inv. &amp; Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.</p></td>
 </tr>
-<tr class="row-even"><td><p>StopAtDL</p></td>
+<tr class="row-odd"><td><p>StopAtDL</p></td>
 <td><p>N</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y= Run bridge only up through Deadload analysis.</p></td>
+<td><p>[Y|N] Y= Run bridge only up through Deadload analysis.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TrussDLonEnds</p></td>
+<tr class="row-even"><td><p>TrussDLonEnds</p></td>
 <td><p>N</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.</p></td>
+<td><p>[Y|N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.</p></td>
 </tr>
-<tr class="row-even"><td><p>WetSlab</p></td>
+<tr class="row-odd"><td><p>WetSlab</p></td>
 <td><p>Y</p></td>
 <td></td>
 <td><p>chr</p></td>
-<td><p>[Y/N] Y= Use a very low E for slab plates in final DL stage.</p></td>
+<td><p>[Y|N] Y= Use a very low E for slab plates in final DL stage.</p></td>
 </tr>
 </tbody>
 </table>

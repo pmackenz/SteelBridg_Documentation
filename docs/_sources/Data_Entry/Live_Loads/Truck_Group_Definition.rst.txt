@@ -1,8 +1,8 @@
 Truck Group Definition
 ===========================
 
-.. image:: ../../image/ebd_Ebd69.gif
-    :alt: image/ebd_Ebd69.gif
+.. image:: ../../image/ebd_Ebd69.png
+    :alt: image/ebd_Ebd69.png
 
 
 Description

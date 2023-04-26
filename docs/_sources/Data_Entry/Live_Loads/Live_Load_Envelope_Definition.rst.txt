@@ -1,13 +1,13 @@
 Live Load Envelope Definition
 ==================================
 
-.. image:: ../../image/ebd_Ebd65.gif
-    :alt: image/ebd_Ebd65.gif
+.. image:: ../../image/ebd_Ebd65.png
+    :alt: image/ebd_Ebd65.png
 
 (These optional entries are not operational yet!)
 
-.. image:: ../../image/ebd_Ebd66.gif
-    :alt: image/ebd_Ebd66.gif
+.. image:: ../../image/ebd_Ebd66.png
+    :alt: image/ebd_Ebd66.png
 
 
 Description

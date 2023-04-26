@@ -1,5 +1,5 @@
 Truss Example: Step 3 - Define Nodal Boundary Conditions
 ---------------------------------------------------------
 
-.. image:: ../../image/ebd_Ebd37.gif
-    :alt: image/ebd_Ebd37.gif
+.. image:: ../../image/ebd_Ebd37.png
+    :alt: image/ebd_Ebd37.png

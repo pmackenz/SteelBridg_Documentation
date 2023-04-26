@@ -1,10 +1,6 @@
 Rate Location
 ==================
 
-.. comments::
-    .. figure:: ../../image/ebd_Ebd74.gif
-        :alt: image/ebd_Ebd74.gif
-
 **Description**
 
 For line members, it is up to the engineer to specify where the program will

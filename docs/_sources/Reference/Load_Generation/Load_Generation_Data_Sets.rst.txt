@@ -9,5 +9,5 @@ type and loading type.
 The following chart shows what data is stored in a `DS` for each type of
 member and loading condition.
 
-.. image:: ../../image/ebd_Ebd54.gif
-    :alt: image/ebd_Ebd54.gif
+.. image:: ../../image/ebd_Ebd54.png
+    :alt: image/ebd_Ebd54.png

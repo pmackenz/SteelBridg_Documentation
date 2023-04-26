@@ -3,14 +3,8 @@ Input Pin Hinge Library
 
 .. warning::
 
-    *** This feature not implemented yet and currently under development. ***
+    ** This feature not implemented yet and currently under development. **
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd91.gif
-        :alt: image/ebd_Ebd88.gif
 
-    .. image:: ../../image/ebd_Ebd92.gif
-        :alt: image/ebd_Ebd89.gif
-
-.. image:: ../../image/ebd_Ebd98.gif
-    :alt: image/ebd_Ebd98.gif
+.. image:: ../../image/ebd_Ebd98.png
+    :alt: image/ebd_Ebd98.png

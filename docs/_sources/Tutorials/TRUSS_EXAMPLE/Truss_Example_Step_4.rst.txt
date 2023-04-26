@@ -1,11 +1,11 @@
 Truss Example: Step 4 - Identify Member Lines
 ---------------------------------------------------------
 
-.. image:: ../../image/ebd_Ebd38.gif
-    :alt: image/ebd_Ebd38.gif
+.. image:: ../../image/ebd_Ebd38.png
+    :alt: image/ebd_Ebd38.png
 
-.. image:: ../../image/ebd_Ebd39.gif
-    :alt: image/ebd_Ebd39.gif
+.. image:: ../../image/ebd_Ebd39.png
+    :alt: image/ebd_Ebd39.png
 
-.. image:: ../../image/ebd_Ebd40.gif
-    :alt: image/ebd_Ebd40.gif
+.. image:: ../../image/ebd_Ebd40.png
+    :alt: image/ebd_Ebd40.png

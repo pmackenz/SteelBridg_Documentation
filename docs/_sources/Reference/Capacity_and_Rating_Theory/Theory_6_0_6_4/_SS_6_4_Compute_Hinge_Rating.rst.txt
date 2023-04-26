@@ -1,5 +1,5 @@
 [SS-6.4] Compute Hinge Rating
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd209.gif
-    :alt: image/ebd_Ebd209.gif
+.. image:: ../../../image/ebd_Ebd209.png
+    :alt: image/ebd_Ebd209.png

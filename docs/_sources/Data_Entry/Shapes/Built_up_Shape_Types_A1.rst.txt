@@ -4,7 +4,7 @@ Input Built-up Shape Types - A1
 * Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
 
 
-.. image:: ../../image/ebd_Ebd107.gif
-    :alt: image/ebd_Ebd107.gif
+.. image:: ../../image/ebd_Ebd107.png
+    :alt: image/ebd_Ebd107.png
 
 

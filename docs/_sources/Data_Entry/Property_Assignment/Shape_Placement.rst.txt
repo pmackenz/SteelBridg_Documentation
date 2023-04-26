@@ -1,5 +1,5 @@
 Input Shape Placement
 =========================
 
-.. image:: ../../image/ebd_Ebd121.gif
-    :alt: image/ebd_Ebd121.gif
+.. image:: ../../image/ebd_Ebd121.png
+    :alt: image/ebd_Ebd121.png

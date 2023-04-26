@@ -1,6 +1,6 @@
 [SS-5.2.2.4.1.2] Compute Rb for Section Type A
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd193.gif
-    :alt: image/ebd_Ebd193.gif
+.. image:: ../../../image/ebd_Ebd193.png
+    :alt: image/ebd_Ebd193.png
 

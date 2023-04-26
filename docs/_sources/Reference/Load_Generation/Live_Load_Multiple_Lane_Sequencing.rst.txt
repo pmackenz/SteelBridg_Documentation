@@ -5,5 +5,5 @@ Starting from the left side of the bridge, looking up station,
 the trucks will be placed side by side within their lanes and then run
 on paths that cascade transversely across the bridge.
 
-.. image:: ../../image/ebd_Ebd51.gif
-    :alt: image/ebd_Ebd51.gif
+.. image:: ../../image/ebd_Ebd51.png
+    :alt: image/ebd_Ebd51.png

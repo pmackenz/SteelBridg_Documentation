@@ -1,11 +1,11 @@
 Load Combination Definition
 ===============================
 
-.. image:: ../../image/ebd_Ebd75.gif
-    :alt: image/ebd_Ebd75.gif
+.. image:: ../../image/ebd_Ebd75.png
+    :alt: image/ebd_Ebd75.png
 
-.. image:: ../../image/ebd_Ebd76.gif
-    :alt: image/ebd_Ebd76.gif
+.. image:: ../../image/ebd_Ebd76.png
+    :alt: image/ebd_Ebd76.png
 
 (See bottom of page for :ref:`Example Entry`)
 
@@ -68,5 +68,5 @@ Parameters
 Example Entry
 ----------------
 
-.. figure:: ../../image/ebd_Ebd77.gif
-    :alt: image/ebd_Ebd77.gif
+.. figure:: ../../image/ebd_Ebd77.png
+    :alt: image/ebd_Ebd77.png

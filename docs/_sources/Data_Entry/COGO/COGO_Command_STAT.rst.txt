@@ -1,5 +1,5 @@
 COGO Command: STAT
 ----------------------
 
-.. figure:: STAT.gif
-    :alt: STAT.gif
+.. figure:: STAT.png
+    :alt: STAT.png

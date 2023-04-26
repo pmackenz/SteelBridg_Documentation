@@ -11,7 +11,7 @@ Concrete Slab - Steps for checking the slab mesh.
    also, although this mode is not very useful unless the view is zoomed up
    enough to not blur all the node labels together.
 
-.. image:: ../../image/Mesh_Help_Graphic_1_TMP.gif
-    :alt: image/Mesh_Help_Graphic_1_TMP.gif
+.. image:: ../../image/Mesh_Help_Graphic_1_TMP.png
+    :alt: image/Mesh_Help_Graphic_1_TMP.png
 
 

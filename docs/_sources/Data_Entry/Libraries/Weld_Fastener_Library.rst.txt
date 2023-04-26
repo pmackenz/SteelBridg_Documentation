@@ -6,6 +6,6 @@ Input Weld Fastener Library
     *** This feature not implemented yet and currently under development. ***
 
 
-.. figure:: ../../image/ebd_Ebd87.gif
-    :alt: image/ebd_Ebd87.gif
+.. figure:: ../../image/ebd_Ebd87.png
+    :alt: image/ebd_Ebd87.png
 

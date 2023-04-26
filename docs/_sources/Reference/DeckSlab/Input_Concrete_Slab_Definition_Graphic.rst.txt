@@ -4,12 +4,12 @@ Input Concrete Slab Definition Graphic
 See also: :ref:`Input Concrete Slab Definition`
 
 
-.. image:: ../../image/ebd_Ebd227.gif
-    :alt: image/ebd_Ebd227.gif
+.. image:: ../../image/ebd_Ebd227.png
+    :alt: image/ebd_Ebd227.png
 
 
 Mesh Building Methodology
 ----------------------------
 
-.. image:: ../../image/ebd_Ebd228.gif
-    :alt: image/ebd_Ebd228.gif
+.. image:: ../../image/ebd_Ebd228.png
+    :alt: image/ebd_Ebd228.png

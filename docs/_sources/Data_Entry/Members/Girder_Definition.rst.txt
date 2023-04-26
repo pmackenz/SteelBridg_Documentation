@@ -1,17 +1,8 @@
 Input Girder Definition
 ------------------------
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd133.gif
-        :alt: image/ebd_Ebd133.gif
-
-
-    .. image:: ../../image/ebd_Ebd134.gif
-        :alt: image/ebd_Ebd134.gif
-
-
-.. image:: ../../image/ebd_Ebd135.gif
-    :alt: image/ebd_Ebd135.gif
+.. image:: ../../image/ebd_Ebd135.png
+    :alt: image/ebd_Ebd135.png
 
 
 .. note::

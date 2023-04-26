@@ -4,8 +4,8 @@ Truss Example: Step 1 - Define COGO points and paths on the profile grade
 
 (See :ref:`COGO Command: Command Descriptions` for more on COGO)
 
-.. image:: ../../image/ebd_Ebd33.gif
-    :alt: image/ebd_Ebd33.gif
+.. image:: ../../image/ebd_Ebd33.png
+    :alt: image/ebd_Ebd33.png
 
-.. image:: ../../image/ebd_Ebd34.gif
-    :alt: image/ebd_Ebd34.gif
+.. image:: ../../image/ebd_Ebd34.png
+    :alt: image/ebd_Ebd34.png

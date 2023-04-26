@@ -1,6 +1,6 @@
 [SS-6.4.1.1] Compute Ag, An
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd211.gif
-    :alt: image/ebd_Ebd211.gif
+.. image:: ../../../image/ebd_Ebd211.png
+    :alt: image/ebd_Ebd211.png
 

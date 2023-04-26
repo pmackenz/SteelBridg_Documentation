@@ -1,6 +1,6 @@
 Input Built-up Shape Types - B1
 --------------------------------
 
-.. figure:: ../../image/ebd_Ebd120.gif
+.. figure:: ../../image/ebd_Ebd120.png
     :align: center
-    :alt: image/ebd_Ebd120.gif
+    :alt: image/ebd_Ebd120.png

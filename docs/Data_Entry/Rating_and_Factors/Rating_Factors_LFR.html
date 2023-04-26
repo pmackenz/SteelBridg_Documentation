@@ -42,10 +42,10 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../input.html">Data Entry</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../transverse.html">2D Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Rating Factors for LFR</a><ul>
@@ -87,7 +87,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../input.html">Data Entry</a> &raquo;</li>
+          <li><a href="../../DataEntry.html">Data Entry</a> &raquo;</li>
           <li><a href="../factors_and_rating.html">Factors &amp; Rating Controls</a> &raquo;</li>
       <li>Rating Factors for LFR</li>
       <li class="wy-breadcrumbs-aside">
@@ -110,8 +110,8 @@ this table is referenced by the following member entries:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../Members/Girder_Definition.html#input-girder-definition"><span class="std std-ref">Input Girder Definition</span></a></p></li>
 <li><p><a class="reference internal" href="../Members/Stringer_Definition.html#input-stringer-definition"><span class="std std-ref">Input Stringer Definition</span></a></p></li>
-<li><p><span class="xref std std-ref">Input Cross Beam_Definition</span></p></li>
-<li><p><span class="xref std std-ref">Input Floor Beam_Definition</span></p></li>
+<li><p><a class="reference internal" href="../Members/Cross_Beam_Definition.html#input-cross-beam-definition"><span class="std std-ref">Input Cross Beam Definition</span></a></p></li>
+<li><p><a class="reference internal" href="../Members/Floor_Beam_Definition.html#input-floor-beam-definition"><span class="std std-ref">Input Floor Beam Definition</span></a></p></li>
 <li><p><a class="reference internal" href="../Members/Truss_Member.html#input-truss-member"><span class="std std-ref">Input Truss Member</span></a></p></li>
 </ul>
 <div class="admonition note">
@@ -186,8 +186,8 @@ table entry, then the Overload values will be used
 instead of the Live Load values.</p></li>
 <li><p>The entered impact factor is used for all STD live load factoring.
 For INV and OPR, if the member is a line member, the impact factor is
-computed per&lt;A HREF=”../../Load_Generation/Impact_Factor_Calculation.html”&gt;
-AASHTO specifications&lt;/A&gt; as a function of span configuration, and
+computed per AASHTO specifications (<a class="reference internal" href="../../Reference/Load_Generation/Impact_Factor_Calculation.html#impact-factor-calculation"><span class="std std-ref">Impact Factor Calculation</span></a>)
+as a function of span configuration, and
 load type. If the member is a truss member, then this explicit impact
 factor is used for the inventory and operating ratings.</p></li>
 </ul>
@@ -198,22 +198,26 @@ factor is used for the inventory and operating ratings.</p></li>
 <li><p>Tensile Axial Strength Reduction</p>
 <p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the strength ratio equation for
 computation of SR1 and SR2.
-See flow chart &lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html”&gt;SS-5.3.1&lt;/A&gt;</p>
+See flow chart
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html#ss-5-3-1-compute-strength-ratio-for-tension-moment"><span class="std std-ref">[SS-5.3.1] Compute Strength Ratio for Tension / Moment</span></a></p>
 </li>
 <li><p>Compression Axial Strength Reduction</p>
 <p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the strength ratio equation for
 computation of SR3 and  SR4.
-See flow chart &lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html”&gt;SS-5.3.5&lt;/A&gt;</p>
+See flow chart
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html#ss-5-3-5-compute-strength-ratio-for-compression-moment"><span class="std std-ref">[SS-5.3.5] Compute Strength Ratio for Compression / Moment</span></a></p>
 </li>
 <li><p>Moment Strength Reduction Factor</p>
 <p>This is the <span class="math notranslate nohighlight">\(\phi\)</span>  factor used in the moment rating equation for
 line members.
-See flow chart &lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html”&gt;SS-6.1.1&lt;/A&gt;</p>
+See flow chart
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html#ss-6-1-1-compute-moment-rating-factor-for-wsdot-inventory-operating-level"><span class="std std-ref">[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level</span></a></p>
 </li>
 <li><p>Shear Strength Reduction Factor</p>
 <p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the shear rating equation for
 line members.
-See flow chart &lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html”&gt;SS-6.1.2&lt;/A&gt;</p>
+See flow chart
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html#ss-6-1-2-compute-shear-rating-factor-for-wsdot-inventory-operating"><span class="std std-ref">[SS-6.1.2] Compute Shear Rating Factor for WSDOT Inventory, Operating</span></a></p>
 </li>
 </ul>
 </li>
@@ -238,7 +242,7 @@ NonRedundant line members, and Truss members.</p></li>
 <li><p>STD (WSDOT BDM) specifies a 0.8 factor for non-redundant members.</p></li>
 </ul>
 <figure class="align-default">
-<img alt="image/ebd_Ebd73.gif" src="../../_images/ebd_Ebd73.gif" />
+<img alt="image/ebd_Ebd73.png" src="../../_images/ebd_Ebd73.png" />
 </figure>
 <p>Reference: WSDOT BDM 14.1.5,14.1.6.1 and 1985 Guide Spec. for
 Evaluation of Truss Bridges.</p>
@@ -258,9 +262,9 @@ See topic page <a class="reference internal" href="../../Reference/Load_Generati
 <p>The compression axial strength reduction factors for line members are
 only used when a line member requires analysis as a non-line member.
 See theory flow charts
-&lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html”&gt;SS-5.2.1&lt;/A&gt;
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html#ss-5-2-1-negative-moment-capacity"><span class="std std-ref">[SS-5.2.1] Negative Moment Capacity</span></a>
 and
-&lt;A HREF=”../../Theory/Capacity_and_Rating_Theory/Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html”&gt;SS-5.2.2&lt;/A&gt;.
+<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html#ss-5-2-2-positive-moment-capacity"><span class="std std-ref">[SS-5.2.2] Positive Moment Capacity</span></a>
 If these entries are left blank, then default valuse of 0.80 for STD
 and 0.85 for INV and OPR will be used.</p>
 </section>

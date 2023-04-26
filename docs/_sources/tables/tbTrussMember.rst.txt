@@ -77,7 +77,7 @@ TrussMember
    * - Slender
      - chr
      - 
-     - [Y/N] Treat as slender member (default is No)
+     - [Y|N] Treat as slender member (default is No)
    * - Reduce
      - real
      - 

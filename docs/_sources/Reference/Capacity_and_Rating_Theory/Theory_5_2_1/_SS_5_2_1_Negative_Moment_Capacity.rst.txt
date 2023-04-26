@@ -1,7 +1,7 @@
 [SS-5.2.1] Negative Moment Capacity
 ======================================================
 
-.. image:: ../../../Graphics/5.2.1_Neg_Moment_Capacity.gif
-    :alt: Graphics/5.2.1_Neg_Moment_Capacity.gif
+.. image:: ../../../Graphics/5.2.1_Neg_Moment_Capacity.png
+    :alt: Graphics/5.2.1_Neg_Moment_Capacity.png
 
 

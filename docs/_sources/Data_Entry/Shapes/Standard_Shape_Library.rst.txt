@@ -9,16 +9,16 @@ Properties for most common standard shapes can be found using the **AISC Filter*
 
 .. _Shape_Input:
 
-.. figure:: ../../image/ebd_Ebd104.gif
-    :alt: image/ebd_Ebd104.gif
+.. figure:: ../../image/ebd_Ebd104.png
+    :alt: image/ebd_Ebd104.png
 
     Defining a standard shape.
 
 
 .. _Member_Orientation:
 
-.. figure:: ../../image/ebd_Ebd105.gif
-    :alt: image/ebd_Ebd105.gif
+.. figure:: ../../image/ebd_Ebd105.png
+    :alt: image/ebd_Ebd105.png
 
     Default member orientation
 

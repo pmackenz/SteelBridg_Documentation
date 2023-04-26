@@ -3,7 +3,7 @@ Staging Definition
 Example:
 
 .. figure:: ../../image/tbStaging.png
-   :alt: image/tbStaging.gif
+   :alt: image/tbStaging.png
 
 This is an optional table you can use to document the different dead load stages in the model. 
 

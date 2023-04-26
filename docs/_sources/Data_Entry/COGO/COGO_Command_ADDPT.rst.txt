@@ -1,6 +1,6 @@
 COGO Command: ADDPT
 ----------------------
 
-.. image:: ADDPT.gif
-    :alt: ADDPT.gif
+.. image:: ADDPT.png
+    :alt: ADDPT.png
 

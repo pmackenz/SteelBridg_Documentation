@@ -1,6 +1,6 @@
 [SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level
-======================================================
+==============================================================================
 
-.. image:: ../../../image/ebd_Ebd207.gif
-    :alt: image/ebd_Ebd207.gif
+.. image:: ../../../image/ebd_Ebd207.png
+    :alt: image/ebd_Ebd207.png
 

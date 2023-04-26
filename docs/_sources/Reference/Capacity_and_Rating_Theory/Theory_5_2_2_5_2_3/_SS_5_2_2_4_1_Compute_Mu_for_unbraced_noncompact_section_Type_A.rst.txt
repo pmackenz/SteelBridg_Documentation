@@ -1,6 +1,6 @@
 [SS-5.2.2.4.1] Compute Mu for unbraced noncompact section Type A
-======================================================
+=============================================================================
 
-.. image:: ../../../image/ebd_Ebd191.gif
-    :alt: image/ebd_Ebd191.gif
+.. image:: ../../../image/ebd_Ebd191.png
+    :alt: image/ebd_Ebd191.png
 

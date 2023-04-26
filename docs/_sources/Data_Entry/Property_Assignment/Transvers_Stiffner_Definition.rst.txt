@@ -1,8 +1,8 @@
 Input Transvers Stiffner Definition
 ======================================
 
-.. image:: ../../image/ebd_Ebd130.gif
-    :alt: image/ebd_Ebd130.gif
+.. image:: ../../image/ebd_Ebd130.png
+    :alt: image/ebd_Ebd130.png
 
-.. image:: ../../image/ebd_Ebd131.gif
-    :alt: image/ebd_Ebd131.gif
+.. image:: ../../image/ebd_Ebd131.png
+    :alt: image/ebd_Ebd131.png

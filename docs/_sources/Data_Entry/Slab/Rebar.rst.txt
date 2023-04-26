@@ -21,7 +21,8 @@ low average might be appropriate, but dependent on engineering judgment.
     * - Long. Top Steel Area
       - For top rebar in the longitudinal direction , enter area of steel in square inches per square foot of slab.
     * - Long. Dist. From Bottom
-      - For rebar in the longitudinal direction, enter distance up in inches from bottom of slab. Bottom of slab is defined as the �Thk� distance.
+      - For rebar in the longitudinal direction, enter distance up in inches from bottom of
+	slab. Bottom of slab is defined as the **Thk** distance.
     * - Long. Bottom Steel Area
       - For bottom rebar in the longitudinal direction , enter area of steel in square inches per square foot of slab.
     * - Tran. Dist. From Top
@@ -29,6 +30,7 @@ low average might be appropriate, but dependent on engineering judgment.
     * - Tran. Top Steel Area
       - For top rebar in the transverse direction , enter area of steel in square inches per square foot of slab.
     * - Tran. Dist. From Bottom
-      - For rebar in the transverse direction, enter distance up in inches from bottom of slab. Bottom of slab is defined as the �Thk� distance.
+      - For rebar in the transverse direction, enter distance up in inches from bottom of slab.
+	Bottom of slab is defined as the **Thk** distance.
     * - Tran. Bottom Steel Area
       - For bottom rebar in the transverse direction , enter area of steel in square inches per square foot of slab.

@@ -1,5 +1,5 @@
 Input Flange Placement
 =======================
 
-.. image:: ../../image/ebd_Ebd124.gif
-    :alt: image/ebd_Ebd124.gif
+.. image:: ../../image/ebd_Ebd124.png
+    :alt: image/ebd_Ebd124.png

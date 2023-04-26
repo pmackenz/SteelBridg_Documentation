@@ -14,22 +14,18 @@ RateLocation
      - Type
      - Units
      - Description
-   * - RecordId
-     - 
-     - 
-     - Auto Increment
    * - MbrLine
      - text
      - 
-     - Member line name
+     - Line member name (or ALL, ALL_TRUSS, or ALL_LINE)
    * - StartDist
      - real
      - FET
-     - Distance from start of member line to begin scanning
+     - Distance from start of member to begin scanning
    * - EndDist
      - real
      - FET
-     - Distance from start of member line to stop scanning
+     - Distance from start of member to stop scanning
    * - Num
      - int
      - 

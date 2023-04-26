@@ -1,5 +1,5 @@
 [SS-5.2.2.5.2] Compute Mu,  for Section Type C w/ non-compact negative moment
-======================================================
+========================================================================================
 
-.. image:: ../../../image/ebd_Ebd196.gif
-    :alt: image/ebd_Ebd196.gif
+.. image:: ../../../image/ebd_Ebd196.png
+    :alt: image/ebd_Ebd196.png

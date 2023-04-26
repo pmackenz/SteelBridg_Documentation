@@ -1,5 +1,5 @@
 COGO Command: STOR
 ----------------------
 
-.. figure:: STOR.gif
-    :alt: STOR.gif
+.. figure:: STOR.png
+    :alt: STOR.png

@@ -41,7 +41,7 @@ StringerDefinition
    * - MbrWt
      - int
      - 
-     - Stage to apply stringer weight.
+     - Stage to apply stringer weight. Including concrete slab if present.
    * - MbrStf
      - int
      - 

@@ -4,6 +4,6 @@ Input Built-up Shape Types - A2A
 * Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
 
 
-.. image:: ../../image/ShapeA2A_wmf.gif
-    :alt: image/ShapeA2A_wmf.gif
+.. image:: ../../image/ShapeA2A_wmf.png
+    :alt: image/ShapeA2A_wmf.png
 

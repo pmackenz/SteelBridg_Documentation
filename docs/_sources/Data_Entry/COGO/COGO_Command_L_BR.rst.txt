@@ -1,6 +1,6 @@
 COGO Command: L/BR
 ----------------------
 
-.. figure:: L_BR.gif
-    :alt: L_BR.gif
+.. figure:: L_BR.png
+    :alt: L_BR.png
 

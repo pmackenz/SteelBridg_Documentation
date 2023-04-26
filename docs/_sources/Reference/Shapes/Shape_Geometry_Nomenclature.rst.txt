@@ -9,6 +9,6 @@ These values are printed in the Section Properties report file.
 The location of the Graphic Origin is arbitrary and documented in the help
 graphic for each type of shape used by BRIDG.
 
-.. image:: ../../image/ebd_Ebd232.gif
-    :alt: image/ebd_Ebd232.gif
+.. image:: ../../image/ebd_Ebd232.png
+    :alt: image/ebd_Ebd232.png
 

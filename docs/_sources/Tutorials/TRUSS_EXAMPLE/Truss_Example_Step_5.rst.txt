@@ -2,8 +2,8 @@ Truss Example: Step 5 - Define Concrete Slab
 ---------------------------------------------------------
 
 
-.. image:: ../../image/ebd_Ebd41.gif
-    :alt: image/ebd_Ebd41.gif
+.. image:: ../../image/ebd_Ebd41.png
+    :alt: image/ebd_Ebd41.png
 
-.. image:: ../../image/ebd_Ebd42.gif
-    :alt: image/ebd_Ebd42.gif
+.. image:: ../../image/ebd_Ebd42.png
+    :alt: image/ebd_Ebd42.png

@@ -41,17 +41,17 @@ To do this, first open the `Options` dialog by selecting the `View` menu
 and then selecting the `Options` menu pick.
 The following panel will appear.
 
-.. image:: ../../image/Options_General.gif
-    :alt: image/Options_General.gif
+.. image:: ../../image/Options_General.png
+    :alt: image/Options_General.png
 
 In order to view the internal tables set the following switch in the
 `Appearance` tab of the options dialog.
 
-.. image:: ../../image/Options_Appearance.gif
-    :alt: image/Options_Appearance.gif
+.. image:: ../../image/Options_Appearance.png
+    :alt: image/Options_Appearance.png
 
 Now tell the program to populate the SQLITE3 database tables.
 Use the `Diagnostics and File Export` tab in the options dialog.
 
-.. image:: ../../image/Options_Diagnostics.gif
-    :alt: image/Options_Diagnostics.gif
+.. image:: ../../image/Options_Diagnostics.png
+    :alt: image/Options_Diagnostics.png

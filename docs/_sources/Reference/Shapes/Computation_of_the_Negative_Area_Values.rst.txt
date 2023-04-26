@@ -33,7 +33,7 @@ Compute Net Area Bar (:math:`A_{nb}`)
 
 
 For Compression Capacity Calculations:
--------------------------------------
+---------------------------------------
 
 Compute Gross Effective Area:
 
@@ -42,3 +42,4 @@ Compute Gross Effective Area:
     A_{ge} = A_g - A_h
 
 **Reference**: AASHTO Table 10.32.1A(i)
+

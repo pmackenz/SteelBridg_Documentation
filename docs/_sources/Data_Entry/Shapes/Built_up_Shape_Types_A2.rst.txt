@@ -4,5 +4,5 @@ Input Built-up Shape Types - A2
 * Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
 
 
-.. image:: ../../image/ebd_Ebd109.gif
-    :alt: image/ebd_Ebd109.gif
+.. image:: ../../image/ebd_Ebd109.png
+    :alt: image/ebd_Ebd109.png

@@ -1,6 +1,6 @@
 [SS-5.3.1] Compute Strength Ratio for Tension / Moment
-======================================================
+===========================================================
 
-.. image:: ../../../image/ebd_Ebd199.gif
-    :alt: image/ebd_Ebd199.gif
+.. image:: ../../../image/ebd_Ebd199.png
+    :alt: image/ebd_Ebd199.png
 

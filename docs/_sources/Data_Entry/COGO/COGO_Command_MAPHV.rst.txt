@@ -1,5 +1,5 @@
 COGO Command: MAPHV
 ----------------------
 
-.. figure:: MAPHV.gif
-    :alt: MAPHV.gif
+.. figure:: MAPHV.png
+    :alt: MAPHV.png

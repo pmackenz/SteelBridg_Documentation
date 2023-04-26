@@ -1,17 +1,9 @@
 Input COGO Command Data
 ------------------------
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd21.gif
-        :alt: image/ebd_Ebd21.gif
 
-
-    .. figure:: ../../image/ebd_Ebd22.gif
-        :alt: image/ebd_Ebd22.gif
-
-
-.. figure:: ../../image/ebd_Ebd23.gif
-    :alt: image/ebd_Ebd23.gif
+.. figure:: ../../image/ebd_Ebd23.png
+    :alt: image/ebd_Ebd23.png
 
 
 Look at the following pages for details on individual `COGO` commands.

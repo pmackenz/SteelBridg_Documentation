@@ -1,15 +1,8 @@
 Input Floor Beam Definition
 ------------------------------
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd142.gif
-        :alt: image/ebd_Ebd142.gif
-
-    .. image:: ../../image/ebd_Ebd143.gif
-        :alt: image/ebd_Ebd143.gif
-
-.. image:: ../../image/ebd_Ebd144.gif
-    :alt: image/ebd_Ebd144.gif
+.. image:: ../../image/ebd_Ebd144.png
+    :alt: image/ebd_Ebd144.png
 
 .. note:: 
 

@@ -3,14 +3,8 @@ Input Plate Bearing Stiffener Library
 
 .. warning::
 
-    *** This feature not implemented yet and currently under development. ***
+    ** This feature not implemented yet and currently under development. **
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd96.gif
-        :alt: image/ebd_Ebd96.gif
 
-    .. figure:: ../../image/ebd_Ebd97.gif
-        :alt: image/ebd_Ebd97.gif
-
-.. figure:: ../../image/ebd_Ebd98.gif
-    :alt: image/ebd_Ebd98.gif
+.. figure:: ../../image/ebd_Ebd98.png
+    :alt: image/ebd_Ebd98.png

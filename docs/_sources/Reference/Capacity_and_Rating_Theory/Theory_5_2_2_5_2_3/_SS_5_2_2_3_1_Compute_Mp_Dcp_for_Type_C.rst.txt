@@ -1,5 +1,5 @@
 [SS-5.2.2.3.1] Compute Mp, Dcp, for  Type C
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd188.gif
-    :alt: image/ebd_Ebd188.gif
+.. image:: ../../../image/ebd_Ebd188.png
+    :alt: image/ebd_Ebd188.png

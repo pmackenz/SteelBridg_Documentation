@@ -1,5 +1,5 @@
 [SS-6.3.1] Compute Column Capacity
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd217.gif
-    :alt: image/ebd_Ebd217.gif
+.. image:: ../../../image/ebd_Ebd217.png
+    :alt: image/ebd_Ebd217.png

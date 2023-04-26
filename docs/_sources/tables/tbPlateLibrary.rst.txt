@@ -45,7 +45,7 @@ PlateLibrary
    * - Lattice
      - chr
      - 
-     - [Y/N] Is this plate used as a lattice member.
+     - [Y|N] Is this plate used as a lattice member.
    * - Dz
      - real
      - INC

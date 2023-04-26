@@ -1,5 +1,5 @@
 [SS-5.2.2.1.1] Compactness of Type A (2) Unsymmetrical Member  Check
-======================================================
+==============================================================================
 
-.. image:: ../../../image/ebd_Ebd185.gif
-    :alt: image/ebd_Ebd185.gif
+.. image:: ../../../image/ebd_Ebd185.png
+    :alt: image/ebd_Ebd185.png

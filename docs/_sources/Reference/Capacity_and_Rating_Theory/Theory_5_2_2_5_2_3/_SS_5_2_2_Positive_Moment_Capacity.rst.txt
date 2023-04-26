@@ -1,5 +1,5 @@
 [SS-5.2.2] Positive Moment Capacity
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd182.gif
-    :alt: image/ebd_Ebd182.gif
+.. image:: ../../../image/ebd_Ebd182.png
+    :alt: image/ebd_Ebd182.png

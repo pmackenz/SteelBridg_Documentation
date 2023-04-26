@@ -1,5 +1,5 @@
 Input Lateral Bracing Placement
 =================================
 
-.. image:: ../../image/ebd_Ebd132.gif
-    :alt: image/ebd_Ebd132.gif
+.. image:: ../../image/ebd_Ebd132.png
+    :alt: image/ebd_Ebd132.png

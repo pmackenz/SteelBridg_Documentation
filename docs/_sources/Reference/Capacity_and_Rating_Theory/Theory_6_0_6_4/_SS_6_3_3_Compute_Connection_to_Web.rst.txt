@@ -1,6 +1,6 @@
 [SS-6.3.3] Compute Connection to Web
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd219.gif
-    :alt: image/ebd_Ebd219.gif
+.. image:: ../../../image/ebd_Ebd219.png
+    :alt: image/ebd_Ebd219.png
 

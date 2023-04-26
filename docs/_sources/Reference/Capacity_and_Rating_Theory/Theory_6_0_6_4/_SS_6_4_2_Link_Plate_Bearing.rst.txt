@@ -1,6 +1,6 @@
 [SS-6.4.2] Link Plate Bearing
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd212.gif
-    :alt: image/ebd_Ebd212.gif
+.. image:: ../../../image/ebd_Ebd212.png
+    :alt: image/ebd_Ebd212.png
 

@@ -1,5 +1,5 @@
 [SS-6.1.2] Compute Shear Rating Factor for WSDOT Inventory, Operating
-======================================================
+=============================================================================
 
-.. image:: ../../../image/ebd_Ebd208.gif
-    :alt: image/ebd_Ebd208.gif
+.. image:: ../../../image/ebd_Ebd208.png
+    :alt: image/ebd_Ebd208.png

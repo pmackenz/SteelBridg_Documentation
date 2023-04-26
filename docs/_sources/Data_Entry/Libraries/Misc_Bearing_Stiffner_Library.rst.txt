@@ -1,12 +1,12 @@
 Input Misc. Bearing Stiffner Library
-=============================
+======================================
 
 .. warning::
 
-    *** This feature not implemented yet and currently under development. ***
+    ** This feature not implemented yet and currently under development. **
 
-.. image:: ../../image/ebd_Ebd102.gif
-    :alt: image/ebd_Ebd102.gif
+.. image:: ../../image/ebd_Ebd102.png
+    :alt: image/ebd_Ebd102.png
 
-.. image:: ../../image/ebd_Ebd103.gif
-    :alt: image/ebd_Ebd103.gif
+.. image:: ../../image/ebd_Ebd103.png
+    :alt: image/ebd_Ebd103.png

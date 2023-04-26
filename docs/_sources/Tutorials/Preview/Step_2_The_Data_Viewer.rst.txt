@@ -15,8 +15,8 @@ Live load plots will cause yet another delay as would capacity and rating plots.
 This method is optimal for model checking and progressing through to the final
 results of capacities and ratings.
 
-.. image:: ../../image/ebd_Ebd166.gif
-    :alt: image/ebd_Ebd166.gif
+.. image:: ../../image/ebd_Ebd166.png
+    :alt: image/ebd_Ebd166.png
 
 
 To start the viewer, select the third icon from the right on the main 
@@ -33,8 +33,8 @@ or a 2D graph. What is graphed is selected by the "View Mode Explorer"
 that is in the left side panel.  The top right pane is the graphics area,
 and the bottom right pane is a dialog with any optional switches and controls.
 
-.. image:: ../../image/ebd_Ebd167.gif
-    :alt: image/ebd_Ebd167.gif
+.. image:: ../../image/ebd_Ebd167.png
+    :alt: image/ebd_Ebd167.png
 
 
 The viewer has the controls shown in the graphic above. 
@@ -74,5 +74,5 @@ For now, please do the following:
 
 :ref:`Step 3 - The Excel Input File`
 
-.. image:: ../../image/ebd_Ebd168.gif
-    :alt: image/ebd_Ebd168.gif
+.. image:: ../../image/ebd_Ebd168.png
+    :alt: image/ebd_Ebd168.png

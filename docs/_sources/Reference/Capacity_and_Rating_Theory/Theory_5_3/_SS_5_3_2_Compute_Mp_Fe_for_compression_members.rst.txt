@@ -1,6 +1,6 @@
 [SS- 5.3.2] Compute Mp, Fe, for compression members
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd200.gif
-    :alt: image/ebd_Ebd200.gif
+.. image:: ../../../image/ebd_Ebd200.png
+    :alt: image/ebd_Ebd200.png
 

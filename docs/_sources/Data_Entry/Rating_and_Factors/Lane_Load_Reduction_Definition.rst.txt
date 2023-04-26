@@ -1,11 +1,6 @@
 Lane Load Reduction Definition
 =================================
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd70.gif
-        :alt: image/ebd_Ebd70.gif
-
-
 **Description**
 
 .. list-table::

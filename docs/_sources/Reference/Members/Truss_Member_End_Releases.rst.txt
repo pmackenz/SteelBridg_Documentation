@@ -13,5 +13,5 @@ An unstable model might run without an error message about the stiffness matrix
 being unstable.  Because of this, it is always best to check the displacement 
 plots and report data for reasonableness.
 
-.. image:: ../../image/TrussMemberEndReleases.gif
-    :alt: image/TrussMemberEndReleases.gif
+.. image:: ../../image/TrussMemberEndReleases.png
+    :alt: image/TrussMemberEndReleases.png

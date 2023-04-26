@@ -1,5 +1,5 @@
 [SS-5.2.2.1] Compactness of Type A (1)
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd183.gif
-    :alt: image/ebd_Ebd183.gif
+.. image:: ../../../image/ebd_Ebd183.png
+    :alt: image/ebd_Ebd183.png

@@ -1,5 +1,5 @@
 [SS-5.3.6] Check local Slenderness Ratio for Compression Members
-======================================================
+==========================================================================
 
-.. image:: ../../../image/ebd_Ebd204.gif
-    :alt: image/ebd_Ebd204.gif
+.. image:: ../../../image/ebd_Ebd204.png
+    :alt: image/ebd_Ebd204.png

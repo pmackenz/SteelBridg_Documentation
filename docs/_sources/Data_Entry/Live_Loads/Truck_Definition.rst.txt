@@ -1,11 +1,11 @@
 Truck Definition
 ==================
 
-.. image:: ../../image/ebd_Ebd63.gif
-    :alt: image/ebd_Ebd63.gif
+.. image:: ../../image/ebd_Ebd63.png
+    :alt: image/ebd_Ebd63.png
 
-.. image:: ../../image/ebd_Ebd64.gif
-    :alt: image/ebd_Ebd64.gif
+.. image:: ../../image/ebd_Ebd64.png
+    :alt: image/ebd_Ebd64.png
 
 
 Description
@@ -71,7 +71,7 @@ loads.  Combine the two using the Truck Group and Lane Group entries.
 
     Enter alternate lane loading moment rider (not required) (Kip)
 
-.. rubric::
+.. rubric:: Shear
 ..
 
-    Shear Enter alternate lane loading shear rider (not required) (Kip)
+    Enter alternate lane loading shear rider (not required) (Kip)

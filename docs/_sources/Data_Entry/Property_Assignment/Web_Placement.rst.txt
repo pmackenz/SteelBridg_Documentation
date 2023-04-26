@@ -1,5 +1,5 @@
 Input Web Placement
 =====================
 
-.. image:: ../../image/ebd_Ebd122.gif
-    :alt: image/ebd_Ebd122.gif
+.. image:: ../../image/ebd_Ebd122.png
+    :alt: image/ebd_Ebd122.png

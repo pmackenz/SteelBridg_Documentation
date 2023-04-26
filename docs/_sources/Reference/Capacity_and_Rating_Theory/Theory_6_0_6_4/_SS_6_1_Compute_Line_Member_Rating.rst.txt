@@ -1,6 +1,6 @@
 [SS-6.1] Compute Line Member Rating
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd206.gif
-    :alt: image/ebd_Ebd206.gif
+.. image:: ../../../image/ebd_Ebd206.png
+    :alt: image/ebd_Ebd206.png
 

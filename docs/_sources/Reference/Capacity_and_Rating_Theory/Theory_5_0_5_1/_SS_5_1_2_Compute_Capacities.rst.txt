@@ -1,6 +1,6 @@
 [SS-5.1.2] Compute Capacities
 ======================================================
 
-.. image:: ../../../Graphics/5.1.2_Compute_Capacities.gif
-    :alt: Graphics/5.1.2_Compute_Capacities.gif
+.. image:: ../../../Graphics/5.1.2_Compute_Capacities.png
+    :alt: Graphics/5.1.2_Compute_Capacities.png
 

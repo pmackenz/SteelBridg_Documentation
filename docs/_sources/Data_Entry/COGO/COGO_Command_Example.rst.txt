@@ -1,6 +1,6 @@
 COGO Command: Example
 ----------------------
 
-.. figure:: Example.gif
-    :alt: Example.gif
+.. figure:: Example.png
+    :alt: Example.png
 

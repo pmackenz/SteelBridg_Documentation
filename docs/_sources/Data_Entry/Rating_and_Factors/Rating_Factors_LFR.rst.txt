@@ -1,16 +1,6 @@
 Rating Factors for LFR
 ===========================
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd71.gif
-        :alt: image/ebd_Ebd71.gif
-
-
-    .. figure:: ../../image/ebd_Ebd72.gif
-        :alt: image/ebd_Ebd72.gif
-
-
-    (Note: See bottom of page for example data entry.)
 
 Description
 ------------
@@ -22,8 +12,8 @@ this table is referenced by the following member entries:
 
 * :ref:`Input Girder Definition`
 * :ref:`Input Stringer Definition`
-* :ref:`Input Cross Beam_Definition`
-* :ref:`Input Floor Beam_Definition`
+* :ref:`Input Cross Beam Definition`
+* :ref:`Input Floor Beam Definition`
 * :ref:`Input Truss Member`
 
 .. note::
@@ -85,8 +75,8 @@ Inventory, and Operating conditions.
 
     -  The entered impact factor is used for all STD live load factoring.
        For INV and OPR, if the member is a line member, the impact factor is
-       computed per<A HREF="../../Load_Generation/Impact_Factor_Calculation.html">
-       AASHTO specifications</A> as a function of span configuration, and
+       computed per AASHTO specifications (:ref:`Impact Factor Calculation`)
+       as a function of span configuration, and
        load type. If the member is a truss member, then this explicit impact
        factor is used for the inventory and operating ratings.
 
@@ -97,25 +87,29 @@ Inventory, and Operating conditions.
 
     This is the :math:`\phi` factor used in the strength ratio equation for
     computation of SR1 and SR2.
-    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html">SS-5.3.1</A>
+    See flow chart 
+    :ref:`[SS-5.3.1] Compute Strength Ratio for Tension / Moment`
 
   - Compression Axial Strength Reduction
 
     This is the :math:`\phi` factor used in the strength ratio equation for
     computation of SR3 and  SR4.
-    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html">SS-5.3.5</A>
+    See flow chart 
+    :ref:`[SS-5.3.5] Compute Strength Ratio for Compression / Moment`
 
   - Moment Strength Reduction Factor
 
     This is the :math:`\phi`  factor used in the moment rating equation for
     line members.
-    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html">SS-6.1.1</A>
+    See flow chart 
+    :ref:`[SS-6.1.1] Compute Moment Rating Factor for WSDOT, Inventory, Operating Level`
 
   - Shear Strength Reduction Factor
 
     This is the :math:`\phi` factor used in the shear rating equation for
     line members.
-    See flow chart <A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html">SS-6.1.2</A>
+    See flow chart 
+    :ref:`[SS-6.1.2] Compute Shear Rating Factor for WSDOT Inventory, Operating`
 
 * **Capacity Reduction Factors**
 
@@ -133,8 +127,8 @@ Example Entry
 *  STD (WSDOT BDM) specifies a 0.8 factor for non-redundant members.
 
 
-.. figure:: ../../image/ebd_Ebd73.gif
-    :alt: image/ebd_Ebd73.gif
+.. figure:: ../../image/ebd_Ebd73.png
+    :alt: image/ebd_Ebd73.png
 
 Reference: WSDOT BDM 14.1.5,14.1.6.1 and 1985 Guide Spec. for
 Evaluation of Truss Bridges.
@@ -156,8 +150,8 @@ Evaluation of Truss Bridges.
 The compression axial strength reduction factors for line members are
 only used when a line member requires analysis as a non-line member.
 See theory flow charts
-<A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html">SS-5.2.1</A>
+:ref:`[SS-5.2.1] Negative Moment Capacity`
 and
-<A HREF="../../Theory/Capacity_and_Rating_Theory/Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html">SS-5.2.2</A>.
+:ref:`[SS-5.2.2] Positive Moment Capacity`
 If these entries are left blank, then default valuse of 0.80 for STD
 and 0.85 for INV and OPR will be used.

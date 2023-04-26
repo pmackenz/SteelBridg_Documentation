@@ -1,5 +1,5 @@
 [SS-6.4.4] Left & Right Web Plate Bearing
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd214.gif
-    :alt: image/ebd_Ebd214.gif
+.. image:: ../../../image/ebd_Ebd214.png
+    :alt: image/ebd_Ebd214.png

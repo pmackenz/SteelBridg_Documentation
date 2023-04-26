@@ -1,6 +1,6 @@
 COGO Command: L/TG
 ----------------------
 
-.. figure:: L_TG.gif
-    :alt: L_TG.gif
+.. figure:: L_TG.png
+    :alt: L_TG.png
 

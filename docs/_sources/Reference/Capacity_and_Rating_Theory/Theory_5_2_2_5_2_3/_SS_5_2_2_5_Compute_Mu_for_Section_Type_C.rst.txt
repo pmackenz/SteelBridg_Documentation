@@ -1,5 +1,5 @@
 [SS-5.2.2.5] Compute Mu for Section Type C
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd194.gif
-    :alt: image/ebd_Ebd194.gif
+.. image:: ../../../image/ebd_Ebd194.png
+    :alt: image/ebd_Ebd194.png

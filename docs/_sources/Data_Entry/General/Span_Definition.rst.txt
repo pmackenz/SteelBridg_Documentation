@@ -3,7 +3,7 @@ Span Definition
 Example:
 
 .. figure:: ../../image/tbSpanDef.png
-   :alt: image/tbSpanDef.gif
+   :alt: image/tbSpanDef.png
 
 Description
    This table is used to explicitly define the spans. If used you MUST define ALL spans.  

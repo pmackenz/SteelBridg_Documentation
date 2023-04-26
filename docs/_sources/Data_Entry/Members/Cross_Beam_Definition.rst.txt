@@ -1,17 +1,8 @@
 Input Cross Beam Definition
 -----------------------------
 
-.. comment::
-    .. figure:: ../../image/ebd_Ebd139.gif
-        :alt: image/ebd_Ebd139.gif
-
-
-    .. figure:: ../../image/ebd_Ebd140.gif
-        :alt: image/ebd_Ebd140.gif
-
-
-.. figure:: ../../image/ebd_Ebd141.gif
-    :alt: image/ebd_Ebd141.gif
+.. figure:: ../../image/ebd_Ebd141.png
+    :alt: image/ebd_Ebd141.png
 
 
 .. note::

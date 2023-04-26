@@ -1,5 +1,5 @@
 Explanation of Member End Release Codes
-=====================================
+=========================================
 
 **References**
 
@@ -7,5 +7,6 @@ Explanation of Member End Release Codes
 * :ref:`Bearing Seats`
 
 
-.. image:: ../../image/ebd_Ebd159.gif
-    :alt: image/ebd_Ebd159.gif
+.. image:: ../../image/ebd_Ebd159.png
+    :alt: image/ebd_Ebd159.png
+

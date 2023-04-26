@@ -1,5 +1,5 @@
 COGO Command: OFFSET
 ----------------------
 
-.. figure:: OFFST.gif
-    :alt: OFFST.gif
+.. figure:: OFFST.png
+    :alt: OFFST.png

@@ -1,5 +1,5 @@
 [SS-6.4.3] Top & Bottom Pin Bearing
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd213.gif
-    :alt: image/ebd_Ebd213.gif
+.. image:: ../../../image/ebd_Ebd213.png
+    :alt: image/ebd_Ebd213.png

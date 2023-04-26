@@ -1,6 +1,6 @@
 [SS-5.2] Cal. Capacity for Line Member
 ======================================================
 
-.. image:: ../../../Graphics/5.2_Cap_Line_Member.gif
-    :alt: Graphics/5.2_Cap_Line_Member.gif
+.. image:: ../../../Graphics/5.2_Cap_Line_Member.png
+    :alt: Graphics/5.2_Cap_Line_Member.png
 

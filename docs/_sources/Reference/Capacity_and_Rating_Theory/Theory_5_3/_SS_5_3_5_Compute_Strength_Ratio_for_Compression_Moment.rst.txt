@@ -1,6 +1,6 @@
 [SS-5.3.5] Compute Strength Ratio for Compression / Moment
-======================================================
+====================================================================
 
-.. image:: ../../../image/ebd_Ebd203.gif
-    :alt: image/ebd_Ebd203.gif
+.. image:: ../../../image/ebd_Ebd203.png
+    :alt: image/ebd_Ebd203.png
 

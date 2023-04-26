@@ -1,8 +1,8 @@
 COGO Command: HCURV
 ----------------------
 
-.. figure:: Horz_Curve.gif
-    :alt: Horz_Curve.gif
+.. figure:: Horz_Curve.png
+    :alt: Horz_Curve.png
 
-.. figure:: HCURV_Table.gif
-    :alt: HCURV_Table.gif
+.. figure:: HCURV_Table.png
+    :alt: HCURV_Table.png

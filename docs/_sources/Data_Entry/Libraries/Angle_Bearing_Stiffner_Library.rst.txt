@@ -6,11 +6,11 @@ Input Angle Bearing Stiffner Library
     *** This feature not implemented yet and currently under development. ***
 
 
-.. image:: ../../image/ebd_Ebd99.gif
-    :alt: image/ebd_Ebd99.gif
+.. image:: ../../image/ebd_Ebd99.png
+    :alt: image/ebd_Ebd99.png
 
-.. image:: ../../image/ebd_Ebd100.gif
-    :alt: image/ebd_Ebd100.gif
+.. image:: ../../image/ebd_Ebd100.png
+    :alt: image/ebd_Ebd100.png
 
-.. image:: ../../image/ebd_Ebd101.gif
-    :alt: image/ebd_Ebd101.gif
+.. image:: ../../image/ebd_Ebd101.png
+    :alt: image/ebd_Ebd101.png

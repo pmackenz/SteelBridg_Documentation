@@ -1,6 +1,6 @@
 [SS-6.0] Compute Member Rating
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd205.gif
-    :alt: image/ebd_Ebd205.gif
+.. image:: ../../../image/ebd_Ebd205.png
+    :alt: image/ebd_Ebd205.png
 

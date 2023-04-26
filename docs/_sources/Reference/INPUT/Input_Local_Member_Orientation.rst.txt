@@ -1,10 +1,10 @@
 Input Local Member Orientation
-============================
+===============================
 
-.. image:: ../../image/ebd_Ebd27.gif
-    :alt: image/ebd_Ebd27.gif
+.. image:: ../../image/ebd_Ebd27.png
+    :alt: image/ebd_Ebd27.png
 
 
-.. image:: ../../image/Orientation_Vector.gif
-    :alt: image/Orientation_Vector.gif
+.. image:: ../../image/Orientation_Vector.png
+    :alt: image/Orientation_Vector.png
 

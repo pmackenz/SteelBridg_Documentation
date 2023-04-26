@@ -45,7 +45,7 @@
    * - Composite
      - chr
      - 
-     - [Y/N] Y=Slab is composite with line membrs.
+     - [Y|N] Y=Slab is composite with line membrs.
    * - Material
      - text
      - 
@@ -57,4 +57,4 @@
    * - Stage
      - int
      - 
-     - First active stage. (Default is last DL stage.)
+     - First active stage. (Default is last DL stage.) This is NOT the stage to add weight, that is set by the line member stage setting.

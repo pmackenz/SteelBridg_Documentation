@@ -1,5 +1,5 @@
 [SS-5.2.2.4] Mu for Type A
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd190.gif
-    :alt: image/ebd_Ebd190.gif
+.. image:: ../../../image/ebd_Ebd190.png
+    :alt: image/ebd_Ebd190.png

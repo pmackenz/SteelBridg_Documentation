@@ -1,9 +1,9 @@
 Example of How BRIDG Generates Live Load Envelopes
 ======================================================
 
-.. image:: ../../image/ebd_Ebd55.gif
-    :alt: image/ebd_Ebd55.gif
+.. image:: ../../image/ebd_Ebd55.png
+    :alt: image/ebd_Ebd55.png
 
 
-.. image:: ../../image/ebd_Ebd56.gif
-    :alt: image/ebd_Ebd56.gif
+.. image:: ../../image/ebd_Ebd56.png
+    :alt: image/ebd_Ebd56.png

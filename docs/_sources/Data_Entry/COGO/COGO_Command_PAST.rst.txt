@@ -1,5 +1,5 @@
 COGO Command: PAST
 ----------------------
 
-.. figure:: PAST.gif
-    :alt: PAST.gif
+.. figure:: PAST.png
+    :alt: PAST.png

@@ -1,5 +1,5 @@
 [SS-5.2.2.2] Compactness of Type B (1)
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd186.gif
-    :alt: image/ebd_Ebd186.gif
+.. image:: ../../../image/ebd_Ebd186.png
+    :alt: image/ebd_Ebd186.png

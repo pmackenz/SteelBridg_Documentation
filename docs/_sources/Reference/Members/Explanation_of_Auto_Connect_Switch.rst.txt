@@ -14,12 +14,12 @@ The AutoConnect  option has three possible conditions:
 #. **Yes** - Scan the line between the end points for intermediate points and include them in the set of points for this member. The member end release codes only apply to the two end points specified for this member line segment.
 #. **All** - Scan the line between the end points for intermediate points and include them in the set of points for this member. The member end release codes apply to all the intermediate segments.
 
-.. image:: ../../image/ebd_Ebd156.gif
-    :alt: image/ebd_Ebd156.gif
+.. image:: ../../image/ebd_Ebd156.png
+    :alt: image/ebd_Ebd156.png
 
-.. image:: ../../image/ebd_Ebd157.gif
-    :alt: image/ebd_Ebd157.gif
+.. image:: ../../image/ebd_Ebd157.png
+    :alt: image/ebd_Ebd157.png
 
-.. image:: ../../image/ebd_Ebd158.gif
-    :alt: image/ebd_Ebd158.gif
+.. image:: ../../image/ebd_Ebd158.png
+    :alt: image/ebd_Ebd158.png
 

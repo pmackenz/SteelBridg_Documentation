@@ -1,5 +1,5 @@
 COGO Command: VCURV
 ----------------------
 
-.. figure:: Vert_Curve.gif
-    :alt: Vert_Curve.gif
+.. figure:: Vert_Curve.png
+    :alt: Vert_Curve.png

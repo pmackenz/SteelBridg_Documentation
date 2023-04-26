@@ -11,6 +11,6 @@ Concrete Slab - Steps for checking composite member generation.
    not consider the member composite unless both concrete and shear connectors
    are present.
 
-.. image:: ../../image/Mesh_Help_Graphic_2.gif
-    :alt: image/Mesh_Help_Graphic_2.gif
+.. image:: ../../image/Mesh_Help_Graphic_2.png
+    :alt: image/Mesh_Help_Graphic_2.png
 

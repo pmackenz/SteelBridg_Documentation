@@ -41,7 +41,7 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../input.html">Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DataEntry.html">Data Entry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
@@ -133,32 +133,27 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>RecordId</p></td>
-<td></td>
-<td></td>
-<td><p>Auto Increment</p></td>
-</tr>
-<tr class="row-odd"><td><p>MbrLine</p></td>
+<tr class="row-even"><td><p>MbrLine</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>Member line name</p></td>
+<td><p>Line member name (or ALL, ALL_TRUSS, or ALL_LINE)</p></td>
 </tr>
-<tr class="row-even"><td><p>StartDist</p></td>
+<tr class="row-odd"><td><p>StartDist</p></td>
 <td><p>real</p></td>
 <td><p>FET</p></td>
-<td><p>Distance from start of member line to begin scanning</p></td>
+<td><p>Distance from start of member to begin scanning</p></td>
 </tr>
-<tr class="row-odd"><td><p>EndDist</p></td>
+<tr class="row-even"><td><p>EndDist</p></td>
 <td><p>real</p></td>
 <td><p>FET</p></td>
-<td><p>Distance from start of member line to stop scanning</p></td>
+<td><p>Distance from start of member to stop scanning</p></td>
 </tr>
-<tr class="row-even"><td><p>Num</p></td>
+<tr class="row-odd"><td><p>Num</p></td>
 <td><p>int</p></td>
 <td></td>
 <td><p>Number of locations to scan between the starting and ending locations</p></td>
 </tr>
-<tr class="row-odd"><td><p>ConstDist</p></td>
+<tr class="row-even"><td><p>ConstDist</p></td>
 <td><p>real</p></td>
 <td><p>FET</p></td>
 <td><p>Constant distance used instead of Num</p></td>

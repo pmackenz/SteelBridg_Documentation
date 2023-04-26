@@ -5,8 +5,8 @@ Input Misc. Hinge Library
 
     *** This feature not implemented yet and currently under development. ***
 
-.. image:: ../../image/ebd_Ebd94.gif
-    :alt: image/ebd_Ebd194.gif
+.. image:: ../../image/ebd_Ebd94.png
+    :alt: image/ebd_Ebd194.png
 
-.. image:: ../../image/ebd_Ebd95.gif
-    :alt: image/ebd_Ebd195.gif
+.. image:: ../../image/ebd_Ebd95.png
+    :alt: image/ebd_Ebd195.png

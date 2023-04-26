@@ -1,18 +1,8 @@
 Input Truss Member
 ---------------------
 
-.. comments::
-    .. figure:: ../../image/ebd_Ebd148.gif
-        :alt: image/ebd_Ebd148.gif
-
-    .. figure:: ../../image/ebd_Ebd149.gif
-        :alt: image/ebd_Ebd149.gif
-
-    .. figure:: ../../image/ebd_Ebd150.gif
-        :alt: image/ebd_Ebd150.gif
-
-.. figure:: ../../image/ebd_Ebd151.gif
-    :alt: image/ebd_Ebd151.gif
+.. figure:: ../../image/ebd_Ebd151.png
+    :alt: image/ebd_Ebd151.png
 
 
 .. note::
@@ -33,6 +23,6 @@ and if it is `C` then that member will only be checked for compression rating.
 
 * The effective length of a member is it's node to node distance times the effective length factor.  For calculations that involve the major axis of bending, bending about the local Z axis, the effective length factor <span style="font-weight:bold; ">MajEffL</span> is used.  For bending about the minor axis, the local Y axis, the factor <span style="font-weight:bold; ">MinEffL</span> is used.</P>
 
-.. image:: ../../image/Effective_Length.gif
-    :alt: image/Effective_Length.gif
+.. image:: ../../image/Effective_Length.png
+    :alt: image/Effective_Length.png
 

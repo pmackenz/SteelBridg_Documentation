@@ -2,12 +2,12 @@ Input Built-up Shape Library
 =============================
 
 
-.. figure:: ../../image/ebd_Ebd106.gif
-    :alt: image/ebd_Ebd106.gif
+.. figure:: ../../image/ebd_Ebd106.png
+    :alt: image/ebd_Ebd106.png
 
 
-.. figure:: ../../image/shapes_shg.gif
-    :alt: image/shapes_shg.gif
+.. figure:: ../../image/shapes_shg.png
+    :alt: image/shapes_shg.png
 
     Available built-up shapes
 

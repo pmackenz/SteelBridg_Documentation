@@ -1,8 +1,8 @@
 Live Load Placement
 ======================================================
 
-.. image:: ../../image/ebd_Ebd50.gif
-    :alt: image/ebd_Ebd50.gif
+.. image:: ../../image/ebd_Ebd50.png
+    :alt: image/ebd_Ebd50.png
 
 
 These parameters are defined in the `AnalysisTable` (:ref:`Input Analysis Controls`).

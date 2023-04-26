@@ -38,17 +38,17 @@ AnalysisControls
      - Y
      - 
      - chr
-     - [Y/N] Use section with hand holes removed for gravity load calculations.
+     - [Y|N] Use section with hand holes removed for gravity load calculations.
    * - FilterByMbrType
      - Y
      - 
      - chr
-     - [Y/N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis
+     - [Y|N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis
    * - IntrBeam
      - Y
      - 
      - chr
-     - [Y/N] for LRFR is this an interior beam analysis
+     - [Y|N] for LRFR is this an interior beam analysis
    * - LFRAutoCv
      - Y
      - 
@@ -83,7 +83,7 @@ AnalysisControls
      - N
      - 
      - chr
-     - [Y/N] Allow mesh generator to create nodes between stringers.
+     - [Y|N] Allow mesh generator to create nodes between stringers.
    * - Phi_b
      - 1.00
      - 
@@ -129,6 +129,11 @@ AnalysisControls
      - FET
      - real
      - (Feet) Width of rating / design lane
+   * - RatePlotLimit
+     - 2.00
+     - 
+     - real
+     - When plotting rating, limit the scale to this value
    * - RiderDist
      - 0
      - FET
@@ -143,12 +148,12 @@ AnalysisControls
      - Y
      - 
      - chr
-     - [Y/N] Y=Generate capacity and rating calculations file.
+     - [Y|N] Y=Generate capacity and rating calculations file.
    * - RptFEA
      - N
      - 
      - chr
-     - [Y/N] Y=Generate FEA forces file. (Warning, file can be quite large!)
+     - [Y|N] Y=Generate FEA forces file. (Warning, file can be quite large!)
    * - RptInfSurf
      - N
      - 
@@ -158,12 +163,12 @@ AnalysisControls
      - Y
      - 
      - chr
-     - [Y/N] Y=Generate section properties report.
+     - [Y|N] Y=Generate section properties report.
    * - RptSummary
      - Y
      - 
      - chr
-     - [Y/N] Y=Generate Rating summary report.
+     - [Y|N] Y=Generate Rating summary report.
    * - SLaneWidth
      - 12
      - FET
@@ -173,19 +178,19 @@ AnalysisControls
      - Y
      - 
      - chr
-     - [Y/N] Y=For Inv. & Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.
+     - [Y|N] Y=For Inv. & Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.
    * - StopAtDL
      - N
      - 
      - chr
-     - [Y/N] Y= Run bridge only up through Deadload analysis.
+     - [Y|N] Y= Run bridge only up through Deadload analysis.
    * - TrussDLonEnds
      - N
      - 
      - chr
-     - [Y/N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.
+     - [Y|N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.
    * - WetSlab
      - Y
      - 
      - chr
-     - [Y/N] Y= Use a very low E for slab plates in final DL stage.
+     - [Y|N] Y= Use a very low E for slab plates in final DL stage.

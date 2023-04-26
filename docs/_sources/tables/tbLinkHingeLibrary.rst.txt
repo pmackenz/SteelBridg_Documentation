@@ -38,6 +38,10 @@ LinkHingeLibrary
      - real
      - INC
      - Link plate side clearance.
+   * - SpacerThk
+     - real
+     - INC
+     - Spacer between web and link plate - thickness in inches.
    * - LPFy
      - real
      - KSI

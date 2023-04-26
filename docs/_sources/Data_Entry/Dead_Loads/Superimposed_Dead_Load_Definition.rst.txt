@@ -1,12 +1,6 @@
 Superimposed Dead Load Definition
 ==================================
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd59.gif
-        :alt: image/ebd_Ebd59.gif
-
-    .. image:: ../../image/ebd_Ebd60.gif
-        :alt: image/ebd_Ebd60.gif
 
 Description
 ----------------

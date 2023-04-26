@@ -1,6 +1,6 @@
 [SS-6.3.2] Compute Bearing on Stiffener
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd218.gif
-    :alt: image/ebd_Ebd218.gif
+.. image:: ../../../image/ebd_Ebd218.png
+    :alt: image/ebd_Ebd218.png
 

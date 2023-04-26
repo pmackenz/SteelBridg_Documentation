@@ -1,5 +1,5 @@
 Input Web Haunch Definition
 ===============================
 
-.. image:: ../../image/ebd_Ebd123.gif
-    :alt: image/ebd_Ebd123.gif
+.. image:: ../../image/ebd_Ebd123.png
+    :alt: image/ebd_Ebd123.png

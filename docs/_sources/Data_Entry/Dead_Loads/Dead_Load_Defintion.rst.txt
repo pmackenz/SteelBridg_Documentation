@@ -1,12 +1,6 @@
 Dead Load Definition
 =======================
 
-.. comment::
-    .. image:: ../../image/ebd_Ebd57.gif
-        :alt: image/ebd_Ebd57.gif
-
-    .. image:: ../../image/ebd_Ebd58.gif
-        :alt: image/ebd_Ebd58.gif
 
 Description
 -------------

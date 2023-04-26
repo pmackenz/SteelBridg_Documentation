@@ -1,6 +1,6 @@
 [SS- 5.3] Compute Capacity of Non-line Member
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd198.gif
-    :alt: image/ebd_Ebd198.gif
+.. image:: ../../../image/ebd_Ebd198.png
+    :alt: image/ebd_Ebd198.png
 

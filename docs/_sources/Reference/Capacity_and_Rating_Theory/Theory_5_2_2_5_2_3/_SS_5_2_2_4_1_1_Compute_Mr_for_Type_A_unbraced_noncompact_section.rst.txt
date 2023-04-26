@@ -1,5 +1,5 @@
 [SS-5.2.2.4.1.1] Compute Mr for Type A, unbraced noncompact section
-======================================================
+===========================================================================
 
-.. image:: ../../../image/ebd_Ebd192.gif
-    :alt: image/ebd_Ebd192.gif
+.. image:: ../../../image/ebd_Ebd192.png
+    :alt: image/ebd_Ebd192.png

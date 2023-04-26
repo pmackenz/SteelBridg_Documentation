@@ -1,6 +1,6 @@
 [SS-6.4.1] Link Plate Tension
 ======================================================
 
-.. image:: ../../../image/ebd_Ebd210.gif
-    :alt: image/ebd_Ebd210.gif
+.. image:: ../../../image/ebd_Ebd210.png
+    :alt: image/ebd_Ebd210.png
 

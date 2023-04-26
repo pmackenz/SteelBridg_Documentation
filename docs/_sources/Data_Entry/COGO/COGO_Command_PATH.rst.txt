@@ -1,5 +1,5 @@
 COGO Command: PATH
 ----------------------
 
-.. figure:: Path.gif
-    :alt: Path.gif
+.. figure:: Path.png
+    :alt: Path.png

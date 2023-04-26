@@ -11,5 +11,5 @@ If the two trucks are different types of trucks, then the 22 unique positions
 are tested twice, once for each truck being on the left and the right lanes.
 (An ***** in the truck locations indicates a repeated position.)
 
-.. image:: ../../image/ebd_Ebd52.gif
-    :alt: image/ebd_Ebd52.gif
+.. image:: ../../image/ebd_Ebd52.png
+    :alt: image/ebd_Ebd52.png

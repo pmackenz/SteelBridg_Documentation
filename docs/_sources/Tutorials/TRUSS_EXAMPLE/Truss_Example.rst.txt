@@ -29,6 +29,6 @@ Example two span truss bridge
     Truss_Example_Step_9.rst
 
 
-.. image:: ../../image/ebd_Ebd32.gif
-    :alt: image/ebd_Ebd32.gif
+.. image:: ../../image/ebd_Ebd32.png
+    :alt: image/ebd_Ebd32.png
 
