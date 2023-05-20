@@ -6,7 +6,7 @@ AnalysisControls
 
 
 .. list-table::
-   :widths: 20 8 4 4 70
+   :widths: 20 10 10 10 70
    :header-rows: 1
 
    * - Parameter
@@ -24,6 +24,11 @@ AnalysisControls
      - 
      - text
      - 2DL or 2DT (for transverse) Default is 2D. (Legacy 2DL=2D)
+   * - AutoLLBuild
+     - N
+     - 
+     - chr
+     - [Y|N] Automatic Live Load builder. If Y rebuild ALL live load input per standard set for LFR and LRFR. (ONLY for 2DL mode)
    * - AxleDist
      - 6
      - FET
@@ -49,21 +54,11 @@ AnalysisControls
      - 
      - chr
      - [Y|N] for LRFR is this an interior beam analysis
-   * - LFRAutoCv
-     - Y
-     - 
-     - chr
-     - [Y/N/R] LFR automatic loading (Y=Add loads if not already defined. R=Clear all live loads and add new LFR loads.
    * - LLMotionSpcFct
      - 2
      - 
      - int
      - Live Load Longitudinal truck motion spacing factor, (See Doc.)
-   * - LRFRAutoCv
-     - Y
-     - 
-     - chr
-     - [Y/N/R] LRFR automatic loading (Y=Add loads if not already defined. R=Clear all live loads and add new LRFR loads.
    * - MRatio
      - 8
      - 
@@ -119,6 +114,11 @@ AnalysisControls
      - 
      - real
      - LRFR Resistance factor for shear (AASHTO 6.5.4.2 -- 2020 edition)
+   * - Phi_vu
+     - 0.80
+     - 
+     - real
+     - LRFR Resistance factor for shear, rupture in connection elements (AASHTO 6.5.4.2 -- 2020 edition)
    * - Phi_y
      - 0.95
      - 
@@ -146,6 +146,11 @@ AnalysisControls
      - Reduction factor for holes. Use 0.90 for bolt holes punched full size and 1.0 for bolt holes drilled full size or subpunched and reamed to size
    * - RptCap
      - Y
+     - 
+     - chr
+     - [Y|N] Y=Generate capacity and rating calculations file.
+   * - RptCapTrace
+     - N
      - 
      - chr
      - [Y|N] Y=Generate capacity and rating calculations file.

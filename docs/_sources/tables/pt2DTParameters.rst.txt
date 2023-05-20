@@ -6,7 +6,7 @@
 
 
 .. list-table::
-   :widths: 20 8 4 4 70
+   :widths: 20 10 10 10 70
    :header-rows: 1
 
    * - Parameter

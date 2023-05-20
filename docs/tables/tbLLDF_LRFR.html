@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StandardShapeLibrary &mdash; SteelBridg LRFR 1.0 documentation</title>
+  <title>LLDF_LRFR &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -60,9 +60,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>StandardShapeLibrary</li>
+      <li>LLDF_LRFR</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tables/tbStandardShapeLibrary.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tables/tbLLDF_LRFR.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -70,8 +70,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="standardshapelibrary">
-<h1>StandardShapeLibrary<a class="headerlink" href="#standardshapelibrary" title="Permalink to this heading"></a></h1>
+  <section id="lldf-lrfr">
+<h1>LLDF_LRFR<a class="headerlink" href="#lldf-lrfr" title="Permalink to this heading"></a></h1>
 <p><strong>PURPOSE:</strong></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -88,85 +88,40 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Name</p></td>
+<tr class="row-even"><td><p>LLDF_ID</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>User defined name</p></td>
+<td><p>Unique ID for this entry. Used in mbr def. to assoc mbr.</p></td>
 </tr>
-<tr class="row-odd"><td><p>Material</p></td>
-<td><p>text</p></td>
-<td></td>
-<td><p>Material Library Reference</p></td>
-</tr>
-<tr class="row-even"><td><p>StdName</p></td>
-<td><p>text</p></td>
-<td></td>
-<td><p>Standard Shape table name</p></td>
-</tr>
-<tr class="row-odd"><td><p>GrossArea</p></td>
+<tr class="row-odd"><td><p>MD</p></td>
 <td><p>real</p></td>
-<td><p>IN2</p></td>
-<td><p>Gross Area</p></td>
+<td><p>FET</p></td>
+<td><p>Moment Design factor used for Inventory|Operating</p></td>
 </tr>
-<tr class="row-even"><td><p>Depth</p></td>
+<tr class="row-even"><td><p>SD</p></td>
 <td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Depth of shape</p></td>
+<td><p>FET</p></td>
+<td><p>Shear Design factor used for Inventory|Operating</p></td>
 </tr>
-<tr class="row-odd"><td><p>bf</p></td>
+<tr class="row-odd"><td><p>IMPDesign</p></td>
 <td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Flange Width</p></td>
+<td><p>FET</p></td>
+<td><p>Impact for Design factor used for Inventory|Operating</p></td>
 </tr>
-<tr class="row-even"><td><p>tw</p></td>
+<tr class="row-even"><td><p>MP</p></td>
 <td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Web thickness</p></td>
+<td><p>FET</p></td>
+<td><p>Moment factor for Legal|Permit|Emergency Vehicle</p></td>
 </tr>
-<tr class="row-odd"><td><p>tf</p></td>
+<tr class="row-odd"><td><p>SP</p></td>
 <td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Flange thickness</p></td>
+<td><p>FET</p></td>
+<td><p>Shear factor  for Legal|Permit|Emergency Vehicle</p></td>
 </tr>
-<tr class="row-even"><td><p>Ix</p></td>
+<tr class="row-even"><td><p>IMPpermit</p></td>
 <td><p>real</p></td>
-<td><p>IN4</p></td>
-<td><p>Moment of inertia major plane of bending (About local Z axis)</p></td>
-</tr>
-<tr class="row-odd"><td><p>Sx</p></td>
-<td><p>real</p></td>
-<td><p>IN3</p></td>
-<td><p>Section modulus for Ix</p></td>
-</tr>
-<tr class="row-even"><td><p>Rx</p></td>
-<td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Radius of gyration with respect to the local Z-Z axis</p></td>
-</tr>
-<tr class="row-odd"><td><p>Iy</p></td>
-<td><p>real</p></td>
-<td><p>IN4</p></td>
-<td><p>Moment of inertia minor plane of bending (About local Y axis)</p></td>
-</tr>
-<tr class="row-even"><td><p>Sy</p></td>
-<td><p>real</p></td>
-<td><p>IN3</p></td>
-<td><p>Section modulus for Iy</p></td>
-</tr>
-<tr class="row-odd"><td><p>Ry</p></td>
-<td><p>real</p></td>
-<td><p>INC</p></td>
-<td><p>Radius of gyration with respect to the local Y-Y axis</p></td>
-</tr>
-<tr class="row-even"><td><p>Zx</p></td>
-<td><p>real</p></td>
-<td><p>IN3</p></td>
-<td><p>Plastic modulus about X-X axis</p></td>
-</tr>
-<tr class="row-odd"><td><p>Zy</p></td>
-<td><p>real</p></td>
-<td><p>IN3</p></td>
-<td><p>Plastic modulus about Y-Y axis</p></td>
+<td><p>FET</p></td>
+<td><p>Impact factor for Legal|Permit|Emergency Vehicle</p></td>
 </tr>
 </tbody>
 </table>

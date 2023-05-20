@@ -6,7 +6,7 @@ TrussMember
 
 
 .. list-table::
-   :widths:  30 4 4 70
+   :widths:  30 10 10 70
    :header-rows: 1
 
 
@@ -97,7 +97,7 @@ TrussMember
    * - LLDF_ID
      - text
      - 
-     - LLDF Factors from tbExplicitLLDF (for LRFR only; LFR uses tbRatingFactorsLFRDef)
+     - LLDF Factors from tbLLDF_LRFR (for LRFR only; LFR uses tbRatingFactorsLFRDef)
    * - LBL
      - real
      - INC
