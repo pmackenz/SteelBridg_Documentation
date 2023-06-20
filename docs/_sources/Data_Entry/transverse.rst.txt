@@ -6,6 +6,7 @@ Transverse Analysis
     :maxdepth: 2
 
     Transverse/Transverse_Theory.rst
+    Transverse/Transverse_TruckPlacement.rst
     Transverse/Transverse_Parameters.rst
     Transverse/Transverse_Transfer_Model.rst
     Transverse/Transverse_Reactions.rst

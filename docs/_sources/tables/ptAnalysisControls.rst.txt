@@ -24,6 +24,11 @@ AnalysisControls
      - 
      - text
      - 2DL or 2DT (for transverse) Default is 2D. (Legacy 2DL=2D)
+   * - AutoFactBuild
+     - N
+     - 
+     - chr
+     - [Y|N] Automatic Factor builder. If Y rebuild ALL factors input per standard set for LFR and LRFR.
    * - AutoLLBuild
      - N
      - 
@@ -145,7 +150,7 @@ AnalysisControls
      - real
      - Reduction factor for holes. Use 0.90 for bolt holes punched full size and 1.0 for bolt holes drilled full size or subpunched and reamed to size
    * - RptCap
-     - Y
+     - N
      - 
      - chr
      - [Y|N] Y=Generate capacity and rating calculations file.
@@ -164,6 +169,11 @@ AnalysisControls
      - 
      - text
      - [Y/N/(m@p)] Influence surface report. Use MBR@POI Can use key word ALL for MBR or POI. Y=ALL@ALL (warning large file generated)
+   * - RptPrependMethod
+     - N
+     - 
+     - chr
+     - [Y|N] Y=Report file names will be prepended with either LFR or LRFR
    * - RptSect
      - Y
      - 

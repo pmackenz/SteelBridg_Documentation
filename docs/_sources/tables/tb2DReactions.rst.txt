@@ -17,7 +17,7 @@
    * - Type
      - text
      - 
-     - [Dead|SDead|PS|Truck] Load Type
+     - [Dead|S_DC|S_DW|Truck] Load Type
    * - TruckName
      - text
      - 

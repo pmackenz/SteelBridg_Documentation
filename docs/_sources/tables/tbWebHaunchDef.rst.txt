@@ -29,28 +29,16 @@ WebHaunchDef
    * - NumDiv
      - int
      - 
-     - Number of divisions
-   * - Type
-     - chr
-     - 
-     - [H|S] H=Haunched, S=Sloped
+     - Number of divisions. Use 0.0 for maximum number of divisions. (Distance for each section is limited to 1.0 feet. )
    * - StartD
      - real
      - INC
      - Starting plate depth
+   * - MidD
+     - real
+     - INC
+     - Plate depth at mid point. If MidD=0.0 then assume straight line
    * - EndD
      - real
      - INC
      - Ending plate depth
-   * - Location
-     - chr
-     - 
-     - [S|E] Location of slope (S=Start, E=End)
-   * - Slope
-     - real
-     - 
-     - Initial Slope when Type=Haunch
-   * - CoeffZ
-     - real
-     - FT2
-     - Coefficient Z  (y=A*X^Z) when Type=Haunch

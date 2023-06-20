@@ -1,0 +1,16 @@
+Transverse Truck Placement Strategy
+=====================================
+
+    .. figure:: ../../image/ebd_Ebd51.png
+        :alt: image/edb_Edb51.png
+
+**Example**:
+
+Table of  truck placements considered for one analysis.
+
+    .. figure:: ../../image/ebd_Ebd52.png
+        :alt: image/edb_Edb52.png
+
+
+..    .. figure:: ../../image/ebd_Ebd49.png
+..        :alt: image/edb_Edb49.png

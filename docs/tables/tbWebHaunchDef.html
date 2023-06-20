@@ -148,37 +148,22 @@
 <tr class="row-odd"><td><p>NumDiv</p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Number of divisions</p></td>
+<td><p>Number of divisions. Use 0.0 for maximum number of divisions. (Distance for each section is limited to 1.0 feet. )</p></td>
 </tr>
-<tr class="row-even"><td><p>Type</p></td>
-<td><p>chr</p></td>
-<td></td>
-<td><p>[H|S] H=Haunched, S=Sloped</p></td>
-</tr>
-<tr class="row-odd"><td><p>StartD</p></td>
+<tr class="row-even"><td><p>StartD</p></td>
 <td><p>real</p></td>
 <td><p>INC</p></td>
 <td><p>Starting plate depth</p></td>
+</tr>
+<tr class="row-odd"><td><p>MidD</p></td>
+<td><p>real</p></td>
+<td><p>INC</p></td>
+<td><p>Plate depth at mid point. If MidD=0.0 then assume straight line</p></td>
 </tr>
 <tr class="row-even"><td><p>EndD</p></td>
 <td><p>real</p></td>
 <td><p>INC</p></td>
 <td><p>Ending plate depth</p></td>
-</tr>
-<tr class="row-odd"><td><p>Location</p></td>
-<td><p>chr</p></td>
-<td></td>
-<td><p>[S|E] Location of slope (S=Start, E=End)</p></td>
-</tr>
-<tr class="row-even"><td><p>Slope</p></td>
-<td><p>real</p></td>
-<td></td>
-<td><p>Initial Slope when Type=Haunch</p></td>
-</tr>
-<tr class="row-odd"><td><p>CoeffZ</p></td>
-<td><p>real</p></td>
-<td><p>FT2</p></td>
-<td><p>Coefficient Z  (y=A*X^Z) when Type=Haunch</p></td>
 </tr>
 </tbody>
 </table>
