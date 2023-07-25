@@ -44,6 +44,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Validation/ValidationSet.html">Validation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../tables.html">Tables</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="pt2DTParameters.html">2DTParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ptAnalysisControls.html">AnalysisControls</a></li>
@@ -164,6 +165,26 @@
 <td><p>real</p></td>
 <td><p>INC</p></td>
 <td><p>Ending plate depth</p></td>
+</tr>
+<tr class="row-odd"><td><p>Legacy_Type</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>Legacy method not used anymore. Here for backward compatibility. [H|S] H=Haunched, S=Sloped</p></td>
+</tr>
+<tr class="row-even"><td><p>Legacy_Location</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>Legacy method not used anymore. Here for backward compatibility. [S|E] Location of slope (S=Start, E=End)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Legacy_Slope</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Legacy method not used anymore. Here for backward compatibility. Initial Slope when Type=Haunch</p></td>
+</tr>
+<tr class="row-even"><td><p>Legacy_CoeffZ</p></td>
+<td><p>real</p></td>
+<td><p>FT2</p></td>
+<td><p>Legacy method not used anymore. Here for backward compatibility. Coefficient Z  (y=A*X^Z) when Type=Haunch</p></td>
 </tr>
 </tbody>
 </table>

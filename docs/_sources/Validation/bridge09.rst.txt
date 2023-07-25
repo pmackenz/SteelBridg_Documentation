@@ -1,0 +1,21 @@
+============================================
+Bridge 9: 507-114
+============================================
+
+.. list-table::
+
+    * - Type
+      - Girder
+    * - Structure
+      - Steel (built-up section)
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/507-114 <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/507-114>`_
+
+
+.. image:: images/507-114-system.png
+
+
+.. image:: images/507-114-section.png
+

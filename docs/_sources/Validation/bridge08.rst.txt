@@ -1,0 +1,18 @@
+============================================
+Bridge 8: 305-10_FB
+============================================
+
+.. list-table::
+
+    * - Type
+      - Floor beam
+    * - Structure
+      - Steel
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/305-10 <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/305-10>`_
+
+
+.. image:: images/305-10_FB-system.png
+

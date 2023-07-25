@@ -1,0 +1,29 @@
+===========================================
+Validation
+===========================================
+
+Bridg is using a set of real bridge models to validate results against
+
+* selected hand calculations
+* results from other software products
+* previous versions of Bridg (like Bridg97 for LFR).
+
+In addition, the validation set is analyzed and compared against
+what is considered the correct output with every release update to minimize the risk of new bugs entering the code base with any new patch.
+
+----------------------------------
+The Validation Set
+----------------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    bridge01.rst
+    bridge02.rst
+    bridge03.rst
+    bridge04.rst
+    bridge05.rst
+    bridge06.rst
+    bridge07.rst
+    bridge08.rst
+    bridge09.rst

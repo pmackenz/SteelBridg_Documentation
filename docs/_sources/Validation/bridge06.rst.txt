@@ -1,0 +1,18 @@
+============================================
+Bridge 6: 129-2_int_Stl
+============================================
+
+.. list-table::
+
+    * - Type
+      - Truss | Girder
+    * - Structure
+      - Steel | Composite
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/129-2_int_Stl <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/129-2_int_Stl>`_
+
+
+.. image:: images/129-2_GIR-system.png
+

@@ -45,6 +45,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Validation/ValidationSet.html">Validation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../tables.html">Tables</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">2DTParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ptAnalysisControls.html">AnalysisControls</a></li>
@@ -133,6 +134,18 @@
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p>AxleDist</p></td>
+<td><p>6</p></td>
+<td><p>FET</p></td>
+<td><p>real</p></td>
+<td><p>(Feet) 2DT mode. Distance between wheels on an axle</p></td>
+</tr>
+<tr class="row-odd"><td><p>DeadAsPtLd</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] If Y then DEAD,SDL_DC,SDL_DW are applied to each support. Else reactions are multipled by MULTxx and applied as distributed load on trf model</p></td>
+</tr>
 <tr class="row-even"><td><p>Dist2Edge</p></td>
 <td><p>0</p></td>
 <td><p>FET</p></td>
@@ -155,31 +168,31 @@
 <td><p>1</p></td>
 <td></td>
 <td><p>real</p></td>
-<td><p>Dead load reaction multiplier.</p></td>
+<td><p>Dead load reaction multiplier. (Only used if DeadAsPtLd=N)</p></td>
 </tr>
 <tr class="row-even"><td><p>MultSDL_DC</p></td>
 <td><p>1</p></td>
 <td></td>
 <td><p>real</p></td>
-<td><p>Superimposed DC dead load reaction multiplier.</p></td>
+<td><p>Superimposed DC dead load reaction multiplier. (Only used if DeadAsPtLd=N)</p></td>
 </tr>
 <tr class="row-odd"><td><p>MultSDL_DW</p></td>
 <td><p>1</p></td>
 <td></td>
 <td><p>real</p></td>
-<td><p>Superimposed DW dead load reaction multiplier.</p></td>
+<td><p>Superimposed DW dead load reaction multiplier. (Only used if DeadAsPtLd=N)</p></td>
 </tr>
-<tr class="row-even"><td><p>MultSecEff</p></td>
-<td><p>1</p></td>
-<td></td>
-<td><p>real</p></td>
-<td><p>PS Secondary effects reaction load multiplier.</p></td>
-</tr>
-<tr class="row-odd"><td><p>REAfile</p></td>
+<tr class="row-even"><td><p>REAfile</p></td>
 <td></td>
 <td></td>
 <td><p>text</p></td>
 <td><p>Name of REA file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RLaneWidth</p></td>
+<td><p>10</p></td>
+<td><p>FET</p></td>
+<td><p>real</p></td>
+<td><p>(Feet) Width of rating / design lane</p></td>
 </tr>
 <tr class="row-even"><td><p>SimpleSpans</p></td>
 <td><p>Y</p></td>
@@ -193,13 +206,7 @@
 <td><p>real</p></td>
 <td><p>Slab width.</p></td>
 </tr>
-<tr class="row-even"><td><p>Stiffness</p></td>
-<td><p>S</p></td>
-<td></td>
-<td><p>chr</p></td>
-<td><p>[S|F] Stiffness of transfer model.  S=stiff F=flexible (also see SimpleSpans switch)</p></td>
-</tr>
-<tr class="row-odd"><td><p>SupportLoc</p></td>
+<tr class="row-even"><td><p>SupportLoc</p></td>
 <td><p>0</p></td>
 <td><p>FET</p></td>
 <td><p>real</p></td>

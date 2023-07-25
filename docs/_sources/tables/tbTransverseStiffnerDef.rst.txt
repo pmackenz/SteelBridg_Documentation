@@ -38,10 +38,6 @@ TransverseStiffnerDef
      - real
      - FET
      - Spacing of plates
-   * - PlLoc
-     - chr
-     - 
-     - [L|R|E], Stiffener plate locator flag (L=left, R=Right, E=Each)
    * - EfStf
      - chr
      - 

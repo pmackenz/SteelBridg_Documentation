@@ -34,11 +34,6 @@ AnalysisControls
      - 
      - chr
      - [Y|N] Automatic Live Load builder. If Y rebuild ALL live load input per standard set for LFR and LRFR. (ONLY for 2DL mode)
-   * - AxleDist
-     - 6
-     - FET
-     - real
-     - (Feet) 2DT mode. Distance between wheels on an axle
    * - DLMult
      - 1
      - 
@@ -129,11 +124,6 @@ AnalysisControls
      - 
      - real
      - LRFR Resistance factor for tension, yielding in gross section (AASHTO 6.5.4.2 -- 2020 edition)
-   * - RLaneWidth
-     - 10
-     - FET
-     - real
-     - (Feet) Width of rating / design lane
    * - RatePlotLimit
      - 2.00
      - 
@@ -168,7 +158,7 @@ AnalysisControls
      - N
      - 
      - text
-     - [Y/N/(m@p)] Influence surface report. Use MBR@POI Can use key word ALL for MBR or POI. Y=ALL@ALL (warning large file generated)
+     - [Y/N] Y=Influence surface report. (warning large file generated)
    * - RptPrependMethod
      - N
      - 
@@ -184,11 +174,11 @@ AnalysisControls
      - 
      - chr
      - [Y|N] Y=Generate Rating summary report.
-   * - SLaneWidth
-     - 12
-     - FET
-     - real
-     - (Feet) Width of Striped lane
+   * - RptTruckLoading
+     - 
+     - 
+     - text
+     - [Y|mbr] Y=ALL or mbr=Name of Member to report raw trucking loading. Leave blank to disable. (warning large file generated)
    * - ShrCapFct
      - Y
      - 

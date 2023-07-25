@@ -14,6 +14,16 @@
      - Units
      - Type
      - Description
+   * - AxleDist
+     - 6
+     - FET
+     - real
+     - (Feet) 2DT mode. Distance between wheels on an axle
+   * - DeadAsPtLd
+     - Y
+     - 
+     - chr
+     - [Y|N] If Y then DEAD,SDL_DC,SDL_DW are applied to each support. Else reactions are multipled by MULTxx and applied as distributed load on trf model
    * - Dist2Edge
      - 0
      - FET
@@ -33,27 +43,27 @@
      - 1
      - 
      - real
-     - Dead load reaction multiplier.
+     - Dead load reaction multiplier. (Only used if DeadAsPtLd=N)
    * - MultSDL_DC
      - 1
      - 
      - real
-     - Superimposed DC dead load reaction multiplier.
+     - Superimposed DC dead load reaction multiplier. (Only used if DeadAsPtLd=N)
    * - MultSDL_DW
      - 1
      - 
      - real
-     - Superimposed DW dead load reaction multiplier.
-   * - MultSecEff
-     - 1
-     - 
-     - real
-     - PS Secondary effects reaction load multiplier.
+     - Superimposed DW dead load reaction multiplier. (Only used if DeadAsPtLd=N)
    * - REAfile
      - 
      - 
      - text
      - Name of REA file.
+   * - RLaneWidth
+     - 10
+     - FET
+     - real
+     - (Feet) Width of rating / design lane
    * - SimpleSpans
      - Y
      - 
@@ -64,11 +74,6 @@
      - FET
      - real
      - Slab width.
-   * - Stiffness
-     - S
-     - 
-     - chr
-     - [S|F] Stiffness of transfer model.  S=stiff F=flexible (also see SimpleSpans switch)
    * - SupportLoc
      - 0
      - FET

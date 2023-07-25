@@ -18,7 +18,7 @@ Tables
     tables/tbCogoCommandData.rst
     tables/tbCoverPlateDef.rst
     tables/tbDeadLoadDef.rst
-    tables/tbExplicitLLDF.rst
+    tables/tbLLDF_LRFR.rst
     tables/tbFlangeDef.rst
     tables/tbHingePlacement.rst
     tables/tbLaneLoadReductionDef.rst

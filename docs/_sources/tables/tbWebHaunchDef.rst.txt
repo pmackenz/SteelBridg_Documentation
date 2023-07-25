@@ -42,3 +42,19 @@ WebHaunchDef
      - real
      - INC
      - Ending plate depth
+   * - Legacy_Type
+     - chr
+     - 
+     - Legacy method not used anymore. Here for backward compatibility. [H|S] H=Haunched, S=Sloped
+   * - Legacy_Location
+     - chr
+     - 
+     - Legacy method not used anymore. Here for backward compatibility. [S|E] Location of slope (S=Start, E=End)
+   * - Legacy_Slope
+     - real
+     - 
+     - Legacy method not used anymore. Here for backward compatibility. Initial Slope when Type=Haunch
+   * - Legacy_CoeffZ
+     - real
+     - FT2
+     - Legacy method not used anymore. Here for backward compatibility. Coefficient Z  (y=A*X^Z) when Type=Haunch

@@ -1,0 +1,18 @@
+============================================
+Bridge 4: 31-36_Trss
+============================================
+
+.. list-table::
+
+    * - Type
+      - Truss
+    * - Structure
+      - Steel
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/31-36_Trss <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/31-36_Trss>`_
+
+
+.. image:: images/31-36_Trss-system.png
+

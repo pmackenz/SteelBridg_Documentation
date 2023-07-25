@@ -16,6 +16,7 @@ Welcome to SteelBridg LRFR documentation!
     theory.rst
     FAQ.rst
     examples.rst
+    Validation/ValidationSet.rst
     tables.rst
 
 

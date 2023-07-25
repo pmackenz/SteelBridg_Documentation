@@ -1,0 +1,24 @@
+============================================
+Bridge 7: 305-10_Trss
+============================================
+
+.. list-table::
+
+    * - Type
+      - Truss
+    * - Structure
+      - Steel
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/305-10 <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/305-10>`_
+
+
+.. image:: images/305-10_Trss-system.png
+
+
+.. image:: images/305-10_Trss-systemA.png
+
+
+.. image:: images/305-10_Trss-systemB.png
+
