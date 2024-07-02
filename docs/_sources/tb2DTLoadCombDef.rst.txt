@@ -1,0 +1,56 @@
+2DTLoadCombDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Unique name for loading configuration
+   * - Active
+     - chr
+     - 
+     - [Y|N]  Y=Run this load case.
+   * - Truck_A
+     - text
+     - 
+     - First Truck Name
+   * - Truck_A_MaxLanes
+     - int
+     - 
+     - First Truck's max number of lanes to load
+   * - Truck_B
+     - text
+     - 
+     - Second Truck Name
+   * - Truck_B_MaxLanes
+     - int
+     - 
+     - Second Truck's max number of lanes to load
+   * - LnLdRdctn
+     - text
+     - 
+     - Lane Load Reduction Set Name
+   * - LFR
+     - text
+     - 
+     - [D|P] D=Inventory&Operating  P=Overload Inv&Opr
+   * - LRFR
+     - text
+     - 
+     - [H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated
+   * - NegOnly
+     - chr
+     - 
+     - [Y|N] LRFR Neg only rating flag.

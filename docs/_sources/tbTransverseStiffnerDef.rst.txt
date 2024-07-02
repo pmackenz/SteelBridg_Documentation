@@ -1,0 +1,44 @@
+TransverseStiffnerDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - Plate
+     - text
+     - 
+     - Plate Library table name
+   * - NoSpc
+     - int
+     - 
+     - Number of stiffener plate spaces between reference locations
+   * - Spcng
+     - real
+     - FET
+     - Spacing of plates
+   * - EfStf
+     - chr
+     - 
+     - [P|N|B], Effective stiffeners, (P=positive moment, N=negative moment, B=Blank=Both)

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Live Load Envelope Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -28,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SteelBridg LRFR
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -95,10 +101,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../DataEntry.html">Data Entry</a> &raquo;</li>
-          <li><a href="../deprecated.html">Deprecated</a> &raquo;</li>
-      <li>Live Load Envelope Definition</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../DataEntry.html">Data Entry</a></li>
+          <li class="breadcrumb-item"><a href="../deprecated.html">Deprecated</a></li>
+      <li class="breadcrumb-item active">Live Load Envelope Definition</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Data_Entry/Live_Loads/Live_Load_Envelope_Definition.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -109,12 +115,12 @@
            <div itemprop="articleBody">
              
   <section id="live-load-envelope-definition">
-<h1>Live Load Envelope Definition<a class="headerlink" href="#live-load-envelope-definition" title="Permalink to this heading"></a></h1>
+<h1>Live Load Envelope Definition<a class="headerlink" href="#live-load-envelope-definition" title="Link to this heading"></a></h1>
 <img alt="image/ebd_Ebd65.png" src="../../_images/ebd_Ebd65.png" />
 <p>(These optional entries are not operational yet!)</p>
 <img alt="image/ebd_Ebd66.png" src="../../_images/ebd_Ebd66.png" />
 <section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>One step in the creation of the final load envelope that is used to rate a bridge, is the creation of load envelopes of each truck along each path that it is used.  These envelopes will then be used to create composite envelopes for multiple truck and multiple lane configurations.  The longitudinal motion for each truck along each path is defined with this table.  Typically, only the first three fields need data, the remaining fields are for the special truck sequencing method of motion control that is <strong>not</strong> required for bridge rating.</p>
 <p>The truck sequencing option provides an alternate method for control of motion for moving live loads. This optional entry allows you to control the motion of one or more trucks in any number of steps. You use this command in conjunction with existing &lt;A href=”Truck_Definition.html”&gt;Truck Definitions&lt;/A&gt; to precisely control the range of motion and axle loading configurations during the development of the force, reaction, and displacement envelopes.  You specify a new “truck” name to represent the final composite envelope that is generated.</p>
 <p>Where as an envelope is developed for each truck for each path that it is used on, a truck this is created using the SEQ method is assumed to apply to all referenced paths.  Thus, if a sequenced “Truck” is referenced in another table, it will only have one envelope that is used for every specified path.  This is different the other modes that generate an envelope for each used path.</p>
@@ -122,7 +128,7 @@
 <p>Note. Only Live Load Definitions and axle load entries in the Truck Definition are used with this option.  Lane loading is not active for truck sequencing.</p>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <p class="rubric">Truck Name</p>
 <blockquote>
 <div><p>Enter the name of a truck referenced in

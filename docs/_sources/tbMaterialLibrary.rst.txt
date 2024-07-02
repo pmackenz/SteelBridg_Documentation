@@ -1,0 +1,48 @@
+MaterialLibrary
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Material Name
+   * - Fy
+     - real
+     - KSI
+     - Steel Material Yield Strength
+   * - Fu
+     - real
+     - KSI
+     - Steel Material Tensile Strength
+   * - E
+     - real
+     - KSI
+     - Modulus of Elasticity
+   * - fc
+     - real
+     - KSI
+     - Concrete compressive strength
+   * - Weight
+     - real
+     - PCF
+     - Weight per unit volume
+   * - Color
+     - chr
+     - 
+     - [R|G|B|Y|C|M] Display Color (R=Red G=Green B=Blue Y=Yellow C=Cyan M=Magenta)
+   * - Desc
+     - text
+     - 
+     - Comments and description

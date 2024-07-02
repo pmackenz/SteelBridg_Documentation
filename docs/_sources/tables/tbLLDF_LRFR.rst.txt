@@ -29,7 +29,7 @@ LLDF_LRFR
    * - IMPDesign
      - real
      - FET
-     - Impact for Design factor used for Inventory|Operating
+     - Impact Design factor used for Inventory|Operating
    * - MP
      - real
      - FET
@@ -38,7 +38,11 @@ LLDF_LRFR
      - real
      - FET
      - Shear factor  for Legal|Permit|Emergency Vehicle
-   * - IMPpermit
+   * - Impact
      - real
      - FET
      - Impact factor for Legal|Permit|Emergency Vehicle
+   * - MaxSkew
+     - real
+     - DEG
+     - The max Skew angle at supports (degrees) : DEFAULT = 0.0

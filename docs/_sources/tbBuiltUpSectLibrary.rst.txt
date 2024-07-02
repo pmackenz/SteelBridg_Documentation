@@ -1,0 +1,104 @@
+BuiltUpSectLibrary
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Builtup Shape Name
+   * - Type
+     - text
+     - 
+     - Builtup Shape Type (A1,A2,C1,...)
+   * - Shape1
+     - text
+     - 
+     - Reference to Shape 1
+   * - Shape2
+     - text
+     - 
+     - Reference to Shape 2
+   * - Shape3
+     - text
+     - 
+     - Reference to Shape 3
+   * - Shape4
+     - text
+     - 
+     - Reference to Shape 4
+   * - Shape5
+     - text
+     - 
+     - Reference to Shape 5
+   * - Shape6
+     - text
+     - 
+     - Reference to Shape 6
+   * - Shape7
+     - text
+     - 
+     - Reference to Shape 7
+   * - Shape8
+     - text
+     - 
+     - Reference to Shape 8
+   * - ParamA
+     - real
+     - INC
+     - Parameter A
+   * - ParamB
+     - real
+     - INC
+     - Parameter B
+   * - ParamC
+     - real
+     - INC
+     - Parameter C
+   * - Slender
+     - chr
+     - 
+     - [Y|N] Treat as slender member (default is No)
+   * - RedK1
+     - real
+     - INC
+     - If slender, reduce Shape1 by (1 - RedK1)
+   * - RedK2
+     - real
+     - INC
+     - If slender, reduce Shape2 by (1 - RedK2)
+   * - RedK3
+     - real
+     - INC
+     - If slender, reduce Shape3 by (1 - RedK3)
+   * - RedK4
+     - real
+     - INC
+     - If slender, reduce Shape4 by (1 - RedK4)
+   * - RedK5
+     - real
+     - INC
+     - If slender, reduce Shape5 by (1 - RedK5)
+   * - RedK6
+     - real
+     - INC
+     - If slender, reduce Shape6 by (1 - RedK6)
+   * - RedK7
+     - real
+     - INC
+     - If slender, reduce Shape7 by (1 - RedK7)
+   * - RedK8
+     - real
+     - INC
+     - If slender, reduce Shape8 by (1 - RedK8)

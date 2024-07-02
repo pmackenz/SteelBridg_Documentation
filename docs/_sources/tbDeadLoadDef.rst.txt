@@ -1,0 +1,60 @@
+DeadLoadDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Stage
+     - int
+     - 
+     - Dead Load stage number
+   * - CogoPt
+     - text
+     - 
+     - Cogo point of Point Load
+   * - ForceDir
+     - text
+     - 
+     - [FX|FY|FZ|MX|MY|MZ] Forces direction in global coordinate system, see Help for details.
+   * - Force
+     - real
+     - KFT
+     - Forces
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - LoadCode
+     - text
+     - 
+     - [PY|PZ|LY|LZ|MY|MZ], Loads applied to major local axis, see Help for details.
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of linear force.
+   * - StartValue
+     - real
+     - KLF
+     - Point or moment force value, or starting linear load.
+   * - EndValue
+     - real
+     - KLF
+     - Ending value of linear load.
+   * - Description
+     - text
+     - 
+     - Optional description

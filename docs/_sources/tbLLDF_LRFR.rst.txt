@@ -1,0 +1,48 @@
+LLDF_LRFR
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - LLDF_ID
+     - text
+     - 
+     - Unique ID for this entry. Used in mbr def. to assoc mbr.
+   * - MD
+     - real
+     - FET
+     - Moment Design factor used for Inventory|Operating|Legal|Emergency Vehicle
+   * - SD
+     - real
+     - FET
+     - Shear  Design factor used for Inventory|Operating|Legal|Emergency Vehicle
+   * - IMPDesign
+     - real
+     - FET
+     - Impact Design factor used for Inventory|Operating
+   * - MP
+     - real
+     - FET
+     - Moment factor for Permit
+   * - SP
+     - real
+     - FET
+     - Shear factor  for Permit
+   * - Impact
+     - real
+     - FET
+     - Impact factor for Permit|Legal|Emergency Vehicle
+   * - MaxSkew
+     - real
+     - DEG
+     - The max Skew angle at supports (degrees) : DEFAULT = 0.0

@@ -1,0 +1,80 @@
+StandardShapeLibrary
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - User defined name
+   * - Material
+     - text
+     - 
+     - Material Library Reference
+   * - StdName
+     - text
+     - 
+     - Standard Shape table name
+   * - GrossArea
+     - real
+     - IN2
+     - Gross Area
+   * - Depth
+     - real
+     - INC
+     - Depth of shape
+   * - bf
+     - real
+     - INC
+     - Flange Width
+   * - tw
+     - real
+     - INC
+     - Web thickness
+   * - tf
+     - real
+     - INC
+     - Flange thickness
+   * - Ix
+     - real
+     - IN4
+     - Moment of inertia major plane of bending (About local Z axis)
+   * - Sx
+     - real
+     - IN3
+     - Section modulus for Ix
+   * - Rx
+     - real
+     - INC
+     - Radius of gyration with respect to the local Z-Z axis
+   * - Iy
+     - real
+     - IN4
+     - Moment of inertia minor plane of bending (About local Y axis)
+   * - Sy
+     - real
+     - IN3
+     - Section modulus for Iy
+   * - Ry
+     - real
+     - INC
+     - Radius of gyration with respect to the local Y-Y axis
+   * - Zx
+     - real
+     - IN3
+     - Plastic modulus about X-X axis
+   * - Zy
+     - real
+     - IN3
+     - Plastic modulus about Y-Y axis

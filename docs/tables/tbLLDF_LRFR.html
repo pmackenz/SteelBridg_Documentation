@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LLDF_LRFR &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FlangeDef" href="tbFlangeDef.html" />
+    <link rel="prev" title="DeadLoadDef" href="tbDeadLoadDef.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -26,25 +30,70 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> SteelBridg LRFR
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            SteelBridg LRFR
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../DataEntry.html">Data Entry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tables.html">Tables</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tables.html">Tables</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pt2DTParameters.html">2DTParameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ptAnalysisControls.html">AnalysisControls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tb2DReactions.html">2DReactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tb2DSlabDef.html">2DSlabDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tb2DTLoadCombDef.html">2DTLoadCombDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tb2DTransferModel.html">2DTransferModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbBearingStiffener.html">BearingStiffener</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbBoxStiffenerDef.html">BoxStiffenerDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbBridgeDescription.html">BridgeDescription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbBuiltUpSectLibrary.html">BuiltUpSectLibrary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbCogoCommandData.html">CogoCommandData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbCoverPlateDef.html">CoverPlateDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbDeadLoadDef.html">DeadLoadDef</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">LLDF_LRFR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbFlangeDef.html">FlangeDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbHingePlacement.html">HingePlacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLaneLoadReductionDef.html">LaneLoadReductionDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLateralBracingDef.html">LateralBracingDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLinkHingeLibrary.html">LinkHingeLibrary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLiveLoadDef.html">LiveLoadDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLoadCombDef.html">LoadCombDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbLongStiffDef.html">LongStiffDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbMaterialLibrary.html">MaterialLibrary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbNodalBoundaryCond.html">NodalBoundaryCond</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbPlateLibrary.html">PlateLibrary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbRateLocation.html">RateLocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbRatingFactorsLFRDef.html">RatingFactorsLFRDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbRatingFactorsLRFRDef.html">RatingFactorsLRFRDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbRebar.html">Rebar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbSIDeadLoadDef.html">SIDeadLoadDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbShapePlacement.html">ShapePlacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbSpanDef.html">SpanDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbStaging.html">Staging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbStringerDefinition.html">StringerDefinition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbTransverseStiffnerDef.html">TransverseStiffnerDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbTruckDef.html">TruckDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbTrussMember.html">TrussMember</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbWebDef.html">WebDef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tbWebHaunchDef.html">WebHaunchDef</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -60,8 +109,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>LLDF_LRFR</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../tables.html">Tables</a></li>
+      <li class="breadcrumb-item active">LLDF_LRFR</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tables/tbLLDF_LRFR.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -72,14 +122,14 @@
            <div itemprop="articleBody">
              
   <section id="lldf-lrfr">
-<h1>LLDF_LRFR<a class="headerlink" href="#lldf-lrfr" title="Permalink to this heading"></a></h1>
+<h1>LLDF_LRFR<a class="headerlink" href="#lldf-lrfr" title="Link to this heading"></a></h1>
 <p><strong>PURPOSE:</strong></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 58%" />
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
@@ -107,7 +157,7 @@
 <tr class="row-odd"><td><p>IMPDesign</p></td>
 <td><p>real</p></td>
 <td><p>FET</p></td>
-<td><p>Impact for Design factor used for Inventory|Operating</p></td>
+<td><p>Impact Design factor used for Inventory|Operating</p></td>
 </tr>
 <tr class="row-even"><td><p>MP</p></td>
 <td><p>real</p></td>
@@ -119,10 +169,15 @@
 <td><p>FET</p></td>
 <td><p>Shear factor  for Legal|Permit|Emergency Vehicle</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPpermit</p></td>
+<tr class="row-even"><td><p>Impact</p></td>
 <td><p>real</p></td>
 <td><p>FET</p></td>
 <td><p>Impact factor for Legal|Permit|Emergency Vehicle</p></td>
+</tr>
+<tr class="row-odd"><td><p>MaxSkew</p></td>
+<td><p>real</p></td>
+<td><p>DEG</p></td>
+<td><p>The max Skew angle at supports (degrees) : DEFAULT = 0.0</p></td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +186,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tbDeadLoadDef.html" class="btn btn-neutral float-left" title="DeadLoadDef" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tbFlangeDef.html" class="btn btn-neutral float-right" title="FlangeDef" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

@@ -1,0 +1,36 @@
+RatingFactorsLRFRDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Factor  name
+   * - Mode
+     - text
+     - 
+     - Mode: Inv, Opr, Leg, Per, EV
+   * - DC
+     - real
+     - 
+     - Dead load facter for structural components and nonstructural attachments.
+   * - DW
+     - real
+     - 
+     - Dead load factor for wearing surfaces and utilities.
+   * - LL
+     - real
+     - 
+     - Live load factor

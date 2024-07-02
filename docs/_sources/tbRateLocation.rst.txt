@@ -1,0 +1,36 @@
+RateLocation
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Line member name (or ALL, ALL_TRUSS, or ALL_LINE)
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member to begin scanning
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member to stop scanning
+   * - Num
+     - int
+     - 
+     - Number of locations to scan between the starting and ending locations
+   * - ConstDist
+     - real
+     - FET
+     - Constant distance used instead of Num

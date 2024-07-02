@@ -1,0 +1,60 @@
+2DSlabDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member to begin this slab. Default=0 for beginning of member.
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member to end this slab. Default of 0 for end of member.
+   * - Width
+     - real
+     - FET
+     - Slab width (feet)
+   * - Thickness
+     - real
+     - INC
+     - Slab thickness (Inches)
+   * - Gap
+     - real
+     - INC
+     - General distance (inches) from top of girders to bottom of slab.  Only one value allowed per slab section.(Optional input. Default = 0)
+   * - EffWidth
+     - real
+     - FET
+     - Effective width (feet). Use instead of calculation using the slab width, thickness, and member length.
+   * - Composite
+     - chr
+     - 
+     - [Y|N] Y=Slab is composite with line membrs.
+   * - Material
+     - text
+     - 
+     - Material Library Reference
+   * - Rebar
+     - text
+     - 
+     - Rebar defintion reference.
+   * - Stage
+     - int
+     - 
+     - First active stage. (Default is last DL stage.) This is NOT the stage to add weight, that is set by the line member stage setting.

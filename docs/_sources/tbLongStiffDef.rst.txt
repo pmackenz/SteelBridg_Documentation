@@ -1,0 +1,52 @@
+LongStiffDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - Plate
+     - text
+     - 
+     - Plate Library table name
+   * - FlngR
+     - real
+     - 
+     - Ratio of depth from reference flange
+   * - FlngD
+     - real
+     - INC
+     - Offset distance from reference flange
+   * - Tp_Bt
+     - chr
+     - 
+     - [T|B] Which one is the reference Flange? (T=Top, B=Bottom)
+   * - PlLoc
+     - chr
+     - 
+     - [L|R|E] Stiffener plate locater flag (L=left, R=right, E=each)
+   * - EffFactor
+     - real
+     - 
+     - Effectiveness factor (default is 0.0) Range is 0.0 to 1.0

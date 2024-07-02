@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnalysisControls &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataEntry.html">Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Validation/ValidationSet.html">Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables.html">Tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">AnalysisControls</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ptAnalysisControls.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="analysiscontrols">
+<h1>AnalysisControls<a class="headerlink" href="#analysiscontrols" title="Link to this heading"></a></h1>
+<p><strong>PURPOSE:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Data</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AnalysisMethod</p></td>
+<td><p>LRFR</p></td>
+<td></td>
+<td><p>text</p></td>
+<td><p>LFR or LRFR  (default is LRFR)</p></td>
+</tr>
+<tr class="row-odd"><td><p>AnalysisMode</p></td>
+<td><p>2DL</p></td>
+<td></td>
+<td><p>text</p></td>
+<td><p>2DL or 2DT (for transverse) Default is 2D. (Legacy 2DL=2D)</p></td>
+</tr>
+<tr class="row-even"><td><p>AutoFactBuild</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Automatic Factor builder. If Y rebuild ALL factors input per standard set for LFR and LRFR.</p></td>
+</tr>
+<tr class="row-odd"><td><p>AutoLLBuild</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Automatic Live Load builder. If Y rebuild ALL live load input per standard set for LFR and LRFR. (ONLY for 2DL mode)</p></td>
+</tr>
+<tr class="row-even"><td><p>DLMult</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>Dead Load multiplyer. Factor to be applied to computed member gravity load.</p></td>
+</tr>
+<tr class="row-odd"><td><p>DLNetSection</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Use section with hand holes removed for gravity load calculations.</p></td>
+</tr>
+<tr class="row-even"><td><p>FilterByMbrType</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Filter Filter analysis by presence of truss members. If truss mbrs then ONLY do Truss analysis. If NO Truss mbrs then ONLY do line mbr analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>IncludeDoubleTandem</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Include double tandem with HL93? Default for WSDOT is N. CalTrans includes this, so state Y</p></td>
+</tr>
+<tr class="row-even"><td><p>IntrBeam</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] for LRFR is this an interior beam analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>LLMotionSpcFct</p></td>
+<td><p>2</p></td>
+<td></td>
+<td><p>int</p></td>
+<td><p>Live Load Longitudinal truck motion spacing factor, (See Doc.)</p></td>
+</tr>
+<tr class="row-even"><td><p>MRatio</p></td>
+<td><p>8</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>Modular Ratio Override. If not zero use this value instead of computed Es/Ec</p></td>
+</tr>
+<tr class="row-odd"><td><p>MaxAllowDeformation</p></td>
+<td><p>1</p></td>
+<td><p>FET</p></td>
+<td><p>real</p></td>
+<td><p>(Feet) Maximum allowable deformation during load analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p>MbrPTPts</p></td>
+<td><p>2</p></td>
+<td></td>
+<td><p>int</p></td>
+<td><p>Number of integration points per pinned-end truss members</p></td>
+</tr>
+<tr class="row-odd"><td><p>MbrPts</p></td>
+<td><p>5</p></td>
+<td></td>
+<td><p>int</p></td>
+<td><p>Number of integration points per member (In addition to rate locations)</p></td>
+</tr>
+<tr class="row-even"><td><p>MidStgNodes</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Allow mesh generator to create nodes between stringers.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phi_b</p></td>
+<td><p>1.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for bearings (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-even"><td><p>Phi_bs</p></td>
+<td><p>0.80</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for block shear (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phi_c</p></td>
+<td><p>0.95</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for axial compression (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-even"><td><p>Phi_f</p></td>
+<td><p>1.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for flexure (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phi_s</p></td>
+<td><p>0.80</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for bolts in shear (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-even"><td><p>Phi_system</p></td>
+<td><p>1.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR System factor for flexure and axial (WSDOT BDM Chapter 13, section 13.1.1.C – 2023 edition)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phi_u</p></td>
+<td><p>0.80</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for tension, fracture in net section (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-even"><td><p>Phi_v</p></td>
+<td><p>1.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for shear (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Phi_vu</p></td>
+<td><p>0.80</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for shear, rupture in connection elements (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-even"><td><p>Phi_y</p></td>
+<td><p>0.95</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>LRFR Resistance factor for tension, yielding in gross section (AASHTO 6.5.4.2 – 2020 edition)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RatePlotLimit</p></td>
+<td><p>2.00</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>When plotting rating, limit the scale to this value</p></td>
+</tr>
+<tr class="row-even"><td><p>RiderDist</p></td>
+<td><p>0</p></td>
+<td><p>FET</p></td>
+<td><p>real</p></td>
+<td><p>Distance per iteration for lane load rider (default if 0 is tenth of span).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rp</p></td>
+<td><p>1</p></td>
+<td></td>
+<td><p>real</p></td>
+<td><p>Reduction factor for holes. Use 0.90 for bolt holes punched full size and 1.0 for bolt holes drilled full size or subpunched and reamed to size</p></td>
+</tr>
+<tr class="row-even"><td><p>RptCap</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Generate capacity and rating calculations file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RptCapTrace</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Generate capacity and rating calculations file.</p></td>
+</tr>
+<tr class="row-even"><td><p>RptCapTraceTenthPts</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] If RptCapTrace is Y then reduce line member trace to near tenth points only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RptFEA</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Generate FEA forces file. (Warning, file can be quite large!)</p></td>
+</tr>
+<tr class="row-even"><td><p>RptFEACtrlTruck</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=If generating a FEA file also include controlling truck information</p></td>
+</tr>
+<tr class="row-odd"><td><p>RptInfSurf</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>text</p></td>
+<td><p>[Y/N] Y=Influence surface report. (warning large file generated)</p></td>
+</tr>
+<tr class="row-even"><td><p>RptPrependMethod</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Report file names will be prepended with either LFR or LRFR</p></td>
+</tr>
+<tr class="row-odd"><td><p>RptSect</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Generate section properties report.</p></td>
+</tr>
+<tr class="row-even"><td><p>RptSummary</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=Generate Rating summary report.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RptTruckLoading</p></td>
+<td></td>
+<td></td>
+<td><p>text</p></td>
+<td><p>[Y|mbr] Y=ALL or mbr=Name of Member to report raw trucking loading. Leave blank to disable. (warning large file generated)</p></td>
+</tr>
+<tr class="row-even"><td><p>ShrCapFct</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y=For Inv. &amp; Opr. Capacity, use Inv. factors for M in AASHTO eq. 10-118.</p></td>
+</tr>
+<tr class="row-odd"><td><p>StopAtDL</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y= Run bridge only up through Deadload analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p>TrussDLonEnds</p></td>
+<td><p>N</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y= Gravity for truss mbrs applied at end nodes only not as linear load.</p></td>
+</tr>
+<tr class="row-odd"><td><p>WetSlab</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>chr</p></td>
+<td><p>[Y|N] Y= Use a very low E for slab plates in final DL stage.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

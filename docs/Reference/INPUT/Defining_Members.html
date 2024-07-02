@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Defining Members &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -28,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SteelBridg LRFR
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -84,9 +90,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../theory.html">Theory</a> &raquo;</li>
-      <li>Defining Members</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../theory.html">Theory</a></li>
+      <li class="breadcrumb-item active">Defining Members</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/INPUT/Defining_Members.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,9 +103,9 @@
            <div itemprop="articleBody">
              
   <section id="defining-members">
-<h1>Defining Members<a class="headerlink" href="#defining-members" title="Permalink to this heading"></a></h1>
+<h1>Defining Members<a class="headerlink" href="#defining-members" title="Link to this heading"></a></h1>
 <section id="sequence">
-<h2>Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading"></a></h2>
+<h2>Sequence<a class="headerlink" href="#sequence" title="Link to this heading"></a></h2>
 <p>The following sequence of steps for building a model in BRIDG is not the only method.
 In fact, this sequence assumes that you are starting from scratch.
 Other methods are using the BRIDG Wizard (if available in this version),
@@ -110,7 +116,7 @@ to the model, until the bridge is completely defined within the scope of
 this program.  Suggestions for the first few passes are described below.</p>
 </section>
 <section id="terminology">
-<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this heading"></a></h2>
+<h2>Terminology<a class="headerlink" href="#terminology" title="Link to this heading"></a></h2>
 <p class="rubric">Line Member</p>
 <blockquote>
 <div><p>Those members that directly support the road surface and are modeled on the profile grade lines.</p>
@@ -121,7 +127,7 @@ this program.  Suggestions for the first few passes are described below.</p>
 </div></blockquote>
 </section>
 <section id="first-pass">
-<h2>First Pass<a class="headerlink" href="#first-pass" title="Permalink to this heading"></a></h2>
+<h2>First Pass<a class="headerlink" href="#first-pass" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Enter geometry for bridge center line and Line Members.</p></li>
 <li><p>Enter basic line member placement.</p></li>
@@ -132,7 +138,7 @@ entries that references these tables have some thing to reference.</p></li>
 </ol>
 </section>
 <section id="geometry-definition">
-<h2>Geometry Definition<a class="headerlink" href="#geometry-definition" title="Permalink to this heading"></a></h2>
+<h2>Geometry Definition<a class="headerlink" href="#geometry-definition" title="Link to this heading"></a></h2>
 <p>See  <span class="xref std std-ref">COGO Command Command Descriptions</span> entry sheet is used to create all of the necessary spatial coordinates and paths.
 The following <strong>minimum</strong> data is required:</p>
 <ul class="simple">
@@ -143,7 +149,7 @@ Multiple lanes will be centered about this path.</p></li>
 </ul>
 </section>
 <section id="library-creation">
-<h2>Library Creation<a class="headerlink" href="#library-creation" title="Permalink to this heading"></a></h2>
+<h2>Library Creation<a class="headerlink" href="#library-creation" title="Link to this heading"></a></h2>
 </section>
 </section>
 

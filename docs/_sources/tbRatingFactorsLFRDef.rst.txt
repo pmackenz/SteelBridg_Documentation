@@ -1,0 +1,56 @@
+RatingFactorsLFRDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Name
+     - text
+     - 
+     - Factor  name
+   * - Mode
+     - text
+     - 
+     - Mode: Std, Inv, Opr, Leg, or Per
+   * - DLF
+     - real
+     - 
+     - Ultimate dead load factor.
+   * - LL
+     - real
+     - 
+     - Ultimate live load factor
+   * - Impact
+     - real
+     - 
+     - Explicit Impact factor. Used for STD and on truss mbrs. for INV and OPR.
+   * - TASF
+     - real
+     - 
+     - Tensile axial strength reduction factor.
+   * - CASF
+     - real
+     - 
+     - Compression axial strength reduction factor.
+   * - MRF
+     - real
+     - 
+     - Moment strength reduction factor.
+   * - SRF
+     - real
+     - 
+     - Shear strength reduction factor.
+   * - BRF
+     - real
+     - 
+     - Bearing strength reduction factor.

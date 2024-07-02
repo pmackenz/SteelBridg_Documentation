@@ -1,0 +1,40 @@
+LateralBracingDef
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - MbrLine
+     - text
+     - 
+     - Member line name
+   * - StartDist
+     - real
+     - FET
+     - Distance from start of member line
+   * - EndDist
+     - real
+     - FET
+     - Distance from start of member line to end of this shape placement. (Entry optional)
+   * - NoSpc
+     - int
+     - 
+     - Number of spaces between braces
+   * - Spcng
+     - real
+     - FET
+     - Spacing of braces
+   * - Tp_Bt
+     - chr
+     - 
+     - [T|B], Location of braces, (T=Top, B=Bottom)

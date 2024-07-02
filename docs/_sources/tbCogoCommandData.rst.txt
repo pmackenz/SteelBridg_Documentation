@@ -1,0 +1,64 @@
+CogoCommandData
+==========================
+
+**PURPOSE:**
+
+
+
+.. list-table::
+   :widths:  30 10 10 70
+   :header-rows: 1
+
+
+   * - Field
+     - Type
+     - Units
+     - Description
+   * - Command
+     - text
+     - 
+     - COGO Command
+   * - Field1
+     - text
+     - 
+     - COGO Data Field 1
+   * - Field2
+     - text
+     - 
+     - COGO Data Field 2
+   * - Field3
+     - text
+     - 
+     - COGO Data Field 3
+   * - Field4
+     - text
+     - 
+     - COGO Data Field 4
+   * - Field5
+     - text
+     - 
+     - COGO Data Field 5
+   * - Field6
+     - text
+     - 
+     - COGO Data Field 6
+   * - Field7
+     - text
+     - 
+     - COGO Data Field 7
+   * - Field8
+     - text
+     - 
+     - COGO Data Field 8
+   * - Field9
+     - text
+     - 
+     - COGO Data Field 9
+   * - Field10
+     - text
+     - 
+     - COGO Data Field 10
+   * - Field11
+     - 
+     - 
+     - COGO Data Field 11

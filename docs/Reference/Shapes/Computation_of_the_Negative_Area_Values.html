@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computation of the Negative Area Values &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -29,11 +31,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> SteelBridg LRFR
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SteelBridg LRFR
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -84,9 +90,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../theory.html">Theory</a> &raquo;</li>
-      <li>Computation of the Negative Area Values</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../theory.html">Theory</a></li>
+      <li class="breadcrumb-item active">Computation of the Negative Area Values</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/Shapes/Computation_of_the_Negative_Area_Values.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,10 +103,10 @@
            <div itemprop="articleBody">
              
   <section id="computation-of-the-negative-area-values">
-<h1>Computation of the Negative Area Values<a class="headerlink" href="#computation-of-the-negative-area-values" title="Permalink to this heading"></a></h1>
+<h1>Computation of the Negative Area Values<a class="headerlink" href="#computation-of-the-negative-area-values" title="Link to this heading"></a></h1>
 <p>The following Net Area calculations are performed:</p>
 <section id="given">
-<h2>Given:<a class="headerlink" href="#given" title="Permalink to this heading"></a></h2>
+<h2>Given:<a class="headerlink" href="#given" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(A_g\)</span> = Gross Cross Section Area</p></li>
 <li><p><span class="math notranslate nohighlight">\(A_f\)</span> = Area of fastener holes</p></li>
@@ -108,7 +114,7 @@
 </ul>
 </section>
 <section id="for-tension-capacity-calculations">
-<h2>For Tension Capacity Calculations:<a class="headerlink" href="#for-tension-capacity-calculations" title="Permalink to this heading"></a></h2>
+<h2>For Tension Capacity Calculations:<a class="headerlink" href="#for-tension-capacity-calculations" title="Link to this heading"></a></h2>
 <p>Compute Net Area (<span class="math notranslate nohighlight">\(A_n\)</span>)</p>
 <div class="math notranslate nohighlight">
 \[A_n = A_g - A_h - (A_g - A_h)*{ f}\]</div>
@@ -120,7 +126,7 @@
 \[A_{nb} = A_g - A_h - A_f\]</div>
 </section>
 <section id="for-compression-capacity-calculations">
-<h2>For Compression Capacity Calculations:<a class="headerlink" href="#for-compression-capacity-calculations" title="Permalink to this heading"></a></h2>
+<h2>For Compression Capacity Calculations:<a class="headerlink" href="#for-compression-capacity-calculations" title="Link to this heading"></a></h2>
 <p>Compute Gross Effective Area:</p>
 <div class="math notranslate nohighlight">
 \[A_{ge} = A_g - A_h\]</div>
