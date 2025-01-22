@@ -1,0 +1,48 @@
+##################
+Tables
+##################
+
+.. toctree::
+    :maxdepth: 3
+
+    tables/pt2DTParameters.rst
+    tables/ptAnalysisControls.rst
+    tables/tb2DReactions.rst
+    tables/tb2DSlabDef.rst
+    tables/tb2DTLoadCombDef.rst
+    tables/tb2DTransferModel.rst
+    tables/tbBearingStiffener.rst
+    tables/tbBoxStiffenerDef.rst
+    tables/tbBridgeDescription.rst
+    tables/tbBuiltUpSectLibrary.rst
+    tables/tbCogoCommandData.rst
+    tables/tbCoverPlateDef.rst
+    tables/tbDeadLoadDef.rst
+    tables/tbLLDF_LRFR.rst
+    tables/tbFlangeDef.rst
+    tables/tbHingePlacement.rst
+    tables/tbLaneLoadReductionDef.rst
+    tables/tbLateralBracingDef.rst
+    tables/tbLinkHingeLibrary.rst
+    tables/tbLiveLoadDef.rst
+    tables/tbLiveLoadDistFact.rst
+    tables/tbLoadCombDef.rst
+    tables/tbLongStiffDef.rst
+    tables/tbMaterialLibrary.rst
+    tables/tbNodalBoundaryCond.rst
+    tables/tbPlateLibrary.rst
+    tables/tbRateLocation.rst
+    tables/tbRatingFactorsLFRDef.rst
+    tables/tbRatingFactorsLRFRDef.rst
+    tables/tbRebar.rst
+    tables/tbSIDeadLoadDef.rst
+    tables/tbShapePlacement.rst
+    tables/tbSpanDef.rst
+    tables/tbStaging.rst
+    tables/tables/tbStandardShapeLibrary.rst
+    tables/tbStringerDefinition.rst
+    tables/tbTransverseStiffnerDef.rst
+    tables/tbTruckDef.rst
+    tables/tbTrussMember.rst
+    tables/tbWebDef.rst
+    tables/tbWebHaunchDef.rst

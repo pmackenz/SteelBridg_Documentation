@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
@@ -5,19 +7,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2DTLoadCombDef &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -149,45 +147,55 @@
 <td></td>
 <td><p>[Y|N]  Y=Run this load case.</p></td>
 </tr>
-<tr class="row-even"><td><p>Truck_A</p></td>
+<tr class="row-even"><td><p>Lane_Type_A</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>First Truck Name</p></td>
+<td><p>First Lane-Type Name</p></td>
 </tr>
-<tr class="row-odd"><td><p>Truck_A_MaxLanes</p></td>
+<tr class="row-odd"><td><p>Type_A_MaxLanes</p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>First Truck’s max number of lanes to load</p></td>
+<td><p>First Lane-Type’s max number of lanes to load</p></td>
 </tr>
-<tr class="row-even"><td><p>Truck_B</p></td>
+<tr class="row-even"><td><p>Lane_Type_B</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>Second Truck Name</p></td>
+<td><p>Second Lane-Type Name</p></td>
 </tr>
-<tr class="row-odd"><td><p>Truck_B_MaxLanes</p></td>
+<tr class="row-odd"><td><p>Type_B_MaxLanes</p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Second Truck’s max number of lanes to load</p></td>
+<td><p>Second Lane-Type’s max number of lanes to load</p></td>
 </tr>
 <tr class="row-even"><td><p>LnLdRdctn</p></td>
 <td><p>text</p></td>
 <td></td>
 <td><p>Lane Load Reduction Set Name</p></td>
 </tr>
-<tr class="row-odd"><td><p>LFR</p></td>
+<tr class="row-odd"><td><p>Impact</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Impact factor. Applied to all lanes.</p></td>
+</tr>
+<tr class="row-even"><td><p>LFR</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>[D|P] D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p></td>
+<td><p>[D|P] LL-Factor for D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p></td>
 </tr>
-<tr class="row-even"><td><p>LRFR</p></td>
+<tr class="row-odd"><td><p>LRFR</p></td>
 <td><p>text</p></td>
 <td></td>
-<td><p>[H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p></td>
+<td><p>[H|L| LL-Factor for P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p></td>
 </tr>
-<tr class="row-odd"><td><p>NegOnly</p></td>
+<tr class="row-even"><td><p>NegOnly</p></td>
 <td><p>chr</p></td>
 <td></td>
 <td><p>[Y|N] LRFR Neg only rating flag.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ReportFlag</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] Shall this load combination be included in the Summary Report if Settings:RptCapTrace == ‘Y’? Default=’Y’</p></td>
 </tr>
 </tbody>
 </table>

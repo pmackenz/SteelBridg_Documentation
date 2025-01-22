@@ -21,11 +21,11 @@ LLDF_LRFR
    * - MD
      - real
      - FET
-     - Moment Design factor used for Inventory|Operating
+     - Moment Design factor used for Inventory|Operating|Legal|Emergency Vehicle
    * - SD
      - real
      - FET
-     - Shear Design factor used for Inventory|Operating
+     - Shear  Design factor used for Inventory|Operating|Legal|Emergency Vehicle
    * - IMPDesign
      - real
      - FET
@@ -33,15 +33,15 @@ LLDF_LRFR
    * - MP
      - real
      - FET
-     - Moment factor for Legal|Permit|Emergency Vehicle
+     - Moment factor for Permit
    * - SP
      - real
      - FET
-     - Shear factor  for Legal|Permit|Emergency Vehicle
+     - Shear factor  for Permit
    * - Impact
      - real
      - FET
-     - Impact factor for Legal|Permit|Emergency Vehicle
+     - Impact factor for Permit|Legal|Emergency Vehicle
    * - MaxSkew
      - real
      - DEG
