@@ -1,0 +1,45 @@
+.. _fem_f3d_file:
+
+Finite Element Analysis - The F3D file
+========================================
+
+Edit the F3D file and cut out all but the F3D model input section. 
+
+The F3D model begins with the section that begins with the "MATPROP" entry. 
+It ends with the command "EvalAllMbrs". Between are all the F3D entry fields (see list below). 
+
+Cut all BUT the F3D model from the file. This is now a run-able F3D file. 
+
+
+A F3D input file has these sections. Each section is self documented in the F3D file. 
+
++------------+----------------------------------------+
+| F3D Section| Description                            |
++============+========================================+
+| MATPROP    | Material properties                    |
++------------+----------------------------------------+
+| ELEPRP     | Beam Element properties                |
++------------+----------------------------------------+
+| PLTPRP     | Simple FEM plates                      |
+|            | Use with caution. Not used in BRIDG.   |
++------------+----------------------------------------+
+| NODE       | Node location and constraint codes     |
++------------+----------------------------------------+
+| MBR        | Member nodes, material, section, and   |
+|            |    end releases                        |
++------------+----------------------------------------+
+| PLATE      | Plate nodes                            |
++------------+----------------------------------------+
+| LDCASE     | Load case names                        |
++------------+----------------------------------------+
+| NODELD     | Nodal loads                            |
++------------+----------------------------------------+
+| MBRLD      | Member loads                           |
++------------+----------------------------------------+
+| cmds       | Commands to select load case and run   |
++------------+----------------------------------------+
+
+
+Example:  :download:`fem_example_f3d.txt`
+
+See  ( :ref:`fem_run` )

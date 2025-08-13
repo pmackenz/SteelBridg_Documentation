@@ -1,3 +1,7 @@
+:orphan:
+
+.. _COGO Command\: OSPATH:
+
 COGO Command: OSPATH
 ----------------------
 

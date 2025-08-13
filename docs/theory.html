@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
@@ -7,21 +5,28 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Theory &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/design-tabs.js?v=f930bc37"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Defining Members" href="Reference/INPUT/Defining_Members.html" />
-    <link rel="prev" title="Input Bolt Fastener Library" href="Data_Entry/Libraries/Bolt_Fastener_Library.html" /> 
+    <link rel="prev" title="Load Combination Definition" href="Data_Entry/Loads/Load_Combination_Definition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,62 +50,29 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DataEntry.html">Data Entry</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Theory</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#input">Input</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Reference/INPUT/Defining_Members.html">Defining Members</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/INPUT/Editor_Key_Assignments.html">Editor Key Assignments</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/INPUT/Finite_Element_Processor_Error_and_Warning_Messages.html">Finite Element Processor Error and Warning Messages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/INPUT/Input_Local_Member_Orientation.html">Input Local Member Orientation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html">Simple Truss Example Using Nodal BC</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#shapes">Shapes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Standard_Shape_Properties.html">Standard Shape Properties</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html">Shape Properties</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html">Computation of the Negative Area Values</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Shape_Coordinate_System.html">Shape Coordinate System</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Built_up_Shape_Properties.html">Built-up Shape Properties</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Shapes/Shape_Geometry_Nomenclature.html">Shape Geometry Nomenclature</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#members">Members</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Members/Truss_Member_End_Releases.html">Truss Member End Releases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Rotational_Member_End_Release_Guidelines.html">Rotational Member End Release Guidelines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Effective_Length.html">Effective Length</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html">Explanation of Member Weight and Stiffness Codes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Members/Explanation_of_Member_of_Release_Codes.html">Explanation of Member End Release Codes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Members/Explanation_of_Auto_Connect_Switch.html">Explanation of Auto Connect Switch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Members/Explanation_of_Start_and_End_Distances.html">Explanation of Start and End Distances</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Non_Line_Member_Design_Properties.html">Non-Line Member Design Properties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Member_Coordinate_System.html">Member Coordinate System</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Members/Line_Member_Design_Properties.html">Line Member Design Properties</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Members/Bearing_Seats.html">Bearing Seats</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#deck-slab">Deck Slab</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition &amp; Corner Offset Graphic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Mesh_Generator_Notes.html">Concrete Slab Mesh Generator Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Modeling_Notes.html">Concrete Slab Modeling Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Input_Concrete_Slab_Definition_Graphic.html">Input Concrete Slab Definition Graphic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Expansion_Joint.html">Concrete Slab Expansion Joint</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/DeckSlab/Plate_Properties.html">Plate Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#load-generation">Load Generation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Load_Combination_Theory.html">Load Combination Theory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Load_Generation.html">Load Generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Points_of_Interest.html">Points of Interest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#capacity-and-rating-theory">Capacity and Rating Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lfr-capacity-and-rating-theory">LFR Capacity and Rating Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.html">[SS-5.1.2] Compute Capacities</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_1.html">[SS-5.2.1.1] Compactness of Type A(1)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_2.html">[SS-5.2.1.1] Compactness of Type A (2)</a></li>
@@ -152,10 +124,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -190,29 +160,9 @@ the WSDOT Bridge Rating Manual.</p>
 <h2>Input<a class="headerlink" href="#input" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Defining_Members.html">Defining Members</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Defining_Members.html#sequence">Sequence</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Defining_Members.html#terminology">Terminology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Defining_Members.html#first-pass">First Pass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Defining_Members.html#geometry-definition">Geometry Definition</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Defining_Members.html#library-creation">Library Creation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Editor_Key_Assignments.html">Editor Key Assignments</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Editor_Key_Assignments.html#function-keys">Function Keys:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Editor_Key_Assignments.html#character-keys">Character Keys:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Editor_Key_Assignments.html#special-keys">Special Keys:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Defining_Members.html">Defining Members</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Finite_Element_Processor_Error_and_Warning_Messages.html">Finite Element Processor Error and Warning Messages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Input_Local_Member_Orientation.html">Input Local Member Orientation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html">Simple Truss Example Using Nodal BC</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html#member-end-moment-releases">Member End Moment releases:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html#using-boundary-conditions-for-the-bracing-members">Using Boundary Conditions for the bracing members.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html#floor-beam-node-constraints">Floor Beam Node Constraints.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.html#other-required-nodal-constraints">Other Required Nodal Constraints.</a></li>
-</ul>
-</li>
 </ul>
 </div>
 </section>
@@ -220,21 +170,8 @@ the WSDOT Bridge Rating Manual.</p>
 <h2>Shapes<a class="headerlink" href="#shapes" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Standard_Shape_Properties.html">Standard Shape Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html">Shape Properties</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html#coordinate-systems">Coordinate Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html#basic-property-sets">Basic Property Sets:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html#design-capacity-properties">Design / Capacity Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html">Computation of the Negative Area Values</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html#given">Given:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html#for-tension-capacity-calculations">For Tension Capacity Calculations:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html#for-compression-capacity-calculations">For Compression Capacity Calculations:</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Shape_Coordinate_System.html">Shape Coordinate System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Built_up_Shape_Properties.html">Built-up Shape Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Shape_Properties.html">Shape Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Computation_of_the_Negative_Area_Values.html">Computation of the Negative Area Values</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Shapes/Shape_Geometry_Nomenclature.html">Shape Geometry Nomenclature</a></li>
 </ul>
 </div>
@@ -244,75 +181,15 @@ the WSDOT Bridge Rating Manual.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Members/Truss_Member_End_Releases.html">Truss Member End Releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Rotational_Member_End_Release_Guidelines.html">Rotational Member End Release Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Effective_Length.html">Effective Length</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html">Explanation of Member Weight and Stiffness Codes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Members/Explanation_of_Member_Weight_and_Stiffness_Codes.html#stiffness-codes">Stiffness Codes:</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Members/Explanation_of_Member_of_Release_Codes.html">Explanation of Member End Release Codes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Members/Explanation_of_Auto_Connect_Switch.html">Explanation of Auto Connect Switch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Members/Explanation_of_Start_and_End_Distances.html">Explanation of Start and End Distances</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Non_Line_Member_Design_Properties.html">Non-Line Member Design Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Member_Coordinate_System.html">Member Coordinate System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Members/Line_Member_Design_Properties.html">Line Member Design Properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Members/Bearing_Seats.html">Bearing Seats</a></li>
 </ul>
 </div>
 </section>
-<section id="deck-slab">
-<h2>Deck Slab<a class="headerlink" href="#deck-slab" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.html">Input Concrete Slab Definition &amp; Corner Offset Graphic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Mesh_Generator_Notes.html">Concrete Slab Mesh Generator Notes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Steps_for_checking_the_slab_mesh.html">Concrete Slab - Steps for checking the slab mesh.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Steps_for_correcting_errant_mesh_generation.html">Concrete Slab - Steps for correcting errant mesh generation.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Steps_for_checking_composite_member_generation.html">Concrete Slab - Steps for checking composite member generation.</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Modeling_Notes.html">Concrete Slab Modeling Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Input_Concrete_Slab_Definition_Graphic.html">Input Concrete Slab Definition Graphic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/DeckSlab/Input_Concrete_Slab_Definition_Graphic.html#mesh-building-methodology">Mesh Building Methodology</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Concrete_Slab_Expansion_Joint.html">Concrete Slab Expansion Joint</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/DeckSlab/Plate_Properties.html">Plate Properties</a></li>
-</ul>
-</div>
-</section>
-<section id="load-generation">
-<h2>Load Generation<a class="headerlink" href="#load-generation" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Load_Combination_Theory.html">Load Combination Theory</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Load_Combination_Theory.html#terminology">Terminology</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Load_Generation.html">Load Generation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Load_Generation.html#theory">Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Load_Generation.html#input-data-sheets">Input Data Sheets</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Data_Set_Collections_Envelopes.html#a-simple-example">A simple Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Introduction_to_Load_Entry_Tables.html">Introduction to Load Entry Tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Points_of_Interest.html">Points of Interest</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Points_of_Interest.html#points-of-interest-for-line-member-data-sets">Points of Interest for Line Member Data Sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Reference/Load_Generation/Points_of_Interest.html#points-of-interest-for-non-line-member-data-sets">Points of Interest for Non-Line Member Data Sets</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
-</ul>
-</div>
-</section>
-<section id="capacity-and-rating-theory">
-<h2>Capacity and Rating Theory<a class="headerlink" href="#capacity-and-rating-theory" title="Link to this heading"></a></h2>
+<section id="lfr-capacity-and-rating-theory">
+<h2>LFR Capacity and Rating Theory<a class="headerlink" href="#lfr-capacity-and-rating-theory" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Reference/Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.html">[SS-5.1.2] Compute Capacities</a></li>
@@ -371,14 +248,14 @@ the WSDOT Bridge Rating Manual.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Data_Entry/Libraries/Bolt_Fastener_Library.html" class="btn btn-neutral float-left" title="Input Bolt Fastener Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Data_Entry/Loads/Load_Combination_Definition.html" class="btn btn-neutral float-left" title="Load Combination Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Reference/INPUT/Defining_Members.html" class="btn btn-neutral float-right" title="Defining Members" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

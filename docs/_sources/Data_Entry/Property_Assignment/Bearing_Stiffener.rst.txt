@@ -1,7 +1,33 @@
-Bearing Stiffener
-====================
+Input Bearing Stiffener
+===========================
 
-.. warning:
+**Table** :ref:`tbBearingStiffener`
 
-   This document section is missing.
+
+**PURPOSE**
+
+Define bearing stiffeners along a stringer.
+
+Reference the theory flow chart,SS-6.3, for how bearing capacity and ratings are computed.  
+Because the 1.7 working stress to ultimate design conversion factor (see theory) is not calibrated for overload, 
+the overload factors are conservatively not used.
+
+The forces for bearings are taken from the maximum positive "Y" constrained reaction of the specified COGO point.  
+If this point is not constrained in the "Y" direction then there will not be any forces.
+
+The geometry of the stiffener arrangement is theoretical.  
+The Cogo point defined as the bearing stiffener location is used for force collection, 
+and the computation of the stiffener geometry is not limited by the fact that this point may be on the member end. 
+The full web contact length is computed using the "Num Stiffeners", "Spacing", and web thickness values. Please see the graphic below.
+
+Note, bearing stiffeners are not used as shear stiffeners!
+
+
+**Parameters**
+
+.. Include:: ../../tables/tbBearingStiffener.txt
+
+.. image:: ../../image/bearing_stiffener.png
+    :alt: image/bearing_stiffener.png
+
 

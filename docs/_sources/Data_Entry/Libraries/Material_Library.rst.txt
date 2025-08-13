@@ -1,6 +1,17 @@
 Input Material Library
 --------------------------
 
+**Table** :ref:`tbMaterialLibrary`
+
+
+**PURPOSE**
+    Define materials that will be referenced by plates and standard shapes
+
+**Parameters**
+
+  .. Include:: ../../tables/tbMaterialLibrary.txt
+
+**Example**
 Table shown with standard default value.
 
 .. figure:: ../../image/ebd_Ebd80.png

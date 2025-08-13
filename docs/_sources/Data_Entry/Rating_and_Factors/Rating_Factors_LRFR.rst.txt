@@ -1,25 +1,49 @@
 Rating Factors for LRFR
 ===========================
 
-* **Load Factors**
+**Table** :ref:`tbRatingFactorsLRFRDef`
 
-.. list-table::
-    :widths: 20 70
-    :header-rows: 1
+**PURPOSE**
 
-    *  - Field
-       - Description
-    *  - Name
-       - Unique factor name; used for referencing factors for members
-    *  - Mode
-       - suitable modes: `Inv`, `Opr`, `Leg`, `Per`, `EV`
-    *  - DC
-       - Dead load facter for structural components and nonstructural attachments, :math:`\gamma_{DC}`
-    *  - DW
-       - Dead load factor for wearing surfaces and utilities, :math:`\gamma_{DW}`
-    *  - LL
-       - Live load factor, :math:`\gamma_{LL}`
+Use this table to create a library of factors that are used when
+computing the member capacity and rating for **LFFR** analysis. 
+Rating factors are applied on a per member basis, thus the name 
+given for a set of factors on this table is referenced by the 
+following member entries:
+
+
+* :ref:`Input Stringer Definition`
+* :ref:`Input Truss Member`
+
+
+.. note::
+
+    It is advised that you use the same 'name' for LFR and LRFR.
+    This way you can easily switch from a LFR to a LRFR analysis.
+
+**Parameters**
+
+  .. Include:: ../../tables/tbRatingFactorsLRFRDef.txt
+
+* **Name**
+
+   Name for set of factors. This name is referenced in :ref:`Input Stringer Definition`  and :ref:`Input Truss Member`
+
+* **Mode**
+
+  Each set of factors can have multiple lines of data, one for each:
+
+  * INV : Inventory
+  * OPR : Operating 
+  * LEG : Lagal
+  * PER : Permit
+  * EV  : Emergency
 
 * **Resistance Factors**
 
    Resistance factors reside in :ref:`Input Analysis Controls`
+
+**Example**
+
+  .. figure:: ../../image/tbRatingFactorsLRFRDef.png
+    :alt: image/tbRatingFactorsLRFRDef.png   

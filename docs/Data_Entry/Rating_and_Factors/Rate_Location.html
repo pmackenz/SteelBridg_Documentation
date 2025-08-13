@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,20 +5,27 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rate Location &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Library" href="../library.html" />
-    <link rel="prev" title="Explicit Live Load Distribution Factors" href="LLDF_LRFR.html" /> 
+    <link rel="prev" title="Live Load Distribution Factors - LRFR" href="LLDF_LRFR.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -53,7 +57,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Live Load Distribution Factors - LRFR</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Rate Location</a></li>
 </ul>
 </li>
@@ -62,14 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -100,68 +101,84 @@
              
   <section id="rate-location">
 <h1>Rate Location<a class="headerlink" href="#rate-location" title="Link to this heading"></a></h1>
-<p><strong>Description</strong></p>
-<p>For line members, it is up to the engineer to specify where the program will
-compute a capacity and a rating value.
-For non-line members, since their section properties do not change along
-their length, every member is checked using the worst case loading and a
-single rating per member is generated.  This table is only concerned with
-line member locations.</p>
-<p>Although it is up to the engineer to identify critical locations, the program
-will automatically use the locations along line members per the
+<p><strong>Table</strong> <a class="reference internal" href="#tbratelocation"><span class="std std-ref">tbRateLocation</span></a></p>
+<p><strong>PURPOSE</strong></p>
+<p>The program will automatically use the locations along line members per the
 <cite>MbrPts</cite> parameter in the  <span class="xref std std-ref">Analysis Controls</span> table.
 These automatically generated locations are used in addition to any
-explicitly defined locations defined by entries in this table.
-The <cite>MbrPts</cite> parameter specifies the number of equal spaced locations along the
+explicitly defined locations defined by entries in this table.</p>
+<p>The <cite>MbrPts</cite> parameter specifies the number of equal spaced locations along the
 length of a member including the two end points.  For example, a <cite>MbrPts</cite> of 5
 will create rating locations at the member ends and the three internal third
 points.</p>
+<p>For stringers, the engineer can specify additional locations where the program will
+compute a capacity and a rating value.</p>
 <p>More then one entry per member line can be specified, and all of the resulting
 locations will be used.</p>
-<table class="docutils align-default">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This entry is optional and will only apply to stringers.</p>
+</div>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><span id="tbratelocation"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbRateLocation</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 30.0%" />
-<col style="width: 70.0%" />
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Descriptions</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>MbrLine</p></td>
-<td><p>Member line name</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Line member name (or ALL, ALL_TRUSS, or ALL_LINE)</p></td>
 </tr>
 <tr class="row-odd"><td><p>StartDist</p></td>
-<td><p>Distance from start of member line to begin scanning</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Distance from start of member to begin scanning</p></td>
 </tr>
 <tr class="row-even"><td><p>EndDist</p></td>
-<td><p>Distance from start of member line to stop scanning</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Distance from start of member to stop scanning</p></td>
 </tr>
 <tr class="row-odd"><td><p>Num</p></td>
+<td><p>int</p></td>
+<td></td>
 <td><p>Number of locations to scan between the starting and ending locations</p></td>
 </tr>
 <tr class="row-even"><td><p>ConstDist</p></td>
-<td><p>Constant distance used instead of Num.
-When a constant distance is specified, the rate locations will be created by marching down the member
-line starting at the Start Dist and continuing at the specified intervals until the End Distance is reached.</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Constant distance used instead of Num</p></td>
 </tr>
 </tbody>
 </table>
+</div></blockquote>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="LLDF_LRFR.html" class="btn btn-neutral float-left" title="Explicit Live Load Distribution Factors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="LLDF_LRFR.html" class="btn btn-neutral float-left" title="Live Load Distribution Factors - LRFR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../library.html" class="btn btn-neutral float-right" title="Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

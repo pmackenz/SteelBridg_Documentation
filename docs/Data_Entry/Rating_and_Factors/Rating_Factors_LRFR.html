@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,20 +5,26 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rating Factors for LRFR &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Explicit Live Load Distribution Factors" href="LLDF_LRFR.html" />
+    <link rel="next" title="Live Load Distribution Factors - LRFR" href="LLDF_LRFR.html" />
     <link rel="prev" title="Rating Factors for LFR" href="Rating_Factors_LFR.html" /> 
 </head>
 
@@ -45,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -54,7 +57,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Rating Factors for LRFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Live Load Distribution Factors - LRFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rate_Location.html">Rate Location</a></li>
 </ul>
 </li>
@@ -63,14 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -101,44 +101,96 @@
              
   <section id="rating-factors-for-lrfr">
 <h1>Rating Factors for LRFR<a class="headerlink" href="#rating-factors-for-lrfr" title="Link to this heading"></a></h1>
+<p><strong>Table</strong> <a class="reference internal" href="#tbratingfactorslrfrdef"><span class="std std-ref">tbRatingFactorsLRFRDef</span></a></p>
+<p><strong>PURPOSE</strong></p>
+<p>Use this table to create a library of factors that are used when
+computing the member capacity and rating for <strong>LFFR</strong> analysis.
+Rating factors are applied on a per member basis, thus the name
+given for a set of factors on this table is referenced by the
+following member entries:</p>
 <ul class="simple">
-<li><p><strong>Load Factors</strong></p></li>
+<li><p><span class="xref std std-ref">Input Stringer Definition</span></p></li>
+<li><p><span class="xref std std-ref">Input Truss Member</span></p></li>
 </ul>
-<table class="docutils align-default">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is advised that you use the same ‘name’ for LFR and LRFR.
+This way you can easily switch from a LFR to a LRFR analysis.</p>
+</div>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><span id="tbratingfactorslrfrdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbRatingFactorsLRFRDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 22.2%" />
-<col style="width: 77.8%" />
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Name</p></td>
-<td><p>Unique factor name; used for referencing factors for members</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Factor  name</p></td>
 </tr>
 <tr class="row-odd"><td><p>Mode</p></td>
-<td><p>suitable modes: <cite>Inv</cite>, <cite>Opr</cite>, <cite>Leg</cite>, <cite>Per</cite>, <cite>EV</cite></p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Mode: Inv, Opr, Leg, Per, EV</p></td>
 </tr>
 <tr class="row-even"><td><p>DC</p></td>
-<td><p>Dead load facter for structural components and nonstructural attachments, <span class="math notranslate nohighlight">\(\gamma_{DC}\)</span></p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Dead load facter for structural components and nonstructural attachments.</p></td>
 </tr>
 <tr class="row-odd"><td><p>DW</p></td>
-<td><p>Dead load factor for wearing surfaces and utilities, <span class="math notranslate nohighlight">\(\gamma_{DW}\)</span></p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Dead load factor for wearing surfaces and utilities.</p></td>
 </tr>
 <tr class="row-even"><td><p>LL</p></td>
-<td><p>Live load factor, <span class="math notranslate nohighlight">\(\gamma_{LL}\)</span></p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Live load factor</p></td>
 </tr>
 </tbody>
 </table>
+</div></blockquote>
 <ul>
+<li><p><strong>Name</strong></p>
+<blockquote>
+<div><p>Name for set of factors. This name is referenced in <span class="xref std std-ref">Input Stringer Definition</span>  and <span class="xref std std-ref">Input Truss Member</span></p>
+</div></blockquote>
+</li>
+<li><p><strong>Mode</strong></p>
+<p>Each set of factors can have multiple lines of data, one for each:</p>
+<ul class="simple">
+<li><p>INV : Inventory</p></li>
+<li><p>OPR : Operating</p></li>
+<li><p>LEG : Lagal</p></li>
+<li><p>PER : Permit</p></li>
+<li><p>EV  : Emergency</p></li>
+</ul>
+</li>
 <li><p><strong>Resistance Factors</strong></p>
 <blockquote>
-<div><p>Resistance factors reside in <a class="reference internal" href="../settings.html#input-analysis-controls"><span class="std std-ref">Input Analysis Controls</span></a></p>
+<div><p>Resistance factors reside in <span class="xref std std-ref">Input Analysis Controls</span></p>
 </div></blockquote>
 </li>
 </ul>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="image/tbRatingFactorsLRFRDef.png" src="../../_images/tbRatingFactorsLRFRDef.png" />
+</figure>
+</div></blockquote>
 </section>
 
 
@@ -146,13 +198,13 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Rating_Factors_LFR.html" class="btn btn-neutral float-left" title="Rating Factors for LFR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="LLDF_LRFR.html" class="btn btn-neutral float-right" title="Explicit Live Load Distribution Factors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="LLDF_LRFR.html" class="btn btn-neutral float-right" title="Live Load Distribution Factors - LRFR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

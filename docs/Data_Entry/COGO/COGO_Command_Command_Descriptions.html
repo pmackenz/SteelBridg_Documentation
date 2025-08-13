@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,15 +5,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>COGO Command: Command Descriptions &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../general.html">General Info</a><ul class="current">
@@ -62,14 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -100,12 +101,16 @@
              
   <section id="cogo-command-command-descriptions">
 <h1>COGO Command: Command Descriptions<a class="headerlink" href="#cogo-command-command-descriptions" title="Link to this heading"></a></h1>
+<p><strong>Table</strong> <a class="reference internal" href="#tbcogocommanddata"><span class="std std-ref">tbCogoCommandData</span></a></p>
+<p><strong>PURPOSE:</strong></p>
+<p>Use this table to enter basic bridge geometry locations. These locations will be used to define nodal boundaries,
+stringers, floorbeams, truss members, and truck path.</p>
 <p>For historical reasons BRIDG includes a near complete COGO package which has many features not needed for 2D data input.
 Only these 3 commands are commonly used:</p>
 <ul class="simple">
-<li><p>STOR</p></li>
-<li><p>OFFSET</p></li>
-<li><p>PATH  (used to define the truck path)</p></li>
+<li><p><a class="reference internal" href="COGO_Command_STOR.html#cogo-command-stor"><span class="std std-ref">COGO Command: STOR</span></a>   (Enter location using coordinates)</p></li>
+<li><p><a class="reference internal" href="COGO_Command_OFFSET.html#cogo-command-offset"><span class="std std-ref">COGO Command: OFFSET</span></a> (Locate a new point from an existing point)</p></li>
+<li><p><a class="reference internal" href="COGO_Command_PATH.html#cogo-command-path"><span class="std std-ref">COGO Command: PATH</span></a>   (Define a path. Mostly used for truck path)</p></li>
 </ul>
 <table class="docutils align-default">
 <colgroup>
@@ -172,6 +177,88 @@ Only these 3 commands are commonly used:</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="COGO_Command_Example.html#cogo-command-example"><span class="std std-ref">COGO Command: Example</span></a></p></td>
 <td><p>Example.</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="COGO_Command_BIAS.html#cogo-command-bias"><span class="std std-ref">COGO Command: BIAS</span></a></p></td>
+<td><p>To apply a bias to the input coordinate data.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table format</strong></p>
+<span id="tbcogocommanddata"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbCogoCommandData</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Command</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Command</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field1</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 1</p></td>
+</tr>
+<tr class="row-even"><td><p>Field2</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field3</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 3</p></td>
+</tr>
+<tr class="row-even"><td><p>Field4</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field5</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 5</p></td>
+</tr>
+<tr class="row-even"><td><p>Field6</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field7</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 7</p></td>
+</tr>
+<tr class="row-even"><td><p>Field8</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field9</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 9</p></td>
+</tr>
+<tr class="row-even"><td><p>Field10</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>COGO Data Field 10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field11</p></td>
+<td></td>
+<td></td>
+<td><p>COGO Data Field 11</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -187,7 +274,7 @@ Only these 3 commands are commonly used:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

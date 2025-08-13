@@ -1,13 +1,12 @@
 Defining Members
-============================
+==================
 
 Sequence
 ------------
 
 The following sequence of steps for building a model in BRIDG is not the only method.
 In fact, this sequence assumes that you are starting from scratch.
-Other methods are using the BRIDG Wizard (if available in this version),
-or coping an existing similar bridge model and modifying it.
+Copying an existing similar bridge model and modifying it is another great way to start.
 
 Also, do not think of these steps as a single pass operation.
 It should be an iterative approach, with each pass adding more complexity
@@ -21,17 +20,20 @@ Terminology
 .. rubric:: Line Member
 ..
 
-    Those members that directly support the road surface and are modeled on the profile grade lines.
+    Line Members (aka Stringers) directly support the road surface. 
+    Line Members are the members that the trucks load.
+    They are analyzed at multiple locations along their length and 
+    may have multiple property changes along their length. 
 
-.. rubric:: Non-Line Member
+.. rubric:: Truss Member
 ..
 
-    Members that support the Line Members, such as trusses, columns, and other miscellaneous members.
+    Truss members support Line Members. They are only analyzed at their ends.
 
 First Pass
 --------------
 
-#. Enter geometry for bridge center line and Line Members.
+#. Enter geometry for Line Members using COGO commands.
 #. Enter basic line member placement.
 #. Enter enough truss members to check general geometry.
 #. Enter a minimal set of materials and shapes.
@@ -50,5 +52,4 @@ The following **minimum** data is required:
 * A path that defines the center line of traffic.
   Multiple lanes will be centered about this path.
 
-Library Creation
--------------------
+

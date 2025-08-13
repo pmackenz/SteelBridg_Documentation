@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,15 +5,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transverse Load Combinations &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -63,14 +67,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -101,73 +102,101 @@
              
   <section id="transverse-load-combinations">
 <h1>Transverse Load Combinations<a class="headerlink" href="#transverse-load-combinations" title="Link to this heading"></a></h1>
-<p>Example:</p>
+<p><strong>Table</strong>  <a class="reference internal" href="#tb2dtloadcombdef"><span class="std std-ref">tb2DTLoadCombDef</span></a></p>
+<dl class="simple">
+<dt><strong>PURPOSE</strong></dt><dd><p>Define the load combinations to be used on the transfer model. The tbLoadCombDef is NOT
+used for transverse analysis.
+The resulting reactions forces from these loads will be directly applied to the floor beam.
+( <span class="xref std std-ref">Transverse Reactions</span> )</p>
+</dd>
+</dl>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><span id="tb2dtloadcombdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tb2DTLoadCombDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Unique name for loading configuration</p></td>
+</tr>
+<tr class="row-odd"><td><p>Active</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N]  Y=Run this load case.</p></td>
+</tr>
+<tr class="row-even"><td><p>Lane_Type_A</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>First Lane-Type Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type_A_MaxLanes</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>First Lane-Type’s max number of lanes to load</p></td>
+</tr>
+<tr class="row-even"><td><p>Lane_Type_B</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Second Lane-Type Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type_B_MaxLanes</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>Second Lane-Type’s max number of lanes to load</p></td>
+</tr>
+<tr class="row-even"><td><p>LnLdRdctn</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Lane Load Reduction Set Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Impact</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Impact factor. Applied to all lanes.</p></td>
+</tr>
+<tr class="row-even"><td><p>LFR</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[D|P] LL-Factor for D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p></td>
+</tr>
+<tr class="row-odd"><td><p>LRFR</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[H|L| LL-Factor for P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p></td>
+</tr>
+<tr class="row-even"><td><p>NegOnly</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] LRFR Neg only rating flag.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ReportFlag</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] Shall the capacity trace at 10th-points be included with the Summary Report for this load combination? (Default is ‘Y’)</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
 <blockquote>
 <div><figure class="align-default">
 <img alt="image/tb2DLoadComb.png" src="../../_images/tb2DLoadComb.png" />
 </figure>
 </div></blockquote>
-<ul>
-<li><dl>
-<dt>Parameters</dt><dd><ul>
-<li><dl class="simple">
-<dt>Name</dt><dd><p>Enter a unique name for this load combination</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Active</dt><dd><p>Enter Y for active load case or N for not active.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Truck_A</dt><dd><p>Enter a truck name that is listed in the 2DReactions table.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Truck_A_MaxLanes</dt><dd><p>Enter number of lanes for Truck_A to use. The program will place the truck(s) in as many different locations as possible.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Truck_B</dt><dd><p>Enter a truck name that is listed in the 2DReactions table. This entry is NOT valid if no Truck_A is defined.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Truck_B_MaxLanes</dt><dd><p>Enter number of lanes for Truck_B to use. The program will place these truck(s) and the Truck_A trucks in as many different locations and lanes as possible.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>LnLdRdctn</dt><dd><p>Reference an entry in the LaneLoadRFeduction table. Used when more then one lane is loaded.</p>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>LFR</dt><dd><p>When runing a LFR analysis select which rating factor mode to use.</p>
-<p>[D|P] D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>LRFR</dt><dd><p>When runing a LRFR analysis select which rating factor mode to use.</p>
-<p>[H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>NegOnly</dt><dd><p>Only use this load combination for Negative moment rating.</p>
-<p>Enter a Y or N</p>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
 </section>
 
 
@@ -181,7 +210,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

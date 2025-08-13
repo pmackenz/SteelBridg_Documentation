@@ -1,11 +1,23 @@
 Input Plate Library
 =====================
 
-.. figure:: ../../image/ebd_Ebd83.png
-    :alt: image/ebd_Ebd83.png
+**Table** :ref:`tbPlateLibrary`
+
+**PURPOSE**
+    Plates can be used as:
+     - Parts of built-up sections
+     - Web and Flange entry 
+     - Stiffeners
+     - Bearing plates
+
+**Parameters**
+
+.. Include:: ../../tables/tbPlateLibrary.txt
 
 .. figure:: ../../image/ebd_Ebd84.png
     :alt: image/ebd_Ebd84.png
 
-    Dimensions and coordinate system
+**Example**
 
+.. figure:: ../../image/tbPlateLibrary.png
+    :alt: image/tbPlateLibrary.png

@@ -1,5 +1,31 @@
 Input Web Haunch Definition
 ===============================
 
-.. image:: ../../image/ebd_Ebd123.png
-    :alt: image/ebd_Ebd123.png
+**Table** :ref:`tbWebHaunchDef`
+
+
+**PURPOSE**
+Automatic haunched member placement is possible when you use the Flange Placement, the Web Placement and Web Haunch Definition tables 
+to define a W1, A3, or A3A type shape for a line member.
+
+The haunch calculations are for the web plate depth not the entire shape depth. So you will need to take this into account when 
+setting the depth factors. The flanges and cover plates are added to the 'haunched' web plate to build up the complete section. 
+
+The haunched section are discrete and computed at sections defined by number of divisions between the start and end of the haunch section.
+The minimum distance is one (1) foot. 
+
+**Parameters**
+
+  .. Include:: ../../tables/tbWebHaunchDef.txt
+
+
+**Example**
+
+.. image:: ../../image/haunch_example_A.png
+    :alt: image/haunch_example_A.png
+
+.. image:: ../../image/haunch_example_B.png
+    :alt: image/haunch_example_B.png    
+
+.. image:: ../../image/haunch_example_C.png
+    :alt: image/haunch_example_C.png        

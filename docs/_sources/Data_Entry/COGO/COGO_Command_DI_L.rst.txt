@@ -1,3 +1,7 @@
+:orphan:
+
+.. _COGO Command\: DI/L:
+
 COGO Command: DI/L
 ----------------------
 

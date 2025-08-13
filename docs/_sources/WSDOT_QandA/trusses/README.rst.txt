@@ -1,0 +1,5 @@
+.. _trusses:
+
+Trusses
+----------
+

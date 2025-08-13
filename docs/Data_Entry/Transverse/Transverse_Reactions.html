@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,15 +5,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transverse Reactions &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -63,14 +67,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -101,37 +102,80 @@
              
   <section id="transverse-reactions">
 <h1>Transverse Reactions<a class="headerlink" href="#transverse-reactions" title="Link to this heading"></a></h1>
-<p>Example:</p>
-<blockquote>
-<div><figure class="align-default">
-<img alt="image/tb2DReactions.png" src="../../_images/tb2DReactions.png" />
-</figure>
-</div></blockquote>
-<ul>
-<li><dl class="simple">
-<dt>Description</dt><dd><p>This table is used for explicit entry of reaction loads to be used with a 2D transverse analysis. The alternate is to use data from an REA file (Please see 2DT Parameters).  Do NOT use both!</p>
+<p><strong>Table</strong> <a class="reference internal" href="#tb2dreactions"><span class="std std-ref">tb2DReactions</span></a></p>
+<dl class="simple">
+<dt><strong>PURPOSE</strong></dt><dd><p>This table is used for entry of reaction loads computed from a logitudinal analysis.</p>
 </dd>
 </dl>
-</li>
-<li><dl>
-<dt>Parameters</dt><dd><ul>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><span id="tb2dreactions"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tb2DReactions</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[Dead|S_DC|S_DW|Truck] Load Type</p></td>
+</tr>
+<tr class="row-odd"><td><p>LaneTypeName</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>If type=Truck, name for this lane type.</p></td>
+</tr>
+<tr class="row-even"><td><p>TruckReaction</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Reaction from Truck (given without IMPACT; IMPACT will be applied by Bridg)</p></td>
+</tr>
+<tr class="row-odd"><td><p>UniformLoadReaction</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Reaction from uniform lane load (given without IMPACT; NO IMPACT will be applied by Bridg)</p></td>
+</tr>
+<tr class="row-even"><td><p>Stage</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>Stage to apply Dead,Sdead or PS load.</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><p>Type</p>
 <dl>
-<dt>Enter key word:</dt><dd><p>DEAD for dead loads.</p>
-<p>SDL for superimposed dead loads.</p>
-<p>TRUCK for un-factored truck live load.</p>
+<dt>Enter key word:</dt><dd><p><strong>DEAD</strong> for dead loads.</p>
+<p><strong>SDL</strong> for superimposed dead loads.</p>
+<p><strong>S_DC</strong></p>
+<p><strong>S_DW</strong></p>
+<p><strong>TRUCK</strong> for un-factored truck live load.</p>
 </dd>
 </dl>
 </li>
-<li><p>Truck Name</p>
+<li><p>LaneTypeName</p>
 <blockquote>
-<div><p>If reaction type is TRUCK then this name must correspond to a truck referenced in the 2DTLoadCombDef.</p>
+<div><p>If reaction type is TRUCK then this name corresponds to a lane type referenced in the 2DTLoadCombDef. ( <span class="xref std std-ref">Transverse Load Combinations</span> )</p>
 </div></blockquote>
 </li>
-<li><p>Reaction</p>
+<li><p>TruckReaction</p>
 <blockquote>
-<div><p>Enter reaction load in kips.  Use  unfactored loads, and for tucks, use the unfactored total truck reaction value including impact.
-Only use positive reactions.</p>
+<div><p>Reaction from Truck (given without IMPACT; IMPACT will be applied by Bridg)</p>
+</div></blockquote>
+</li>
+<li><p>UniformLoadReaction</p>
+<blockquote>
+<div><p>Reaction from uniform lane load (given without IMPACT; NO IMPACT will be applied by Bridg)</p>
 </div></blockquote>
 </li>
 <li><p>Stage</p>
@@ -140,24 +184,13 @@ Only use positive reactions.</p>
 </div></blockquote>
 </li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><p>The REA File</p>
+</div></blockquote>
+<p><strong>Example</strong></p>
 <blockquote>
-<div><p>Whenever a longitudinal analysis is run, a reaction, REA, file is generated.</p>
-<p>You can specify this file name instead of entering data in the reactions table but this is not advised. The better approach is to reference this file once in the
-parameters table, let the program import the data, then remove the reference, and save the file. This way the one BDF file has all the data needed and not dependant
-on a file REA file that might go walk-about and get lost.</p>
-<p>The reaction locations are taken at the ends of all stringer members in the model. Thus, some entries might have zero reactions if that location is not at a support point.</p>
-<p>The “Reaction Minimum” column is for information only and not used in the analysis.  Only positive reaction values are used from this file for crossbeam analysis.</p>
-<p>Example REA file:</p>
-<figure class="align-default">
-<img alt="image/REAfile.png" src="../../_images/REAfile.png" />
+<div><figure class="align-default">
+<img alt="image/tb2DReactions.png" src="../../_images/tb2DReactions.png" />
 </figure>
 </div></blockquote>
-</li>
-</ul>
 </section>
 
 
@@ -171,7 +204,7 @@ on a file REA file that might go walk-about and get lost.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

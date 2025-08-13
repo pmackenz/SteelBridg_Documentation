@@ -1,14 +1,15 @@
 Input Nodal Boundary Condition
 =================================
-Example:
 
-.. figure:: ../../image/tbNodalBoundaryCond.png
-   :alt: image/tbNodalBoundaryCond.png
+**Table** :ref:`tbNodalBoundaryCond` 
 
+**PURPOSE:**
+   Define nodal contraints. A bridge model MUST be statically stable.
 
+**Parameters**
 
+   .. Include:: ../../tables/tbNodalBoundaryCond.txt
 
-Parameters
    - CogoPt
 
       Enter a name of a COGO point to be constrained. The same point can be listed multiple times. See the notes below on multiple point entry.
@@ -33,3 +34,8 @@ Parameters
       then point AA will be constrained in both the Fx and Fy directions. This makes entry more convenient when point constrains are listed by purpose, 
       not by point number. For example listing all physical supports, then simplification constrains, then model stability constraints. 
 
+
+**Example**
+
+.. figure:: ../../image/tbNodalBoundaryCond.png
+   :alt: image/tbNodalBoundaryCond.png

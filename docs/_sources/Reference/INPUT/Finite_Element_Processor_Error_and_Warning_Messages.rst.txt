@@ -20,21 +20,10 @@ For example, if a node is the connecting point for members that have their end
 moment continuity released, then that node may be restrained from rotation.
 This is because the node's rotation is not tied into any of the connecting
 members and constraining it will not force a member end to not rotate.
-Think of it this way, if you "grab hold of a node" and then rotate it in any
-of the three major axes would any part of the model resist this motion.
+Think of it this way, if you "grab hold of a node" and then rotate it 
+would any part of the model resist this motion.
 If not, then that node is a good candidate for a local rotational constraint.
 Except for natural boundary conditions at points of support, a translation
 constraint is hardly ever used.
 
-Consider the following examples of unstable models.
-
-
-.. image:: ../../image/ebd_Ebd29.png
-    :alt: image/ebd_Ebd29.png
-
-.. image:: ../../image/ebd_Ebd30.png
-    :alt: image/ebd_Ebd30.png
-
-.. image:: ../../image/ebd_Ebd31.png
-    :alt: image/ebd_Ebd31.png
 

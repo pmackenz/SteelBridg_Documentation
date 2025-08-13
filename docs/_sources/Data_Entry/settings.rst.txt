@@ -2,4 +2,4 @@
 Settings
 **********************
 
-.. include:: General/Analysis_Controls.rst
+.. include:: ../tables/ptAnalysisControls.txt

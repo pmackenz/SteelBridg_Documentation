@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Truck Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Live Load Definition" href="Live_Load_Definition.html" />
+    <link rel="prev" title="Superimposed Dead Load Definition" href="Superimposed_Dead_Load_Definition.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../library.html">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../steel_members.html">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../loads.html">Loads</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Dead_Load_Defintion.html">Dead Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Truck Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Definition.html">Live Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Definition.html">Load Combination Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../DataEntry.html">Data Entry</a></li>
+          <li class="breadcrumb-item"><a href="../loads.html">Loads</a></li>
+      <li class="breadcrumb-item active">Truck Definition</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Loads/Truck_Definition.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="truck-definition">
+<h1>Truck Definition<a class="headerlink" href="#truck-definition" title="Link to this heading"></a></h1>
+<p><strong>Table</strong> <a class="reference internal" href="#tbtruckdef"><span class="std std-ref">tbTruckDef</span></a></p>
+<p><strong>PURPOSE</strong></p>
+<p>The truck definition table defines both trucks and/or lane loading  with moment and shear riders.
+Trucks can have a arbitrary number of axles using multiple lines of entry to define a single truck.</p>
+<p><strong>Parameters</strong></p>
+<span id="tbtruckdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbTruckDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TruckName</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Truck Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Description of Truck</p></td>
+</tr>
+<tr class="row-even"><td><p>P1</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Axle load</p></td>
+</tr>
+<tr class="row-odd"><td><p>D1</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Spacing to next axle</p></td>
+</tr>
+<tr class="row-even"><td><p>P2</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Axle load</p></td>
+</tr>
+<tr class="row-odd"><td><p>D2</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Spacing to next axle</p></td>
+</tr>
+<tr class="row-even"><td><p>P3</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Axle load</p></td>
+</tr>
+<tr class="row-odd"><td><p>D3</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Spacing to next axle</p></td>
+</tr>
+<tr class="row-even"><td><p>P4</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Axle load</p></td>
+</tr>
+<tr class="row-odd"><td><p>D4</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Spacing to next axle</p></td>
+</tr>
+<tr class="row-even"><td><p>Unif</p></td>
+<td><p>real</p></td>
+<td><p>KLF</p></td>
+<td><p>Altemate lane loading uniform load</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mom</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Altemate lane loading moment rider</p></td>
+</tr>
+<tr class="row-even"><td><p>Shear</p></td>
+<td><p>real</p></td>
+<td><p>KIP</p></td>
+<td><p>Altemate lane loading shear rider</p></td>
+</tr>
+<tr class="row-odd"><td><p>LLImpact</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] LRFR - Include live load impact (default if blank is YES)</p></td>
+</tr>
+<tr class="row-even"><td><p>TruckTrain</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] LRFR - Truck train</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Truck Name</p>
+<blockquote>
+<div><p>Unique truck name. Use same name here as on the <span class="xref std std-ref">Live Load Definition</span> entry to include stationary forces.</p>
+<p>The <cite>Px</cite> and <cite>Dx</cite> parameters defines the truck axle loads and location.  If more than four axles are required,
+continue entering more axle loads on the next line.  You need only repeat the truck number on subsequent
+lines since the program only reads the uniform loading, lane loading, and title from the first line for any
+truck definition.</p>
+</div></blockquote>
+<p class="rubric">P1</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">D1</p>
+<blockquote>
+<div><p>Enter spacing to next axle (not required) (Feet)</p>
+</div></blockquote>
+<p class="rubric">P2</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">D2</p>
+<blockquote>
+<div><p>Enter spacing to next axle (not required) (Feet)</p>
+</div></blockquote>
+<p class="rubric">P3</p>
+<blockquote>
+<div><p>Enter axle Load (not required) (Kip)</p>
+</div></blockquote>
+<p>The <cite>Unif</cite>, <cite>Mom</cite>, and <cite>Shear</cite> entries are only needed on the first line
+of a truck definition and are used to specify the alternate lane loading
+forces. Enter values in the uniform, moment, and shear fields if an
+alternate lane loading is to be compared with the axle/truck loading.
+The load resulting in the greatest forces on the bridge will be used.
+If you want to keep these results separate from the axle loading condition,
+then create two trucks, one with only axle loads, and another with only lane
+loads.  Combine the two using the Truck Group and Lane Group entries.</p>
+<p class="rubric">Unif</p>
+<blockquote>
+<div><p>Enter alternate lane loading uniform load (not required) (KLF)</p>
+</div></blockquote>
+<p class="rubric">Mom</p>
+<blockquote>
+<div><p>Enter alternate lane loading moment rider (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">Shear</p>
+<blockquote>
+<div><p>Enter alternate lane loading shear rider (not required) (Kip)</p>
+</div></blockquote>
+<p class="rubric">LLImpact</p>
+<blockquote>
+<div><p>For LRFR choose if include impact factor. The default is Yes if left blank.</p>
+</div></blockquote>
+<p class="rubric">TruckTrain</p>
+<blockquote>
+<div><p>For LRFR set this to Yes if this truck is to be duplicated in the live load calculation
+as a “Truck Train”.</p>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Superimposed_Dead_Load_Definition.html" class="btn btn-neutral float-left" title="Superimposed Dead Load Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Live_Load_Definition.html" class="btn btn-neutral float-right" title="Live Load Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

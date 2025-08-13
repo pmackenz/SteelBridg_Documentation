@@ -1,0 +1,224 @@
+************************** Materials *******************************************
+*
+*[MATPRP] Material definitions:
+*     E        ksf      Modulus of elasticity.
+*     V                 Poisson's ratio.
+*     G        ksf      Shear modulus, if zero computed from E & V.
+*
+*      Material Name             E      V          G
+*      ===============   =====(ksi) ====== =====(ksi)
+MATPRP           STEEL        29000 0.300       11154
+MATPRP      Very_Low_E            0 0.300           0
+
+************************** Member Sections *************************************
+*
+* [ELEPRP] Member sections:
+*     Area     ft^2     Cross section area in Y-Z plane.
+*     Iyy      ft^4     Weak axis bending inertia.
+*     Izz      ft^4     Strong axis bending inertia.
+*     Jxy      ft^4     Torsional resistance.
+*
+*      Section Name           Area        Iyy        Izz        Jxy
+*      ===============   ====(in^2) ====(in^4) ====(in^4) ====(in^4)
+ELEPRP LM_S1:00:000000     144.000   4624.000  18560.000  23184.000
+ELEPRP LM_S2:00:000000     144.000   4624.000  18560.000  23184.000
+
+************************** Plate Sections **************************************
+*
+* [PLTPRP] Plate Sections:
+*     Thick    ft       Plate thickness.
+*
+*      Section Name          Thick
+*      ===============   ======(in)
+
+************************** Nodes or Joints *************************************
+*
+* [NODE] Nodes or Joints.
+*     Number            Node number.
+*     X,Y,Z    ft       Node location.
+*     X,Y,Z             Axial Constraint or Release.
+*     RX,RY,RZ          Rotational Constraint or Release.
+*
+*     NOTE: For contraints, use "R" or "1" to release the node and "C" or "0"
+*     to constrain the node.
+*
+*     Example constraints:
+*        X  Y  Z  RX RY RZ
+*        =  =  =  =  =  =
+*        C  C  C  C  C  C     Fixed node.
+*        C  C  C  C  C  R     Pinned in the X-Y plane.
+*        R  C  C  C  C  R     Roller/rail joint in the X-Y plane.
+*        R  R  C  C  C  R     Roller/ball joint.
+*        C  C  C  R  R  R     Fully pinned joint, as in a truss.
+*
+*                                  Coordinates                -Trans-  -Rotate
+*       Num   (Name)                X          Y          Z   X  Y  Z  X  Y  Z
+*     ===== =============== ======(ft) ======(ft) ======(ft)  =  =  =  =  =  =
+NODE      1              P1      0.000      0.000      0.000  C  C  C  C  C  R
+NODE      2              P2     50.000      0.000      0.000  R  C  C  C  C  R
+NODE      3              P3    100.000      0.000      0.000  R  C  C  C  C  R
+
+******************************** Members ***************************************
+*
+* [MBR] Linear members:
+*     Num                  Member number.
+*     NodeA                Node at beginning of member.
+*     NodeB                Node at end of member.
+*     Beta           deg   Orientation angle of member
+*     Material Name        Name of material for member.
+*     Section Name         Name of member section for member.
+*     Releases             End Release/Constraint for member at each node.
+*                          Release code is a binary code: zyxZYX 
+*                          "zyx" for moment releases.  1=Released 
+*                          "ZYX" for translation releases. 1=Released 
+*                          Example: 110000 for a pin end member.
+*     Coupling             Identifies unidirectional members.
+*                          Use 'T' for Tension, 'C' for Compression,
+*                          or 'X' for normal.
+*     Spacing              Identifies difference between member length under
+*                          load and design length before member is deactivated.
+*                          Unidirectional members are deactivated in the
+*                          following conditions:
+*                             Compression only member:
+*                                When the load length minus the design length
+*                                is greater than 'Spacing'.
+*                             Tension only member:
+*                                When the design length minus the load length
+*                                is greater than 'Spacing'.
+*
+*                                                              - Releases -  
+*                                                              NodeA  NodeB  
+*    Member NodeA NodeB   Beta Material Name   Section Name    zyxZYX zyxZYX  Length
+*    ====== ===== ===== =(deg) =============== =============== ====== ====== ========
+MBR       1     1     2    0.0           STEEL LM_S1:00:000000 000000 000000   50.000
+MBR       2     2     3    0.0           STEEL LM_S2:00:000000 000000 000000   50.000
+
+*********************************** Plates *************************************
+*
+* [PLATE] Plate elements:
+*     Num                  Plate number.
+*     NodeA                First node of plate.
+*     NodeB                Second node of plate.
+*     NodeC                Third node of plate.
+*     NodeD                Fourth node of plate. Set to NodeC for triangles.
+*     Material Name        Name of material for plate.
+*     Section Name         Name of plate section for plate.
+*
+*  Output data:
+*     Width                Width of plate.
+*     Height               Height of plate.
+*
+*  NOTE: The FEM3D modeler only supports triangular or rectangular plates.
+*
+*  To specify a triangular plate, set NodeD equal to NodeC.
+*
+*  For rectangular plates, nodes must be identify in order by going along the
+*  perimeter of the plate (i.e. DO NOT go accross the diagonal).  Therefore
+*  side A-B must be parallel to D-C, side B-C must be parallel to A-D, and
+*  side A-B must be perpendicular to A-D.
+*                                                                   
+*                                                                  
+*     Plate NodeA NodeB NodeC NodeD Material Name   Section Name   
+*     ===== ===== ===== ===== ===== =============== ===============
+
+******************************* Load Cases *************************************
+*
+* [LDCASE] Load Cases:
+*     Define valid load case names.  
+*
+*        Load Case Name  
+*        =============== 
+LDCASE              DL_1
+
+****************************** Nodal Loading ***********************************
+*
+* [NODELD] Nodal loading:
+*     Load Case Name       Name of load case this load belongs to.  Load case
+*                          must be defined by previous "LDCASE" card.
+*     Node                 Name of node to apply load to.
+*     Force/Moment         Indicates if this is a force or moment.
+*     Magnitude            Magnitude of force in kips or moment in
+*                          kips per foot.
+*     X,Y,Z                Direction of applied load onto node.
+*                          (-1.0 in Y direction is normally down)
+*
+*                Force/Moment -+
+*                              F  Magnitude ------- Direction Vector -------
+*        Load Case Name   Node M (k) (k-ft)   X          Y          Z
+*        =============== ===== = ========== ========== ========== ==========
+
+****************************** Member Loading **********************************
+*
+* [MBRLD] Member loading:
+*     Load Case Name       Name of load case this load belongs to.  Load case
+*                          must be defined by previous "LDCASE" card.
+*     Membr                Name of member to apply load to.
+*     Force/Moment         Indicates if this is a force or moment.
+*     Global/Local         Indicates if direction vector is in global or local
+*                          coordinate system.
+*     Absolute/Fraction    Indicates if distance is absolute distance in feet or
+*                          a percentage of the length of the member.
+*     Magnitude            Magnitude of force in kips, magnitude of moment in
+*                          kips per foot, or beginning magnitude of trapizodial
+*                          linear load.
+*     Dist                 Location of concentrated force/moment or beginning
+*                          location of trapizodial linear load.
+*     Dist                 Zero if concentrated force/moment or ending location
+*                          of trapizodial linear load (must be greater than
+*                          beginning location).
+*     Magnitude            Ending magnitude for trapizodial linear load. Ignored
+*                          but must be specified for concentrated force/moment.
+*     X,Y,Z                Direction of applied load onto member.
+*                          (-1.0 in Y direction is normally down)
+*
+*              Force/Moment-++-Global/Local
+*                           ||+-Absolute/Fraction
+*                           |||
+*                           FGA  Magnitude  Dist     Dist     Magnitude - Direction Vector -
+*     Load Case Name  Membr MLF (k) (k-ft)  (ft)     (ft)    (k) (k-ft)     X      Y      Z
+*     =============== ===== === ========== ======== ======== ========== ====== ====== ======
+MBRLD            DL_1     1 FGA      0.490     0.00    50.00      0.490  0.000 -1.000  0.000
+MBRLD            DL_1     2 FGA      0.490     0.00    50.00      0.490  0.000 -1.000  0.000
+
+***************************** Commands *****************************************
+*
+* Commands:
+*     NOTE: Commands are case insensative except for load case and combination
+*           names.
+*
+*     COMPUTE
+*        Compute stiffness matrix.
+*
+*     PRINTMODEL
+*        Instructs FEM 3D Engine to print model definition.
+*        Best done after the COMPUTE command so that the node indexes are
+*        calculated.
+*
+*     SOLVE <loadcond> <multiplier>
+*        Solve for specified load case or combination with the specified
+*        multiplier.
+*
+*     EVALNODE <node>
+*        Evaluate specified node and print results.
+*
+*     EVALALLNODES
+*        Evaluate all nodes and print results.
+*
+*     EVALMBR <member>  <Number of Divisions>
+*        Evaluate specified member and print results.
+*        Number of Divisions default = 11
+*
+*     EVALALLMBRS  <Number of Divisions>
+*        Evaluate all members and print results.
+*        Number of Divisions default = 11
+*
+*     UNI_ANALYSIS <Yes/No>
+*        Enable or disbale the Uni-direction member ananlysis.
+*
+*
+********************************************************************************
+Compute
+PrintModel
+Solve DL_1 1.000000
+EvalAllNodes
+EvalAllMbrs
