@@ -1,5 +1,16 @@
 Input Web Placement
 =====================
 
-.. image:: ../../image/ebd_Ebd122.png
-    :alt: image/ebd_Ebd122.png
+**Table** :ref:`tbWebDef`
+
+
+**PURPOSE**
+    Instead of using a shape from the shapes library, a **stringer** member can be defined by referencing **plates** 
+    from the plate library for web and flanges. This is similar to using the built up W1 (:ref:`Input Built-up Shape Types - W1` ) shape but you have more
+    freedom to make changes in web and flange dimensions along the length of a stringer. 
+
+    Do not use this entry with **Shape Placement** placement, but you can include **Cover Plates**
+
+**Parameters**
+
+  .. Include:: ../../tables/tbWebDef.txt

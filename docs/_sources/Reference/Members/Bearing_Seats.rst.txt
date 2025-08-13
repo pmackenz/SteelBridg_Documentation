@@ -1,5 +1,5 @@
 Bearing Seats
 =====================================
 
-.. image:: ../../image/ebd_Ebd161.png
-    :alt: image/ebd_Ebd161.png
+.. image:: ../../image/bearing_seats.png
+    :alt: image/bearing_seats.png

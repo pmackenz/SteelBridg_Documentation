@@ -1,12 +1,16 @@
 Input Bridge Description
 ==========================
 
+**Table** tbBridgeDescription
+
 **PURPOSE:**
 
 Provide descriptive information about the bridge.
 These comments are not used in the rating process but are used by the report generator.
 
 **DEFINITIONS:**
+
+.. Include:: ../../tables/tbBridgeDescription.txt
 
 .. list-table::
    :header-rows: 1

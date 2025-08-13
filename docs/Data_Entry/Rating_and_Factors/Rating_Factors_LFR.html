@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,16 +5,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rating Factors for LFR &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -45,21 +49,15 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Rating Factors for LFR</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-entry">Example Entry</a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Rating Factors for LFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LLDF_LRFR.html">Live Load Distribution Factors - LRFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rate_Location.html">Rate Location</a></li>
 </ul>
 </li>
@@ -68,14 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -106,173 +101,115 @@
              
   <section id="rating-factors-for-lfr">
 <h1>Rating Factors for LFR<a class="headerlink" href="#rating-factors-for-lfr" title="Link to this heading"></a></h1>
-<section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p><strong>Table</strong> <a class="reference internal" href="#tbratingfactorslfrdef"><span class="std std-ref">tbRatingFactorsLFRDef</span></a></p>
+<p><strong>PURPOSE</strong></p>
 <p>Use this table to create a library of factors that are used when
-computing the member capacity and rating. Rating factors are applied
-on a per member basis, thus the name given for a set of factors on
-this table is referenced by the following member entries:</p>
+computing the member capacity and rating for <strong>LFR</strong> analysis.
+Rating factors are applied on a per member basis, thus the name
+given for a set of factors on this table is referenced by the
+following member entries:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../Members/Girder_Definition.html#input-girder-definition"><span class="std std-ref">Input Girder Definition</span></a></p></li>
-<li><p><a class="reference internal" href="../Members/Stringer_Definition.html#input-stringer-definition"><span class="std std-ref">Input Stringer Definition</span></a></p></li>
-<li><p><a class="reference internal" href="../Members/Cross_Beam_Definition.html#input-cross-beam-definition"><span class="std std-ref">Input Cross Beam Definition</span></a></p></li>
-<li><p><a class="reference internal" href="../Members/Floor_Beam_Definition.html#input-floor-beam-definition"><span class="std std-ref">Input Floor Beam Definition</span></a></p></li>
-<li><p><a class="reference internal" href="../Members/Truss_Member.html#input-truss-member"><span class="std std-ref">Input Truss Member</span></a></p></li>
+<li><p><span class="xref std std-ref">Input Stringer Definition</span></p></li>
+<li><p><span class="xref std std-ref">Input Truss Member</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As a convenience, the name <cite>DEFAULT</cite> all in
-upper case is reserved for all members that have the
-<strong>Factors</strong> field left blank. Thus you only need one entry,
-named DEFAULT, if most or all members are using the same factors, you
-do not need to put any text in their <strong>Factors</strong> field.</p>
+<p>It is advised that you use the same ‘name’ for LFR and LRFR.
+This way you can easily switch from a LFR to a LRFR analysis.</p>
 </div>
-</section>
-<section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
-<p>There are three sets of factors for Standard (WSDOT),
-Inventory, and Operating conditions.</p>
-<ul>
-<li><p><strong>Name</strong></p>
+<p><strong>Parameters</strong></p>
 <blockquote>
-<div><p>Unique name for set of factors. See note above about special DEFAULT name.</p>
-</div></blockquote>
-</li>
-<li><p><strong>Mode</strong></p>
-<blockquote>
-<div><p>Each set of factors can have up to three lines of data, one for the
-standard factors, one of inventory factors, and one for operating
-factors. The same set name is repeated for each of the three lines.</p>
-</div></blockquote>
-</li>
-<li><p><strong>Ultimate Load Factors</strong></p>
-<blockquote>
-<div><table class="docutils align-default">
+<div><span id="tbratingfactorslfrdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbRatingFactorsLFRDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 22.2%" />
-<col style="width: 77.8%" />
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
 </colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
 <tbody>
-<tr class="row-odd"><td><p>Dead Load</p></td>
-<td><p>Ultimate Dead Load Factor</p></td>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Factor  name</p></td>
 </tr>
-<tr class="row-even"><td><p>SI-Dead Load</p></td>
-<td><p>Ultimate Superimposed Dead Load Factor</p></td>
+<tr class="row-odd"><td><p>Mode</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Mode: Inv, Opr, Leg, or Per</p></td>
 </tr>
-<tr class="row-odd"><td><p>Pre-Stress</p></td>
-<td><p>Ultimate Prestress Secondary Load Factor</p></td>
+<tr class="row-even"><td><p>DLF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Ultimate dead load factor.</p></td>
 </tr>
-<tr class="row-even"><td><p>Live Load (N)</p></td>
-<td><p>Ultimate Live Load factor for trucks used in numerator part of rating equation</p></td>
-</tr>
-<tr class="row-odd"><td><p>Live Load (D)</p></td>
-<td><p>Ultimate Live Load factor for trucks used in denominator part of rating equation</p></td>
-</tr>
-<tr class="row-even"><td><p>Overload (N)</p></td>
-<td><p>Ultimate Overload Live Load factor for numerator part of rating equation.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Overload (D)</p></td>
-<td><p>Ultimate Overload Live Load factor for denominator part of rating equation.</p></td>
+<tr class="row-odd"><td><p>LL</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Ultimate live load factor</p></td>
 </tr>
 <tr class="row-even"><td><p>Impact</p></td>
-<td><p>Impact factor. See notes below.</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Explicit Impact factor. Used for truss members for INV and OPR.</p></td>
 </tr>
-<tr class="row-odd"><td><p>General Live Load Factor</p></td>
-<td><p>Per AASHTO 1989 Guide Spec. Table 1, a
-factor of 1.07 should be applied to live load forces on line members.
-The factor in the column “General Live Load Multiplier” is  for this purpose.</p></td>
+<tr class="row-odd"><td><p>TASF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Tensile axial strength reduction factor.</p></td>
+</tr>
+<tr class="row-even"><td><p>CASF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Compression axial strength reduction factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MRF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Moment strength reduction factor.</p></td>
+</tr>
+<tr class="row-even"><td><p>SRF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Shear strength reduction factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>BRF</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Bearing strength reduction factor.</p></td>
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li><p>If Overload switch is selected in
-<a class="reference internal" href="../Live_Loads/Load_Combination_Definition.html#load-combination-definition"><span class="std std-ref">Load Combination Definition</span></a>
-table entry, then the Overload values will be used
-instead of the Live Load values.</p></li>
-<li><p>The entered impact factor is used for all STD live load factoring.
-For INV and OPR, if the member is a line member, the impact factor is
-computed per AASHTO specifications (<a class="reference internal" href="../../Reference/Load_Generation/Impact_Factor_Calculation.html#impact-factor-calculation"><span class="std std-ref">Impact Factor Calculation</span></a>)
-as a function of span configuration, and
-load type. If the member is a truss member, then this explicit impact
-factor is used for the inventory and operating ratings.</p></li>
-</ul>
 </div></blockquote>
-</li>
-<li><p><strong>Capacity Adjustment Factors</strong></p>
 <ul>
-<li><p>Tensile Axial Strength Reduction</p>
-<p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the strength ratio equation for
-computation of SR1 and SR2.
-See flow chart
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_1_Compute_Strength_Ratio_for_Tension_Moment.html#ss-5-3-1-compute-strength-ratio-for-tension-moment"><span class="std std-ref">[SS-5.3.1] Compute Strength Ratio for Tension / Moment</span></a></p>
-</li>
-<li><p>Compression Axial Strength Reduction</p>
-<p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the strength ratio equation for
-computation of SR3 and  SR4.
-See flow chart
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_3/_SS_5_3_5_Compute_Strength_Ratio_for_Compression_Moment.html#ss-5-3-5-compute-strength-ratio-for-compression-moment"><span class="std std-ref">[SS-5.3.5] Compute Strength Ratio for Compression / Moment</span></a></p>
-</li>
-<li><p>Moment Strength Reduction Factor</p>
-<p>This is the <span class="math notranslate nohighlight">\(\phi\)</span>  factor used in the moment rating equation for
-line members.
-See flow chart
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_1_Compute_Moment_Rating_Factor_for_WSDOT_Inventory_Operating_Level.html#ss-6-1-1-compute-moment-rating-factor-for-wsdot-inventory-operating-level"><span class="std std-ref">[SS-6.1.1] Compute Moment Rating Factor for  WSDOT, Inventory, Operating Level</span></a></p>
-</li>
-<li><p>Shear Strength Reduction Factor</p>
-<p>This is the <span class="math notranslate nohighlight">\(\phi\)</span> factor used in the shear rating equation for
-line members.
-See flow chart
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_6_0_6_4/_SS_6_1_2_Compute_Shear_Rating_Factor_for_WSDOT_Inventory_Operating.html#ss-6-1-2-compute-shear-rating-factor-for-wsdot-inventory-operating"><span class="std std-ref">[SS-6.1.2] Compute Shear Rating Factor for WSDOT Inventory, Operating</span></a></p>
-</li>
-</ul>
-</li>
-<li><p><strong>Capacity Reduction Factors</strong></p>
+<li><p><strong>Name</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>Axial Strength Reduction Factors for tension and compression.</p></li>
-<li><p>Moment Strength Reduction Factor</p></li>
-<li><p>Shear Strength Reduction Factor</p></li>
-</ul>
+<div><p>Name for set of factors. This name is referenced in <span class="xref std std-ref">Input Stringer Definition</span>  and <span class="xref std std-ref">Input Truss Member</span></p>
 </div></blockquote>
 </li>
-</ul>
-</section>
-<section id="example-entry">
-<h2>Example Entry<a class="headerlink" href="#example-entry" title="Link to this heading"></a></h2>
+<li><p><strong>Mode</strong></p>
+<p>Each set of factors can have multiple lines of data, one for each:</p>
 <ul class="simple">
-<li><p>Example shows different factors for Redundant Line members,
-NonRedundant line members, and Truss members.</p></li>
-<li><p>Values shown are example only! Factors are for new bridge with no deterioration.</p></li>
-<li><p>A blank cell shown below indicates where a value is not needed or used by the program.</p></li>
-<li><p>STD (WSDOT BDM) specifies a 0.8 factor for non-redundant members.</p></li>
+<li><p>INV : Inventory</p></li>
+<li><p>OPR : Operating</p></li>
+<li><p>LEG : Lagal</p></li>
+<li><p>PER : Permit</p></li>
 </ul>
-<figure class="align-default">
-<img alt="image/ebd_Ebd73.png" src="../../_images/ebd_Ebd73.png" />
+</li>
+</ul>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="image/tbRatingFactorsLFRDef.png" src="../../_images/tbRatingFactorsLFRDef.png" />
 </figure>
-<p>Reference: WSDOT BDM 14.1.5,14.1.6.1 and 1985 Guide Spec. for
-Evaluation of Truss Bridges.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>(1) INV and OPR impact factor for line members calculated per
-<a class="reference internal" href="../../Reference/Load_Generation/Impact_Factor_Calculation.html#impact-factor-calculation"><span class="std std-ref">Impact Factor Calculation</span></a> AASHTO 3.8.2.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>(2) For INV and OPR compute impact factor for truss members using
-equation <span class="math notranslate nohighlight">\(1 + (50/(L+125))\)</span> limited to maximum of 1.3. Use distance
-between truss supports for L. Enter value in table. For STD truss
-impact factor, use the same value as the line members.
-See topic page <a class="reference internal" href="../../Reference/Load_Generation/Impact_Factor_Calculation.html#impact-factor-calculation"><span class="std std-ref">Impact Factor Calculation</span></a>.</p>
-</div>
-<p>The compression axial strength reduction factors for line members are
-only used when a line member requires analysis as a non-line member.
-See theory flow charts
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_Negative_Moment_Capacity.html#ss-5-2-1-negative-moment-capacity"><span class="std std-ref">[SS-5.2.1] Negative Moment Capacity</span></a>
-and
-<a class="reference internal" href="../../Reference/Capacity_and_Rating_Theory/Theory_5_2_2_5_2_3/_SS_5_2_2_Positive_Moment_Capacity.html#ss-5-2-2-positive-moment-capacity"><span class="std std-ref">[SS-5.2.2] Positive Moment Capacity</span></a>
-If these entries are left blank, then default valuse of 0.80 for STD
-and 0.85 for INV and OPR will be used.</p>
-</section>
+</div></blockquote>
 </section>
 
 
@@ -286,7 +223,7 @@ and 0.85 for INV and OPR will be used.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

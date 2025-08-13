@@ -14,5 +14,4 @@ Data Entry
     Data_Entry/concrete.rst
     Data_Entry/shape_placement.rst
     Data_Entry/loads.rst
-    Data_Entry/deprecated.rst
 

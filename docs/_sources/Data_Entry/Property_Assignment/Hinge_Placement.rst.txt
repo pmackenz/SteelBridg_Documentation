@@ -1,0 +1,20 @@
+Input Hinge Placement
+======================================
+
+**Table** :ref:`tbHingePlacement`
+
+
+**PURPOSE**
+
+Location of the hinges along a stringer. 
+Hinges must be on a COGO point used either as a member end point or interior-point. 
+An interior point is created by defining a member that spans multiple COGO points using the
+"AutoCn" option "Y" when placing the stringer. (:ref:`Input Stringer Definition`)
+
+You need to reference an existing hinge defined in the Link-Hinge library. (:ref:`Input Link Hinge Library`)
+
+**Parameters**
+
+.. Include:: ../../tables/tbHingePlacement.txt
+
+

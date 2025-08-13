@@ -1,9 +1,24 @@
 Input Link Hinge Library
 =============================
 
-.. warning::
 
-    ** This feature not implemented yet and currently under development. **
+**Table** :ref:`tbLinkHingeLibrary`
 
-.. image:: ../../image/ebd_Ebd93.png
-    :alt: image/ebd_Ebd93.png
+
+**PURPOSE**
+    Define a link hinge so it can be rated. 
+
+**Parameters**
+
+  .. Include:: ../../tables/tbLinkHingeLibrary.txt
+
+
+.. figure:: ../../image/link-plate-1.png
+    :alt:  Link Plate 1
+
+.. figure:: ../../image/link-plate-2.png
+    :alt:  Link Plate 2
+
+.. figure:: ../../image/link-plate-3.png
+    :alt:  Link Plate 3
+

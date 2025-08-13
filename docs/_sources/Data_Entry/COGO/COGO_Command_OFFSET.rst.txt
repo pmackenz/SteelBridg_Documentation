@@ -1,3 +1,7 @@
+:orphan:
+
+.. _COGO Command\: OFFSET:
+
 COGO Command: OFFSET
 ----------------------
 

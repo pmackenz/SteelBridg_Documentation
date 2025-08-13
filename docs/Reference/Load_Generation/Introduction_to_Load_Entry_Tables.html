@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,20 +5,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Introduction to Load Entry Tables &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Points of Interest" href="Points_of_Interest.html" />
-    <link rel="prev" title="Data Set Collections ( Envelopes )" href="Data_Set_Collections_Envelopes.html" /> 
+    <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,33 +46,11 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../DataEntry.html">Data Entry</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#input">Input</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Load_Combination_Theory.html">Load Combination Theory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Generation.html">Load Generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Data_Set_Collections_Envelopes.html">Data Set Collections ( Envelopes )</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction to Load Entry Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Points_of_Interest.html">Points of Interest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Live_Load_Multiple_Lane_Sequencing.html">Live Load Multiple Lane Sequencing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Load_Generation_Data_Sets.html">Load Generation Data Sets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Lane_Group_Positioning_Methods.html">Lane Group Positioning Methods</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Multiple_Lane_Live_Load_Sequencing_Example.html">Multiple Lane Live Load Sequencing Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -86,8 +67,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../theory.html">Theory</a></li>
-          <li class="breadcrumb-item"><a href="Load_Generation.html">Load Generation</a></li>
       <li class="breadcrumb-item active">Introduction to Load Entry Tables</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst.txt" rel="nofollow"> View page source</a>
@@ -102,44 +81,44 @@
 <h1>Introduction to Load Entry Tables<a class="headerlink" href="#introduction-to-load-entry-tables" title="Link to this heading"></a></h1>
 <p>There are eleven data tables that are used to define the non gravity
 loads on a model.  Read the discussion on load
-<a class="reference internal" href="Load_Combination_Theory.html#load-combination-theory"><span class="std std-ref">Load Combination Theory</span></a> to see how and when the data specified
+<span class="xref std std-ref">Load Combination Theory</span> to see how and when the data specified
 in the following tables are used.</p>
-<p><a class="reference internal" href="../../Data_Entry/Dead_Loads/Dead_Load_Defintion.html#dead-load-definition"><span class="std std-ref">Dead Load Definition</span></a></p>
+<p><span class="xref std std-ref">Dead Load Definition</span></p>
 <blockquote>
 <div><p>Use this table to specify nodal or member loads for any dead load stage.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Dead_Loads/Superimposed_Dead_Load_Definition.html#superimposed-dead-load-definition"><span class="std std-ref">Superimposed Dead Load Definition</span></a></p>
+<p><span class="xref std std-ref">Superimposed Dead Load Definition</span></p>
 <blockquote>
 <div><p>Use this table to specify nodal or member loads for the superimposed dead load stage.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Live_Load_Definition.html#live-load-definition"><span class="std std-ref">Live Load Definition</span></a></p>
+<p><span class="xref std std-ref">Live Load Definition</span></p>
 <blockquote>
 <div><p>A <cite>Truck</cite> can have static loads associated with it.
 These can be either nodal or member forces that are applied to the
 model with the moving loads.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Truck_Definition.html#truck-definition"><span class="std std-ref">Truck Definition</span></a></p>
+<p><span class="xref std std-ref">Truck Definition</span></p>
 <blockquote>
 <div><p>BRIDG uses the word <cite>Truck</cite> quite loosely.
 It is used to reference a collection of static and moving loads.
 This table is used to define the axle loads and their spacing.
 It also is used to define the lane load forces.
-This entry in addition to the <a class="reference internal" href="../../Data_Entry/Live_Loads/Live_Load_Definition.html#live-load-definition"><span class="std std-ref">Live Load Definition</span></a>
+This entry in addition to the <span class="xref std std-ref">Live Load Definition</span>
 create a complete set of loadings that can be referenced by one name,
 i.e., the Truck Name.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#live-load-envelope-definition"><span class="std std-ref">Live Load Envelope Definition</span></a></p>
+<p><span class="xref std std-ref">Live Load Envelope Definition</span></p>
 <blockquote>
 <div><p>BRIDG positions the movable portion of a Truck’s loads along a path in
 discrete iterations.  For each iteration, the forces throughout the
 bridge are scanned and a set of envelopes are generated.
 This table is used to define how the moving loads are incrementally positioned.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Truck_Group_Definition.html#truck-group-definition"><span class="std std-ref">Truck Group Definition</span></a></p>
+<p><span class="xref std std-ref">Truck Group Definition</span></p>
 <blockquote>
 <div><p>This table has a dual purpose. It is used to create a collection of one
 or more trucks that are used in conjunction with the
-<a class="reference internal" href="../../Data_Entry/Live_Loads/Lane_Group_Definition.html#lane-group-definition"><span class="std std-ref">Lane Group Definition</span></a> to specify what trucks to use when generating
+<span class="xref std std-ref">Lane Group Definition</span> to specify what trucks to use when generating
 a load combination envelope.
 It also is used to specify the <strong>axle force multiplier</strong> and
 <strong>ultimate load factors</strong> to apply to the truck’s loads when used in
@@ -150,28 +129,28 @@ Numerator or Denominator of the rating equation.
 BRIDG keeps these loads separate for when the rating equation requires
 that not all of the live loads be summed together.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Lane_Group_Definition.html#lane-group-definition"><span class="std std-ref">Lane Group Definition</span></a></p>
+<p><span class="xref std std-ref">Lane Group Definition</span></p>
 <blockquote>
 <div><p>Except when the special sequenced truck motion method is specified in the
-<a class="reference internal" href="../../Data_Entry/Live_Loads/Live_Load_Envelope_Definition.html#live-load-envelope-definition"><span class="std std-ref">Live Load Envelope Definition</span></a> table, the range of positioning
+<span class="xref std std-ref">Live Load Envelope Definition</span> table, the range of positioning
 the truck transverse to the bridge is specified using this table.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Rating_and_Factors/Lane_Load_Reduction_Definition.html#lane-load-reduction-definition"><span class="std std-ref">Lane Load Reduction Definition</span></a></p>
+<p><span class="xref std std-ref">Lane Load Reduction Definition</span></p>
 <blockquote>
 <div><p>This table defines the factors that are applied to the truck loads when
 one or more trucks are combined using the <span class="xref std std-ref">Truck Group</span> and <span class="xref std std-ref">Lane Group</span> combination.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Rating_and_Factors/Rating_Factors_LFR.html#rating-factors-for-lfr"><span class="std std-ref">Rating Factors for LFR</span></a> and <a class="reference internal" href="../../Data_Entry/Rating_and_Factors/Rating_Factors_LRFR.html#rating-factors-for-lrfr"><span class="std std-ref">Rating Factors for LRFR</span></a></p>
+<p><span class="xref std std-ref">Rating Factors for LFR</span> and <span class="xref std std-ref">Rating Factors for LRFR</span></p>
 <blockquote>
 <div><p>This table defines the ultimate dead load factors and the strength reduction factors.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Rating_and_Factors/Rate_Location.html#rate-location"><span class="std std-ref">Rate Location</span></a></p>
+<p><span class="xref std std-ref">Rate Location</span></p>
 <blockquote>
 <div><p>Except for non-line members, the user needs to specify where the program will
 compute capacities and rate the structure.  Non-line members are always
 analyzed at their critical locations.</p>
 </div></blockquote>
-<p><a class="reference internal" href="../../Data_Entry/Live_Loads/Load_Combination_Definition.html#load-combination-definition"><span class="std std-ref">Load Combination Definition</span></a></p>
+<p><span class="xref std std-ref">Load Combination Definition</span></p>
 <blockquote>
 <div><p>This is where all the entry tables listed above come together to form a bridge
 loading condition.  Only load combinations generate member capacities and
@@ -182,15 +161,12 @@ ratings.</p>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Data_Set_Collections_Envelopes.html" class="btn btn-neutral float-left" title="Data Set Collections ( Envelopes )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Points_of_Interest.html" class="btn btn-neutral float-right" title="Points of Interest" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

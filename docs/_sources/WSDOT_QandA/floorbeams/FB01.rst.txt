@@ -1,0 +1,52 @@
+
+.. _FB01:
+
+============================================
+Conducting a transverse analysis
+============================================
+
+**Description**
+
+This example duplicates :ref:`Bridge 5: 31-36-FB`
+
+.. list-table::
+
+    * - Type
+      - Floor Beam - Transverse Analysis
+    * - Structure
+      - Steel
+    * - Description
+      -
+    * - Input file
+      - `ValidationSet/31-36-FB <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/31-36-FB>`_
+
+
+**Keywords**
+
+* :ref:`Defining Cross Sections<cross sections in QA>`
+* :ref:`Girders<girders in QA>`
+* :ref:`Floor Beams<floor beams in QA>`
+* :ref:`Trusses<trusses in QA>`
+* :ref:`Loads, Trucks, Load Combinations<loads in QA>`
+* :ref:`Miscellaneous<misc in QA>`
+
+
+**Source(s)**
+
+1. Input file: `ValidationSet/31-36-FB <https://github.com/pmackenz/QTBridg/tree/QTBridg/Steel_BDF/ValidationSet/31-36-FB>`_
+2. WSDOT Bridge Design Manual, Chapter 13: :download:`https://wsdot.wa.gov/publications/manuals/fulltext/M23-50/Chapter13.pdf`
+3. AASHTO (2024): "LRFD Bridge Design Specifications for use in the design, evaluation, and rehabilitation of bridges", 10th Edition.
+
+**Approach**
+
+Describe your solution approach
+
+.. image:: ../../Examples/images/31-36-FB-system.png
+
+
+**Tips & Tricks**
+
+* Watch out for ...
+* Avoid ...
+* Try this ...
+

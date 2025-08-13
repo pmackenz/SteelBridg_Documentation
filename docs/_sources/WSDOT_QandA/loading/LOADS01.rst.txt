@@ -1,0 +1,42 @@
+.. [do not delete the next line: it must be a unique label]
+
+.. _LOADS01:
+
+ADD A NICER TITLE HERE
+============================================
+
+**Description**
+
+* Describe the issue/example for a quick overview. ...
+* Include a photo or representative graphics that could be used in the overview page.
+
+.. list-table::
+
+    * - Type
+      - Load Combination on a Girder
+    * - Structure
+      - [Steel|Composite|...]
+    * - Description
+      - [write something]
+
+**Keywords**
+
+[Delete lines that DO NOT apply]
+* :ref:`Girders<girders in QA>`
+* :ref:`Miscellaneous<misc in QA>`
+
+**Source(s)**
+
+1. some file
+2. some URL
+3. some citation
+
+**Approach**
+
+Describe your solution approach, add images, etc.
+
+**Tips & Tricks**
+
+* Watch out for ...
+* Avoid ...
+* Try this ...

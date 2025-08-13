@@ -10,26 +10,21 @@ Input
 ****************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Reference/INPUT/Defining_Members.rst
-    Reference/INPUT/Editor_Key_Assignments.rst
     Reference/INPUT/Finite_Element_Processor_Error_and_Warning_Messages.rst
     Reference/INPUT/Input_Local_Member_Orientation.rst
-    Reference/INPUT/Simple_Truss_Example_Using_Nodal_BC.rst
 
 ****************
 Shapes
 ****************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    Reference/Shapes/Standard_Shape_Properties.rst
     Reference/Shapes/Shape_Properties.rst
     Reference/Shapes/Computation_of_the_Negative_Area_Values.rst
-    Reference/Shapes/Shape_Coordinate_System.rst
-    Reference/Shapes/Built_up_Shape_Properties.rst
     Reference/Shapes/Shape_Geometry_Nomenclature.rst
 
 ****************
@@ -37,60 +32,39 @@ Members
 ****************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Reference/Members/Truss_Member_End_Releases.rst
-    Reference/Members/Rotational_Member_End_Release_Guidelines.rst
-    Reference/Members/Effective_Length.rst
-    Reference/Members/Explanation_of_Member_Weight_and_Stiffness_Codes.rst
     Reference/Members/Explanation_of_Member_of_Release_Codes.rst
     Reference/Members/Explanation_of_Auto_Connect_Switch.rst
     Reference/Members/Explanation_of_Start_and_End_Distances.rst
-    Reference/Members/Non_Line_Member_Design_Properties.rst
-    Reference/Members/Member_Coordinate_System.rst
-    Reference/Members/Line_Member_Design_Properties.rst
     Reference/Members/Bearing_Seats.rst
 
 
-****************
-Deck Slab
-****************
+.. ****************
+.. Load Generation
+.. ****************
 
-.. toctree::
-    :maxdepth: 2
+.. .. toctree::
+..     :maxdepth: 2
 
-    Reference/DeckSlab/Input_Concrete_Slab_Definition_Corner_Offset_Graphic.rst
-    Reference/DeckSlab/Concrete_Slab_Mesh_Generator_Notes.rst
-    Reference/DeckSlab/Concrete_Slab_Modeling_Notes.rst
-    Reference/DeckSlab/Input_Concrete_Slab_Definition_Graphic.rst
-    Reference/DeckSlab/Concrete_Slab_Expansion_Joint.rst
-    Reference/DeckSlab/Plate_Properties.rst
-
-
-****************
-Load Generation
-****************
-
-.. toctree::
-    :maxdepth: 2
-
-    Reference/Load_Generation/Load_Combination_Theory.rst
-    Reference/Load_Generation/Load_Generation.rst
-    Reference/Load_Generation/Data_Set_Collections_Envelopes.rst
-    Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst
-    Reference/Load_Generation/Points_of_Interest.rst
-    Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.rst
-    Reference/Load_Generation/Load_Generation_Data_Sets.rst
-    Reference/Load_Generation/Lane_Group_Positioning_Methods.rst
-    Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
+..     Reference/Load_Generation/Load_Combination_Theory.rst
+..     Reference/Load_Generation/Load_Generation.rst
+..     Reference/Load_Generation/Data_Set_Collections_Envelopes.rst
+..     Reference/Load_Generation/Introduction_to_Load_Entry_Tables.rst
+..     Reference/Load_Generation/Points_of_Interest.rst
+..     Reference/Load_Generation/Live_Load_Multiple_Lane_Sequencing.rst
+..     Reference/Load_Generation/Load_Generation_Data_Sets.rst
+..     Reference/Load_Generation/Lane_Group_Positioning_Methods.rst
+..     Reference/Load_Generation/Multiple_Lane_Live_Load_Sequencing_Example.rst
 
 
 ********************************
-Capacity and Rating Theory
+LFR Capacity and Rating Theory
 ********************************
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Reference/Capacity_and_Rating_Theory/Theory_5_0_5_1/_SS_5_1_2_Compute_Capacities.rst
     Reference/Capacity_and_Rating_Theory/Theory_5_2_1/_SS_5_2_1_1_Compactness_of_Type_A_1.rst

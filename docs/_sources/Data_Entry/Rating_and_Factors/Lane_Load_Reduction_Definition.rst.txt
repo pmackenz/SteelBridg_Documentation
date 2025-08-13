@@ -1,22 +1,13 @@
 Lane Load Reduction Definition
 =================================
 
-**Description**
+**Table**  :ref:`tbLaneLoadReductionDef`
 
-.. list-table::
-    :widths: 30 70
-    :header-rows: 1
+**Parameters** 
 
-    * - Field
-      - Description
-    * - Name
-      - Unique name for lane load reduction set
-    * - One
-      - Load reduction factor if 1 lane is loaded
-    * - Two
-      - Load reduction factor if 2 lanes are loaded
-    * - Three
-      - Load reduction factor if 3 lanes are loaded
-    * - Four
-      - Load reduction factor if 4 lanes are loaded
+  .. Include:: ../../tables/tbLaneLoadReductionDef.txt
 
+**Example**
+
+  .. figure:: ../../image/tbLaneLoadReduction.png
+    :alt: image/tbLaneLoadReduction.png

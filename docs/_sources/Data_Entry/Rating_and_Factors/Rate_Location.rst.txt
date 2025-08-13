@@ -1,45 +1,30 @@
 Rate Location
 ==================
 
-**Description**
+**Table** :ref:`tbRateLocation`
 
-For line members, it is up to the engineer to specify where the program will
-compute a capacity and a rating value.
-For non-line members, since their section properties do not change along
-their length, every member is checked using the worst case loading and a
-single rating per member is generated.  This table is only concerned with
-line member locations.
+**PURPOSE**
 
-Although it is up to the engineer to identify critical locations, the program
-will automatically use the locations along line members per the
+The program will automatically use the locations along line members per the
 `MbrPts` parameter in the  :ref:`Analysis Controls` table.
 These automatically generated locations are used in addition to any
 explicitly defined locations defined by entries in this table.
+
 The `MbrPts` parameter specifies the number of equal spaced locations along the
 length of a member including the two end points.  For example, a `MbrPts` of 5
 will create rating locations at the member ends and the three internal third
 points.
 
+For stringers, the engineer can specify additional locations where the program will
+compute a capacity and a rating value.
+
 More then one entry per member line can be specified, and all of the resulting
 locations will be used.
 
+.. note::
 
-.. list-table::
-    :widths: 30 70
-    :header-rows: 1
+  This entry is optional and will only apply to stringers.
 
-    * - Field
-      - Descriptions
-    * - MbrLine
-      - Member line name
-    * - StartDist
-      - Distance from start of member line to begin scanning
-    * - EndDist
-      - Distance from start of member line to stop scanning
-    * - Num
-      - Number of locations to scan between the starting and ending locations
-    * - ConstDist
-      - Constant distance used instead of Num.
-        When a constant distance is specified, the rate locations will be created by marching down the member
-        line starting at the Start Dist and continuing at the specified intervals until the End Distance is reached.
+**Parameters**  
 
+  .. Include:: ../../tables/tbRateLocation.txt

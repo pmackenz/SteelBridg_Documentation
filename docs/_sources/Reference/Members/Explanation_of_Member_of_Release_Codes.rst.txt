@@ -1,12 +1,13 @@
 Explanation of Member End Release Codes
 =========================================
 
-**References**
+    Coding is either 3 digit [RZ,TY,TX]  or "Y" or "N"
 
-* :ref:`Rotational Member End Release Guidelines`
-* :ref:`Bearing Seats`
+    Axial force is always release in stringers unless use numeric release coding.
 
-
-.. image:: ../../image/ebd_Ebd159.png
-    :alt: image/ebd_Ebd159.png
+    * blank is default "Y"   --> [101]
+   
+    * "Y" Release Moment [hinge] --> [101]
+   
+    * "N" Don't Release Moment [continuous] --> [001]
 

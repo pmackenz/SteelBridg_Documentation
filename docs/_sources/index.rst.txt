@@ -1,23 +1,15 @@
-.. SteelBridg LRFR documentation master file, created by
-   sphinx-quickstart on Wed Dec 28 23:18:47 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 ###############################################
-Welcome to SteelBridg LRFR documentation!
+Welcome to Steel BRIDG LRFR documentation!
 ###############################################
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Contents:
 
-    Tutorials/Preview/Getting_Started.rst
     DataEntry.rst
     theory.rst
-    FAQ.rst
-    examples.rst
-    Validation/ValidationSet.rst
-    tables.rst
+    Examples/Examples.rst
+    WSDOT_QandA/index.rst
 
 
 Indices and tables

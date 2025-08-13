@@ -1,8 +1,17 @@
 Input Longitudinal Stiffner Placement
 ======================================
 
-.. image:: ../../image/ebd_Ebd127.png
-    :alt: image/ebd_Ebd127.png
+**Table** :ref:`tbLongStiffDef`
+
+
+**PURPOSE**
+
+Add longitudinal stiffeners to a stringer.
+
+**Parameters**
+
+.. Include:: ../../tables/tbLongStiffDef.txt
+
 
 .. image:: ../../image/ebd_Ebd128.png
     :alt: image/ebd_Ebd128.png

@@ -1,5 +1,17 @@
 Input Lateral Bracing Placement
 =================================
 
-.. image:: ../../image/ebd_Ebd132.png
-    :alt: image/ebd_Ebd132.png
+**Table** :ref:`tbLateralBracingDef`
+
+
+**PURPOSE**
+
+Add lateral bracing to stringers.
+
+**Parameters**
+
+.. Include:: ../../tables/tbLateralBracingDef.txt
+
+.. image:: ../../image/lateral-bracing.png
+    :alt: image/lateral-bracing.png
+

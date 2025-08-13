@@ -1,0 +1,91 @@
+Load Combination Definition
+===============================
+
+
+**Table** :ref:`tbLoadCombDef`
+
+
+**PURPOSE**
+
+
+This table is used to create the set of trucks, factors, and switches that are combined for capacity and rating calculations.     
+
+
+**Parameters**
+
+.. Include:: ../../tables/tbLoadCombDef.txt
+
+
+.. rubric:: Name
+..
+
+    This is a unique name for this combination.
+
+.. rubric:: Active
+..
+
+    You may only want to run some combinations when analyzing a bridge. Use this option to select which combinations will be analyzed and 
+    then only those trucks used in the `active` combinations will be run.  
+
+.. rubric:: Truck_A
+..    
+
+    One or two trucks may be included in a combination. You `must` define a `Truck_A` but a second truck is optional. This entry must 
+    reference a truck defined in the :ref:`Truck Definition` table. 
+
+.. rubric:: Truck_A_AxlFrcMult
+..       
+
+    Enter the multiplier that will be applied to each axle force for `Truck_A`. 
+
+.. rubric:: Truck_B
+..    
+
+    One or two trucks may be included in a combination. You `must` define a `Truck_A` but this second truck is optional. This entry must 
+    reference a truck defined in the :ref:`Truck Definition` table. 
+
+.. rubric:: Truck_B_AxlFrcMult
+..       
+
+    Enter the multiplier that will be applied to each axle force for `Truck_B`.     
+
+.. rubric:: Truck_C
+..        
+
+    This is a **special** entry for a uniform lane load truck that `must` be named `UNIFORM_LANE_1KPF` and defined the :ref:`Truck Definition` table.
+
+.. rubric:: Truck_C_AxlFrcMult
+..       
+
+    Enter the multiplier that will be applied to each axle force for `Truck_C`.        
+
+
+.. rubric:: LFR
+..           
+
+    When doing a LFR analysis, enter a `D` or `P` t specify rating factor to use.  
+    D=Inventory&Operating  P=Overload Inv&Op
+
+.. rubric:: LRFR
+..           
+
+    When doing a LRFR analysis, `H`, `L`, `P`, `E`, or `N` 
+    (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated
+
+.. rubric:: NegOnly
+..      
+
+    For LRFR set this to "Y" to `ONLY` rate this combination for negative moment.
+
+.. rubric:: ReportFlag
+..    
+
+    The summary report include the summary, a copy of the input BDF file in fixed field format, and
+    capacity trace at 10th points along a stringer. This capacity trace can get very very large and 
+    might not be needed for all active combinations. Set this entry to `Y` to include the detailed 
+    capacity calculations for this combination in the summary report.
+
+**Example Entry**
+
+.. image:: ../../image/load_combination.png
+    :alt: image/load_combination.png

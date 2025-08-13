@@ -1,0 +1,21 @@
+
+.. _FEM:
+
+============================================
+Finite Element Analyzer
+============================================
+
+**Description**
+
+The BRIDG program has a built in 3D finite element analyzer that it uses (in 2D mode) and it can be used as a standalone FEA engine.
+
+The steps to using the FEA are:
+
+1) Generate a FEA file using BRIDG on any BDF file. This gives you an example input to work with. ( :ref:`fem_gen_file` )
+
+2) Cut and paste the FEM model section from the generated FEA file and create a F3D file ( :ref:`fem_f3d_file` )
+
+3) Edit this file as needed. 
+
+4) Run the FEA ( :ref:`fem_run` )
+

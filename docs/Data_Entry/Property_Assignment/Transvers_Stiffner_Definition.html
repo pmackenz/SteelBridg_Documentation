@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,15 +5,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Input Transvers Stiffner Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,7 +49,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -62,18 +66,16 @@
 <li class="toctree-l3"><a class="reference internal" href="Longitudinal_Stiffner_Placement.html">Input Longitudinal Stiffner Placement</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Input Transvers Stiffner Definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Lateral_Bracing_Placement.html">Input Lateral Bracing Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Bearing_Stiffener.html">Bearing Stiffener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Hinge_Placement.html">Input Hinge Placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bearing_Stiffener.html">Input Bearing Stiffener</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -104,8 +106,69 @@
              
   <section id="input-transvers-stiffner-definition">
 <h1>Input Transvers Stiffner Definition<a class="headerlink" href="#input-transvers-stiffner-definition" title="Link to this heading"></a></h1>
-<img alt="image/ebd_Ebd130.png" src="../../_images/ebd_Ebd130.png" />
-<img alt="image/ebd_Ebd131.png" src="../../_images/ebd_Ebd131.png" />
+<p><strong>Table</strong> <a class="reference internal" href="#tbtransversestiffnerdef"><span class="std std-ref">tbTransverseStiffnerDef</span></a></p>
+<p><strong>PURPOSE</strong></p>
+<p>Add transverse stiffeners to a stringer.</p>
+<p>The shear capacity at member ends is very dependant on how the program interprets the end condition.
+AASHTO 10.48.8.3 specifies that a member’s end will have a reduced shear capacity if it is a “simply supported end ( Shear Theory SS-5.2.3).
+The program looks at each member end and if (1) the member end has no other attached members of any kind,
+and (2) the member end node is not constrained in rotation, then it is a simply supported end.</p>
+<p><strong>Parameters</strong></p>
+<span id="tbtransversestiffnerdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbTransverseStiffnerDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MbrLine</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Member line name</p></td>
+</tr>
+<tr class="row-odd"><td><p>StartDist</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Distance from start of member line</p></td>
+</tr>
+<tr class="row-even"><td><p>EndDist</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Distance from start of member line to end of this shape placement. (Entry optional)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Plate</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Plate Library table name</p></td>
+</tr>
+<tr class="row-even"><td><p>NoSpc</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>Number of stiffener plate spaces between reference locations</p></td>
+</tr>
+<tr class="row-odd"><td><p>Spcng</p></td>
+<td><p>real</p></td>
+<td><p>FET</p></td>
+<td><p>Spacing of plates</p></td>
+</tr>
+<tr class="row-even"><td><p>EfStf</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[P|N|B], Effective stiffeners, (P=positive moment, N=negative moment, B=Blank=Both)</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/ebd_Ebd131.png"><img alt="image/ebd_Ebd131.png" src="../../_images/ebd_Ebd131.png" style="width: 500px;" />
+</a>
 </section>
 
 
@@ -119,7 +182,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

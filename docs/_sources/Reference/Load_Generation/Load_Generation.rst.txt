@@ -34,25 +34,25 @@ Input Data Sheets
 Dead Loads
 ^^^^^^^^^^^^^^^^^
 
-    * :ref:`Dead Load Definition`
-    * :ref:`Superimposed Dead Load Definition`
+* :ref:`Dead Load Definition`
+* :ref:`Superimposed Dead Load Definition`
 
 Trucks / Live Load Definition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    * :ref:`Live Load Definition`
-    * :ref:`Truck Definition`
-    * :ref:`Live Load Envelope Definition`
+* :ref:`Live Load Definition`
+* :ref:`Truck Definition`
+* :ref:`Live Load Envelope Definition`
 
 
 Load Combinations and Rating Factors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    * :ref:`Lane Group Definition`
-    * :ref:`Truck Group Definition`
-    * :ref:`Lane Load Reduction Definition`
-    * :ref:`Rating Factors for LFR`
-    * :ref:`Rating Factors for LRFR`
-    * :ref:`Rate Location`
-    * :ref:`Load Combination Definition`
+* :ref:`Lane Group Definition`
+* :ref:`Truck Group Definition`
+* :ref:`Lane Load Reduction Definition`
+* :ref:`Rating Factors for LFR`
+* :ref:`Rating Factors for LRFR`
+* :ref:`Rate Location`
+* :ref:`Load Combination Definition`
 

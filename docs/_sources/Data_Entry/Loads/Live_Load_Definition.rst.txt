@@ -1,0 +1,77 @@
+Live Load Definition
+=========================
+
+**Table** :ref:`tbLiveLoadDef`
+
+
+**PURPOSE**
+
+This entry is one of the two entries that describe the live load 
+forces that are associated with a `Truck`. Truck loads
+include these stationary loads in addition to the moving loads 
+specified in the :ref:`Truck Definition` entry form. Use the 
+same name on this entry as on the :ref:`Truck Definition` 
+entry to combine stationary loads with moving loads for a single truck definition.
+ 
+Forces can be applied to member lines and COGO points explicitly. Use 
+this entry sheet to describe **either**
+a "Load at Point" **or** a "distributed member load" applied to a member line.
+ 
+A full length uniform load can easily be applied by just entering the 
+a Start Value and leaving the End Value, Start Distance, and End 
+Distances blank.
+
+
+**Parameters**
+
+.. Include:: ../../tables/tbLiveLoadDef.txt
+
+
+**Point Loading**
+
+    **COGO Point**
+
+        If this entry is being use to describe a point load, then specify the point where the force will be applied. Member loading does not use this entry.
+
+    **Force Dir**
+
+        Forces are applied in the global coordinate system. Note that unlike the member loads, the sense of these loads is consistent with the directions 
+        of the global coordinate system. Use either: FY or MZ. Member loading does not use this part of the dead load entry.
+
+    **Force**
+
+        Enter the force in units of Kips and Feet. Member loading does not use this entry.
+
+**Member Loading**
+
+    **Mrb Line**
+
+        Specify which member (stringer) to apply this load.
+
+    **Load Code**
+
+        Loads are applied to the major local axis of the member. Although the Y direction is up, 
+        for convenience, the Y forces are negated so that a positive value will apply a downward forces. 
+        Use the following codes to apply point, linear, and moment forces:
+
+            **PY** Downward point load.
+
+            **LY** Linear downward load applied along a member.
+
+            **MZ** Moment about the local Z axis.
+
+    **Start Dist**
+
+        Distance from start of member line. Use to specify location of point or moment forces, and beginning of linear load.
+
+    **End Dist**
+
+        Distance from start of member line. Used to specify ending location of linear load. Leave blank (or 0) for point load. 
+
+    **Start Value**
+
+        Force value, or starting linear load force value.
+
+    **Ending Value**
+
+        Ending force value for linear load. 
