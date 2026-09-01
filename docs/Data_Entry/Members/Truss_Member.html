@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
@@ -7,18 +5,36 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Input Truss Member &mdash; SteelBridg LRFR 1.0 documentation</title>
+<<<<<<< HEAD
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+=======
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+>>>>>>> origin/main
       <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
+<<<<<<< HEAD
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+=======
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+>>>>>>> origin/main
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -184,25 +200,45 @@
 <td></td>
 <td><p>Ky Minor axis of bending effective length factor (Ky factor).</p></td>
 </tr>
+<<<<<<< HEAD
 <tr class="row-odd"><td><p>TorqueKz</p></td>
 <td><p>real</p></td>
 <td></td>
 <td><p>Effective length factor Kz for torsional buckling of compression members</p></td>
 </tr>
 <tr class="row-even"><td><p>StageIn</p></td>
+=======
+<tr class="row-odd"><td><p>StageIn</p></td>
+>>>>>>> origin/main
 <td><p>int</p></td>
 <td></td>
 <td><p>Stage that member becomes active in the analysis.</p></td>
 </tr>
+<<<<<<< HEAD
 <tr class="row-odd"><td><p>StageOut</p></td>
+=======
+<tr class="row-even"><td><p>StageOut</p></td>
+>>>>>>> origin/main
 <td><p>int</p></td>
 <td></td>
 <td><p>Stage that member is removed from the analysis (Member  is not active in this stage).</p></td>
 </tr>
+<<<<<<< HEAD
 <tr class="row-even"><td><p>Reduce</p></td>
 <td><p>real</p></td>
 <td></td>
 <td><p>If this is a slender member, compute Aeff = Reduce * Ag  (see AASHTO 6.9.4.2.2a-1  2025)</p></td>
+=======
+<tr class="row-odd"><td><p>Slender</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] Treat as slender member (default is No)</p></td>
+</tr>
+<tr class="row-even"><td><p>Reduce</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>If slender, override any shape slenderness reductions (using Q = Reduce)</p></td>
+>>>>>>> origin/main
 </tr>
 <tr class="row-odd"><td><p>ShearLag</p></td>
 <td><p>real</p></td>
@@ -217,12 +253,20 @@
 <tr class="row-odd"><td><p>RateFactor</p></td>
 <td><p>text</p></td>
 <td></td>
+<<<<<<< HEAD
 <td><p>Rating Factors (from tbRatingFactors_LFR or tbRatingFactors_LRFR)</p></td>
+=======
+<td><p>Rating Factors (from tbRatingFactorsLFRDef or tbRatingFactorsLRFRDef)</p></td>
+>>>>>>> origin/main
 </tr>
 <tr class="row-even"><td><p>LLDF_ID</p></td>
 <td><p>text</p></td>
 <td></td>
+<<<<<<< HEAD
 <td><p>LLDF from tbLLDF_LFR or tbLLDF_LRFR</p></td>
+=======
+<td><p>LLDF Factors from tbLLDF_LRFR (for LRFR only; LFR uses tbRatingFactorsLFRDef)</p></td>
+>>>>>>> origin/main
 </tr>
 <tr class="row-odd"><td><p>LBL</p></td>
 <td><p>real</p></td>
