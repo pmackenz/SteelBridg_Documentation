@@ -1,0 +1,155 @@
+
+.. _WSDOT QandA:
+
+Special Topics Q&A
+====================
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    sections/SECTION01.rst
+    sections/SECTION02.rst
+    sections/SECTION03.rst
+    sections/SECTION04.rst
+    girders/GIRDER01.rst
+    girders/GIRDER02.rst
+    floorbeams/FB01.rst
+    floorbeams/FB02.rst
+    trusses/TRUSS01.rst
+    trusses/TRUSS02.rst
+    loading/LOADS01.rst
+    loading/LOADS02.rst
+    misc/MISC01.rst
+    misc/MISC02.rst
+
+
+.. _cross sections in QA:
+
+.. dropdown:: Defining Cross Sections
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            :ref:`SECTION01`
+
+        .. grid-item-card::
+
+            :ref:`SECTION02`
+
+        .. grid-item-card::
+
+            :ref:`SECTION03`
+
+        .. grid-item-card::
+
+            :ref:`SECTION04`
+
+
+.. _girders in QA:
+
+.. dropdown:: Girders
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            :ref:`GIRDER01`
+
+        .. grid-item-card::
+
+            :ref:`GIRDER02`
+
+
+.. _floor beams in QA:
+
+.. dropdown:: Floor Beams
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            |IMG_FB01|
+
+        .. grid-item-card::
+
+            |IMG_FB02|
+
+
+.. _trusses in QA:
+
+.. dropdown:: Trusses
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            :ref:`TRUSS01`
+
+        .. grid-item-card::
+
+            :ref:`TRUSS02`
+
+
+.. _loads in QA:
+
+.. dropdown:: Loads, Trucks, and Load Combinations
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            |IMG_LOAD01|
+
+        .. grid-item-card::
+
+            |IMG_LOAD02|
+
+
+.. _misc in QA:
+
+.. dropdown:: Miscellaneaous
+
+    .. grid:: 3
+        :gutter: 1
+
+        .. grid-item-card::
+
+            |IMG_FEM|
+
+        .. grid-item-card::
+
+            :ref:`MISC02`
+
+
+
+.. |IMG_LOAD01| image:: ./images/semitruck.png
+    :alt: LOAD01
+    :width: 200
+    :target: ./loading/LOADS01.html
+
+.. |IMG_LOAD02| image:: ./images/engineer2.png
+    :alt: LOAD02
+    :width: 200
+    :target: ./loading/LOADS02.html
+
+.. |IMG_FB01| image:: ./images/engineer1.png
+    :alt: FB01
+    :width: 200
+    :target: ./floorbeams/FB01.html
+
+.. |IMG_FB02| image:: ./images/idea.png
+    :alt: FB02
+    :width: 200
+    :target: ./floorbeams/FB02.html
+
+.. |IMG_FEM| image:: ./images/FEM.png
+    :alt: FEM
+    :width: 200
+    :target: ./finite-element-analyzer/FEM.html    

@@ -1,5 +1,14 @@
 Input Shape Placement
 =========================
 
-.. image:: ../../image/ebd_Ebd121.png
-    :alt: image/ebd_Ebd121.png
+**Table** :ref:`tbShapePlacement`
+
+
+**PURPOSE**
+    Use this entry to the define which shapes from the shapes library are to be applied to **stringers**. 
+
+    Do not use this entry in addition to **Web** and **Flange** placement, but you can include **Cover Plates**
+
+**Parameters**
+
+  .. Include:: ../../tables/tbShapePlacement.txt

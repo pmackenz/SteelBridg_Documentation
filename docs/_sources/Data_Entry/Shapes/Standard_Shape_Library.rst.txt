@@ -1,19 +1,26 @@
 Standard Shape Library
 ==============================
 
-* Entering a default shape: :ref:`Shape_Input`
-* Default member orientation: :ref:`Member_Orientation`
+.. include:: ../../tables/ptAnalysisControls.txt
+
+**PURPOSE**
+
+Entry of Standard Shapes that are extrusions normally found in the AISC handbook.
 
 
-Properties for most common standard shapes can be found using the **AISC Filter** in the `Tools` menu.
+**Parameters**
 
-.. _Shape_Input:
+Properties for most common standard shapes can be found using the :ref:`AISC_Tool` in the `Tools` menu. See discussion about the AISC tool below. 
 
-.. figure:: ../../image/ebd_Ebd104.png
-    :alt: image/ebd_Ebd104.png
+StdName MUST begin with a standard shape letter indicator: 
 
-    Defining a standard shape.
+| C,L,2L,MC,MT,P,PX,PXX,HP,S,ST,W,WT
+| These first letters are all that are used of the "StdName" to determine the shape type. 
 
+The entered values are used to compute the shape properties, dependant on the shape type. 
+
+
+.. Include:: ../../tables/tbStandardShapeLibrary.txt
 
 .. _Member_Orientation:
 
@@ -21,4 +28,30 @@ Properties for most common standard shapes can be found using the **AISC Filter*
     :alt: image/ebd_Ebd105.png
 
     Default member orientation
+
+.. _AISC_Tool:
+
+The AISC shapes table
+---------------------
+The AISC shapes table is included with the BRIDG program for easy entry of standard shapes. To use the tool:
+
+| 1 Start a new blank line in the  StandardShapesLibrary table (use the 'green' new-record button)
+| 2 Select the menu "Tools --> Open AISC filter"  to open the AISC shapes table pop-up
+| 3 Select the entire row of a shape you want to copy and press "ctrl-C" on your keyboard
+| 4 On your new blank line in the StandardShapesLibrary table select the "StdName" cell and then press "ctrl-V" to paste parameters.
+
+.. figure:: ../../image/AISC-insert-a.png
+    :alt: image/AISC-insert-a.png    
+
+----
+
+.. figure:: ../../image/AISC-tool.png
+    :alt: image/AISC-tool.png
+    
+----
+
+.. figure:: ../../image/AISC-tool-select.png
+    :alt: image/AISC-tool-select.png
+
+
 

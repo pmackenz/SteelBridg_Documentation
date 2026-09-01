@@ -9,6 +9,8 @@
   <title>Factors &amp; Rating Controls &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
@@ -16,7 +18,7 @@
       <script src="../_static/documentation_options.js?v=f2a433a1"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -45,7 +47,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general.html">General Info</a></li>
@@ -54,7 +55,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/LLDF_LRFR.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/LLDF_LRFR.html">Live Load Distribution Factors - LRFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Rating_and_Factors/Rate_Location.html">Rate Location</a></li>
 </ul>
 </li>
@@ -63,14 +64,11 @@
 <li class="toctree-l2"><a class="reference internal" href="concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -103,14 +101,9 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/Lane_Load_Reduction_Definition.html">Lane Load Reduction Definition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html#example-entry">Example Entry</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LFR.html">Rating Factors for LFR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/Rating_Factors_LRFR.html">Rating Factors for LRFR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/LLDF_LRFR.html">Explicit Live Load Distribution Factors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/LLDF_LRFR.html">Live Load Distribution Factors - LRFR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Rating_and_Factors/Rate_Location.html">Rate Location</a></li>
 </ul>
 </div>
@@ -127,7 +120,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

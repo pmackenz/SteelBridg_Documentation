@@ -1,15 +1,19 @@
 COGO Command: Command Descriptions
 ====================================
 
+**Table** :ref:`tbCogoCommandData`
+
+**PURPOSE:**
+
+Use this table to enter basic bridge geometry locations. These locations will be used to define nodal boundaries,
+stringers, floorbeams, truss members, and truck path.
+
 For historical reasons BRIDG includes a near complete COGO package which has many features not needed for 2D data input. 
 Only these 3 commands are commonly used:
 
-* STOR
-  
-* OFFSET
-  
-* PATH  (used to define the truck path)
-  
+* :ref:`COGO Command: STOR`   (Enter location using coordinates)
+* :ref:`COGO Command: OFFSET` (Locate a new point from an existing point)
+* :ref:`COGO Command: PATH`   (Define a path. Mostly used for truck path)
 
 
 .. list-table::
@@ -54,10 +58,12 @@ Only these 3 commands are commonly used:
       - To specify a vertical curve.
     * - :ref:`COGO Command: Example`
       - Example.
+    * - :ref:`COGO Command: BIAS`
+      - To apply a bias to the input coordinate data.
 
+**Table format**
 
-
-
+.. Include:: ../../tables/tbCogoCommandData.txt
 
 
 

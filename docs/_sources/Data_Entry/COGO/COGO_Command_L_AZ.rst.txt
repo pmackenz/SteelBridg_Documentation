@@ -1,3 +1,7 @@
+:orphan:
+
+.. _COGO Command\: L/AZ:
+
 COGO Command: L/AZ
 ----------------------
 

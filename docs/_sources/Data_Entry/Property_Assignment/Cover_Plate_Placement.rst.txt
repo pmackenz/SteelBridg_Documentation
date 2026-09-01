@@ -1,5 +1,17 @@
 Input Cover Plate Placement
 ================================
 
+**Table** :ref:`tbCoverPlateDef`
+
+
+**PURPOSE**
+
+Add cover plates to stringers.
+
+**Parameters**
+
+.. Include:: ../../tables/tbCoverPlateDef.txt
+
+
 .. image:: ../../image/ebd_Ebd125.png
     :alt: image/ebd_Ebd125.png

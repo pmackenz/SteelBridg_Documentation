@@ -9,6 +9,8 @@
   <title>Input Built-up Shape Types - A2R &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,6 +18,7 @@
       <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,17 +47,15 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../library.html">Library</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Standard_Shape_Library.html">Standard Shape Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Material_Library.html">Input Material Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Plate_Library.html">Input Plate Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/Plate_Bearing_Stiffner_Library.html">Input Plate Bearing Stiffener Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Standard_Shape_Library.html">Standard Shape Library</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="Built_up_Shape_Library.html">Input Built-up Shape Library</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A1.html">Input Built-up Shape Types - A1</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A1R.html">Input Built-up Shape Types - A1R</a></li>
@@ -66,8 +67,10 @@
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3A.html">Input Built-up Shape Types - A3A</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3R.html">Input Built-up Shape Types - A3R</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A3AR.html">Input Built-up Shape Types - A3AR</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A4.html">Input Built-up Shape Types - A4 &amp; A4A</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A5.html">Input Built-up Shape Types - A5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A4.html">Input Built-up Shape Types - A4 &amp; A4R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A4A.html">Input Built-up Shape Types - A4A &amp; A4AR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A5.html">Input Built-up Shape Types - A5 &amp; A5R</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_A5A.html">Input Built-up Shape Types - A5A &amp; A5AR</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_B1.html">Input Built-up Shape Types - B1</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_C1.html">Input Built-up Shape Types - C1 &amp; C1R</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Built_up_Shape_Types_C2.html">Input Built-up Shape Types - C2</a></li>
@@ -81,14 +84,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -121,7 +121,7 @@
   <section id="input-built-up-shape-types-a2r">
 <h1>Input Built-up Shape Types - A2R<a class="headerlink" href="#input-built-up-shape-types-a2r" title="Link to this heading"></a></h1>
 <ul class="simple">
-<li><p>Back to other available built-up shapes: <a class="reference internal" href="Built_up_Shape_Library.html#input-built-up-shape-library"><span class="std std-ref">Input Built-up Shape Library</span></a></p></li>
+<li><p>Back to other available built-up shapes: <span class="xref std std-ref">Input Built-up Shape Library</span></p></li>
 </ul>
 <img alt="image/ShapeA2R_wmf.png" src="../../_images/ShapeA2R_wmf.png" />
 </section>
@@ -137,7 +137,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -1,8 +1,22 @@
 Input Transvers Stiffner Definition
 ======================================
 
-.. image:: ../../image/ebd_Ebd130.png
-    :alt: image/ebd_Ebd130.png
+**Table** :ref:`tbTransverseStiffnerDef`
+
+
+**PURPOSE**
+
+Add transverse stiffeners to a stringer.
+
+The shear capacity at member ends is very dependant on how the program interprets the end condition.  
+AASHTO 10.48.8.3 specifies that a member's end will have a reduced shear capacity if it is a "simply supported end ( Shear Theory SS-5.2.3).  
+The program looks at each member end and if (1) the member end has no other attached members of any kind, 
+and (2) the member end node is not constrained in rotation, then it is a simply supported end.
+
+**Parameters**
+
+.. Include:: ../../tables/tbTransverseStiffnerDef.txt
 
 .. image:: ../../image/ebd_Ebd131.png
+    :width: 500
     :alt: image/ebd_Ebd131.png

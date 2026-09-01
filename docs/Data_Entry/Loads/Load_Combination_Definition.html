@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Load Combination Definition &mdash; SteelBridg LRFR 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Theory" href="../../theory.html" />
+    <link rel="prev" title="Live Load Definition" href="Live_Load_Definition.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SteelBridg LRFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transverse.html">Transverse Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../factors_and_rating.html">Factors &amp; Rating Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../library.html">Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../steel_members.html">Steel Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../loads.html">Loads</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Dead_Load_Defintion.html">Dead Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Superimposed_Dead_Load_Definition.html">Superimposed Dead Load Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Truck_Definition.html">Truck Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Live_Load_Definition.html">Live Load Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Load Combination Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SteelBridg LRFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../DataEntry.html">Data Entry</a></li>
+          <li class="breadcrumb-item"><a href="../loads.html">Loads</a></li>
+      <li class="breadcrumb-item active">Load Combination Definition</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Data_Entry/Loads/Load_Combination_Definition.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="load-combination-definition">
+<h1>Load Combination Definition<a class="headerlink" href="#load-combination-definition" title="Link to this heading"></a></h1>
+<p><strong>Table</strong> <a class="reference internal" href="#tbloadcombdef"><span class="std std-ref">tbLoadCombDef</span></a></p>
+<p><strong>PURPOSE</strong></p>
+<p>This table is used to create the set of trucks, factors, and switches that are combined for capacity and rating calculations.</p>
+<p><strong>Parameters</strong></p>
+<span id="tbloadcombdef"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">tbLoadCombDef</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Unique name for loading configuration</p></td>
+</tr>
+<tr class="row-odd"><td><p>Active</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N]  Y=Run this load case.</p></td>
+</tr>
+<tr class="row-even"><td><p>Truck_A</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>First Truck Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Truck_A_AxlFrcMult</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>First Truck’s axle force multiplyer</p></td>
+</tr>
+<tr class="row-even"><td><p>Truck_B</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Second Truck Name (optional) If used as uniform lane load truck it MUST be named UNIFORM_LANE_1KPF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Truck_B_AxlFrcMult</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Second Truck’s axle force multiplyer (if second truck defined)</p></td>
+</tr>
+<tr class="row-even"><td><p>Truck_C</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Third Truck Name (optional) If used as uniform lane load truck it MUST be named UNIFORM_LANE_1KPF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Truck_C_AxlFrcMult</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Third Truck’s axle force multiplyer (if third truck defined)</p></td>
+</tr>
+<tr class="row-even"><td><p>LFR</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[D|P] D=Inventory&amp;Operating  P=Overload Inv&amp;Opr</p></td>
+</tr>
+<tr class="row-odd"><td><p>LRFR</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[H|L|P|E|N] (H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p></td>
+</tr>
+<tr class="row-even"><td><p>NegOnly</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] LRFR Neg only rating flag.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ReportFlag</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[Y|N] Shall the capacity trace at 10th-points be included with the Summary Report for this load combination? (Default is ‘N’)</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Name</p>
+<blockquote>
+<div><p>This is a unique name for this combination.</p>
+</div></blockquote>
+<p class="rubric">Active</p>
+<blockquote>
+<div><p>You may only want to run some combinations when analyzing a bridge. Use this option to select which combinations will be analyzed and
+then only those trucks used in the <cite>active</cite> combinations will be run.</p>
+</div></blockquote>
+<p class="rubric">Truck_A</p>
+<blockquote>
+<div><p>One or two trucks may be included in a combination. You <cite>must</cite> define a <cite>Truck_A</cite> but a second truck is optional. This entry must
+reference a truck defined in the <span class="xref std std-ref">Truck Definition</span> table.</p>
+</div></blockquote>
+<p class="rubric">Truck_A_AxlFrcMult</p>
+<blockquote>
+<div><p>Enter the multiplier that will be applied to each axle force for <cite>Truck_A</cite>.</p>
+</div></blockquote>
+<p class="rubric">Truck_B</p>
+<blockquote>
+<div><p>One or two trucks may be included in a combination. You <cite>must</cite> define a <cite>Truck_A</cite> but this second truck is optional. This entry must
+reference a truck defined in the <span class="xref std std-ref">Truck Definition</span> table.</p>
+</div></blockquote>
+<p class="rubric">Truck_B_AxlFrcMult</p>
+<blockquote>
+<div><p>Enter the multiplier that will be applied to each axle force for <cite>Truck_B</cite>.</p>
+</div></blockquote>
+<p class="rubric">Truck_C</p>
+<blockquote>
+<div><p>This is a <strong>special</strong> entry for a uniform lane load truck that <cite>must</cite> be named <cite>UNIFORM_LANE_1KPF</cite> and defined the <span class="xref std std-ref">Truck Definition</span> table.</p>
+</div></blockquote>
+<p class="rubric">Truck_C_AxlFrcMult</p>
+<blockquote>
+<div><p>Enter the multiplier that will be applied to each axle force for <cite>Truck_C</cite>.</p>
+</div></blockquote>
+<p class="rubric">LFR</p>
+<blockquote>
+<div><p>When doing a LFR analysis, enter a <cite>D</cite> or <cite>P</cite> t specify rating factor to use.
+D=Inventory&amp;Operating  P=Overload Inv&amp;Op</p>
+</div></blockquote>
+<p class="rubric">LRFR</p>
+<blockquote>
+<div><p>When doing a LRFR analysis, <cite>H</cite>, <cite>L</cite>, <cite>P</cite>, <cite>E</cite>, or <cite>N</cite>
+(H)HL-93 Design  (L)Legal  (P)Permit-Overload  (E)Emergency  (N)Not Rated</p>
+</div></blockquote>
+<p class="rubric">NegOnly</p>
+<blockquote>
+<div><p>For LRFR set this to “Y” to <cite>ONLY</cite> rate this combination for negative moment.</p>
+</div></blockquote>
+<p class="rubric">ReportFlag</p>
+<blockquote>
+<div><p>The summary report include the summary, a copy of the input BDF file in fixed field format, and
+capacity trace at 10th points along a stringer. This capacity trace can get very very large and
+might not be needed for all active combinations. Set this entry to <cite>Y</cite> to include the detailed
+capacity calculations for this combination in the summary report.</p>
+</div></blockquote>
+<p><strong>Example Entry</strong></p>
+<img alt="image/load_combination.png" src="../../_images/load_combination.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Live_Load_Definition.html" class="btn btn-neutral float-left" title="Live Load Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../theory.html" class="btn btn-neutral float-right" title="Theory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

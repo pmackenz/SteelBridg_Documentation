@@ -9,6 +9,8 @@
   <title>Finite Element Processor Error and Warning Messages &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,11 +18,12 @@
       <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Input Local Member Orientation" href="Input_Local_Member_Orientation.html" />
-    <link rel="prev" title="Editor Key Assignments" href="Editor_Key_Assignments.html" /> 
+    <link rel="prev" title="Defining Members" href="Defining_Members.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,28 +47,21 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../DataEntry.html">Data Entry</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../theory.html">Theory</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../../theory.html#input">Input</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Defining_Members.html">Defining Members</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Editor_Key_Assignments.html">Editor Key Assignments</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Finite Element Processor Error and Warning Messages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Input_Local_Member_Orientation.html">Input Local Member Orientation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Simple_Truss_Example_Using_Nodal_BC.html">Simple Truss Example Using Nodal BC</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#shapes">Shapes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../theory.html#members">Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#deck-slab">Deck Slab</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#load-generation">Load Generation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../theory.html#capacity-and-rating-theory">Capacity and Rating Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../theory.html#lfr-capacity-and-rating-theory">LFR Capacity and Rating Theory</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -112,29 +108,25 @@ For example, if a node is the connecting point for members that have their end
 moment continuity released, then that node may be restrained from rotation.
 This is because the node’s rotation is not tied into any of the connecting
 members and constraining it will not force a member end to not rotate.
-Think of it this way, if you “grab hold of a node” and then rotate it in any
-of the three major axes would any part of the model resist this motion.
+Think of it this way, if you “grab hold of a node” and then rotate it
+would any part of the model resist this motion.
 If not, then that node is a good candidate for a local rotational constraint.
 Except for natural boundary conditions at points of support, a translation
 constraint is hardly ever used.</p>
-<p>Consider the following examples of unstable models.</p>
-<img alt="image/ebd_Ebd29.png" src="../../_images/ebd_Ebd29.png" />
-<img alt="image/ebd_Ebd30.png" src="../../_images/ebd_Ebd30.png" />
-<img alt="image/ebd_Ebd31.png" src="../../_images/ebd_Ebd31.png" />
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Editor_Key_Assignments.html" class="btn btn-neutral float-left" title="Editor Key Assignments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Defining_Members.html" class="btn btn-neutral float-left" title="Defining Members" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Input_Local_Member_Orientation.html" class="btn btn-neutral float-right" title="Input Local Member Orientation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

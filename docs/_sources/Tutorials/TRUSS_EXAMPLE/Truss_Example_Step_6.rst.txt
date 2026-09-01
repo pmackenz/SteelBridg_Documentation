@@ -1,6 +1,0 @@
-Truss Example: Step 6 - Define Materials and required shapes.
---------------------------------------------------------------------------------
-
-.. image:: ../../image/ebd_Ebd43.png
-    :alt: image/ebd_Ebd43.png
-

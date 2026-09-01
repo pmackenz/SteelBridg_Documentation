@@ -1,6 +1,0 @@
-Input Column Definition
---------------------------
-
-.. figure:: ../../image/ebd_Ebd147.png
-    :alt: image/ebd_Ebd147.png
-

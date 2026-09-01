@@ -1,5 +1,0 @@
-Input Shear Connector Placement
-=================================
-
-.. image:: ../../image/ebd_Ebd129.png
-    :alt: image/ebd_Ebd129.png

@@ -1,0 +1,9 @@
+Input Built-up Shape Types - A4A & A4AR
+---------------------------------------
+
+* Back to other available built-up shapes: :ref:`Input Built-up Shape Library`
+
+
+.. figure:: ../../image/ebd_Ebd115_b.png
+    :alt: image/ebd_Ebd115_b.png
+

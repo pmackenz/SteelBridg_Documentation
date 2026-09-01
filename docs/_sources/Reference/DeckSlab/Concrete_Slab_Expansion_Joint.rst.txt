@@ -1,7 +1,0 @@
-Concrete Slab Expansion Joint
-======================================================
-
-.. note::
-
-    This feature is not handled by the SteelBridg application.
-

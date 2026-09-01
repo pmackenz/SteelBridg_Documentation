@@ -9,6 +9,8 @@
   <title>Input Truss Member &mdash; SteelBridg LRFR 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,10 +18,11 @@
       <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Input Column Definition" href="Column_Definition.html" />
+    <link rel="next" title="Concrete" href="../concrete.html" />
     <link rel="prev" title="Input Stringer Definition" href="Stringer_Definition.html" /> 
 </head>
 
@@ -44,7 +47,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Tutorials/Preview/Getting_Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../DataEntry.html">Data Entry</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general.html">General Info</a></li>
@@ -54,20 +56,16 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../steel_members.html">Steel Members</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Stringer_Definition.html">Input Stringer Definition</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Input Truss Member</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Column_Definition.html">Input Column Definition</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../concrete.html">Concrete</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../shape_placement.html">Steel Shape Placement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../loads.html">Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../deprecated.html">Deprecated</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Validation/ValidationSet.html">Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Examples/Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WSDOT_QandA/index.html">Special Topics Q&amp;A</a></li>
 </ul>
 
         </div>
@@ -98,9 +96,147 @@
              
   <section id="input-truss-member">
 <h1>Input Truss Member<a class="headerlink" href="#input-truss-member" title="Link to this heading"></a></h1>
-<figure class="align-default">
-<img alt="image/ebd_Ebd151.png" src="../../_images/ebd_Ebd151.png" />
-</figure>
+<p><strong>Table</strong> <a class="reference internal" href="#tbtrussmember"><span class="std std-ref">tbTrussMember</span></a></p>
+<dl class="simple">
+<dt><strong>PURPOSE</strong></dt><dd><p>Define truss member locations.</p>
+</dd>
+</dl>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><span id="tbtrussmember"></span><table class="docutils align-default" id="id3">
+<caption><span class="caption-text">tbTrussMember</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 58.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Units</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Truss member name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[B|T|C|D|V] Member type code. BOTTOM, TOP, CORD, DIAG, VERT  If B,T,or C use Mom rider only loads. If D or V use Shr rider only. Blank=both riders.</p></td>
+</tr>
+<tr class="row-even"><td><p>StartPoint</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Name of COGO point at start of truss                       2</p></td>
+</tr>
+<tr class="row-odd"><td><p>EndPoint</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Name of COGO point at end of truss</p></td>
+</tr>
+<tr class="row-even"><td><p>AutoCn</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>[N|Y|YS|A|AS] Automatically connect with intersecting lines and points.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shape</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Select shape from  either Plate, Std.Shape, or Built-up libraries.</p></td>
+</tr>
+<tr class="row-even"><td><p>BetaAngle</p></td>
+<td><p>real</p></td>
+<td><p>DEG</p></td>
+<td><p>Beta Angle</p></td>
+</tr>
+<tr class="row-odd"><td><p>NegFArea</p></td>
+<td><p>real</p></td>
+<td><p>IN2</p></td>
+<td><p>Area of fastener holes (sqi)</p></td>
+</tr>
+<tr class="row-even"><td><p>NegHArea</p></td>
+<td><p>real</p></td>
+<td><p>IN2</p></td>
+<td><p>Area of hand holes (sqi)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RelEndA</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Member end releases at end A</p></td>
+</tr>
+<tr class="row-even"><td><p>RelEndB</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Member end releases at end B</p></td>
+</tr>
+<tr class="row-odd"><td><p>MajEffL</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Kz Major axis of bending effective length factor (Kz factor).</p></td>
+</tr>
+<tr class="row-even"><td><p>MinEffL</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Ky Minor axis of bending effective length factor (Ky factor).</p></td>
+</tr>
+<tr class="row-odd"><td><p>TorqueKz</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Effective length factor Kz for torsional buckling of compression members</p></td>
+</tr>
+<tr class="row-even"><td><p>StageIn</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>Stage that member becomes active in the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p>StageOut</p></td>
+<td><p>int</p></td>
+<td></td>
+<td><p>Stage that member is removed from the analysis (Member  is not active in this stage).</p></td>
+</tr>
+<tr class="row-even"><td><p>Reduce</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>If this is a slender member, compute Aeff = Reduce * Ag  (see AASHTO 6.9.4.2.2a-1  2025)</p></td>
+</tr>
+<tr class="row-odd"><td><p>ShearLag</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Shear lag reduction factor (U = ShearLag)   (see AASHTO 6.8.2.1)</p></td>
+</tr>
+<tr class="row-even"><td><p>TCCode</p></td>
+<td><p>chr</p></td>
+<td></td>
+<td><p>[ <a href="#id1"><span class="problematic" id="id2">|</span></a>T|C] Tension or compression only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RateFactor</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>Rating Factors (from tbRatingFactors_LFR or tbRatingFactors_LRFR)</p></td>
+</tr>
+<tr class="row-even"><td><p>LLDF_ID</p></td>
+<td><p>text</p></td>
+<td></td>
+<td><p>LLDF from tbLLDF_LFR or tbLLDF_LRFR</p></td>
+</tr>
+<tr class="row-odd"><td><p>LBL</p></td>
+<td><p>real</p></td>
+<td><p>INC</p></td>
+<td><p>Local Buckling Length</p></td>
+</tr>
+<tr class="row-even"><td><p>Cond</p></td>
+<td><p>real</p></td>
+<td></td>
+<td><p>Condition factor (phi_c; default = 1.00) – the system factor as defined in AnalysisControls will be added by SteelBridg</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the Local Buckling length is not entered, then no local buckling length
@@ -108,16 +244,14 @@ check is performed.  A warning is issued that no local buckling length check
 has been done.</p>
 </div>
 <ul class="simple">
-<li><p>If a member’s <cite>TCCode</cite> is <cite>T</cite> then that member will only be checked for tension rating,</p></li>
-</ul>
-<p>and if it is <cite>C</cite> then that member will only be checked for compression rating.</p>
-<ul class="simple">
-<li><p>The <cite>Type</cite> field is informational only, but is used by the viewer when chaining truss members.
-If you select a truss member in the viewer and then select the <cite>Auto Chain</cite> switch,
-then all connecting truss members from the selected one with the same <cite>Type</cite> are
-plotted.  A convenient method for plotting the forces, capacity, rating, etc.
-for an entire top cord or bottom cord of a truss.</p></li>
-<li><p>The effective length of a member is it’s node to node distance times the effective length factor.  For calculations that involve the major axis of bending, bending about the local Z axis, the effective length factor &lt;span style=”font-weight:bold; “&gt;MajEffL&lt;/span&gt; is used.  For bending about the minor axis, the local Y axis, the factor &lt;span style=”font-weight:bold; “&gt;MinEffL&lt;/span&gt; is used.&lt;/P&gt;</p></li>
+<li><p>If a member’s <cite>TCCode</cite> is <cite>T</cite> then that member will only be checked for tension rating,
+and if it is <cite>C</cite> then that member will only be checked for compression rating.</p></li>
+<li><p>The <cite>Type</cite> field is [B|T|C|D|V] for code: BOTTOM, TOP, CORD, DIAG, VERT
+If B,T,or C use Mom rider only loads. If D or V use Shr rider only. Blank=both riders.</p></li>
+<li><p>The effective length of a member is it’s node to node distance times the effective length factor.
+For calculations that involve the major axis of bending, bending about the local Z axis, the effective
+length factor &lt;span style=”font-weight:bold; “&gt;MajEffL&lt;/span&gt; is used.
+For bending about the minor axis, the local Y axis, the factor &lt;span style=”font-weight:bold; “&gt;MinEffL&lt;/span&gt; is used.&lt;/P&gt;</p></li>
 </ul>
 <img alt="image/Effective_Length.png" src="../../_images/Effective_Length.png" />
 </section>
@@ -127,13 +261,13 @@ for an entire top cord or bottom cord of a truss.</p></li>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Stringer_Definition.html" class="btn btn-neutral float-left" title="Input Stringer Definition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Column_Definition.html" class="btn btn-neutral float-right" title="Input Column Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../concrete.html" class="btn btn-neutral float-right" title="Concrete" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Peter Mackenzie &amp; Alan Gordon.</p>
+    <p>&#169; Copyright 2025, Peter Mackenzie &amp; Alan Gordon.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -7,7 +7,7 @@ Input Built-up Shape Library
 
 
 .. figure:: ../../image/shapes_shg.png
-    :alt: image/shapes_shg.png
+    :alt: image/shapes_shg2.png
 
     Available built-up shapes
 
@@ -26,7 +26,9 @@ Input Built-up Shape Library
     Built_up_Shape_Types_A3R.rst
     Built_up_Shape_Types_A3AR.rst
     Built_up_Shape_Types_A4.rst
+    Built_up_Shape_Types_A4A.rst
     Built_up_Shape_Types_A5.rst
+    Built_up_Shape_Types_A5A.rst
     Built_up_Shape_Types_B1.rst
     Built_up_Shape_Types_C1.rst
     Built_up_Shape_Types_C2.rst

@@ -1,0 +1,41 @@
+.. [do not delete the next line: it must be a unique label]
+
+.. _LOADS02:
+
+ADD AN EVEN NICER TITLE HERE
+============================================
+
+**Description**
+
+* Describe the issue/example for a quick overview. ...
+* Include a photo or representative graphics that could be used in the overview page.
+
+.. list-table::
+
+    * - Type
+      - Load Combination on a Floor Beam
+    * - Structure
+      - [Steel|Composite|...]
+    * - Description
+      - [write something]
+
+**Keywords**
+
+* :ref:`Floor Beams<floor beams in QA>`
+* :ref:`Miscellaneous<misc in QA>`
+
+**Source(s)**
+
+1. some file
+2. some URL
+3. some citation
+
+**Approach**
+
+Describe your solution approach, add images, etc.
+
+**Tips & Tricks**
+
+* Watch out for ...
+* Avoid ...
+* Try this ...

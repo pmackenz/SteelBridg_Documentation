@@ -1,12 +1,10 @@
 Transverse Transfer Model
 =================================
-Example:
 
-    .. figure:: ../../image/tb2DTransferModel.png
-        :alt: image/tb2DTransferModel.png
+**Table** tb2DTransferModel
 
         
-- Description
+**PURPOSE**
    Use this entry table to define the locations where the intermediate transverse model has supports that will be the load locations on the cross beam  
    For a continuously supported condition, use a spacing of 1 foot with a duplicate value sufficient to place supports across the beam.
 
@@ -16,7 +14,10 @@ Example:
         :alt: image/tb2DTransferModel_2.png
 
 
-- Parameters
+Dist2Edge: Distance from left edge of Floor beam to left edge of slab (transfer model). 
+If slab edge is to left of FB edge then negative distance. Example shown above is a *negative* distance.
+
+**Parameters**
     - Dist (feet) 
 
         Enter distance from the left edge of the cross beam to the support location.  The 2DT parameter "Dist2Edge" will be used to position this support on the intermediate model.
@@ -28,3 +29,8 @@ Example:
     - Duplicate 
 
         Enter number of times to duplicate the support / loading location.
+
+**Example**
+
+    .. figure:: ../../image/tb2DTransferModel.png
+        :alt: image/tb2DTransferModel.png
