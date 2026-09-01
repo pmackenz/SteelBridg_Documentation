@@ -6,7 +6,7 @@ Input Built-up Shape Library
     :alt: image/ebd_Ebd106.png
 
 
-.. figure:: ../../image/shapes_shg.png
+.. figure:: ../../image/shapes_shg2.png
     :alt: image/shapes_shg2.png
 
     Available built-up shapes
